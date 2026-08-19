@@ -922,26 +922,7 @@ function openMatch(match){
 <div class="info-row tv-broadcast">
   <span>📺 Diffusion TV</span>
   <strong>
-    <strong>
-  ${
-    match.tvChannels && match.tvChannels.length
-      ? match.tvChannels.map(channel => {
-          const links = {
-            "Canal+ Sport": "https://www.canalplus.com/ci/chaines/canal-plus-sport/",
-            "beIN SPORTS": "https://www.beinsports.com/",
-            "SuperSport": "https://supersport.com/"
-          };
-
-          const url = links[channel];
-
-          return url
-            ? `<a href="${url}" target="_blank" rel="noopener noreferrer"
-                style="color:#55a9ff;text-decoration:none;margin-right:8px;">
-                📺 ${escapeHTML(channel)}
-              </a>`
-            : escapeHTML(channel);
-        }).join(" ")
-      : "Non disponible"
+  
   }
 </strong>
   </strong>
