@@ -1,543 +1,318 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Football Live</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Live</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #07111f;
-      color: #fff;
-      min-height: 100vh;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
 
-    header {
-      background: #0b1728;
-      padding: 18px 16px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      border-bottom: 1px solid #1e3048;
-    }
+header {
+  background: #0d1b2a;
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid #26384d;
+}
 
-    .top {
-      max-width: 900px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+header h1 {
+  margin: 0;
+  font-size: 25px;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+header p {
+  margin: 7px 0 0;
+  color: #9fb0c2;
+}
 
-    .logo span {
-      color: #19d66b;
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
 
-    .live {
-      background: #e53935;
-      padding: 7px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: bold;
-    }
+.status {
+  text-align: center;
+  margin: 10px 0 18px;
+  color: #9fb0c2;
+}
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px 14px 40px;
-    }
+.match {
+  background: #101f31;
+  border: 1px solid #26384d;
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #102c4d, #0b1728);
-      border-radius: 18px;
-      padding: 22px;
-      margin-bottom: 20px;
-      border: 1px solid #1d3a5c;
-    }
+.competition {
+  color: #61dafb;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
 
-    .hero h1 {
-      font-size: 28px;
-      margin-bottom: 7px;
-    }
+.date {
+  color: #8fa2b7;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 12px;
+}
 
-    .hero p {
-      color: #9fb0c4;
-      font-size: 14px;
-    }
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
 
-    .tabs {
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      margin-bottom: 18px;
-    }
+.team {
+  width: 38%;
+  text-align: center;
+  font-weight: bold;
+}
 
-    .tab {
-      border: none;
-      background: #122238;
-      color: #aebed0;
-      padding: 11px 18px;
-      border-radius: 22px;
-      cursor: pointer;
-      white-space: nowrap;
-      font-weight: bold;
-    }
+.team img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px;
+}
 
-    .tab.active {
-      background: #19d66b;
-      color: #04100a;
-    }
+.score {
+  width: 24%;
+  text-align: center;
+}
 
-    .competition {
-      margin-top: 20px;
-    }
+.score-number {
+  font-size: 25px;
+  font-weight: bold;
+}
 
-    .competition-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #0d1d31;
-      padding: 13px 15px;
-      border-radius: 12px 12px 0 0;
-      border-bottom: 1px solid #203650;
-    }
+.live {
+  color: #ff3b30;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 
-    .competition-title strong {
-      font-size: 15px;
-    }
+.finished {
+  color: #35d07f;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 
-    .match {
-      background: #0d1a2b;
-      padding: 17px 14px;
-      border-bottom: 1px solid #1b2c42;
-    }
+.scheduled {
+  color: #61dafb;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 
-    .match:last-child {
-      border-radius: 0 0 12px 12px;
-    }
+.error {
+  background: #3a1620;
+  border: 1px solid #8f3045;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
 
-    .date {
-      text-align: center;
-      color: #8194aa;
-      font-size: 12px;
-      margin-bottom: 12px;
-    }
+.empty {
+  text-align: center;
+  padding: 40px 15px;
+  color: #9fb0c2;
+}
 
-    .teams {
-      display: grid;
-      grid-template-columns: 1fr 70px 1fr;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .team {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 8px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .team img {
-      width: 45px;
-      height: 45px;
-      object-fit: contain;
-      background: #fff;
-      border-radius: 50%;
-      padding: 4px;
-    }
-
-    .score {
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .time {
-      font-size: 13px;
-      color: #19d66b;
-    }
-
-    .finished {
-      color: #aebed0;
-    }
-
-    .status {
-      font-size: 11px;
-      margin-top: 5px;
-      color: #8094aa;
-    }
-
-    .empty,
-    .error,
-    .loading {
-      text-align: center;
-      padding: 35px 15px;
-      color: #91a4ba;
-      background: #0d1a2b;
-      border-radius: 14px;
-    }
-
-    .error {
-      color: #ff7373;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #65788e;
-      font-size: 12px;
-    }
-
-    @media (max-width: 500px) {
-      .hero h1 {
-        font-size: 23px;
-      }
-
-      .teams {
-        grid-template-columns: 1fr 60px 1fr;
-      }
-
-      .team img {
-        width: 40px;
-        height: 40px;
-      }
-
-      .team {
-        font-size: 12px;
-      }
-    }
-  </style>
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 9px;
+  background: #1677ff;
+  color: white;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="top">
-    <div class="logo">⚽ <span>Football</span> Live</div>
-    <div class="live">● EN DIRECT</div>
-  </div>
+  <h1>⚽ Football Live</h1>
+  <p>Matchs de football en direct</p>
 </header>
 
-<main>
+<div class="container">
 
-  <section class="hero">
-    <h1>Football Live ⚽</h1>
-    <p>Matchs en direct, à venir et résultats</p>
-  </section>
+  <button onclick="chargerMatchs()">🔄 Actualiser</button>
 
-  <div class="tabs">
-    <button class="tab active" onclick="showTab('all', this)">Tous</button>
-    <button class="tab" onclick="showTab('live', this)">🔴 Direct</button>
-    <button class="tab" onclick="showTab('upcoming', this)">📅 À venir</button>
-    <button class="tab" onclick="showTab('finished', this)">✅ Terminés</button>
+  <div id="status" class="status">
+    Chargement des matchs...
   </div>
 
-  <div id="matches">
-    <div class="loading">Chargement des matchs… ⚽</div>
-  </div>
+  <div id="matches"></div>
 
-</main>
-
-<footer>
-  Football Live • Matchs actualisés automatiquement
-</footer>
+</div>
 
 <script>
-  let allMatches = [];
-  let currentTab = "all";
 
-  async function loadMatches() {
-    const container = document.getElementById("matches");
+async function chargerMatchs() {
 
-    try {
-      const response = await fetch("matches.json?t=" + Date.now());
+  const zone = document.getElementById("matches");
+  const status = document.getElementById("status");
 
-      if (!response.ok) {
-        throw new Error("matches.json introuvable");
-      }
+  status.textContent = "Chargement des matchs...";
+  zone.innerHTML = "";
 
-      const data = await response.json();
+  try {
 
-      if (Array.isArray(data)) {
-        allMatches = data;
-      } else if (Array.isArray(data.matches)) {
-        allMatches = data.matches;
-      } else {
-        allMatches = [];
-      }
+    const response = await fetch("matches.json?cache=" + Date.now());
 
-      renderMatches();
-
-    } catch (error) {
-      container.innerHTML = `
-        <div class="error">
-          ❌ Impossible de charger les matchs.<br><br>
-          Vérifie que <b>matches.json</b> existe bien à la racine du dépôt.
-        </div>
-      `;
-    }
-  }
-
-  function getStatus(match) {
-    const status = String(match.status || "").toUpperCase();
-
-    if (
-      status === "LIVE" ||
-      status === "IN_PLAY" ||
-      status === "PAUSED"
-    ) {
-      return "live";
+    if (!response.ok) {
+      throw new Error("Impossible de charger matches.json");
     }
 
-    if (
-      status === "FINISHED" ||
-      status === "AWARDED"
-    ) {
-      return "finished";
-    }
+    const data = await response.json();
 
-    return "upcoming";
-  }
+    const matchs = data.matches || [];
 
-  function getTeamName(team) {
-    if (!team) return "Équipe";
-
-    return (
-      team.shortName ||
-      team.name ||
-      team.tla ||
-      "Équipe"
-    );
-  }
-
-  function getLogo(team) {
-    if (!team) return "";
-
-    return team.crest || team.logo || "";
-  }
-
-  function getScore(match) {
-    const score = match.score || {};
-    const full = score.fullTime || score.fulltime || {};
-
-    const home =
-      full.home !== null &&
-      full.home !== undefined
-        ? full.home
-        : null;
-
-    const away =
-      full.away !== null &&
-      full.away !== undefined
-        ? full.away
-        : null;
-
-    if (home !== null || away !== null) {
-      return `${home ?? 0} - ${away ?? 0}`;
-    }
-
-    return "VS";
-  }
-
-  function formatDate(dateString) {
-    if (!dateString) return "";
-
-    const date = new Date(dateString);
-
-    if (isNaN(date.getTime())) {
-      return "";
-    }
-
-    return date.toLocaleString("fr-FR", {
-      day: "2-digit",
-      month: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit"
-    });
-  }
-
-  function renderMatches() {
-    const container = document.getElementById("matches");
-
-    let matches = allMatches.filter(match => {
-      const status = getStatus(match);
-
-      if (currentTab === "live") return status === "live";
-      if (currentTab === "upcoming") return status === "upcoming";
-      if (currentTab === "finished") return status === "finished";
-
-      return true;
-    });
-
-    if (!matches.length) {
-      container.innerHTML = `
+    if (matchs.length === 0) {
+      zone.innerHTML = `
         <div class="empty">
-          Aucun match disponible dans cette catégorie.
+          Aucun match disponible pour le moment.
         </div>
       `;
+      status.textContent = "0 match";
       return;
     }
 
-    const groups = {};
+    status.textContent = matchs.length + " matchs disponibles";
 
-    matches.forEach(match => {
-      const competition =
-        match.competition?.name ||
-        match.competition?.shortName ||
-        "Football";
+    matchs.forEach(match => {
 
-      if (!groups[competition]) {
-        groups[competition] = [];
+      const home = match.homeTeam || {};
+      const away = match.awayTeam || {};
+      const competition = match.competition || {};
+      const score = match.score || {};
+
+      const homeScore =
+        score.fullTime && score.fullTime.home !== null
+          ? score.fullTime.home
+          : "-";
+
+      const awayScore =
+        score.fullTime && score.fullTime.away !== null
+          ? score.fullTime.away
+          : "-";
+
+      let statut = "À venir";
+      let classe = "scheduled";
+
+      if (match.status === "LIVE" ||
+          match.status === "IN_PLAY" ||
+          match.status === "PAUSED") {
+        statut = "🔴 EN DIRECT";
+        classe = "live";
       }
 
-      groups[competition].push(match);
-    });
+      if (match.status === "FINISHED") {
+        statut = "✓ TERMINÉ";
+        classe = "finished";
+      }
 
-    container.innerHTML = "";
+      const date = match.utcDate
+        ? new Date(match.utcDate).toLocaleString("fr-FR", {
+            dateStyle: "medium",
+            timeStyle: "short"
+          })
+        : "Date inconnue";
 
-    Object.keys(groups).forEach(competition => {
+      const carte = document.createElement("div");
 
-      const section = document.createElement("section");
-      section.className = "competition";
+      carte.className = "match";
 
-      section.innerHTML = `
-        <div class="competition-title">
-          <strong>🏆 ${escapeHtml(competition)}</strong>
-          <span>${groups[competition].length} match(s)</span>
+      carte.innerHTML = `
+
+        <div class="competition">
+          🏆 ${competition.name || "Football"}
         </div>
-      `;
 
-      groups[competition].forEach(match => {
+        <div class="date">
+          ${date}
+        </div>
 
-        const status = getStatus(match);
+        <div class="teams">
 
-        const home = match.homeTeam || match.home || {};
-        const away = match.awayTeam || match.away || {};
+          <div class="team">
+            <img
+              src="${home.crest || ""}"
+              alt=""
+              onerror="this.style.display='none'"
+            >
+            ${home.name || "Équipe"}
+          </div>
 
-        const homeName = getTeamName(home);
-        const awayName = getTeamName(away);
+          <div class="score">
 
-        const homeLogo = getLogo(home);
-        const awayLogo = getLogo(away);
-
-        const date = formatDate(match.utcDate || match.date);
-
-        let middle = "";
-
-        if (status === "live") {
-          middle = `
-            <div class="score">
-              ${getScore(match)}
-              <div class="time">🔴 LIVE</div>
-            </div>
-          `;
-        } else if (status === "finished") {
-          middle = `
-            <div class="score">
-              ${getScore(match)}
-              <div class="status">TERMINÉ</div>
-            </div>
-          `;
-        } else {
-          middle = `
-            <div class="score">
-              <div class="time">
-                ${date ? date.split(" ")[1] || "À venir" : "À venir"}
-              </div>
-              <div class="status">À VENIR</div>
-            </div>
-          `;
-        }
-
-        const matchElement = document.createElement("div");
-        matchElement.className = "match";
-
-        matchElement.innerHTML = `
-          <div class="date">${date}</div>
-
-          <div class="teams">
-
-            <div class="team">
-              ${
-                homeLogo
-                ? `<img src="${escapeAttribute(homeLogo)}"
-                    alt="${escapeAttribute(homeName)}"
-                    onerror="this.style.display='none'">`
-                : `<div style="font-size:38px">⚽</div>`
-              }
-              <span>${escapeHtml(homeName)}</span>
+            <div class="score-number">
+              ${homeScore} - ${awayScore}
             </div>
 
-            ${middle}
-
-            <div class="team">
-              ${
-                awayLogo
-                ? `<img src="${escapeAttribute(awayLogo)}"
-                    alt="${escapeAttribute(awayName)}"
-                    onerror="this.style.display='none'">`
-                : `<div style="font-size:38px">⚽</div>`
-              }
-              <span>${escapeHtml(awayName)}</span>
+            <div class="${classe}">
+              ${statut}
             </div>
 
           </div>
-        `;
 
-        section.appendChild(matchElement);
-      });
+          <div class="team">
+            <img
+              src="${away.crest || ""}"
+              alt=""
+              onerror="this.style.display='none'"
+            >
+            ${away.name || "Équipe"}
+          </div>
 
-      container.appendChild(section);
+        </div>
+      `;
+
+      zone.appendChild(carte);
+
     });
+
+  } catch (error) {
+
+    console.error(error);
+
+    status.textContent = "";
+
+    zone.innerHTML = `
+      <div class="error">
+        ❌ Impossible de charger les matchs.<br><br>
+        Vérifie que <b>matches.json</b> est bien présent
+        à la racine du dépôt.
+      </div>
+    `;
+
   }
+}
 
-  function showTab(tab, button) {
-    currentTab = tab;
+chargerMatchs();
 
-    document.querySelectorAll(".tab").forEach(btn => {
-      btn.classList.remove("active");
-    });
+setInterval(chargerMatchs, 60000);
 
-    button.classList.add("active");
-
-    renderMatches();
-  }
-
-  function escapeHtml(value) {
-    return String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
-
-  function escapeAttribute(value) {
-    return String(value)
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
-
-  loadMatches();
-
-  // Actualisation de l'affichage toutes les 60 secondes
-  setInterval(loadMatches, 60000);
 </script>
 
 </body>
