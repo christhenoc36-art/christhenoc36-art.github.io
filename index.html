@@ -1,96 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FOOTBALL LIVE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOOTBALL LIVE</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: white;
-      text-align: center;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    header {
-      background: #111c33;
-      padding: 25px 15px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #081220;
+  color: white;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
+header {
+  background: #111c33;
+  padding: 25px 15px;
+  text-align: center;
+}
 
-    .subtitle {
-      color: #b8c4d9;
-      margin-top: 8px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
 
-    .container {
-      padding: 25px 15px;
-    }
+header p {
+  color: #b8c4d9;
+  font-size: 18px;
+}
 
-    .match {
-      background: #16233d;
-      border-radius: 15px;
-      padding: 20px;
-      margin: 15px auto;
-      max-width: 450px;
-    }
+#matches {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
 
-    .teams {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+.match {
+  background: #172642;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 18px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
 
-    .score {
-      font-size: 30px;
-      margin: 10px;
-    }
+.competition {
+  color: #9fb0cc;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
 
-    .status {
-      color: #35d07f;
-      font-weight: bold;
-    }
+.teams {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      color: #8795ad;
-    }
-  </style>
+.score {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.status {
+  color: #35e879;
+  font-weight: bold;
+}
+
+.date {
+  color: #aebbd0;
+  margin-top: 10px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.error {
+  text-align: center;
+  color: #ff6b6b;
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #7f8da8;
+  padding: 30px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>⚽ FOOTBALL LIVE</h1>
-    <div class="subtitle">Matchs et scores en direct</div>
-  </header>
+<header>
+  <h1>⚽ FOOTBALL LIVE</h1>
+  <p>Matchs et scores en direct</p>
+</header>
 
-  <div class="container">
+<div id="matches">
+  <div class="loading">⏳ Chargement des matchs...</div>
+</div>
 
-    <div class="match">
-      <div class="teams">Équipe A 🆚 Équipe B</div>
-      <div class="score">2 - 1</div>
-      <div class="status">● EN DIRECT</div>
-    </div>
+<footer>
+  © 2026 FOOTBALL LIVE
+</footer>
 
-    <div class="match">
-      <div class="teams">Équipe C 🆚 Équipe D</div>
-      <div class="score">0 - 0</div>
-      <div class="status">À VENIR</div>
-    </div>
+<script>
+async function chargerMatchs() {
 
-  </div>
+  const container = document.getElementById("matches");
 
-  <footer>
-    © 2026 FOOTBALL LIVE
-  </footer>
+  try {
+
+    const response = await fetch("matches.json?cache=" + Date.now());
+
+    if (!response.ok) {
+      throw new Error("Impossible de charger les matchs");
+    }
+
+    const data = await response.json();
+
+    container.innerHTML = "";
+
+    if (!data.matches || data.matches.length === 0) {
+      container.innerHTML =
+        '<div class="loading">Aucun match disponible.</div>';
+      return;
+    }
+
+    data.matches.forEach(match => {
+
+      const home =
+        match.homeTeam?.name || "Équipe A";
+
+      const away =
+        match.awayTeam?.name || "Équipe B";
+
+      const homeScore =
+        match.score?.fullTime?.home ?? 0;
+
+      const awayScore =
+        match.score?.fullTime?.away ?? 0;
+
+      const status =
+        match.status || "À VENIR";
+
+      const competition =
+        match.competition?.name || "Football";
+
+      let date = "";
+
+      if (match.utcDate) {
+        date = new Date(match.utcDate).toLocaleString("fr-FR", {
+          dateStyle: "short",
+          timeStyle: "short"
+        });
+      }
+
+      const card = document.createElement("div");
+
+      card.className = "match";
+
+      card.innerHTML = `
+        <div class="competition">
+          ${competition}
+        </div>
+
+        <div class="teams">
+          ${home} 🆚 ${away}
+        </div>
+
+        <div class="score">
+          ${homeScore} - ${awayScore}
+        </div>
+
+        <div class="status">
+          ${traduireStatut(status)}
+        </div>
+
+        <div class="date">
+          ${date}
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+
+  } catch (error) {
+
+    container.innerHTML = `
+      <div class="error">
+        ❌ Impossible de charger les matchs.
+      </div>
+    `;
+
+    console.error(error);
+  }
+}
+
+function traduireStatut(status) {
+
+  const statuts = {
+    IN_PLAY: "🔴 EN DIRECT",
+    PAUSED: "⏸️ PAUSE",
+    FINISHED: "✅ TERMINÉ",
+    SCHEDULED: "🕐 À VENIR",
+    TIMED: "🕐 À VENIR"
+  };
+
+  return statuts[status] || status;
+}
+
+chargerMatchs();
+
+setInterval(chargerMatchs, 60000);
+</script>
 
 </body>
-    </html>
+</html>
