@@ -1,1 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>FOOTBALL LIVE</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
+
+header {
+  background: #101d32;
+  padding: 22px 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.slogan {
+  color: #aebbd0;
+  margin-top: 6px;
+}
+
+.search {
+  margin: 18px auto 0;
+  max-width: 600px;
+}
+
+.search input {
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.menu {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.menu button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 16px;
+  background: #172642;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu button.active {
+  background: #1769ff;
+}
+
+#matches {
+  padding: 5px 15px 30px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.match {
+  background: #111f35;
+  border-radius: 18px;
+  padding: 18px;
+  margin: 14px 0;
+  text-align: center;
+}
+
+.competition {
+  color: #9eabc0;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.teams {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.score {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 12px;
+}
+
+.status {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.live {
+  color: #ff3b3b;
+}
+
+.upcoming {
+  color: #4da3ff;
+}
+
+.finished {
+  color: #35e879;
+}
+
+.date {
+  color: #8f9db2;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.message {
+  text-align: center;
+  padding: 40px 15px;
+  color: #b8c4d9;
+}
+
+footer {
+  text-align: center;
+  color: #718096;
+  padding: 25px;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">⚽ FOOTBALL LIVE</div>
+
+  <div class="slogan">
+    Matchs et scores de football
+  </div>
+
+  <div class="search">
+    <input
+      id="search"
+      type="search"
+      placeholder="🔎 Rechercher une équipe..."
+    >
+  </div>
+
+</header>
+
+<nav class="menu">
+
+  <button class="active" data-filter="all">
+    Tous
+  </button>
+
+  <button data-filter="live">
+    🔴 En direct
+  </button>
+
+  <button data-filter="upcoming">
+    🕐 À venir
+  </button>
+
+  <button data-filter="finished">
+    ✅ Terminés
+  </button>
+
+</nav>
+
+<main id="matches">
+
+  <div class="message">
+    ⏳ Chargement des matchs...
+  </div>
+
+</main>
+
+<footer>
+  © 2026 FOOTBALL LIVE
+</footer>
+
+
+<script>
+
+let tousLesMatchs = [];
+let filtreActuel = "all";
+
+
+// Traduction des statuts
+function traduireStatut(statut) {
+
+  const traductions = {
+
+    "IN_PLAY": "🔴 EN DIRECT",
+    "PAUSED": "⏸️ PAUSE",
+    "FINISHED": "✅ TERMINÉ",
+    "SCHEDULED": "🕐 À VENIR",
+    "TIMED": "🕐 À VENIR",
+    "POSTPONED": "⏸️ REPORTÉ",
+    "CANCELLED": "❌ ANNULÉ",
+    "SUSPENDED": "⚠️ SUSPENDU"
+
+  };
+
+  return traductions[statut] || "🕐 À VENIR";
+}
+
+
+// Catégorie du match
+function categorieMatch(statut) {
+
+  if (
+    statut === "IN_PLAY" ||
+    statut === "PAUSED"
+  ) {
+    return "live";
+  }
+
+  if (statut === "FINISHED") {
+    return "finished";
+  }
+
+  return "upcoming";
+}
+
+
+// Date du match
+function afficherDate(date) {
+
+  if (!date) {
+    return "";
+  }
+
+  return new Date(date).toLocaleString(
+    "fr-FR",
+    {
+      dateStyle: "short",
+      timeStyle: "short"
+    }
+  );
+}
+
+
+// Afficher les matchs
+function afficherMatchs() {
+
+  const container =
+    document.getElementById("matches");
+
+  const recherche =
+    document
+      .getElementById("search")
+      .value
+      .toLowerCase()
+      .trim();
+
+
+  let matchs = tousLesMatchs.filter(match => {
+
+    const categorie =
+      categorieMatch(match.status);
+
+    const domicile =
+      match.homeTeam?.name || "";
+
+    const exterieur =
+      match.awayTeam?.name || "";
+
+    const texte =
+      (domicile + " " + exterieur)
+      .toLowerCase();
+
+
+    const bonFiltre =
+      filtreActuel === "all" ||
+      filtreActuel === categorie;
+
+
+    const bonneRecherche =
+      recherche === "" ||
+      texte.includes(recherche);
+
+
+    return bonFiltre && bonneRecherche;
+
+  });
+
+
+  if (matchs.length === 0) {
+
+    container.innerHTML = `
+      <div class="message">
+        ⚽ Aucun match trouvé.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  container.innerHTML = "";
+
+
+  matchs.forEach(match => {
+
+    const domicile =
+      match.homeTeam?.name ||
+      "Équipe domicile";
+
+
+    const exterieur =
+      match.awayTeam?.name ||
+      "Équipe extérieure";
+
+
+    const scoreDomicile =
+      match.score?.fullTime?.home ?? "-";
+
+
+    const scoreExterieur =
+      match.score?.fullTime?.away ?? "-";
+
+
+    const statut =
+      match.status || "SCHEDULED";
+
+
+    const categorie =
+      categorieMatch(statut);
+
+
+    const competition =
+      match.competition?.name ||
+      "Football";
+
+
+    const date =
+      afficherDate(match.utcDate);
+
+
+    const carte =
+      document.createElement("div");
+
+
+    carte.className = "match";
+
+
+    carte.innerHTML = `
+
+      <div class="competition">
+        🏆 ${competition}
+      </div>
+
+      <div class="teams">
+        ${domicile}
+        <br>
+        🆚
+        <br>
+        ${exterieur}
+      </div>
+
+      <div class="score">
+        ${scoreDomicile} - ${scoreExterieur}
+      </div>
+
+      <div class="status ${categorie}">
+        ${traduireStatut(statut)}
+      </div>
+
+      <div class="date">
+        ${date}
+      </div>
+
+    `;
+
+
+    container.appendChild(carte);
+
+  });
+
+}
+
+
+// Charger matches.json
+async function chargerMatchs() {
+
+  try {
+
+    const response =
+      await fetch(
+        "matches.json?cache=" +
+        Date.now()
+      );
+
+
+    if (!response.ok) {
+      throw new Error("Erreur");
+    }
+
+
+    const data =
+      await response.json();
+
+
+    tousLesMatchs =
+      data.matches || [];
+
+
+    afficherMatchs();
+
+
+  } catch (erreur) {
+
+    document.getElementById("matches")
+      .innerHTML = `
+
+        <div class="message">
+          ❌ Impossible de charger les matchs.
+          <br><br>
+          Vérifie que matches.json est disponible.
+        </div>
+
+      `;
+
+  }
+
+}
+
+
+// Boutons de filtre
+document
+  .querySelectorAll(".menu button")
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        document
+          .querySelectorAll(".menu button")
+          .forEach(btn =>
+            btn.classList.remove("active")
+          );
+
+
+        button.classList.add("active");
+
+
+        filtreActuel =
+          button.dataset.filter;
+
+
+        afficherMatchs();
+
+      }
+    );
+
+  });
+
+
+// Recherche
+document
+  .getElementById("search")
+  .addEventListener(
+    "input",
+    afficherMatchs
+  );
+
+
+// Premier chargement
+chargerMatchs();
+
+
+// Actualisation toutes les 60 secondes
+setInterval(
+  chargerMatchs,
+  60000
+);
+
+</script>
+
+</body>
+  </html>
