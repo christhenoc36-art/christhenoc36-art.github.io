@@ -1,1 +1,87 @@
+name: Actualiser les matchs
 
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-matches:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Télécharger le dépôt
+        uses: actions/checkout@v4
+
+      - name: Récupérer les compétitions accessibles
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: |
+          curl -sS \
+            -H "X-Auth-Token: $FOOTBALL_API_KEY" \
+            "https://api.football-data.org/v4/competitions" \
+            -o competitions.json
+
+          jq empty competitions.json
+
+      - name: Récupérer les matchs
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: |
+          echo '{"matches":[]}' > matches.json
+
+          jq -r '.competitions[].id' competitions.json | while read ID
+          do
+            echo "Compétition $ID"
+
+            curl -sS \
+              -H "X-Auth-Token: $FOOTBALL_API_KEY" \
+              -H "X-Unfold-Goals: true" \
+              -H "X-Unfold-Lineups: true" \
+              -H "X-Unfold-Bookings: true" \
+              -H "X-Unfold-Subs: true" \
+              "https://api.football-data.org/v4/competitions/$ID/matches" \
+              -o competition.json
+
+            if jq -e '.matches' competition.json >/dev/null 2>&1
+            then
+              jq -s '.[0].matches + .[1].matches' \
+                matches.json competition.json \
+                | jq '{matches: .}' > matches-new.json
+
+              mv matches-new.json matches.json
+            fi
+
+            sleep 1
+          done
+
+      - name: Supprimer les doublons
+        run: |
+          jq '
+            .matches
+            | unique_by(.id)
+            | {matches: .}
+          ' matches.json > matches-clean.json
+
+          mv matches-clean.json matches.json
+
+      - name: Vérifier les fichiers
+        run: |
+          jq empty matches.json
+          echo "Matchs récupérés :"
+          jq '.matches | length' matches.json
+
+      - name: Enregistrer les matchs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add matches.json competitions.json
+
+          git diff --cached --quiet || \
+            git commit -m "Mise à jour de tous les matchs"
+
+          git push
