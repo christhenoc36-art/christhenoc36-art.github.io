@@ -19,19 +19,19 @@ body {
 
 header {
   background: #0d1b2a;
-  padding: 18px;
+  padding: 20px 15px;
   text-align: center;
   border-bottom: 1px solid #26384d;
 }
 
 header h1 {
   margin: 0;
-  font-size: 25px;
+  font-size: 26px;
 }
 
 header p {
-  margin: 7px 0 0;
   color: #9fb0c2;
+  margin: 7px 0 0;
 }
 
 .container {
@@ -40,10 +40,44 @@ header p {
   padding: 15px;
 }
 
+.filters {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+.filter {
+  flex: 1;
+  min-width: 100px;
+  padding: 11px 8px;
+  border: 1px solid #30445b;
+  border-radius: 10px;
+  background: #101f31;
+  color: white;
+  font-weight: bold;
+}
+
+.filter.active {
+  background: #1677ff;
+  border-color: #1677ff;
+}
+
+.refresh {
+  display: block;
+  margin: 0 auto 15px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 9px;
+  background: #1677ff;
+  color: white;
+  font-weight: bold;
+}
+
 .status {
   text-align: center;
-  margin: 10px 0 18px;
   color: #9fb0c2;
+  margin-bottom: 15px;
 }
 
 .match {
@@ -57,33 +91,34 @@ header p {
 .competition {
   color: #61dafb;
   font-size: 14px;
-  margin-bottom: 12px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .date {
   color: #8fa2b7;
   font-size: 13px;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .teams {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 8px;
 }
 
 .team {
   width: 38%;
   text-align: center;
   font-weight: bold;
+  line-height: 1.3;
 }
 
 .team img {
-  width: 52px;
-  height: 52px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   display: block;
   margin: 0 auto 8px;
@@ -103,29 +138,21 @@ header p {
   color: #ff3b30;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .finished {
   color: #35d07f;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .scheduled {
   color: #61dafb;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 5px;
-}
-
-.error {
-  background: #3a1620;
-  border: 1px solid #8f3045;
-  padding: 15px;
-  border-radius: 12px;
-  text-align: center;
+  margin-top: 6px;
 }
 
 .empty {
@@ -134,15 +161,12 @@ header p {
   color: #9fb0c2;
 }
 
-button {
-  display: block;
-  margin: 15px auto;
-  padding: 10px 18px;
-  border: 0;
-  border-radius: 9px;
-  background: #1677ff;
-  color: white;
-  font-weight: bold;
+.error {
+  background: #3a1620;
+  border: 1px solid #8f3045;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
 }
 </style>
 </head>
@@ -151,12 +175,32 @@ button {
 
 <header>
   <h1>⚽ Football Live</h1>
-  <p>Matchs de football en direct</p>
+  <p>Les matchs de football en temps réel</p>
 </header>
 
 <div class="container">
 
-  <button onclick="chargerMatchs()">🔄 Actualiser</button>
+  <div class="filters">
+    <button class="filter active" onclick="filtrer('tous', this)">
+      ⚽ Tous
+    </button>
+
+    <button class="filter" onclick="filtrer('live', this)">
+      🔴 En direct
+    </button>
+
+    <button class="filter" onclick="filtrer('avenir', this)">
+      🕐 À venir
+    </button>
+
+    <button class="filter" onclick="filtrer('termine', this)">
+      ✅ Terminés
+    </button>
+  </div>
+
+  <button class="refresh" onclick="chargerMatchs()">
+    🔄 Actualiser
+  </button>
 
   <div id="status" class="status">
     Chargement des matchs...
@@ -168,129 +212,207 @@ button {
 
 <script>
 
-async function chargerMatchs() {
+let tousLesMatchs = [];
+let filtreActuel = "tous";
+
+function estEnDirect(match) {
+  return [
+    "LIVE",
+    "IN_PLAY",
+    "PAUSED",
+    "IN_PLAY_HALF_TIME"
+  ].includes(match.status);
+}
+
+function estTermine(match) {
+  return match.status === "FINISHED";
+}
+
+function estAVenir(match) {
+  return !estEnDirect(match) && !estTermine(match);
+}
+
+function filtrer(type, bouton) {
+
+  filtreActuel = type;
+
+  document.querySelectorAll(".filter").forEach(b => {
+    b.classList.remove("active");
+  });
+
+  bouton.classList.add("active");
+
+  afficherMatchs();
+}
+
+function afficherMatchs() {
 
   const zone = document.getElementById("matches");
+
+  let matchs = tousLesMatchs;
+
+  if (filtreActuel === "live") {
+    matchs = tousLesMatchs.filter(estEnDirect);
+  }
+
+  if (filtreActuel === "avenir") {
+    matchs = tousLesMatchs.filter(estAVenir);
+  }
+
+  if (filtreActuel === "termine") {
+    matchs = tousLesMatchs.filter(estTermine);
+  }
+
+  if (matchs.length === 0) {
+
+    zone.innerHTML = `
+      <div class="empty">
+        Aucun match dans cette catégorie.
+      </div>
+    `;
+
+    return;
+  }
+
+  zone.innerHTML = "";
+
+  matchs.forEach(match => {
+
+    const home = match.homeTeam || {};
+    const away = match.awayTeam || {};
+    const competition = match.competition || {};
+    const score = match.score || {};
+    const fullTime = score.fullTime || {};
+
+    const homeScore =
+      fullTime.home !== null &&
+      fullTime.home !== undefined
+        ? fullTime.home
+        : "-";
+
+    const awayScore =
+      fullTime.away !== null &&
+      fullTime.away !== undefined
+        ? fullTime.away
+        : "-";
+
+    let statut = "🕐 À VENIR";
+    let classe = "scheduled";
+
+    if (estEnDirect(match)) {
+      statut = "🔴 EN DIRECT";
+      classe = "live";
+    }
+
+    if (estTermine(match)) {
+      statut = "✅ TERMINÉ";
+      classe = "finished";
+    }
+
+    let date = "Date inconnue";
+
+    if (match.utcDate) {
+
+      date = new Date(match.utcDate).toLocaleString(
+        "fr-FR",
+        {
+          dateStyle: "medium",
+          timeStyle: "short"
+        }
+      );
+
+    }
+
+    const carte = document.createElement("div");
+
+    carte.className = "match";
+
+    carte.innerHTML = `
+
+      <div class="competition">
+        🏆 ${competition.name || "Football"}
+      </div>
+
+      <div class="date">
+        ${date}
+      </div>
+
+      <div class="teams">
+
+        <div class="team">
+
+          ${
+            home.crest
+            ? `<img src="${home.crest}"
+                    alt=""
+                    onerror="this.style.display='none'">`
+            : ""
+          }
+
+          ${home.name || "Équipe domicile"}
+
+        </div>
+
+        <div class="score">
+
+          <div class="score-number">
+            ${homeScore} - ${awayScore}
+          </div>
+
+          <div class="${classe}">
+            ${statut}
+          </div>
+
+        </div>
+
+        <div class="team">
+
+          ${
+            away.crest
+            ? `<img src="${away.crest}"
+                    alt=""
+                    onerror="this.style.display='none'">`
+            : ""
+          }
+
+          ${away.name || "Équipe extérieure"}
+
+        </div>
+
+      </div>
+    `;
+
+    zone.appendChild(carte);
+
+  });
+}
+
+async function chargerMatchs() {
+
   const status = document.getElementById("status");
+  const zone = document.getElementById("matches");
 
   status.textContent = "Chargement des matchs...";
-  zone.innerHTML = "";
 
   try {
 
-    const response = await fetch("matches.json?cache=" + Date.now());
+    const response = await fetch(
+      "matches.json?cache=" + Date.now()
+    );
 
     if (!response.ok) {
-      throw new Error("Impossible de charger matches.json");
+      throw new Error("matches.json introuvable");
     }
 
     const data = await response.json();
 
-    const matchs = data.matches || [];
+    tousLesMatchs = data.matches || [];
 
-    if (matchs.length === 0) {
-      zone.innerHTML = `
-        <div class="empty">
-          Aucun match disponible pour le moment.
-        </div>
-      `;
-      status.textContent = "0 match";
-      return;
-    }
+    status.textContent =
+      tousLesMatchs.length +
+      " matchs disponibles";
 
-    status.textContent = matchs.length + " matchs disponibles";
-
-    matchs.forEach(match => {
-
-      const home = match.homeTeam || {};
-      const away = match.awayTeam || {};
-      const competition = match.competition || {};
-      const score = match.score || {};
-
-      const homeScore =
-        score.fullTime && score.fullTime.home !== null
-          ? score.fullTime.home
-          : "-";
-
-      const awayScore =
-        score.fullTime && score.fullTime.away !== null
-          ? score.fullTime.away
-          : "-";
-
-      let statut = "À venir";
-      let classe = "scheduled";
-
-      if (match.status === "LIVE" ||
-          match.status === "IN_PLAY" ||
-          match.status === "PAUSED") {
-        statut = "🔴 EN DIRECT";
-        classe = "live";
-      }
-
-      if (match.status === "FINISHED") {
-        statut = "✓ TERMINÉ";
-        classe = "finished";
-      }
-
-      const date = match.utcDate
-        ? new Date(match.utcDate).toLocaleString("fr-FR", {
-            dateStyle: "medium",
-            timeStyle: "short"
-          })
-        : "Date inconnue";
-
-      const carte = document.createElement("div");
-
-      carte.className = "match";
-
-      carte.innerHTML = `
-
-        <div class="competition">
-          🏆 ${competition.name || "Football"}
-        </div>
-
-        <div class="date">
-          ${date}
-        </div>
-
-        <div class="teams">
-
-          <div class="team">
-            <img
-              src="${home.crest || ""}"
-              alt=""
-              onerror="this.style.display='none'"
-            >
-            ${home.name || "Équipe"}
-          </div>
-
-          <div class="score">
-
-            <div class="score-number">
-              ${homeScore} - ${awayScore}
-            </div>
-
-            <div class="${classe}">
-              ${statut}
-            </div>
-
-          </div>
-
-          <div class="team">
-            <img
-              src="${away.crest || ""}"
-              alt=""
-              onerror="this.style.display='none'"
-            >
-            ${away.name || "Équipe"}
-          </div>
-
-        </div>
-      `;
-
-      zone.appendChild(carte);
-
-    });
+    afficherMatchs();
 
   } catch (error) {
 
@@ -301,8 +423,8 @@ async function chargerMatchs() {
     zone.innerHTML = `
       <div class="error">
         ❌ Impossible de charger les matchs.<br><br>
-        Vérifie que <b>matches.json</b> est bien présent
-        à la racine du dépôt.
+        Vérifie que <b>matches.json</b>
+        est bien présent dans le dépôt.
       </div>
     `;
 
@@ -316,4 +438,4 @@ setInterval(chargerMatchs, 60000);
 </script>
 
 </body>
-  </html>
+</html>
