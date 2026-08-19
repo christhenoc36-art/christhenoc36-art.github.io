@@ -29,9 +29,19 @@
       "group": null,
       "lastUpdated": "2026-08-19T04:22:12Z",
       "tvChannels": [
-  "Canal+ Sport",
-  "beIN SPORTS",
-  "SuperSport"
+  {
+    "name": "Canal+ Sport",
+    "url": ""
+  },
+  {
+    "name": "beIN SPORTS",
+    "url": ""
+  },
+  {
+    "name": "SuperSport",
+    "url": ""
+  }
+],
 ],
       "homeTeam": {
         "id": 6993,
