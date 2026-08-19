@@ -923,7 +923,23 @@ function openMatch(match){
   <span>📺 Diffusion TV</span>
   <strong>
   }
-</strong>
+  ${
+  match.tvChannels && match.tvChannels.length
+    ? match.tvChannels.map(channel => {
+        const name = channel.name || channel;
+        const url = channel.url || "";
+
+        return url
+          ? `<a href="${url}" target="_blank" rel="noopener noreferrer"
+              style="color:#55a9ff;text-decoration:none;margin-right:10px;">
+              📺 ${escapeHTML(name)}
+            </a>`
+          : `<span style="margin-right:10px;">
+              📺 ${escapeHTML(name)}
+            </span>`;
+      }).join("")
+    : "Non disponible"
+  }
   </strong>
 </div>
       </div>
