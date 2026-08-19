@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+je<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -259,4 +259,9 @@ async function chargerMatchs() {
 }
 
 chargerMatchs();
+</script>
+<script>
+fetch("matches.json")
+.then(r=>r.json())
+.then(d=>document.body.innerHTML += "<h2>⚽ Matchs : "+d.matches.length+"</h2>");
 </script>
