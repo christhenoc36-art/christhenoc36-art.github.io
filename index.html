@@ -222,3 +222,41 @@ setInterval(chargerMatchs, 60000);
 
 </body>
 </html>
+<script>
+async function chargerMatchs() {
+  try {
+    const response = await fetch("matches.json");
+    const data = await response.json();
+
+    const matchs = data.matches || [];
+
+    const section = document.createElement("section");
+    section.innerHTML = "<h2>⚽ Matchs en direct</h2>";
+
+    matchs.forEach(match => {
+      const home = match.homeTeam?.name || "Équipe A";
+      const away = match.awayTeam?.name || "Équipe B";
+      const scoreHome = match.score?.fullTime?.home ?? 0;
+      const scoreAway = match.score?.fullTime?.away ?? 0;
+
+      const carte = document.createElement("div");
+      carte.style.cssText =
+        "background:#111c33;padding:20px;margin:15px;border-radius:15px;";
+
+      carte.innerHTML = `
+        <h3>${home} 🆚 ${away}</h3>
+        <div style="font-size:30px">${scoreHome} - ${scoreAway}</div>
+      `;
+
+      section.appendChild(carte);
+    });
+
+    document.body.appendChild(section);
+
+  } catch (erreur) {
+    console.log("Erreur :", erreur);
+  }
+}
+
+chargerMatchs();
+</script>
