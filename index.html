@@ -1,1 +1,1080 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FOOTBALL LIVE</title>
 
+<style>
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#07111f;
+ color:#fff;
+ padding-bottom:75px
+}
+
+header{
+ background:linear-gradient(135deg,#101d32,#172d4d);
+ padding:24px 15px;
+ text-align:center
+}
+
+.logo{
+ font-size:30px;
+ font-weight:800
+}
+
+.logo span{color:#39e878}
+
+.subtitle{
+ color:#aebbd0;
+ margin:7px 0 18px
+}
+
+.search{
+ max-width:650px;
+ margin:auto
+}
+
+.search input{
+ width:100%;
+ padding:14px;
+ border:0;
+ border-radius:14px;
+ font-size:16px
+}
+
+main{
+ max-width:750px;
+ margin:auto;
+ padding:18px 15px
+}
+
+.hero{
+ background:#111f35;
+ border-radius:20px;
+ padding:20px;
+ margin-bottom:18px
+}
+
+.hero h2{margin:0 0 8px}
+.hero p{color:#aebbd0;margin:0}
+
+.stats{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:10px;
+ margin:18px 0
+}
+
+.stat{
+ background:#111f35;
+ border-radius:15px;
+ padding:15px 5px;
+ text-align:center
+}
+
+.stat strong{
+ display:block;
+ font-size:24px
+}
+
+.stat span{
+ color:#9eabc0;
+ font-size:12px
+}
+
+.menu{
+ display:flex;
+ gap:8px;
+ overflow-x:auto;
+ margin-bottom:15px
+}
+
+.menu button{
+ border:0;
+ border-radius:20px;
+ padding:10px 15px;
+ background:#172642;
+ color:#fff;
+ font-weight:bold;
+ white-space:nowrap
+}
+
+.menu button.active{background:#1769ff}
+
+.match{
+ background:#111f35;
+ border-radius:18px;
+ padding:17px;
+ margin:12px 0;
+ cursor:pointer
+}
+
+.competition{
+ color:#9eabc0;
+ font-size:13px;
+ margin-bottom:14px
+}
+
+.teams{
+ display:grid;
+ grid-template-columns:1fr 70px 1fr;
+ align-items:center;
+ text-align:center;
+ gap:8px
+}
+
+.team{
+ font-weight:bold;
+ font-size:14px
+}
+
+.team img{
+ width:55px;
+ height:55px;
+ object-fit:contain;
+ display:block;
+ margin:0 auto 8px
+}
+
+.vs{
+ color:#718096;
+ font-weight:bold
+}
+
+.score{
+ text-align:center;
+ font-size:28px;
+ font-weight:800;
+ margin:12px 0
+}
+
+.status{
+ text-align:center;
+ font-weight:bold;
+ margin-top:8px
+}
+
+.live{color:#ff4d4d}
+.upcoming{color:#4da3ff}
+.finished{color:#39e878}
+
+.date{
+ text-align:center;
+ color:#7f8da3;
+ font-size:12px;
+ margin-top:8px
+}
+
+.favorite{
+ float:right;
+ border:0;
+ background:none;
+ color:#ffd166;
+ font-size:23px
+}
+
+.message{
+ text-align:center;
+ padding:35px 10px;
+ color:#aebbd0
+}
+
+table{
+ width:100%;
+ border-collapse:collapse;
+ background:#111f35;
+ border-radius:15px;
+ overflow:hidden
+}
+
+th,td{
+ padding:10px 5px;
+ border-bottom:1px solid #243752;
+ text-align:center;
+ font-size:12px
+}
+
+th{
+ color:#9eabc0;
+ background:#172642
+}
+
+.team-name{
+ text-align:left;
+ font-weight:bold
+}
+
+.points{
+ color:#39e878;
+ font-weight:bold
+}
+
+.bottom-nav{
+ position:fixed;
+ bottom:0;
+ left:0;
+ right:0;
+ height:70px;
+ background:#101d32;
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ border-top:1px solid #203451;
+ z-index:20
+}
+
+.bottom-nav button{
+ background:none;
+ border:0;
+ color:#8f9db2;
+ font-size:11px
+}
+
+.bottom-nav button.active{color:#39e878}
+
+.bottom-nav div{font-size:21px}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+⚽ FOOTBALL <span>LIVE</span>
+</div>
+
+<div class="subtitle">
+Les vrais matchs et résultats en direct
+</div>
+
+<div class="search">
+<input
+id="search"
+type="search"
+placeholder="🔎 Rechercher une équipe..."
+>
+</div>
+
+</header>
+
+<main id="app"></main>
+
+<nav class="bottom-nav">
+
+<button id="homeBtn"
+class="active"
+onclick="accueil()">
+<div>🏠</div>
+Accueil
+</button>
+
+<button id="liveBtn"
+onclick="live()">
+<div>🔴</div>
+Live
+</button>
+
+<button id="standingsBtn"
+onclick="classement()">
+<div>🏆</div>
+Classement
+</button>
+
+<button id="favBtn"
+onclick="favorisPage()">
+<div>⭐</div>
+Favoris
+</button>
+
+</nav>
+
+<script>
+
+let matchs=[];
+let page="home";
+
+let favoris=
+JSON.parse(
+localStorage.getItem("favorisFootball")||"[]"
+);
+
+
+function cat(status){
+
+if(status==="IN_PLAY"||status==="PAUSED")
+return"live";
+
+if(status==="FINISHED")
+return"finished";
+
+return"upcoming";
+
+}
+
+
+function statusFr(status){
+
+const s={
+IN_PLAY:"🔴 EN DIRECT",
+PAUSED:"⏸️ PAUSE",
+FINISHED:"✅ TERMINÉ",
+SCHEDULED:"🕐 À VENIR",
+TIMED:"🕐 À VENIR",
+POSTPONED:"⏸️ REPORTÉ",
+CANCELLED:"❌ ANNULÉ",
+SUSPENDED:"⚠️ SUSPENDU"
+};
+
+return s[status]||"🕐 À VENIR";
+
+}
+
+
+function dateFr(date){
+
+if(!date)return"";
+
+return new Date(date).toLocaleString(
+"fr-FR",
+{
+day:"2-digit",
+month:"2-digit",
+hour:"2-digit",
+minute:"2-digit"
+}
+);
+
+}
+
+
+function nav(active){
+
+document.querySelectorAll(".bottom-nav button")
+.forEach(b=>b.classList.remove("active"));
+
+document.getElementById(active)
+.classList.add("active");
+
+}
+
+
+function accueil(){
+
+page="home";
+nav("homeBtn");
+afficherAccueil();
+
+}
+
+
+function live(){
+
+page="live";
+nav("liveBtn");
+
+const liste=matchs.filter(
+m=>cat(m.status)==="live"
+);
+
+afficherListe(
+"🔴 Matchs en direct",
+liste
+);
+
+}
+
+
+function favorisPage(){
+
+page="fav";
+nav("favBtn");
+
+const liste=matchs.filter(m=>{
+
+const id=String(
+m.id||
+(m.homeTeam?.name||"")+"-"+(m.awayTeam?.name||"")
+);
+
+return favoris.includes(id);
+
+});
+
+afficherListe(
+"⭐ Mes favoris",
+liste
+);
+
+}
+
+
+function afficherAccueil(){
+
+const live=matchs.filter(
+m=>cat(m.status)==="live"
+);
+
+const upcoming=matchs.filter(
+m=>cat(m.status)==="upcoming"
+);
+
+const finished=matchs.filter(
+m=>cat(m.status)==="finished"
+);
+
+document.getElementById("app").innerHTML=`
+
+<div class="hero">
+
+<h2>🔥 Football en direct</h2>
+
+<p>
+Suis les vrais matchs, scores et résultats.
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<strong>${matchs.length}</strong>
+<span>Matchs</span>
+</div>
+
+<div class="stat">
+<strong>${live.length}</strong>
+<span>En direct</span>
+</div>
+
+<div class="stat">
+<strong>${finished.length}</strong>
+<span>Terminés</span>
+</div>
+
+</div>
+
+<div class="menu">
+
+<button class="active"
+onclick="afficherAccueil()">
+Tous
+</button>
+
+<button onclick="live()">
+🔴 Live
+</button>
+
+<button onclick="afficherListe(
+'📅 Matchs à venir',
+matchs.filter(m=>cat(m.status)==='upcoming')
+)">
+📅 À venir
+</button>
+
+<button onclick="afficherListe(
+'✅ Résultats',
+matchs.filter(m=>cat(m.status)==='finished')
+)">
+✅ Résultats
+</button>
+
+</div>
+
+<div id="matches"></div>
+
+`;
+
+afficherCartes(
+matchs,
+"matches"
+);
+
+}
+
+
+function afficherListe(titre,liste){
+
+document.getElementById("app").innerHTML=`
+
+<h2>${titre}</h2>
+
+<div id="matches"></div>
+
+`;
+
+afficherCartes(
+liste,
+"matches"
+);
+
+}
+
+
+function afficherCartes(liste,id){
+
+const zone=document.getElementById(id);
+
+if(!zone)return;
+
+if(!liste.length){
+
+zone.innerHTML=`
+
+<div class="message">
+⚽ Aucun match disponible.
+</div>
+
+`;
+
+return;
+}
+
+zone.innerHTML="";
+
+liste.forEach(m=>{
+
+zone.appendChild(
+creerMatch(m)
+);
+
+});
+
+}
+
+
+function creerMatch(match){
+
+const home=
+match.homeTeam?.name||
+"Équipe domicile";
+
+const away=
+match.awayTeam?.name||
+"Équipe extérieure";
+
+const homeLogo=
+match.homeTeam?.crest||
+"";
+
+const awayLogo=
+match.awayTeam?.crest||
+"";
+
+const hs=
+match.score?.fullTime?.home??"-";
+
+const as=
+match.score?.fullTime?.away??"-";
+
+const competition=
+match.competition?.name||
+"Football";
+
+const status=
+match.status||"SCHEDULED";
+
+const id=String(
+match.id||
+home+"-"+away
+);
+
+const star=
+favoris.includes(id)?"★":"☆";
+
+const div=document.createElement("div");
+
+div.className="match";
+
+div.innerHTML=`
+
+<button class="favorite"
+onclick="event.stopPropagation();
+toggleFavori('${id}')">
+${star}
+</button>
+
+<div class="competition">
+🏆 ${competition}
+</div>
+
+<div class="teams">
+
+<div class="team">
+
+${
+homeLogo
+?
+`<img src="${homeLogo}"
+alt="${home}">`
+:
+"⚽"
+}
+
+${home}
+
+</div>
+
+<div class="vs">
+
+VS
+
+</div>
+
+<div class="team">
+
+${
+awayLogo
+?
+`<img src="${awayLogo}"
+alt="${away}">`
+:
+"⚽"
+}
+
+${away}
+
+</div>
+
+</div>
+
+<div class="score">
+
+${hs} - ${as}
+
+</div>
+
+<div class="status ${cat(status)}">
+
+${statusFr(status)}
+
+</div>
+
+<div class="date">
+
+${dateFr(match.utcDate)}
+
+</div>
+
+`;
+
+div.onclick=()=>details(match);
+
+return div;
+
+}
+
+
+function toggleFavori(id){
+
+const i=favoris.indexOf(id);
+
+if(i>=0)
+favoris.splice(i,1);
+else
+favoris.push(id);
+
+localStorage.setItem(
+"favorisFootball",
+JSON.stringify(favoris)
+);
+
+if(page==="fav")
+favorisPage();
+else
+accueil();
+
+}
+
+
+function details(match){
+
+const home=
+match.homeTeam?.name||
+"Équipe domicile";
+
+const away=
+match.awayTeam?.name||
+"Équipe extérieure";
+
+const homeLogo=
+match.homeTeam?.crest||"";
+
+const awayLogo=
+match.awayTeam?.crest||"";
+
+const hs=
+match.score?.fullTime?.home??"-";
+
+const as=
+match.score?.fullTime?.away??"-";
+
+document.getElementById("app").innerHTML=`
+
+<h2>⚽ Détails du match</h2>
+
+<div class="match">
+
+<div class="competition">
+
+🏆 ${
+match.competition?.name||
+"Football"
+}
+
+</div>
+
+<div class="teams">
+
+<div class="team">
+
+${
+homeLogo
+?
+`<img src="${homeLogo}"
+alt="${home}">`
+:
+"⚽"
+}
+
+${home}
+
+</div>
+
+<div class="score">
+
+${hs} - ${as}
+
+</div>
+
+<div class="team">
+
+${
+awayLogo
+?
+`<img src="${awayLogo}"
+alt="${away}">`
+:
+"⚽"
+}
+
+${away}
+
+</div>
+
+</div>
+
+<div class="status">
+
+${statusFr(match.status)}
+
+</div>
+
+<div class="date">
+
+${dateFr(match.utcDate)}
+
+</div>
+
+</div>
+
+<button
+onclick="accueil()"
+style="
+width:100%;
+padding:13px;
+border:0;
+border-radius:12px;
+background:#1769ff;
+color:white;
+font-weight:bold">
+
+← Retour aux matchs
+
+</button>
+
+`;
+
+}
+
+
+async function classement(){
+
+page="standings";
+nav("standingsBtn");
+
+const app=
+document.getElementById("app");
+
+app.innerHTML=`
+
+<h2>🏆 Classement</h2>
+
+<div class="message">
+⏳ Chargement du classement...
+</div>
+
+`;
+
+try{
+
+const response=
+await fetch(
+"standings.json?t="+Date.now()
+);
+
+if(!response.ok)
+throw new Error();
+
+const data=
+await response.json();
+
+let tableData=null;
+
+if(data.standings){
+
+tableData=
+data.standings.find(
+s=>s.type==="TOTAL"
+)||data.standings[0];
+
+}
+
+const rows=
+tableData?.table||[];
+
+if(!rows.length){
+
+app.innerHTML=`
+
+<div class="message">
+🏆 Aucun classement disponible.
+</div>
+
+`;
+
+return;
+
+}
+
+
+let html=`
+
+<h2>
+🏆 ${
+data.competition?.name||
+"Copa Libertadores"
+}
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>#</th>
+<th>Équipe</th>
+<th>MJ</th>
+<th>V</th>
+<th>N</th>
+<th>D</th>
+<th>Diff</th>
+<th>Pts</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+`;
+
+rows.forEach(team=>{
+
+const logo=
+team.team?.crest||"";
+
+const name=
+team.team?.shortName||
+team.team?.name||
+"Équipe";
+
+html+=`
+
+<tr>
+
+<td>
+${team.position??"-"}
+</td>
+
+<td class="team-name">
+
+${
+logo
+?
+`<img
+src="${logo}"
+style="
+width:25px;
+height:25px;
+object-fit:contain;
+vertical-align:middle;
+margin-right:5px">`
+:
+""
+}
+
+${name}
+
+</td>
+
+<td>
+${team.playedGames??0}
+</td>
+
+<td>
+${team.won??0}
+</td>
+
+<td>
+${team.draw??0}
+</td>
+
+<td>
+${team.lost??0}
+</td>
+
+<td>
+${team.goalDifference??0}
+</td>
+
+<td class="points">
+${team.points??0}
+</td>
+
+</tr>
+
+`;
+
+});
+
+html+=`
+
+</tbody>
+
+</table>
+
+`;
+
+app.innerHTML=html;
+
+}catch(e){
+
+app.innerHTML=`
+
+<div class="message">
+
+❌ Le classement n'est pas encore disponible.
+
+</div>
+
+`;
+
+}
+
+}
+
+
+document.getElementById("search")
+.addEventListener("input",function(){
+
+const q=this.value
+.toLowerCase()
+.trim();
+
+if(!q){
+
+if(page==="home")
+accueil();
+
+return;
+
+}
+
+const result=matchs.filter(m=>{
+
+const home=
+m.homeTeam?.name||"";
+
+const away=
+m.awayTeam?.name||"";
+
+return(
+(home+" "+away)
+.toLowerCase()
+.includes(q)
+);
+
+});
+
+afficherListe(
+"🔎 Résultats",
+result
+);
+
+});
+
+
+async function charger(){
+
+try{
+
+const response=
+await fetch(
+"matches.json?t="+Date.now()
+);
+
+if(!response.ok)
+throw new Error();
+
+const data=
+await response.json();
+
+matchs=data.matches||[];
+
+accueil();
+
+}catch(e){
+
+document.getElementById("app")
+.innerHTML=`
+
+<div class="message">
+
+❌ Impossible de charger les matchs.
+
+</div>
+
+`;
+
+}
+
+}
+
+
+charger();
+
+setInterval(
+charger,
+60000
+);
+
+</script>
+
+</body>
+</html>
