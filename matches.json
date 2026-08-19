@@ -116,6 +116,72 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
+      "referees": [
+        {
+          "id": 206205,
+          "name": "Adrián Cordero Vega",
+          "type": "REFEREE",
+          "nationality": "Spain"
+        }
+      ]
+    },
+    {
+      "area": {
+        "id": 2220,
+        "name": "South America",
+        "code": "SAM",
+        "flag": "https://crests.football-data.org/CLI.svg"
+      },
+      "competition": {
+        "id": 2152,
+        "name": "Copa Libertadores",
+        "code": "CLI",
+        "type": "CUP",
+        "emblem": "https://crests.football-data.org/CLI.svg"
+      },
+      "season": {
+        "id": 2466,
+        "startDate": "2026-02-04",
+        "endDate": "2026-11-28",
+        "currentMatchday": 6,
+        "winner": null
+      },
+      "id": 564467,
+      "utcDate": "2026-08-19T22:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 1,
+      "stage": "PLAY_OFFS",
+      "group": null,
+      "lastUpdated": "2026-08-18T10:25:17Z",
+      "homeTeam": {
+        "id": 7912,
+        "name": "CD Coquimbo Unido",
+        "shortName": "Coquimbo Unido",
+        "tla": "COQ",
+        "crest": "https://crests.football-data.org/7912.png"
+      },
+      "awayTeam": {
+        "id": 7580,
+        "name": "CA Platense",
+        "shortName": "Platense",
+        "tla": "PLA",
+        "crest": "https://crests.football-data.org/7580.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
       "referees": []
     },
     {
@@ -159,65 +225,6 @@
         "shortName": "Palmeiras",
         "tla": "PAL",
         "crest": "https://crests.football-data.org/1769.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2220,
-        "name": "South America",
-        "code": "SAM",
-        "flag": "https://crests.football-data.org/CLI.svg"
-      },
-      "competition": {
-        "id": 2152,
-        "name": "Copa Libertadores",
-        "code": "CLI",
-        "type": "CUP",
-        "emblem": "https://crests.football-data.org/CLI.svg"
-      },
-      "season": {
-        "id": 2466,
-        "startDate": "2026-02-04",
-        "endDate": "2026-11-28",
-        "currentMatchday": 6,
-        "winner": null
-      },
-      "id": 564467,
-      "utcDate": "2026-08-19T22:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 1,
-      "stage": "PLAY_OFFS",
-      "group": null,
-      "lastUpdated": "2026-08-18T10:25:17Z",
-      "homeTeam": {
-        "id": 7912,
-        "name": "CD Coquimbo Unido",
-        "shortName": "Coquimbo Unido",
-        "tla": "COQ",
-        "crest": "https://crests.football-data.org/7912.png"
-      },
-      "awayTeam": {
-        "id": 7580,
-        "name": "CA Platense",
-        "shortName": "Platense",
-        "tla": "PLA",
-        "crest": "https://crests.football-data.org/7580.png"
       },
       "score": {
         "winner": null,
