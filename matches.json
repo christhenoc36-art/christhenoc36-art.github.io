@@ -28,6 +28,11 @@
       "stage": "PLAY_OFFS",
       "group": null,
       "lastUpdated": "2026-08-19T04:22:12Z",
+      "tvChannels": [
+  "Canal+ Sport",
+  "beIN SPORTS",
+  "SuperSport"
+],
       "homeTeam": {
         "id": 6993,
         "name": "CD Universidad Católica",
