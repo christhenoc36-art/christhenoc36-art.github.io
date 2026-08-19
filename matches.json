@@ -146,7 +146,7 @@
         "currentMatchday": 6,
         "winner": null
       },
-      "id": 564467,
+      "id": 564466,
       "utcDate": "2026-08-19T22:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
@@ -154,18 +154,18 @@
       "group": null,
       "lastUpdated": "2026-08-18T10:25:17Z",
       "homeTeam": {
-        "id": 7912,
-        "name": "CD Coquimbo Unido",
-        "shortName": "Coquimbo Unido",
-        "tla": "COQ",
-        "crest": "https://crests.football-data.org/7912.png"
+        "id": 9373,
+        "name": "Club Cerro Porteño",
+        "shortName": "Cerro Porteño",
+        "tla": "CCP",
+        "crest": "https://crests.football-data.org/9373.png"
       },
       "awayTeam": {
-        "id": 7580,
-        "name": "CA Platense",
-        "shortName": "Platense",
-        "tla": "PLA",
-        "crest": "https://crests.football-data.org/7580.png"
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
       },
       "score": {
         "winner": null,
@@ -205,7 +205,7 @@
         "currentMatchday": 6,
         "winner": null
       },
-      "id": 564466,
+      "id": 564467,
       "utcDate": "2026-08-19T22:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
@@ -213,18 +213,18 @@
       "group": null,
       "lastUpdated": "2026-08-18T10:25:17Z",
       "homeTeam": {
-        "id": 9373,
-        "name": "Club Cerro Porteño",
-        "shortName": "Cerro Porteño",
-        "tla": "CCP",
-        "crest": "https://crests.football-data.org/9373.png"
+        "id": 7912,
+        "name": "CD Coquimbo Unido",
+        "shortName": "Coquimbo Unido",
+        "tla": "COQ",
+        "crest": "https://crests.football-data.org/7912.png"
       },
       "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
+        "id": 7580,
+        "name": "CA Platense",
+        "shortName": "Platense",
+        "tla": "PLA",
+        "crest": "https://crests.football-data.org/7580.png"
       },
       "score": {
         "winner": null,
