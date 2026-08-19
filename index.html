@@ -881,7 +881,14 @@ function openMatch(match){
           <span>Date</span>
           <strong>${formatDate(match.utcDate)}</strong>
         </div>
-
+<div class="info-row tv-broadcast">
+  <span>📺 Diffusion TV</span>
+  <strong>
+    ${match.tvChannels && match.tvChannels.length
+      ? match.tvChannels.join(" • ")
+      : "Non disponible"}
+  </strong>
+</div>
       </div>
 
     </div>
