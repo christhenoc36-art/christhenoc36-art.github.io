@@ -3,13 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Football Live</title>
 
 <style>
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
   margin:0;
@@ -35,12 +32,12 @@ header{
   justify-content:space-between;
 }
 
-.logo{
+.logo-title{
   font-size:23px;
   font-weight:800;
 }
 
-.logo span{
+.logo-title span{
   color:#16d96b;
 }
 
@@ -81,7 +78,6 @@ header{
   display:flex;
   gap:8px;
   overflow-x:auto;
-  padding-bottom:4px;
   margin-bottom:14px;
 }
 
@@ -138,7 +134,6 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  border-bottom:1px solid #1d344b;
 }
 
 .competition-name{
@@ -154,6 +149,12 @@ header{
 .match{
   padding:17px 13px;
   border-bottom:1px solid #192d42;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.match:hover{
+  background:#12263c;
 }
 
 .match:last-child{
@@ -178,10 +179,6 @@ header{
   text-align:center;
   font-weight:bold;
   font-size:13px;
-}
-
-.team.right{
-  text-align:center;
 }
 
 .logo{
@@ -212,38 +209,25 @@ header{
   font-size:22px;
 }
 
-.team-name{
-  line-height:1.3;
-}
-
-.center{
-  text-align:center;
-}
-
 .score{
+  text-align:center;
   font-size:24px;
   font-weight:800;
 }
 
 .status{
   margin-top:6px;
+  text-align:center;
   font-size:10px;
   font-weight:bold;
 }
 
-.status.live{
-  color:#ff4052;
-}
+.status.live{color:#ff4052}
+.status.finished{color:#16d96b}
+.status.upcoming{color:#55a9ff}
 
-.status.finished{
-  color:#16d96b;
-}
-
-.status.upcoming{
-  color:#55a9ff;
-}
-
-.empty{
+.empty,
+.loading{
   background:#0d1d2e;
   border:1px solid #1d344a;
   border-radius:15px;
@@ -261,10 +245,100 @@ header{
   color:#ff8d9a;
 }
 
-.loading{
+/* DÉTAIL DU MATCH */
+
+#details{
+  display:none;
+}
+
+.back{
+  border:0;
+  background:#172b40;
+  color:white;
+  padding:11px 16px;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:15px;
+}
+
+.detail-card{
+  background:linear-gradient(145deg,#0d2236,#091725);
+  border:1px solid #1d3c59;
+  border-radius:20px;
+  padding:22px 15px;
   text-align:center;
-  padding:35px;
-  color:#91a5ba;
+}
+
+.detail-competition{
+  color:#55a9ff;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.detail-date{
+  color:#8195aa;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+.detail-teams{
+  display:grid;
+  grid-template-columns:1fr 100px 1fr;
+  align-items:center;
+  gap:8px;
+}
+
+.detail-team{
+  font-weight:bold;
+  font-size:14px;
+}
+
+.detail-logo{
+  width:75px;
+  height:75px;
+  object-fit:contain;
+  background:white;
+  border-radius:50%;
+  padding:7px;
+  margin-bottom:10px;
+}
+
+.detail-score{
+  font-size:32px;
+  font-weight:900;
+}
+
+.detail-status{
+  margin-top:8px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.info-box{
+  margin-top:18px;
+  background:#0a1828;
+  border:1px solid #1b3045;
+  border-radius:14px;
+  padding:16px;
+}
+
+.info-row{
+  display:flex;
+  justify-content:space-between;
+  padding:9px 0;
+  border-bottom:1px solid #172b40;
+  color:#a9bacb;
+  font-size:13px;
+}
+
+.info-row:last-child{
+  border-bottom:0;
+}
+
+.info-row strong{
+  color:white;
 }
 
 footer{
@@ -288,14 +362,26 @@ footer{
     font-size:11px;
   }
 
-  .team-logo,
-  .logo-placeholder{
+  .team-logo{
     width:44px;
     height:44px;
   }
 
   .score{
     font-size:20px;
+  }
+
+  .detail-teams{
+    grid-template-columns:1fr 75px 1fr;
+  }
+
+  .detail-logo{
+    width:58px;
+    height:58px;
+  }
+
+  .detail-score{
+    font-size:25px;
   }
 }
 </style>
@@ -305,62 +391,74 @@ footer{
 
 <header>
   <div class="header-inner">
-
-    <div class="logo">
-      ⚽ <span>Football</span> Live
-    </div>
-
-    <div class="live-badge">
-      ● LIVE
-    </div>
-
+    <div class="logo-title">⚽ <span>Football</span> Live</div>
+    <div class="live-badge">● LIVE</div>
   </div>
 </header>
 
 <main class="container">
 
-  <section class="hero">
-    <h1>Football Live ⚽</h1>
-    <p>Scores, matchs en direct et résultats</p>
+  <!-- LISTE DES MATCHS -->
+
+  <section id="home">
+
+    <div class="hero">
+      <h1>Football Live ⚽</h1>
+      <p>Scores, matchs en direct et résultats</p>
+    </div>
+
+    <div class="filters">
+
+      <button class="filter active" onclick="setFilter('all',this)">
+        ⚽ Tous
+      </button>
+
+      <button class="filter" onclick="setFilter('live',this)">
+        🔴 Direct
+      </button>
+
+      <button class="filter" onclick="setFilter('upcoming',this)">
+        🕐 À venir
+      </button>
+
+      <button class="filter" onclick="setFilter('finished',this)">
+        ✅ Terminés
+      </button>
+
+    </div>
+
+    <div class="toolbar">
+
+      <div id="counter" class="counter">
+        Chargement...
+      </div>
+
+      <button class="refresh" onclick="loadMatches()">
+        🔄 Actualiser
+      </button>
+
+    </div>
+
+    <div id="matches">
+      <div class="loading">
+        ⚽ Chargement des matchs...
+      </div>
+    </div>
+
   </section>
 
-  <div class="filters">
 
-    <button class="filter active" onclick="setFilter('all',this)">
-      ⚽ Tous
+  <!-- DÉTAIL D'UN MATCH -->
+
+  <section id="details">
+
+    <button class="back" onclick="showHome()">
+      ← Retour aux matchs
     </button>
 
-    <button class="filter" onclick="setFilter('live',this)">
-      🔴 Direct
-    </button>
+    <div id="detailContent"></div>
 
-    <button class="filter" onclick="setFilter('upcoming',this)">
-      🕐 À venir
-    </button>
-
-    <button class="filter" onclick="setFilter('finished',this)">
-      ✅ Terminés
-    </button>
-
-  </div>
-
-  <div class="toolbar">
-
-    <div id="counter" class="counter">
-      Chargement...
-    </div>
-
-    <button class="refresh" onclick="loadMatches()">
-      🔄 Actualiser
-    </button>
-
-  </div>
-
-  <div id="matches">
-    <div class="loading">
-      ⚽ Chargement des matchs...
-    </div>
-  </div>
+  </section>
 
 </main>
 
@@ -375,7 +473,8 @@ let currentFilter = "all";
 
 function getStatus(match){
 
-  const status = String(match.status || "").toUpperCase();
+  const status =
+    String(match.status || "").toUpperCase();
 
   if(
     status === "LIVE" ||
@@ -420,7 +519,7 @@ function formatDate(value){
 
   return date.toLocaleString("fr-FR",{
     day:"2-digit",
-    month:"short",
+    month:"long",
     year:"numeric",
     hour:"2-digit",
     minute:"2-digit"
@@ -450,19 +549,31 @@ function getScore(match){
   return home + " - " + away;
 }
 
+function escapeHTML(value){
+
+  return String(value)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+
+}
+
+function teamName(team){
+
+  return (
+    team.name ||
+    team.shortName ||
+    team.tla ||
+    "Équipe"
+  );
+}
+
 function teamHTML(team){
 
-  const name =
-    team &&
-    (team.name || team.shortName || team.tla)
-      ? (team.name || team.shortName || team.tla)
-      : "Équipe";
-
-  const crest =
-    team &&
-    team.crest
-      ? team.crest
-      : "";
+  const name = teamName(team);
+  const crest = team.crest || "";
 
   return `
 
@@ -483,22 +594,8 @@ function teamHTML(team){
 
     </div>
 
-    <div class="team-name">
-      ${escapeHTML(name)}
-    </div>
-
+    <div>${escapeHTML(name)}</div>
   `;
-}
-
-function escapeHTML(value){
-
-  return String(value)
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
-
 }
 
 function renderMatches(){
@@ -506,25 +603,26 @@ function renderMatches(){
   const container =
     document.getElementById("matches");
 
-  let filtered = matches.filter(match => {
+  let filtered =
+    matches.filter(match => {
 
-    const status = getStatus(match);
+      const status = getStatus(match);
 
-    if(currentFilter === "live"){
-      return status === "live";
-    }
+      if(currentFilter === "live"){
+        return status === "live";
+      }
 
-    if(currentFilter === "upcoming"){
-      return status === "upcoming";
-    }
+      if(currentFilter === "upcoming"){
+        return status === "upcoming";
+      }
 
-    if(currentFilter === "finished"){
-      return status === "finished";
-    }
+      if(currentFilter === "finished"){
+        return status === "finished";
+      }
 
-    return true;
+      return true;
 
-  });
+    });
 
   document.getElementById("counter").textContent =
     filtered.length + " match(s)";
@@ -586,7 +684,7 @@ function renderMatches(){
 
     `;
 
-    groups[competitionName].forEach(match => {
+    groups[competitionName].forEach((match,index) => {
 
       const status = getStatus(match);
 
@@ -614,6 +712,10 @@ function renderMatches(){
 
       card.className = "match";
 
+      card.onclick = function(){
+        openMatch(match);
+      };
+
       card.innerHTML = `
 
         <div class="match-date">
@@ -626,7 +728,7 @@ function renderMatches(){
             ${teamHTML(home)}
           </div>
 
-          <div class="center">
+          <div>
 
             <div class="score">
               ${getScore(match)}
@@ -638,7 +740,7 @@ function renderMatches(){
 
           </div>
 
-          <div class="team right">
+          <div class="team">
             ${teamHTML(away)}
           </div>
 
@@ -652,6 +754,158 @@ function renderMatches(){
 
     container.appendChild(section);
 
+  });
+
+}
+
+function openMatch(match){
+
+  document.getElementById("home").style.display =
+    "none";
+
+  document.getElementById("details").style.display =
+    "block";
+
+  const home =
+    match.homeTeam || {};
+
+  const away =
+    match.awayTeam || {};
+
+  const competition =
+    match.competition || {};
+
+  const status =
+    getStatus(match);
+
+  let statusText = "🕐 À VENIR";
+  let statusColor = "#55a9ff";
+
+  if(status === "live"){
+    statusText = "🔴 EN DIRECT";
+    statusColor = "#ff4052";
+  }
+
+  if(status === "finished"){
+    statusText = "✅ TERMINÉ";
+    statusColor = "#16d96b";
+  }
+
+  const homeLogo =
+    home.crest
+    ?
+    `<img class="detail-logo" src="${home.crest}" alt="">`
+    :
+    `<div class="logo-placeholder">⚽</div>`;
+
+  const awayLogo =
+    away.crest
+    ?
+    `<img class="detail-logo" src="${away.crest}" alt="">`
+    :
+    `<div class="logo-placeholder">⚽</div>`;
+
+  document.getElementById("detailContent").innerHTML = `
+
+    <div class="detail-card">
+
+      <div class="detail-competition">
+        🏆 ${escapeHTML(
+          competition.name ||
+          competition.shortName ||
+          "Football"
+        )}
+      </div>
+
+      <div class="detail-date">
+        ${formatDate(match.utcDate)}
+      </div>
+
+      <div class="detail-teams">
+
+        <div class="detail-team">
+
+          ${homeLogo}
+
+          <div>
+            ${escapeHTML(teamName(home))}
+          </div>
+
+        </div>
+
+        <div>
+
+          <div class="detail-score">
+            ${getScore(match)}
+          </div>
+
+          <div
+            class="detail-status"
+            style="color:${statusColor}"
+          >
+            ${statusText}
+          </div>
+
+        </div>
+
+        <div class="detail-team">
+
+          ${awayLogo}
+
+          <div>
+            ${escapeHTML(teamName(away))}
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="info-box">
+
+        <div class="info-row">
+          <span>Compétition</span>
+          <strong>
+            ${escapeHTML(
+              competition.name ||
+              "Football"
+            )}
+          </strong>
+        </div>
+
+        <div class="info-row">
+          <span>Statut</span>
+          <strong>${statusText}</strong>
+        </div>
+
+        <div class="info-row">
+          <span>Date</span>
+          <strong>${formatDate(match.utcDate)}</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  `;
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+function showHome(){
+
+  document.getElementById("details").style.display =
+    "none";
+
+  document.getElementById("home").style.display =
+    "block";
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
   });
 
 }
