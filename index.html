@@ -1,1 +1,784 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football Live</title>
 
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#07111f;
+  color:#fff
+}
+header{
+  background:linear-gradient(135deg,#0b5cff,#003399);
+  padding:22px 15px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10
+}
+header h1{
+  margin:0;
+  font-size:28px
+}
+header p{
+  margin:7px 0 0;
+  opacity:.85
+}
+nav{
+  display:flex;
+  gap:8px;
+  overflow:auto;
+  padding:12px;
+  background:#0b1728
+}
+nav button{
+  border:0;
+  border-radius:20px;
+  padding:10px 16px;
+  background:#16263d;
+  color:white;
+  white-space:nowrap
+}
+nav button.active{
+  background:#0b63ff
+}
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:15px
+}
+.status{
+  text-align:center;
+  padding:12px;
+  color:#a9c7e8
+}
+.match{
+  background:#101f33;
+  border:1px solid #1d3552;
+  border-radius:16px;
+  padding:16px;
+  margin-bottom:14px
+}
+.competition{
+  color:#62a4ff;
+  font-size:13px;
+  margin-bottom:12px
+}
+.teams{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px
+}
+.team{
+  width:40%;
+  text-align:center
+}
+.team img{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 8px
+}
+.team-name{
+  font-weight:bold
+}
+.score{
+  font-size:24px;
+  font-weight:bold
+}
+.date{
+  text-align:center;
+  color:#a9c7e8;
+  margin-top:12px;
+  font-size:14px
+}
+.badge{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 10px;
+  border-radius:20px;
+  font-size:12px
+}
+.live{
+  background:#c62828
+}
+.finished{
+  background:#287a43
+}
+.upcoming{
+  background:#455a64
+}
+.tv{
+  margin-top:14px;
+  padding:10px;
+  border-top:1px solid #263e5b;
+  color:#ffd54f
+}
+.watch{
+  width:100%;
+  margin-top:12px;
+  border:0;
+  border-radius:10px;
+  padding:12px;
+  background:#0b63ff;
+  color:white;
+  font-weight:bold;
+  font-size:15px
+}
+.empty{
+  text-align:center;
+  padding:40px 15px;
+  color:#9eb4ce
+}
+.player{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.9);
+  z-index:50;
+  padding:20px
+}
+.player-box{
+  max-width:850px;
+  margin:30px auto;
+  background:#101f33;
+  padding:15px;
+  border-radius:15px
+}
+.player video{
+  width:100%;
+  max-height:65vh;
+  background:#000
+}
+.close{
+  float:right;
+  background:#d32f2f;
+  color:#fff;
+  border:0;
+  border-radius:8px;
+  padding:8px 12px
+}
+footer{
+  text-align:center;
+  padding:30px;
+  color:#7188a3
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>⚽ Football Live</h1>
+  <p>Matchs en direct, résultats et programmes TV</p>
+</header>
+
+<nav>
+  <button class="active" onclick="changeTab('all',this)">Tous</button>
+  <button onclick="changeTab('live',this)">🔴 En direct</button>
+  <button onclick="changeTab('upcoming',this)">🕐 À venir</button>
+  <button onclick="changeTab('finished',this)">✅ Terminés</button>
+</nav>
+
+<main class="container">
+
+  <div id="status" class="status">
+    Chargement des matchs...
+  </div>
+
+  <div id="matches"></div>
+
+</main>
+
+<div id="playerModal" class="player">
+  <div class="player-box">
+    <button class="close" onclick="closePlayer()">✕ Fermer</button>
+    <h2 id="playerTitle">Football Live</h2>
+
+    <video id="videoPlayer" controls playsinline></video>
+
+    <p id="playerMessage">
+      La diffusion officielle n'est pas disponible pour ce match.
+    </p>
+  </div>
+</div>
+
+<footer>
+  Football Live © 2026
+</footer>
+
+<script>
+
+/* =====================================================
+   CONFIGURATION
+   ===================================================== */
+
+/*
+   Mets ta clé dans cette variable.
+
+   IMPORTANT :
+   une clé placée directement dans index.html
+   devient visible publiquement sur GitHub.
+   Pour un vrai site public, il faudra ensuite
+   passer par un serveur/proxy sécurisé.
+*/
+
+const FOOTBALL_API_KEY = "TA_CLE_FOOTBALL_API";
+
+/* API Football */
+const API_URL = "https://v3.football.api-sports.io";
+
+/* =====================================================
+   VARIABLES
+   ===================================================== */
+
+let allMatches = [];
+let currentTab = "all";
+
+/* =====================================================
+   CHARGEMENT API FOOTBALL
+   ===================================================== */
+
+async function loadMatches(){
+
+  const status = document.getElementById("status");
+
+  status.textContent = "⏳ Chargement des matchs...";
+
+  try{
+
+    if(
+      !FOOTBALL_API_KEY ||
+      FOOTBALL_API_KEY === "TA_CLE_FOOTBALL_API"
+    ){
+      throw new Error("Clé API non configurée");
+    }
+
+    const response = await fetch(
+      API_URL + "/fixtures?live=all",
+      {
+        headers:{
+          "x-apisports-key":FOOTBALL_API_KEY
+        }
+      }
+    );
+
+    if(!response.ok){
+      throw new Error("Erreur API : " + response.status);
+    }
+
+    const data = await response.json();
+
+    allMatches = data.response || [];
+
+    status.textContent =
+      "✅ " + allMatches.length +
+      " match(s) en direct";
+
+    renderMatches();
+
+  }catch(error){
+
+    console.error(error);
+
+    status.textContent =
+      "⚠️ Impossible de charger l'API. Chargement de matches.json...";
+
+    loadLocalMatches();
+  }
+}
+
+/* =====================================================
+   FALLBACK matches.json
+   ===================================================== */
+
+async function loadLocalMatches(){
+
+  try{
+
+    const response = await fetch("matches.json");
+
+    if(!response.ok){
+      throw new Error("matches.json introuvable");
+    }
+
+    const data = await response.json();
+
+    allMatches =
+      Array.isArray(data)
+      ? data
+      : (data.matches || data.response || []);
+
+    renderMatches();
+
+  }catch(error){
+
+    console.error(error);
+
+    document.getElementById("status").textContent =
+      "❌ Aucun match disponible.";
+
+    document.getElementById("matches").innerHTML =
+      '<div class="empty">Aucun match à afficher.</div>';
+  }
+}
+
+/* =====================================================
+   STATUT DU MATCH
+   ===================================================== */
+
+function getStatus(match){
+
+  const status =
+    match.fixture?.status?.short ||
+    match.status ||
+    "";
+
+  const liveStatuses = [
+    "1H","2H","HT","ET","BT","P",
+    "LIVE"
+  ];
+
+  const finishedStatuses = [
+    "FT","AET","PEN"
+  ];
+
+  if(liveStatuses.includes(status)){
+    return "live";
+  }
+
+  if(finishedStatuses.includes(status)){
+    return "finished";
+  }
+
+  return "upcoming";
+}
+
+/* =====================================================
+   ÉQUIPE
+   ===================================================== */
+
+function getTeam(match,side){
+
+  if(match.teams){
+
+    return side === "home"
+      ? match.teams.home
+      : match.teams.away;
+  }
+
+  return side === "home"
+    ? (match.homeTeam || match.home || {})
+    : (match.awayTeam || match.away || {});
+}
+
+/* =====================================================
+   DATE
+   ===================================================== */
+
+function getDate(match){
+
+  return (
+    match.fixture?.date ||
+    match.date ||
+    match.fixtureDate ||
+    null
+  );
+}
+
+function formatDate(date){
+
+  if(!date){
+    return "Date inconnue";
+  }
+
+  try{
+
+    return new Date(date).toLocaleString(
+      "fr-FR",
+      {
+        day:"2-digit",
+        month:"2-digit",
+        year:"numeric",
+        hour:"2-digit",
+        minute:"2-digit"
+      }
+    );
+
+  }catch(e){
+
+    return date;
+  }
+}
+
+/* =====================================================
+   SCORE
+   ===================================================== */
+
+function getScore(match){
+
+  if(match.goals){
+
+    const home = match.goals.home;
+    const away = match.goals.away;
+
+    if(home !== null && home !== undefined &&
+       away !== null && away !== undefined){
+
+      return home + " - " + away;
+    }
+  }
+
+  if(match.score?.fullTime){
+
+    const home = match.score.fullTime.home;
+    const away = match.score.fullTime.away;
+
+    if(home !== null && home !== undefined &&
+       away !== null && away !== undefined){
+
+      return home + " - " + away;
+    }
+  }
+
+  return "VS";
+}
+
+/* =====================================================
+   COMPÉTITION
+   ===================================================== */
+
+function getCompetition(match){
+
+  if(match.league?.name){
+    return match.league.name;
+  }
+
+  if(match.competition){
+    return match.competition;
+  }
+
+  return "Football";
+}
+
+/* =====================================================
+   TV
+   ===================================================== */
+
+function getTV(match){
+
+  const channels = [
+    "Canal+ Sport",
+    "beIN SPORTS",
+    "SuperSport"
+  ];
+
+  let realChannels =
+    match.tvChannels ||
+    match.tv_channels ||
+    match.channels ||
+    [];
+
+  if(!Array.isArray(realChannels)){
+    realChannels = [];
+  }
+
+  const names = realChannels
+    .map(channel => {
+
+      if(typeof channel === "string"){
+        return channel;
+      }
+
+      return channel?.name ||
+             channel?.channel ||
+             "";
+
+    })
+    .filter(Boolean);
+
+  const finalChannels =
+    names.length > 0
+      ? names
+      : channels;
+
+  return `
+    <div class="tv">
+      📺 Diffusion TV :
+      ${finalChannels.map(channel =>
+        `<span>${escapeHTML(channel)}</span>`
+      ).join(" • ")}
+    </div>
+  `;
+}
+
+/* =====================================================
+   PROTECTION HTML
+   ===================================================== */
+
+function escapeHTML(value){
+
+  return String(value ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+/* =====================================================
+   CARTE MATCH
+   ===================================================== */
+
+function createMatchCard(match){
+
+  const home = getTeam(match,"home");
+  const away = getTeam(match,"away");
+
+  const homeName =
+    home.name ||
+    home.shortName ||
+    "Équipe inconnue";
+
+  const awayName =
+    away.name ||
+    away.shortName ||
+    "Équipe inconnue";
+
+  const homeLogo =
+    home.logo ||
+    home.crest ||
+    "";
+
+  const awayLogo =
+    away.logo ||
+    away.crest ||
+    "";
+
+  const status = getStatus(match);
+
+  let badge = "";
+
+  if(status === "live"){
+
+    badge =
+      '<span class="badge live">🔴 EN DIRECT</span>';
+
+  }else if(status === "finished"){
+
+    badge =
+      '<span class="badge finished">✅ TERMINÉ</span>';
+
+  }else{
+
+    badge =
+      '<span class="badge upcoming">🕐 À VENIR</span>';
+  }
+
+  const streamUrl =
+    match.streamUrl ||
+    match.stream_url ||
+    "";
+
+  return `
+
+    <div class="match">
+
+      <div class="competition">
+        🏆 ${escapeHTML(getCompetition(match))}
+      </div>
+
+      <div class="teams">
+
+        <div class="team">
+
+          ${
+            homeLogo
+            ? `<img src="${escapeHTML(homeLogo)}"
+                    alt="${escapeHTML(homeName)}">`
+            : ""
+          }
+
+          <div class="team-name">
+            ${escapeHTML(homeName)}
+          </div>
+
+        </div>
+
+        <div class="score">
+
+          ${escapeHTML(getScore(match))}
+
+          <br>
+
+          ${badge}
+
+        </div>
+
+        <div class="team">
+
+          ${
+            awayLogo
+            ? `<img src="${escapeHTML(awayLogo)}"
+                    alt="${escapeHTML(awayName)}">`
+            : ""
+          }
+
+          <div class="team-name">
+            ${escapeHTML(awayName)}
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="date">
+        ${escapeHTML(formatDate(getDate(match)))}
+      </div>
+
+      ${getTV(match)}
+
+      <button
+        class="watch"
+        onclick='regarderMatch(${JSON.stringify(match).replace(/'/g,"&#39;")})'
+      >
+        ▶️ Regarder le match
+      </button>
+
+    </div>
+  `;
+}
+
+/* =====================================================
+   AFFICHAGE
+   ===================================================== */
+
+function renderMatches(){
+
+  const container =
+    document.getElementById("matches");
+
+  let matches = allMatches;
+
+  if(currentTab !== "all"){
+
+    matches = allMatches.filter(
+      match => getStatus(match) === currentTab
+    );
+  }
+
+  if(!matches.length){
+
+    container.innerHTML =
+      '<div class="empty">Aucun match dans cette catégorie.</div>';
+
+    return;
+  }
+
+  container.innerHTML =
+    matches.map(createMatchCard).join("");
+}
+
+/* =====================================================
+   ONGLETS
+   ===================================================== */
+
+function changeTab(tab,button){
+
+  currentTab = tab;
+
+  document
+    .querySelectorAll("nav button")
+    .forEach(btn => btn.classList.remove("active"));
+
+  button.classList.add("active");
+
+  renderMatches();
+}
+
+/* =====================================================
+   LECTEUR
+   ===================================================== */
+
+function regarderMatch(match){
+
+  const modal =
+    document.getElementById("playerModal");
+
+  const video =
+    document.getElementById("videoPlayer");
+
+  const title =
+    document.getElementById("playerTitle");
+
+  const message =
+    document.getElementById("playerMessage");
+
+  const home = getTeam(match,"home");
+  const away = getTeam(match,"away");
+
+  title.textContent =
+    (home.name || "Équipe")
+    + " - "
+    + (away.name || "Équipe");
+
+  modal.style.display = "block";
+
+  const streamUrl =
+    match.streamUrl ||
+    match.stream_url ||
+    "";
+
+  if(!streamUrl){
+
+    video.removeAttribute("src");
+
+    message.textContent =
+      "La diffusion officielle n'est pas disponible pour ce match.";
+
+    return;
+  }
+
+  message.textContent = "";
+
+  video.src = streamUrl;
+  video.load();
+
+  video.play().catch(() => {});
+}
+
+function closePlayer(){
+
+  const modal =
+    document.getElementById("playerModal");
+
+  const video =
+    document.getElementById("videoPlayer");
+
+  video.pause();
+  video.removeAttribute("src");
+
+  modal.style.display = "none";
+}
+
+/* =====================================================
+   DÉMARRAGE
+   ===================================================== */
+
+loadMatches();
+
+/* Actualisation toutes les 60 secondes */
+
+setInterval(loadMatches,60000);
+
+</script>
+
+</body>
+  </html>
