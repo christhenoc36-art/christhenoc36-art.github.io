@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20T19:18:40.475575+00:00",
+  "lastUpdated": "2026-08-20T20:52:13.767008+00:00",
   "from": "2026-08-20",
   "to": "2026-08-22",
   "matches": [
@@ -4651,9 +4651,9 @@
       "id": 1549134,
       "utcDate": "2026-08-20T17:10:00+00:00",
       "timestamp": 1787245800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 331,
         "name": "Division 1",
@@ -4674,8 +4674,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -4823,8 +4823,8 @@
       "id": 1627538,
       "utcDate": "2026-08-20T17:30:00+00:00",
       "timestamp": 1787247000,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 848,
@@ -4866,9 +4866,9 @@
       "id": 1563644,
       "utcDate": "2026-08-20T17:45:00+00:00",
       "timestamp": 1787247900,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 70,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 237,
         "name": "Cup",
@@ -4909,9 +4909,9 @@
       "id": 1623402,
       "utcDate": "2026-08-20T17:45:00+00:00",
       "timestamp": 1787247900,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 75,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -4932,7 +4932,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -4952,9 +4952,9 @@
       "id": 1547467,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 57,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1086,
         "name": "Paulista - U20",
@@ -4995,9 +4995,9 @@
       "id": 1600747,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 60,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 567,
         "name": "Ligi kuu Bara",
@@ -5038,9 +5038,9 @@
       "id": 1602981,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 60,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 307,
         "name": "Pro League",
@@ -5062,7 +5062,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5124,9 +5124,9 @@
       "id": 1611959,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 59,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 906,
         "name": "Reserve League",
@@ -5147,8 +5147,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5167,9 +5167,9 @@
       "id": 1611960,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 58,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 906,
         "name": "Reserve League",
@@ -5190,7 +5190,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -5210,9 +5210,9 @@
       "id": 1611961,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 62,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 906,
         "name": "Reserve League",
@@ -5253,9 +5253,9 @@
       "id": 1611962,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 63,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 906,
         "name": "Reserve League",
@@ -5276,7 +5276,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -5296,9 +5296,9 @@
       "id": 1622632,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 57,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 3,
         "name": "UEFA Europa League",
@@ -5319,7 +5319,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -5339,9 +5339,9 @@
       "id": 1623389,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 63,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5382,9 +5382,9 @@
       "id": 1623392,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 60,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5405,7 +5405,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 3
         }
       },
@@ -5425,9 +5425,9 @@
       "id": 1623407,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 60,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5468,9 +5468,9 @@
       "id": 1623408,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 46,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5491,8 +5491,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 2
+          "home": 1,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5511,9 +5511,9 @@
       "id": 1623437,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 60,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 3,
         "name": "UEFA Europa League",
@@ -5534,7 +5534,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -5554,9 +5554,9 @@
       "id": 1623438,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 57,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 3,
         "name": "UEFA Europa League",
@@ -5577,7 +5577,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -5597,9 +5597,9 @@
       "id": 1627043,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 54,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 542,
         "name": "Iraqi League",
@@ -5620,7 +5620,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       },
@@ -5640,9 +5640,9 @@
       "id": 1627053,
       "utcDate": "2026-08-20T18:00:00+00:00",
       "timestamp": 1787248800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 53,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 542,
         "name": "Iraqi League",
@@ -5663,7 +5663,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -5683,9 +5683,9 @@
       "id": 1623405,
       "utcDate": "2026-08-20T18:15:00+00:00",
       "timestamp": 1787249700,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 46,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5706,8 +5706,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -5726,9 +5726,9 @@
       "id": 1623111,
       "utcDate": "2026-08-20T18:30:00+00:00",
       "timestamp": 1787250600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5769,9 +5769,9 @@
       "id": 1623390,
       "utcDate": "2026-08-20T18:30:00+00:00",
       "timestamp": 1787250600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5812,9 +5812,9 @@
       "id": 1623397,
       "utcDate": "2026-08-20T18:30:00+00:00",
       "timestamp": 1787250600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5835,8 +5835,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -5855,9 +5855,9 @@
       "id": 1623399,
       "utcDate": "2026-08-20T18:30:00+00:00",
       "timestamp": 1787250600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5879,7 +5879,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 1
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5898,9 +5898,9 @@
       "id": 1623401,
       "utcDate": "2026-08-20T18:30:00+00:00",
       "timestamp": 1787250600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -5921,8 +5921,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -5941,9 +5941,9 @@
       "id": 1574696,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 33,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -5964,8 +5964,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 1
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5984,9 +5984,9 @@
       "id": 1574697,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 33,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6008,7 +6008,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6027,9 +6027,9 @@
       "id": 1574698,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 32,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6050,7 +6050,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -6070,9 +6070,9 @@
       "id": 1574699,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 33,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6093,7 +6093,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       },
@@ -6113,9 +6113,9 @@
       "id": 1574700,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 33,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6137,7 +6137,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6156,9 +6156,9 @@
       "id": 1574701,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 34,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6179,8 +6179,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6199,9 +6199,9 @@
       "id": 1574702,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 34,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6222,7 +6222,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -6242,9 +6242,9 @@
       "id": 1574703,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 31,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6265,8 +6265,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6285,9 +6285,9 @@
       "id": 1574704,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 33,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 63,
         "name": "Ligue 3",
@@ -6308,7 +6308,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 0
         }
       },
@@ -6328,9 +6328,9 @@
       "id": 1623394,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 32,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6351,8 +6351,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6371,9 +6371,9 @@
       "id": 1623403,
       "utcDate": "2026-08-20T18:45:00+00:00",
       "timestamp": 1787251500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 34,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6394,7 +6394,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -6414,9 +6414,9 @@
       "id": 1526601,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 18,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -6437,7 +6437,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -6500,9 +6500,9 @@
       "id": 1564254,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 17,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 41,
         "name": "League One",
@@ -6524,7 +6524,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6543,9 +6543,9 @@
       "id": 1570351,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 17,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 140,
         "name": "La Liga",
@@ -6566,8 +6566,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6586,9 +6586,9 @@
       "id": 1619658,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 18,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 964,
         "name": "Copa de la División Profesional",
@@ -6609,8 +6609,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 4,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6629,9 +6629,9 @@
       "id": 1623387,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 18,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6652,7 +6652,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       },
@@ -6672,9 +6672,9 @@
       "id": 1623388,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 17,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6695,8 +6695,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6715,9 +6715,9 @@
       "id": 1623391,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 18,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6738,8 +6738,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6758,9 +6758,9 @@
       "id": 1623393,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 18,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6781,8 +6781,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6801,9 +6801,9 @@
       "id": 1623404,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 18,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 848,
         "name": "UEFA Europa Conference League",
@@ -6824,8 +6824,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6844,9 +6844,9 @@
       "id": 1623431,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 17,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 3,
         "name": "UEFA Europa League",
@@ -6867,8 +6867,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6887,9 +6887,9 @@
       "id": 1612598,
       "utcDate": "2026-08-20T19:30:00+00:00",
       "timestamp": 1787254200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 66,
       "competition": {
         "id": 501,
         "name": "Copa Paraguay",
@@ -6910,8 +6910,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -6930,9 +6930,9 @@
       "id": 1525756,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 712,
         "name": "Liga Femenina",
@@ -6953,8 +6953,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -6973,9 +6973,9 @@
       "id": 1525758,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 712,
         "name": "Liga Femenina",
@@ -6996,8 +6996,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7016,9 +7016,9 @@
       "id": 1525762,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 712,
         "name": "Liga Femenina",
@@ -7039,8 +7039,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7059,9 +7059,9 @@
       "id": 1525763,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 712,
         "name": "Liga Femenina",
@@ -7082,8 +7082,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7102,9 +7102,9 @@
       "id": 1547791,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 917,
         "name": "Copa Ecuador",
@@ -7125,8 +7125,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7145,9 +7145,9 @@
       "id": 1611964,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 906,
         "name": "Reserve League",
@@ -7168,8 +7168,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7188,9 +7188,9 @@
       "id": 1526602,
       "utcDate": "2026-08-20T20:30:00+00:00",
       "timestamp": 1787257800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -7211,8 +7211,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7231,9 +7231,9 @@
       "id": 1526603,
       "utcDate": "2026-08-20T20:30:00+00:00",
       "timestamp": 1787257800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -7254,8 +7254,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7274,9 +7274,9 @@
       "id": 1549593,
       "utcDate": "2026-08-20T20:30:00+00:00",
       "timestamp": 1787257800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -7297,8 +7297,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
