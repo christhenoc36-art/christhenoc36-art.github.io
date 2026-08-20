@@ -259,7 +259,111 @@ function afficherCategorie() {
 
   </script>
 <body>;
+<!-- PAGE D'ACCUEIL -->
+<div id="homePage" style="
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:30px 15px;
+  background:#07111f;
+">
 
+  <div style="width:100%;max-width:520px;">
+
+    <div style="
+      background:#0b1d33;
+      border:1px solid #23476d;
+      border-radius:22px;
+      padding:30px 20px;
+      margin-bottom:25px;
+    ">
+
+      <div style="font-size:65px;">
+        ⚽
+      </div>
+
+      <h1 style="
+        margin:10px 0;
+        font-size:38px;
+      ">
+        Football Live
+      </h1>
+
+      <p style="
+        margin:0;
+        color:#a9c8e8;
+        font-size:17px;
+      ">
+        Scores, matchs en direct et résultats
+      </p>
+
+    </div>
+
+
+    <!-- DIRECT -->
+    <button
+      type="button"
+      onclick="ouvrirCategorie('live')"
+      style="
+        width:100%;
+        padding:18px;
+        margin:7px 0;
+        border:1px solid #23476d;
+        border-radius:16px;
+        background:#d90429;
+        color:white;
+        font-size:19px;
+        font-weight:bold;
+      "
+    >
+      🔴 Matchs en direct
+    </button>
+
+
+    <!-- À VENIR -->
+    <button
+      type="button"
+      onclick="ouvrirCategorie('upcoming')"
+      style="
+        width:100%;
+        padding:18px;
+        margin:7px 0;
+        border:1px solid #23476d;
+        border-radius:16px;
+        background:#1769aa;
+        color:white;
+        font-size:19px;
+        font-weight:bold;
+      "
+    >
+      🕐 Matchs à venir
+    </button>
+
+
+    <!-- TERMINÉS -->
+    <button
+      type="button"
+      onclick="ouvrirCategorie('finished')"
+      style="
+        width:100%;
+        padding:18px;
+        margin:7px 0;
+        border:1px solid #23476d;
+        border-radius:16px;
+        background:#455a64;
+        color:white;
+        font-size:19px;
+        font-weight:bold;
+      "
+    >
+      ✅ Matchs terminés
+    </button>
+
+  </div>
+
+</div>
 <header>
   <h1>⚽ Football Live</h1>
   <p>Matchs, scores, horaires et diffusion TV</p>
