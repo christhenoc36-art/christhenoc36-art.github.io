@@ -864,7 +864,58 @@ setInterval(
   loadMatches,
   300000
 );
+<!-- LECTEUR FOOTBALL LIVE -->
+<div id="videoPlayer" style="
+  display:none;
+  margin:20px auto;
+  max-width:900px;
+  padding:15px;
+  background:#111;
+  border-radius:12px;
+">
 
+  <h2 id="matchTitle">Match en direct</h2>
+
+  <video
+    id="player"
+    controls
+    playsinline
+    style="
+      width:100%;
+      background:#000;
+      border-radius:10px;
+    ">
+  </video>
+
+  <p id="playerMessage">
+    La diffusion officielle n'est pas encore disponible.
+  </p>
+</div>
+
+<script>
+function regarderMatch(match) {
+  const videoPlayer = document.getElementById("videoPlayer");
+  const player = document.getElementById("player");
+  const matchTitle = document.getElementById("matchTitle");
+  const playerMessage = document.getElementById("playerMessage");
+
+  videoPlayer.style.display = "block";
+
+  matchTitle.textContent =
+    match.homeTeam + " - " + match.awayTeam;
+
+  if (!match.streamUrl) {
+    player.removeAttribute("src");
+    playerMessage.textContent =
+      "La diffusion officielle n'est pas encore disponible pour ce match.";
+    return;
+  }
+
+  playerMessage.textContent = "";
+  player.src = match.streamUrl;
+  player.load();
+  player.play().catch(() => {});
+}
 </script>
 
 </body>
