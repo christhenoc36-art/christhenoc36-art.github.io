@@ -158,13 +158,13 @@ jobs:
     fi
 
     python -m json.tool matches.json > /dev/null
-    echo "matches.json est bien présent et valide."
-      - name: Préparer la mise à jour
+    echo "matches.json est bien présent et valide." 
+- name: Préparer la mise à jour
         run: |
-          echo "Football Live est prêt pour l'actualisation automatique."
+           echo "Football Live est prêt pour l'actualisation automatique."
           echo "Aucune donnée fictive ne sera écrite dans matches.json."
 
-      - name: Enregistrer les changements
+- name: Enregistrer les changements
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
