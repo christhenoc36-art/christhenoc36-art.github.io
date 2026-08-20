@@ -22,7 +22,7 @@ jobs:
           python-version: "3.12"
 
       - name: Installer requests
-        run: python -m pip install requests
+        run: python -m pip install --upgrade requests
 
       - name: Actualiser les matchs
         env:
@@ -34,42 +34,72 @@ jobs:
           import requests
           from datetime import datetime, timezone
 
-          api_key = os.environ.get("API_FOOTBALL_KEY")
+          api_key = os.environ.get("FOOTBALL_API_KEY", "").strip()
 
           if not api_key:
               raise SystemExit(
-                  "Erreur : le secret API_FOOTBALL_KEY est absent."
+                  "ERREUR : le secret FOOTBALL_API_KEY est absent."
               )
 
-          response = requests.get(
-              "https://v3.football.api-sports.io/fixtures",
-              headers={
-                  "x-apisports-key": api_key
-              },
-              params={
-                  "live": "all"
-              },
-              timeout=30
-          )
+          url = "https://v3.football.api-sports.io/fixtures"
 
-          response.raise_for_status()
+          headers = {
+              "x-apisports-key": api_key
+          }
 
-          data = response.json()
+          params = {
+              "live": "all"
+          }
+
+          try:
+              response = requests.get(
+                  url,
+                  headers=headers,
+                  params=params,
+                  timeout=30
+              )
+          except requests.RequestException as e:
+              raise SystemExit(
+                  f"ERREUR de connexion API : {e}"
+              )
+
+          try:
+              data = response.json()
+          except ValueError:
+              raise SystemExit(
+                  f"ERREUR : réponse API invalide. HTTP {response.status_code}"
+              )
+
+          if response.status_code != 200:
+              raise SystemExit(
+                  "ERREUR API HTTP "
+                  + str(response.status_code)
+                  + " : "
+                  + json.dumps(
+                      data.get("errors", data),
+                      ensure_ascii=False
+                  )
+              )
 
           if data.get("errors"):
               raise SystemExit(
-                  "Erreur API : "
-                  + json.dumps(data["errors"], ensure_ascii=False)
+                  "ERREUR API : "
+                  + json.dumps(
+                      data["errors"],
+                      ensure_ascii=False
+                  )
               )
 
           matches = []
 
           for item in data.get("response", []):
-              fixture = item.get("fixture", {})
-              league = item.get("league", {})
-              teams = item.get("teams", {})
-              goals = item.get("goals", {})
-              status = fixture.get("status", {})
+              fixture = item.get("fixture") or {}
+              league = item.get("league") or {}
+              teams = item.get("teams") or {}
+              goals = item.get("goals") or {}
+              status = fixture.get("status") or {}
+              home = teams.get("home") or {}
+              away = teams.get("away") or {}
 
               matches.append({
                   "fixture": {
@@ -85,14 +115,14 @@ jobs:
                       "logo": league.get("logo")
                   },
                   "home": {
-                      "id": teams.get("home", {}).get("id"),
-                      "name": teams.get("home", {}).get("name"),
-                      "logo": teams.get("home", {}).get("logo")
+                      "id": home.get("id"),
+                      "name": home.get("name"),
+                      "logo": home.get("logo")
                   },
                   "away": {
-                      "id": teams.get("away", {}).get("id"),
-                      "name": teams.get("away", {}).get("name"),
-                      "logo": teams.get("away", {}).get("logo")
+                      "id": away.get("id"),
+                      "name": away.get("name"),
+                      "logo": away.get("logo")
                   },
                   "goals": {
                       "home": goals.get("home"),
@@ -100,33 +130,39 @@ jobs:
                   }
               })
 
-          result = {
+          output = {
               "lastUpdated": datetime.now(timezone.utc).isoformat(),
               "count": len(matches),
               "matches": matches
           }
 
-          with open("matches.json", "w", encoding="utf-8") as f:
+          with open(
+              "matches.json",
+              "w",
+              encoding="utf-8"
+          ) as f:
               json.dump(
-                  result,
+                  output,
                   f,
                   ensure_ascii=False,
                   indent=2
               )
 
-          print(f"OK : {len(matches)} matchs récupérés.")
+          print(
+              f"OK : {len(matches)} matchs récupérés."
+          )
           PY
 
       - name: Vérifier matches.json
         run: |
           if [ ! -f matches.json ]; then
-            echo "Erreur : matches.json n'a pas été créé."
+            echo "ERREUR : matches.json n'a pas été créé."
             exit 1
           fi
 
           python -m json.tool matches.json > /dev/null
 
-          echo "matches.json est valide."
+          echo "OK : matches.json est présent et valide."
 
       - name: Enregistrer les changements
         run: |
