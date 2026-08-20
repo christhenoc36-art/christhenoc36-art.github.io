@@ -25,9 +25,9 @@ jobs:
         run: |
           python -m pip install requests
 
-      - name: Récupérer les matchs depuis API-Football
+      - name: Récupérer les matchs depuis API-KEY
         env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_KEY }}
         run: |
           python - <<'PY'
           import os
