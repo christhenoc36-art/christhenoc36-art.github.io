@@ -577,7 +577,16 @@ function createMatchCard(match) {
 
 
       <div class="datetime">
-
+<button
+  type="button"
+  class="watch-button"
+  onclick='regarderMatch({
+    homeTeam: "${escapeHTML(homeName)}",
+    awayTeam: "${escapeHTML(awayName)}",
+    streamUrl: ""
+  })'>
+  ▶️ Regarder
+</button>
         📅 ${escapeHTML(dateTime.date)}
         <br>
 
