@@ -3,7 +3,7 @@ name: Football Live
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
@@ -22,12 +22,11 @@ jobs:
           python-version: "3.12"
 
       - name: Installer requests
-        run: |
-          python -m pip install requests
+        run: pip install requests
 
-      - name: Récupérer les matchs depuis API-KEY
+      - name: Actualiser les matchs
         env:
-          API_KEY: ${{ secrets.eb7aa85a4c66c0c140f9d8e717187a98 }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: |
           python - <<'PY'
           import os
@@ -35,23 +34,15 @@ jobs:
           import requests
           from datetime import datetime, timezone
 
-          api_key = os.environ.get("API_FOOTBALL_KEY")
+          key = os.environ.get("API_KEY")
 
-          if not api_key:
-              raise SystemExit("Erreur : le secret API_FOOTBALL_KEY est absent.")
-
-          url = "https://v3.football.api-sports.io/fixtures"
-          headers = {
-              "x-apisports-key": api_key
-          }
-          params = {
-              "live": "all"
-          }
+          if not key:
+              raise SystemExit("Erreur : le secret API_KEY est absent.")
 
           response = requests.get(
-              url,
-              headers=headers,
-              params=params,
+              "https://v3.football.api-sports.io/fixtures",
+              headers={"x-apisports-key": key},
+              params={"live": "all"},
               timeout=30
           )
 
@@ -61,76 +52,64 @@ jobs:
 
           if data.get("errors"):
               raise SystemExit(
-                  "Erreur API-Football : "
-                  + json.dumps(data["errors"], ensure_ascii=False)
+                  "Erreur API : " + json.dumps(data["errors"])
               )
-
-          fixtures = data.get("response", [])
 
           matches = []
 
-          for fixture in fixtures:
+          for item in data.get("response", []):
+              fixture = item.get("fixture", {})
+              league = item.get("league", {})
+              teams = item.get("teams", {})
+              goals = item.get("goals", {})
+              status = fixture.get("status", {})
+
               matches.append({
                   "fixture": {
-                      "id": fixture.get("fixture", {}).get("id"),
-                      "date": fixture.get("fixture", {}).get("date"),
-                      "status": {
-                          "long": fixture.get("fixture", {}).get("status", {}).get("long"),
-                          "short": fixture.get("fixture", {}).get("status", {}).get("short"),
-                          "elapsed": fixture.get("fixture", {}).get("status", {}).get("elapsed")
-                      }
+                      "id": fixture.get("id"),
+                      "date": fixture.get("date"),
+                      "status": status.get("short"),
+                      "elapsed": status.get("elapsed")
                   },
                   "league": {
-                      "id": fixture.get("league", {}).get("id"),
-                      "name": fixture.get("league", {}).get("name"),
-                      "country": fixture.get("league", {}).get("country"),
-                      "logo": fixture.get("league", {}).get("logo")
+                      "id": league.get("id"),
+                      "name": league.get("name"),
+                      "country": league.get("country"),
+                      "logo": league.get("logo")
                   },
-                  "teams": {
-                      "home": {
-                          "id": fixture.get("teams", {}).get("home", {}).get("id"),
-                          "name": fixture.get("teams", {}).get("home", {}).get("name"),
-                          "logo": fixture.get("teams", {}).get("home", {}).get("logo")
-                      },
-                      "away": {
-                          "id": fixture.get("teams", {}).get("away", {}).get("id"),
-                          "name": fixture.get("teams", {}).get("away", {}).get("name"),
-                          "logo": fixture.get("teams", {}).get("away", {}).get("logo")
-                      }
+                  "home": {
+                      "id": teams.get("home", {}).get("id"),
+                      "name": teams.get("home", {}).get("name"),
+                      "logo": teams.get("home", {}).get("logo")
+                  },
+                  "away": {
+                      "id": teams.get("away", {}).get("id"),
+                      "name": teams.get("away", {}).get("name"),
+                      "logo": teams.get("away", {}).get("logo")
                   },
                   "goals": {
-                      "home": fixture.get("goals", {}).get("home"),
-                      "away": fixture.get("goals", {}).get("away")
+                      "home": goals.get("home"),
+                      "away": goals.get("away")
                   }
               })
 
-          output = {
+          result = {
               "lastUpdated": datetime.now(timezone.utc).isoformat(),
               "count": len(matches),
               "matches": matches
           }
 
           with open("matches.json", "w", encoding="utf-8") as f:
-              json.dump(
-                  output,
-                  f,
-                  ensure_ascii=False,
-                  indent=2
-              )
+              json.dump(result, f, ensure_ascii=False, indent=2)
 
-          print(f"OK : {len(matches)} matchs récupérés.")
+          print(f"{len(matches)} matchs actualisés.")
           PY
 
       - name: Vérifier matches.json
         run: |
-          if [ ! -f matches.json ]; then
-            echo "Erreur : matches.json n'a pas été créé."
-            exit 1
-          fi
-
+          test -f matches.json
           python -m json.tool matches.json > /dev/null
-
-          echo "matches.json est bien présent et valide."
+          echo "matches.json est valide."
 
       - name: Enregistrer les changements
         run: |
@@ -140,8 +119,8 @@ jobs:
           git add matches.json
 
           if git diff --cached --quiet; then
-            echo "Aucun changement à enregistrer."
+            echo "Aucun changement."
           else
-            git commit -m "chore: mise à jour des matchs"
+            git commit -m "chore: actualisation des matchs"
             git push origin main
           fi
