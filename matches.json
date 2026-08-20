@@ -1,13 +1,97 @@
 {
-  "lastUpdated": "2026-08-20T10:32:04.301384+00:00",
+  "lastUpdated": "2026-08-20T11:02:25.690287+00:00",
   "count": 6,
   "matches": [
     {
       "fixture": {
+        "id": 1519617,
+        "date": "2026-08-20T09:30:00+00:00",
+        "status": "2H",
+        "elapsed": 77
+      },
+      "league": {
+        "id": 328,
+        "name": "Esiliiga A",
+        "country": "Estonia",
+        "logo": "https://media.api-sports.io/football/leagues/328.png"
+      },
+      "home": {
+        "id": 3516,
+        "name": "Elva",
+        "logo": "https://media.api-sports.io/football/teams/3516.png"
+      },
+      "away": {
+        "id": 3527,
+        "name": "Maardu",
+        "logo": "https://media.api-sports.io/football/teams/3527.png"
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1611333,
+        "date": "2026-08-22T09:00:00+00:00",
+        "status": "2H",
+        "elapsed": 47
+      },
+      "league": {
+        "id": 1031,
+        "name": "Premier League",
+        "country": "Bhutan",
+        "logo": "https://media.api-sports.io/football/leagues/1031.png"
+      },
+      "home": {
+        "id": 9426,
+        "name": "Paro",
+        "logo": "https://media.api-sports.io/football/teams/9426.png"
+      },
+      "away": {
+        "id": 19005,
+        "name": "RTC",
+        "logo": "https://media.api-sports.io/football/teams/19005.png"
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1627684,
+        "date": "2026-08-20T09:30:00+00:00",
+        "status": "2H",
+        "elapsed": 71
+      },
+      "league": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "home": {
+        "id": 22001,
+        "name": "Aryan",
+        "logo": "https://media.api-sports.io/football/teams/22001.png"
+      },
+      "away": {
+        "id": 24102,
+        "name": "Measurers",
+        "logo": "https://media.api-sports.io/football/teams/24102.png"
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
         "id": 1534832,
         "date": "2026-08-20T10:00:00+00:00",
-        "status": "1H",
-        "elapsed": 29
+        "status": "HT",
+        "elapsed": 45
       },
       "league": {
         "id": 388,
@@ -34,8 +118,8 @@
       "fixture": {
         "id": 1578042,
         "date": "2026-08-20T10:00:00+00:00",
-        "status": "1H",
-        "elapsed": 32
+        "status": "HT",
+        "elapsed": 45
       },
       "league": {
         "id": 1140,
@@ -55,91 +139,7 @@
       },
       "goals": {
         "home": 0,
-        "away": 0
-      }
-    },
-    {
-      "fixture": {
-        "id": 1611333,
-        "date": "2026-08-22T09:00:00+00:00",
-        "status": "1H",
-        "elapsed": 32
-      },
-      "league": {
-        "id": 1031,
-        "name": "Premier League",
-        "country": "Bhutan",
-        "logo": "https://media.api-sports.io/football/leagues/1031.png"
-      },
-      "home": {
-        "id": 9426,
-        "name": "Paro",
-        "logo": "https://media.api-sports.io/football/teams/9426.png"
-      },
-      "away": {
-        "id": 19005,
-        "name": "RTC",
-        "logo": "https://media.api-sports.io/football/teams/19005.png"
-      },
-      "goals": {
-        "home": 1,
-        "away": 0
-      }
-    },
-    {
-      "fixture": {
-        "id": 1519617,
-        "date": "2026-08-20T09:30:00+00:00",
-        "status": "2H",
-        "elapsed": 46
-      },
-      "league": {
-        "id": 328,
-        "name": "Esiliiga A",
-        "country": "Estonia",
-        "logo": "https://media.api-sports.io/football/leagues/328.png"
-      },
-      "home": {
-        "id": 3516,
-        "name": "Elva",
-        "logo": "https://media.api-sports.io/football/teams/3516.png"
-      },
-      "away": {
-        "id": 3527,
-        "name": "Maardu",
-        "logo": "https://media.api-sports.io/football/teams/3527.png"
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      }
-    },
-    {
-      "fixture": {
-        "id": 1627684,
-        "date": "2026-08-20T09:30:00+00:00",
-        "status": "HT",
-        "elapsed": 45
-      },
-      "league": {
-        "id": 1020,
-        "name": "Calcutta Premier Division",
-        "country": "India",
-        "logo": "https://media.api-sports.io/football/leagues/1020.png"
-      },
-      "home": {
-        "id": 22001,
-        "name": "Aryan",
-        "logo": "https://media.api-sports.io/football/teams/22001.png"
-      },
-      "away": {
-        "id": 24102,
-        "name": "Measurers",
-        "logo": "https://media.api-sports.io/football/teams/24102.png"
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
+        "away": 1
       }
     },
     {
