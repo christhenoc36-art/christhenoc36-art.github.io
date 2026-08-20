@@ -1,4 +1,4 @@
-dename: Football Live Update
+name: Football Live Update
 
 on:
   workflow_dispatch:
