@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20T21:57:31.737156+00:00",
+  "lastUpdated": "2026-08-20T23:00:45.557436+00:00",
   "from": "2026-08-20",
   "to": "2026-08-22",
   "matches": [
@@ -6457,9 +6457,9 @@
       "id": 1543988,
       "utcDate": "2026-08-20T19:00:00+00:00",
       "timestamp": 1787252400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -6480,8 +6480,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6930,8 +6930,8 @@
       "id": 1525756,
       "utcDate": "2026-08-20T20:00:00+00:00",
       "timestamp": 1787256000,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 712,
@@ -7188,9 +7188,9 @@
       "id": 1526602,
       "utcDate": "2026-08-20T20:30:00+00:00",
       "timestamp": 1787257800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 66,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -7212,7 +7212,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 3
         }
       },
       "tvChannels": [
@@ -7231,9 +7231,9 @@
       "id": 1526603,
       "utcDate": "2026-08-20T20:30:00+00:00",
       "timestamp": 1787257800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 68,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -7274,9 +7274,9 @@
       "id": 1549593,
       "utcDate": "2026-08-20T20:30:00+00:00",
       "timestamp": 1787257800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 65,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -7297,7 +7297,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 2
         }
       },
@@ -7317,9 +7317,9 @@
       "id": 1526605,
       "utcDate": "2026-08-20T21:10:00+00:00",
       "timestamp": 1787260200,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -7360,9 +7360,9 @@
       "id": 1547771,
       "utcDate": "2026-08-20T22:00:00+00:00",
       "timestamp": 1787263200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 13,
         "name": "CONMEBOL Libertadores",
@@ -7383,8 +7383,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7403,9 +7403,9 @@
       "id": 1549110,
       "utcDate": "2026-08-20T22:00:00+00:00",
       "timestamp": 1787263200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 856,
         "name": "CONCACAF Caribbean Club Championship",
@@ -7426,8 +7426,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7446,9 +7446,9 @@
       "id": 1549591,
       "utcDate": "2026-08-20T22:00:00+00:00",
       "timestamp": 1787263200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -7469,8 +7469,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7489,9 +7489,9 @@
       "id": 1606078,
       "utcDate": "2026-08-20T22:00:00+00:00",
       "timestamp": 1787263200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 11,
         "name": "CONMEBOL Sudamericana",
@@ -7512,8 +7512,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7532,9 +7532,9 @@
       "id": 1607202,
       "utcDate": "2026-08-20T22:00:00+00:00",
       "timestamp": 1787263200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 11,
         "name": "CONMEBOL Sudamericana",
@@ -7555,8 +7555,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7575,9 +7575,9 @@
       "id": 1520820,
       "utcDate": "2026-08-20T22:30:00+00:00",
       "timestamp": 1787265000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -7598,8 +7598,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7618,9 +7618,9 @@
       "id": 1549588,
       "utcDate": "2026-08-20T22:45:00+00:00",
       "timestamp": 1787265900,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 14,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -7641,8 +7641,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7661,9 +7661,9 @@
       "id": 1581394,
       "utcDate": "2026-08-20T23:00:00+00:00",
       "timestamp": 1787266800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -7684,8 +7684,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7704,8 +7704,8 @@
       "id": 1607188,
       "utcDate": "2026-08-20T23:00:00+00:00",
       "timestamp": 1787266800,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 241,
