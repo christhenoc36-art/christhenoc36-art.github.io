@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="300">
+
 <title>Football Live</title>
 
 <style>
@@ -22,7 +22,7 @@ header {
   background: #0b1d33;
   padding: 22px 15px;
   text-align: center;
-  border-bottom: 2px solid #163b61;
+  border-bottom: 2px solid #1c456d;
 }
 
 header h1 {
@@ -37,7 +37,7 @@ header p {
 
 .container {
   width: 94%;
-  max-width: 800px;
+  max-width: 850px;
   margin: 20px auto;
 }
 
@@ -46,8 +46,20 @@ header p {
   padding: 15px;
   border-radius: 15px;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0 0 13px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #102840;
 }
 
 .match {
@@ -55,22 +67,21 @@ header p {
   border: 1px solid #23476d;
   border-radius: 18px;
   padding: 18px;
-  margin-bottom: 18px;
-  box-shadow: 0 5px 18px rgba(0,0,0,.25);
+  margin-bottom: 15px;
 }
 
 .competition {
+  text-align: center;
   color: #75b8ff;
   font-size: 14px;
-  margin-bottom: 15px;
-  text-align: center;
+  margin-bottom: 16px;
 }
 
 .teams {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 8px;
 }
 
 .team {
@@ -83,59 +94,92 @@ header p {
   height: 65px;
   object-fit: contain;
   display: block;
-  margin: 0 auto 8px;
+  margin: 0 auto 9px;
 }
 
 .team-name {
-  font-weight: bold;
   font-size: 15px;
+  font-weight: bold;
 }
 
 .score {
-  font-size: 22px;
-  font-weight: bold;
   width: 20%;
   text-align: center;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .datetime {
   text-align: center;
   margin-top: 18px;
-  padding-top: 14px;
+  padding-top: 13px;
   border-top: 1px solid #23405e;
-  color: #d7e8fa;
+  color: #d9e9f8;
+  line-height: 1.8;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.live {
+  background: #d90429;
+}
+
+.upcoming {
+  background: #1769aa;
+}
+
+.finished {
+  background: #455a64;
 }
 
 .tv {
   margin-top: 14px;
+  padding: 12px;
   background: #132b43;
   border-radius: 12px;
-  padding: 12px;
 }
 
 .tv-title {
   color: #ffd65a;
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 
-.tv-channel {
-  padding: 5px 0;
-  color: #f1f6fb;
+.channel {
+  display: inline-block;
+  background: #1c3b58;
+  border-radius: 8px;
+  padding: 7px 9px;
+  margin: 3px;
+  font-size: 13px;
 }
 
 .empty {
+  color: #8fa6bc;
   text-align: center;
-  padding: 40px 15px;
-  color: #aabbd0;
+  padding: 20px;
 }
 
 .error {
   background: #4a1820;
   color: #ffb8c0;
-  padding: 15px;
+  padding: 16px;
   border-radius: 12px;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: #71869b;
+  padding: 25px 10px;
+  font-size: 13px;
 }
 </style>
 </head>
@@ -144,7 +188,7 @@ header p {
 
 <header>
   <h1>⚽ Football Live</h1>
-  <p>Matchs, scores et diffusion TV en direct</p>
+  <p>Matchs, scores, horaires et diffusion TV</p>
 </header>
 
 <div class="container">
@@ -153,254 +197,23 @@ header p {
     Chargement des matchs...
   </div>
 
-  <div id="matches"></div>
+  <div id="content"></div>
 
 </div>
 
+<footer>
+  Mise à jour automatique toutes les 5 minutes
+</footer>
+
+
 <script>
 
-async function chargerMatchs() {
-
-  const status = document.getElementById("status");
-  const container = document.getElementById("matches");
-
-  try {
-
-    const response = await fetch(
-      "matches.json?t=" + Date.now(),
-      { cache: "no-store" }
-    );
-
-    if (!response.ok) {
-      throw new Error("matches.json introuvable");
-    }
-
-    const data = await response.json();
-
-    let matchs = [];
-
-    /*
-      Le workflow peut enregistrer :
-      - directement un tableau
-      - ou un objet contenant matches
-    */
-
-    if (Array.isArray(data)) {
-      matchs = data;
-    } else if (Array.isArray(data.matches)) {
-      matchs = data.matches;
-    } else if (Array.isArray(data.response)) {
-      matchs = data.response;
-    }
-
-    if (!matchs.length) {
-      status.textContent = "Aucun match disponible";
-      container.innerHTML =
-        '<div class="empty">Aucun match trouvé pour le moment.</div>';
-      return;
-    }
-
-    status.textContent =
-      matchs.length + " match" + (matchs.length > 1 ? "s" : "") +
-      " disponible" + (matchs.length > 1 ? "s" : "");
-
-    container.innerHTML = "";
-
-    matchs.forEach(match => {
-
-      const home = match.homeTeam || match.home || {};
-      const away = match.awayTeam || match.away || {};
-      const competition = match.competition || {};
-
-      const homeName =
-        home.name ||
-        home.shortName ||
-        "Équipe inconnue";
-
-      const awayName =
-        away.name ||
-        away.shortName ||
-        "Équipe inconnue";
-
-      const homeLogo =
-        home.crest ||
-        home.logo ||
-        "";
-
-      const awayLogo =
-        away.crest ||
-        away.logo ||
-        "";
-
-      const competitionName =
-        competition.name ||
-        match.league?.name ||
-        "Compétition";
-
-      const dateValue =
-        match.utcDate ||
-        match.date ||
-        match.startDate ||
-        "";
-
-      let dateText = "Date inconnue";
-      let timeText = "Heure inconnue";
-
-      if (dateValue) {
-
-        const date = new Date(dateValue);
-
-        if (!isNaN(date.getTime())) {
-
-          dateText = date.toLocaleDateString(
-            "fr-FR",
-            {
-              day: "2-digit",
-              month: "2-digit",
-              year: "numeric"
-            }
-          );
-
-          timeText = date.toLocaleTimeString(
-            "fr-FR",
-            {
-              hour: "2-digit",
-              minute: "2-digit"
-            }
-          );
-        }
-      }
-
-      let homeScore = "-";
-      let awayScore = "-";
-
-      if (match.score && match.score.fullTime) {
-
-        homeScore =
-          match.score.fullTime.home ?? "-";
-
-        awayScore =
-          match.score.fullTime.away ?? "-";
-      }
-
-      /*
-        Récupération des chaînes TV
-      */
-
-      let tvChannels =
-        match.tvChannels ||
-        match.tv ||
-        [];
-
-      if (!Array.isArray(tvChannels)) {
-        tvChannels = [];
-      }
-
-      const tvHTML = tvChannels.length
-        ? `
-          <div class="tv">
-            <div class="tv-title">📺 Diffusion TV</div>
-            ${tvChannels.map(channel => {
-
-              const name =
-                typeof channel === "string"
-                  ? channel
-                  : channel.name || "Chaîne TV";
-
-              return `
-                <div class="tv-channel">
-                  📺 ${escapeHTML(name)}
-                </div>
-              `;
-
-            }).join("")}
-          </div>
-        `
-        : "";
-
-      const card = document.createElement("div");
-
-      card.className = "match";
-
-      card.innerHTML = `
-
-        <div class="competition">
-          🏆 ${escapeHTML(competitionName)}
-        </div>
-
-        <div class="teams">
-
-          <div class="team">
-
-            ${
-              homeLogo
-              ? `<img src="${escapeHTML(homeLogo)}"
-                      alt="${escapeHTML(homeName)}"
-                      onerror="this.style.display='none'">`
-              : ""
-            }
-
-            <div class="team-name">
-              ${escapeHTML(homeName)}
-            </div>
-
-          </div>
-
-          <div class="score">
-            ${homeScore} - ${awayScore}
-          </div>
-
-          <div class="team">
-
-            ${
-              awayLogo
-              ? `<img src="${escapeHTML(awayLogo)}"
-                      alt="${escapeHTML(awayName)}"
-                      onerror="this.style.display='none'">`
-              : ""
-            }
-
-            <div class="team-name">
-              ${escapeHTML(awayName)}
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="datetime">
-          📅 ${dateText}
-          <br>
-          🕐 ${timeText}
-        </div>
-
-        ${tvHTML}
-
-      `;
-
-      container.appendChild(card);
-
-    });
-
-  } catch (error) {
-
-    console.error(error);
-
-    status.textContent = "Erreur de chargement";
-
-    container.innerHTML = `
-      <div class="error">
-        ❌ Impossible de charger les matchs.<br><br>
-        Vérifie que <b>matches.json</b> existe bien.
-      </div>
-    `;
-  }
-}
+const content = document.getElementById("content");
+const statusBox = document.getElementById("status");
 
 
 function escapeHTML(value) {
-
-  return String(value)
+  return String(value ?? "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -409,9 +222,611 @@ function escapeHTML(value) {
 }
 
 
-chargerMatchs();
+function getMatchStatus(match) {
 
-setInterval(chargerMatchs, 300000);
+  const status = String(match.status || "").toUpperCase();
+
+  const liveStatuses = [
+    "1H",
+    "2H",
+    "HT",
+    "ET",
+    "P",
+    "LIVE"
+  ];
+
+  const finishedStatuses = [
+    "FT",
+    "AET",
+    "PEN"
+  ];
+
+  if (liveStatuses.includes(status)) {
+    return "live";
+  }
+
+  if (finishedStatuses.includes(status)) {
+    return "finished";
+  }
+
+  return "upcoming";
+}
+
+
+function getTeam(match, side) {
+
+  if (side === "home") {
+    return match.homeTeam || match.home || {};
+  }
+
+  return match.awayTeam || match.away || {};
+}
+
+
+function getCompetition(match) {
+
+  if (typeof match.competition === "string") {
+    return match.competition;
+  }
+
+  if (match.competition && match.competition.name) {
+    return match.competition.name;
+  }
+
+  if (match.league && match.league.name) {
+    return match.league.name;
+  }
+
+  return "Compétition";
+}
+
+
+function getDate(match) {
+
+  return (
+    match.utcDate ||
+    match.date ||
+    match.fixture?.date ||
+    ""
+  );
+}
+
+
+function formatDateTime(value) {
+
+  if (!value) {
+    return {
+      date: "Date inconnue",
+      time: "Heure inconnue"
+    };
+  }
+
+  const date = new Date(value);
+
+  if (isNaN(date.getTime())) {
+    return {
+      date: "Date inconnue",
+      time: "Heure inconnue"
+    };
+  }
+
+  return {
+    date: date.toLocaleDateString("fr-FR", {
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    }),
+
+    time: date.toLocaleTimeString("fr-FR", {
+      hour: "2-digit",
+      minute: "2-digit"
+    })
+  };
+}
+
+
+function getScore(match) {
+
+  if (
+    match.score &&
+    match.score.fullTime
+  ) {
+
+    const home = match.score.fullTime.home;
+    const away = match.score.fullTime.away;
+
+    if (
+      home !== null &&
+      home !== undefined &&
+      away !== null &&
+      away !== undefined
+    ) {
+      return `${home} - ${away}`;
+    }
+  }
+
+  return "VS";
+}
+
+
+function getTV(match) {
+
+  const channels = [
+    "Canal+ Sport",
+    "beIN SPORTS",
+    "SuperSport"
+  ];
+
+  /*
+    Si le JSON contient réellement des chaînes TV,
+    on les utilise.
+  */
+
+  let realChannels =
+    match.tvChannels ||
+    match.tv_channels ||
+    match.channels ||
+    [];
+
+  if (!Array.isArray(realChannels)) {
+    realChannels = [];
+  }
+
+  const names = realChannels
+    .map(channel => {
+
+      if (typeof channel === "string") {
+        return channel;
+      }
+
+      return channel?.name ||
+             channel?.channel ||
+             "";
+    })
+    .filter(Boolean);
+
+
+  /*
+    Si aucune chaîne réelle n'est fournie,
+    on affiche les chaînes prévues par le site.
+  */
+
+  const finalChannels =
+    names.length > 0
+      ? names
+      : channels;
+
+
+  return `
+    <div class="tv">
+
+      <div class="tv-title">
+        📺 Diffusion TV
+      </div>
+
+      ${finalChannels.map(channel => `
+        <span class="channel">
+          📺 ${escapeHTML(channel)}
+        </span>
+      `).join("")}
+
+    </div>
+  `;
+}
+
+
+function createMatchCard(match) {
+
+  const home = getTeam(match, "home");
+  const away = getTeam(match, "away");
+
+  const homeName =
+    home.name ||
+    home.shortName ||
+    "Équipe inconnue";
+
+  const awayName =
+    away.name ||
+    away.shortName ||
+    "Équipe inconnue";
+
+  const homeLogo =
+    home.crest ||
+    home.logo ||
+    "";
+
+  const awayLogo =
+    away.crest ||
+    away.logo ||
+    "";
+
+  const competition =
+    getCompetition(match);
+
+  const dateTime =
+    formatDateTime(getDate(match));
+
+  const matchStatus =
+    getMatchStatus(match);
+
+  let badge = "";
+
+  if (matchStatus === "live") {
+
+    badge = `
+      <span class="badge live">
+        🔴 EN DIRECT
+      </span>
+    `;
+
+  } else if (matchStatus === "finished") {
+
+    badge = `
+      <span class="badge finished">
+        ✅ TERMINÉ
+      </span>
+    `;
+
+  } else {
+
+    badge = `
+      <span class="badge upcoming">
+        🕐 À VENIR
+      </span>
+    `;
+  }
+
+
+  return `
+
+    <div class="match">
+
+      <div class="competition">
+        🏆 ${escapeHTML(competition)}
+      </div>
+
+      <div class="teams">
+
+        <div class="team">
+
+          ${
+            homeLogo
+            ? `
+              <img
+                src="${escapeHTML(homeLogo)}"
+                alt="${escapeHTML(homeName)}"
+                onerror="this.style.display='none'"
+              >
+            `
+            : ""
+          }
+
+          <div class="team-name">
+            ${escapeHTML(homeName)}
+          </div>
+
+        </div>
+
+
+        <div class="score">
+          ${escapeHTML(getScore(match))}
+          <br>
+          ${badge}
+        </div>
+
+
+        <div class="team">
+
+          ${
+            awayLogo
+            ? `
+              <img
+                src="${escapeHTML(awayLogo)}"
+                alt="${escapeHTML(awayName)}"
+                onerror="this.style.display='none'"
+              >
+            `
+            : ""
+          }
+
+          <div class="team-name">
+            ${escapeHTML(awayName)}
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="datetime">
+
+        📅 ${escapeHTML(dateTime.date)}
+        <br>
+
+        🕐 <strong>
+          ${escapeHTML(dateTime.time)}
+        </strong>
+
+      </div>
+
+
+      ${getTV(match)}
+
+    </div>
+  `;
+}
+
+
+function getDateKey(match) {
+
+  const value = getDate(match);
+
+  if (!value) {
+    return "";
+  }
+
+  const date = new Date(value);
+
+  if (isNaN(date.getTime())) {
+    return "";
+  }
+
+  return date.toISOString().slice(0, 10);
+}
+
+
+function getDayLabel(dateKey) {
+
+  if (!dateKey) {
+    return "Autres matchs";
+  }
+
+  const date = new Date(dateKey + "T00:00:00");
+
+  return date.toLocaleDateString("fr-FR", {
+    weekday: "long",
+    day: "2-digit",
+    month: "long",
+    year: "numeric"
+  });
+}
+
+
+function renderSection(title, matches) {
+
+  if (!matches.length) {
+    return "";
+  }
+
+  return `
+
+    <div class="section">
+
+      <div class="section-title">
+        ${title}
+      </div>
+
+      ${matches.map(createMatchCard).join("")}
+
+    </div>
+  `;
+}
+
+
+async function loadMatches() {
+
+  try {
+
+    const response = await fetch(
+      "matches.json?t=" + Date.now(),
+      {
+        cache: "no-store"
+      }
+    );
+
+
+    if (!response.ok) {
+      throw new Error(
+        "matches.json introuvable"
+      );
+    }
+
+
+    const data =
+      await response.json();
+
+
+    let matches = [];
+
+
+    if (Array.isArray(data)) {
+
+      matches = data;
+
+    } else if (Array.isArray(data.matches)) {
+
+      matches = data.matches;
+
+    } else if (Array.isArray(data.response)) {
+
+      matches = data.response;
+    }
+
+
+    statusBox.textContent =
+      `${matches.length} match${matches.length !== 1 ? "s" : ""} disponible${matches.length !== 1 ? "s" : ""}`;
+
+
+    if (!matches.length) {
+
+      content.innerHTML = `
+        <div class="empty">
+          Aucun match disponible pour le moment.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    const live = [];
+    const finished = [];
+    const upcoming = [];
+
+
+    matches.forEach(match => {
+
+      const type =
+        getMatchStatus(match);
+
+
+      if (type === "live") {
+
+        live.push(match);
+
+      } else if (type === "finished") {
+
+        finished.push(match);
+
+      } else {
+
+        upcoming.push(match);
+      }
+
+    });
+
+
+    /*
+      Tri des matchs à venir par date.
+    */
+
+    upcoming.sort(
+      (a, b) =>
+        new Date(getDate(a)) -
+        new Date(getDate(b))
+    );
+
+
+    /*
+      Tri des matchs terminés par date.
+    */
+
+    finished.sort(
+      (a, b) =>
+        new Date(getDate(b)) -
+        new Date(getDate(a))
+    );
+
+
+    /*
+      Matchs en direct.
+    */
+
+    let html = "";
+
+    html += renderSection(
+      "🔴 EN DIRECT",
+      live
+    );
+
+
+    /*
+      Matchs à venir groupés par jour.
+    */
+
+    const upcomingDays = {};
+
+    upcoming.forEach(match => {
+
+      const key =
+        getDateKey(match);
+
+      if (!upcomingDays[key]) {
+        upcomingDays[key] = [];
+      }
+
+      upcomingDays[key].push(match);
+
+    });
+
+
+    Object.keys(upcomingDays)
+      .sort()
+      .forEach(key => {
+
+        html += renderSection(
+          `🕐 À VENIR — ${getDayLabel(key)}`,
+          upcomingDays[key]
+        );
+
+      });
+
+
+    /*
+      Matchs terminés.
+    */
+
+    html += renderSection(
+      "✅ TERMINÉS",
+      finished
+    );
+
+
+    if (!html) {
+
+      html = `
+        <div class="empty">
+          Aucun match à afficher.
+        </div>
+      `;
+    }
+
+
+    content.innerHTML = html;
+
+
+  } catch (error) {
+
+    console.error(error);
+
+    statusBox.textContent =
+      "Erreur de chargement";
+
+    content.innerHTML = `
+
+      <div class="error">
+
+        ❌ Impossible de charger les matchs.
+
+        <br><br>
+
+        Vérifie que
+        <strong>matches.json</strong>
+        est bien présent dans le dépôt.
+
+      </div>
+
+    `;
+  }
+}
+
+
+/*
+  Chargement initial.
+*/
+
+loadMatches();
+
+
+/*
+  Actualisation toutes les 5 minutes.
+*/
+
+setInterval(
+  loadMatches,
+  300000
+);
 
 </script>
 
