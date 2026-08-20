@@ -1,147 +1,396 @@
-name: Football Live
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="300">
+  <title>Football Live</title>
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-permissions:
-  contents: write
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: white;
+    }
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+    header {
+      background: #0d1b2a;
+      padding: 20px 15px;
+      text-align: center;
+      border-bottom: 1px solid #1d3557;
+    }
 
-    steps:
-      - name: Récupérer le dépôt
-        uses: actions/checkout@v4
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
 
-      - name: Installer Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+    header p {
+      margin: 8px 0 0;
+      color: #9fb3c8;
+    }
 
-      - name: Installer requests
-        run: |
-          python -m pip install requests
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 15px;
+    }
 
-      - name: Récupérer les matchs depuis API-KEY
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_KEY }}
-        run: |
-          python - <<'PY'
-          import os
-          import json
-          import requests
-          from datetime import datetime, timezone
+    .status {
+      background: #102a43;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #b9d6f2;
+    }
 
-          api_key = os.environ.get("API_FOOTBALL_KEY")
+    .match {
+      background: #0d1b2a;
+      border: 1px solid #1d3557;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 15px;
+    }
 
-          if not api_key:
-              raise SystemExit("Erreur : le secret API_FOOTBALL_KEY est absent.")
+    .competition {
+      color: #72a7d9;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
 
-          url = "https://v3.football.api-sports.io/fixtures"
-          headers = {
-              "x-apisports-key": api_key
-          }
-          params = {
-              "live": "all"
-          }
+    .teams {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
 
-          response = requests.get(
-              url,
-              headers=headers,
-              params=params,
-              timeout=30
-          )
+    .team {
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-          response.raise_for_status()
+    .crest {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 7px;
+    }
 
-          data = response.json()
+    .score {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-          if data.get("errors"):
-              raise SystemExit(
-                  "Erreur API-Football : "
-                  + json.dumps(data["errors"], ensure_ascii=False)
-              )
+    .date {
+      color: #9fb3c8;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
 
-          fixtures = data.get("response", [])
+    .live {
+      display: inline-block;
+      background: #d90429;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
 
-          matches = []
+    .tv {
+      margin-top: 15px;
+      padding-top: 12px;
+      border-top: 1px solid #1d3557;
+    }
 
-          for fixture in fixtures:
-              matches.append({
-                  "fixture": {
-                      "id": fixture.get("fixture", {}).get("id"),
-                      "date": fixture.get("fixture", {}).get("date"),
-                      "status": {
-                          "long": fixture.get("fixture", {}).get("status", {}).get("long"),
-                          "short": fixture.get("fixture", {}).get("status", {}).get("short"),
-                          "elapsed": fixture.get("fixture", {}).get("status", {}).get("elapsed")
-                      }
-                  },
-                  "league": {
-                      "id": fixture.get("league", {}).get("id"),
-                      "name": fixture.get("league", {}).get("name"),
-                      "country": fixture.get("league", {}).get("country"),
-                      "logo": fixture.get("league", {}).get("logo")
-                  },
-                  "teams": {
-                      "home": {
-                          "id": fixture.get("teams", {}).get("home", {}).get("id"),
-                          "name": fixture.get("teams", {}).get("home", {}).get("name"),
-                          "logo": fixture.get("teams", {}).get("home", {}).get("logo")
-                      },
-                      "away": {
-                          "id": fixture.get("teams", {}).get("away", {}).get("id"),
-                          "name": fixture.get("teams", {}).get("away", {}).get("name"),
-                          "logo": fixture.get("teams", {}).get("away", {}).get("logo")
-                      }
-                  },
-                  "goals": {
-                      "home": fixture.get("goals", {}).get("home"),
-                      "away": fixture.get("goals", {}).get("away")
-                  }
-              })
+    .tv-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
 
-          output = {
-              "lastUpdated": datetime.now(timezone.utc).isoformat(),
-              "count": len(matches),
-              "matches": matches
-          }
+    .channel {
+      display: inline-block;
+      background: #172a3a;
+      padding: 7px 10px;
+      border-radius: 8px;
+      margin: 3px;
+      color: #dcecff;
+      font-size: 13px;
+    }
 
-          with open("matches.json", "w", encoding="utf-8") as f:
-              json.dump(
-                  output,
-                  f,
-                  ensure_ascii=False,
-                  indent=2
-              )
+    .error {
+      background: #42151c;
+      color: #ffb3bd;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
 
-          print(f"OK : {len(matches)} matchs récupérés.")
-          PY
+    footer {
+      text-align: center;
+      color: #71869b;
+      padding: 25px 10px;
+      font-size: 13px;
+    }
+  </style>
+</head>
 
-      - name: Vérifier matches.json
-        run: |
-          if [ ! -f matches.json ]; then
-            echo "Erreur : matches.json n'a pas été créé."
-            exit 1
-          fi
+<body>
 
-          python -m json.tool matches.json > /dev/null
+<header>
+  <h1>⚽ Football Live</h1>
+  <p>Matchs, scores et diffusion TV en direct</p>
+</header>
 
-          echo "matches.json est bien présent et valide."
+<div class="container">
 
-      - name: Enregistrer les changements
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+  <div id="status" class="status">
+    Chargement des matchs...
+  </div>
 
-          git add matches.json
+  <div id="matches"></div>
 
-          if git diff --cached --quiet; then
-            echo "Aucun changement à enregistrer."
-          else
-            git commit -m "chore: mise à jour des matchs"
-            git push origin main
-          fi
+</div>
+
+<footer>
+  Football Live • Données actualisées automatiquement
+</footer>
+
+<script>
+  const matchesContainer = document.getElementById("matches");
+  const statusContainer = document.getElementById("status");
+
+  function escapeHTML(value) {
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function formatDate(date) {
+    if (!date) return "Date inconnue";
+
+    const d = new Date(date);
+
+    if (isNaN(d.getTime())) {
+      return escapeHTML(date);
+    }
+
+    return d.toLocaleString("fr-FR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+  }
+
+  function getTeamName(team) {
+    if (!team) return "Équipe inconnue";
+    return team.shortName || team.name || "Équipe inconnue";
+  }
+
+  function getScore(match) {
+    const score = match.score || {};
+
+    const fullTime = score.fullTime || {};
+
+    const home =
+      fullTime.home !== null &&
+      fullTime.home !== undefined
+        ? fullTime.home
+        : "-";
+
+    const away =
+      fullTime.away !== null &&
+      fullTime.away !== undefined
+        ? fullTime.away
+        : "-";
+
+    return `${home} - ${away}`;
+  }
+
+  function getStatus(match) {
+    const status = match.status || "";
+
+    if (
+      status === "IN_PLAY" ||
+      status === "LIVE" ||
+      status === "PAUSED"
+    ) {
+      return `<span class="live">🔴 EN DIRECT</span>`;
+    }
+
+    if (status === "FINISHED") {
+      return `<span class="live">FINI</span>`;
+    }
+
+    return "";
+  }
+
+  function getChannels(match) {
+    const channels = match.tvChannels;
+
+    if (!Array.isArray(channels) || channels.length === 0) {
+      return "";
+    }
+
+    const validChannels = channels.filter(channel =>
+      channel &&
+      channel.name
+    );
+
+    if (validChannels.length === 0) {
+      return "";
+    }
+
+    return `
+      <div class="tv">
+        <div class="tv-title">📺 Diffusion TV</div>
+        ${validChannels.map(channel => `
+          <span class="channel">
+            ${escapeHTML(channel.name)}
+          </span>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function renderMatches(data) {
+    let matches = [];
+
+    if (Array.isArray(data)) {
+      matches = data;
+    } else if (Array.isArray(data.matches)) {
+      matches = data.matches;
+    }
+
+    if (matches.length === 0) {
+      statusContainer.textContent = "Aucun match disponible.";
+      matchesContainer.innerHTML = "";
+      return;
+    }
+
+    statusContainer.textContent =
+      `${matches.length} match${matches.length > 1 ? "s" : ""} disponible${matches.length > 1 ? "s" : ""}`;
+
+    matchesContainer.innerHTML = matches.map(match => {
+
+      const home = match.homeTeam || {};
+      const away = match.awayTeam || {};
+      const competition = match.competition || {};
+
+      return `
+        <div class="match">
+
+          <div class="competition">
+            ${escapeHTML(
+              competition.name || "Compétition"
+            )}
+          </div>
+
+          <div class="teams">
+
+            <div class="team">
+              ${home.crest ? `
+                <img
+                  class="crest"
+                  src="${escapeHTML(home.crest)}"
+                  alt=""
+                  onerror="this.style.display='none'"
+                >
+              ` : ""}
+
+              ${escapeHTML(getTeamName(home))}
+            </div>
+
+            <div>
+              <div class="score">
+                ${escapeHTML(getScore(match))}
+              </div>
+
+              ${getStatus(match)}
+            </div>
+
+            <div class="team">
+              ${away.crest ? `
+                <img
+                  class="crest"
+                  src="${escapeHTML(away.crest)}"
+                  alt=""
+                  onerror="this.style.display='none'"
+                >
+              ` : ""}
+
+              ${escapeHTML(getTeamName(away))}
+            </div>
+
+          </div>
+
+          <div class="date">
+            🕒 ${formatDate(match.utcDate)}
+          </div>
+
+          ${getChannels(match)}
+
+        </div>
+      `;
+    }).join("");
+  }
+
+  async function loadMatches() {
+    try {
+
+      const response = await fetch(
+        "matches.json?t=" + Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          "Impossible de charger matches.json"
+        );
+      }
+
+      const data = await response.json();
+
+      renderMatches(data);
+
+    } catch (error) {
+
+      console.error(error);
+
+      statusContainer.textContent = "Erreur";
+
+      matchesContainer.innerHTML = `
+        <div class="error">
+          ❌ Impossible de charger les matchs.<br><br>
+          Vérifie que <strong>matches.json</strong>
+          est bien présent dans le dépôt.
+        </div>
+      `;
+    }
+  }
+
+  loadMatches();
+
+  // Actualisation de l'affichage toutes les 5 minutes
+  setInterval(loadMatches, 300000);
+</script>
+
+</body>
+  </html>
