@@ -1,0 +1,47 @@
+name: Football Live Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Vérifier matches.json
+        run: |
+          if [ ! -f matches.json ]; then
+            echo "Erreur : matches.json est introuvable."
+            exit 1
+          fi
+
+          echo "matches.json est bien présent."
+          python -m json.tool matches.json > /dev/null
+          echo "matches.json est un JSON valide."
+
+      - name: Préparer la mise à jour
+        run: |
+          echo "Football Live est prêt pour l'actualisation automatique."
+          echo "Aucune donnée fictive ne sera écrite dans matches.json."
+
+      - name: Enregistrer les changements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add matches.json
+
+          if git diff --cached --quiet; then
+            echo "Aucun changement à enregistrer."
+          else
+            git commit -m "chore: update football data"
+            git push
+          fi
