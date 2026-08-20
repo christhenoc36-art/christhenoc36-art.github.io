@@ -200,7 +200,96 @@ function ouvrirMatchs() {
   background:#07111f;
 ">
 
-  <div>
+  <div style="width:100%;max-width:500px;">
+
+    <div style="
+      font-size:70px;
+      margin-bottom:10px;
+    ">
+      ⚽
+    </div>
+
+    <h1 style="
+      font-size:38px;
+      margin:0 0 10px;
+    ">
+      Football Live
+    </h1>
+
+    <p style="
+      color:#a9c8e8;
+      font-size:17px;
+      margin:0 0 35px;
+    ">
+      Suivez tous les matchs en direct
+    </p>
+
+
+    <!-- MATCHS EN DIRECT -->
+    <button
+      type="button"
+      onclick="ouvrirCategorie('live')"
+      style="
+        width:100%;
+        padding:18px;
+        margin:8px 0;
+        border:0;
+        border-radius:15px;
+        background:#b71c1c;
+        color:white;
+        font-size:19px;
+        font-weight:bold;
+        cursor:pointer;
+      "
+    >
+      🔴 Matchs en direct
+    </button>
+
+
+    <!-- MATCHS À VENIR -->
+    <button
+      type="button"
+      onclick="ouvrirCategorie('upcoming')"
+      style="
+        width:100%;
+        padding:18px;
+        margin:8px 0;
+        border:0;
+        border-radius:15px;
+        background:#1769aa;
+        color:white;
+        font-size:19px;
+        font-weight:bold;
+        cursor:pointer;
+      "
+    >
+      🕐 Matchs à venir
+    </button>
+
+
+    <!-- MATCHS TERMINÉS -->
+    <button
+      type="button"
+      onclick="ouvrirCategorie('finished')"
+      style="
+        width:100%;
+        padding:18px;
+        margin:8px 0;
+        border:0;
+        border-radius:15px;
+        background:#455a64;
+        color:white;
+        font-size:19px;
+        font-weight:bold;
+        cursor:pointer;
+      "
+    >
+      ✅ Matchs terminés
+    </button>
+
+  </div>
+
+</div>
 
     <div style="
       font-size:70px;
