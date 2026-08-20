@@ -1,261 +1,174 @@
 {
+  "lastUpdated": "2026-08-20T10:32:04.301384+00:00",
+  "count": 6,
   "matches": [
     {
-      "area": {
-        "id": 2220,
-        "name": "South America",
-        "code": "SAM",
-        "flag": "https://crests.football-data.org/CLI.svg"
+      "fixture": {
+        "id": 1534832,
+        "date": "2026-08-20T10:00:00+00:00",
+        "status": "1H",
+        "elapsed": 29
       },
-      "competition": {
-        "id": 2152,
-        "name": "Copa Libertadores",
-        "code": "CLI",
-        "type": "CUP",
-        "emblem": "https://crests.football-data.org/CLI.svg"
+      "league": {
+        "id": 388,
+        "name": "1. Division",
+        "country": "Kazakhstan",
+        "logo": "https://media.api-sports.io/football/leagues/388.png"
       },
-      "season": {
-        "id": 2466,
-        "startDate": "2026-02-04",
-        "endDate": "2026-11-28",
-        "currentMatchday": 6,
-        "winner": null
+      "home": {
+        "id": 27634,
+        "name": "Tobol 2",
+        "logo": "https://media.api-sports.io/football/teams/27634.png"
       },
-      "id": 564465,
-      "utcDate": "2026-08-19T00:30:00Z",
-      "status": "FINISHED",
-      "matchday": 1,
-      "stage": "PLAY_OFFS",
-      "group": null,
-      "lastUpdated": "2026-08-19T04:22:12Z",
-      "tvChannels": [
-  {
-    "name": "Canal+ Sport",
-    "url": ""
-  },
-  {
-    "name": "beIN SPORTS",
-    "url": ""
-  },
-  {
-    "name": "SuperSport",
-    "url": ""
-  }
-],
-"homeTeam": {
-        "id": 6993,
-        "name": "CD Universidad Católica",
-        "shortName": "Univ Católica",
-        "tla": "CAT",
-        "crest": "https://crests.football-data.org/6993.png"
+      "away": {
+        "id": 18805,
+        "name": "Khan Tengri",
+        "logo": "https://media.api-sports.io/football/teams/18805.png"
       },
-      "awayTeam": {
-        "id": 2051,
-        "name": "Estudiantes de La Plata",
-        "shortName": "Estudiantes LP",
-        "tla": "EST",
-        "crest": "https://crests.football-data.org/2051.png"
-      },
-      "score": {
-        "winner": "AWAY_TEAM",
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": 0,
-          "away": 3
-        },
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
+      "goals": {
+        "home": 0,
+        "away": 3
+      }
     },
     {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
+      "fixture": {
+        "id": 1578042,
+        "date": "2026-08-20T10:00:00+00:00",
+        "status": "1H",
+        "elapsed": 32
       },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
+      "league": {
+        "id": 1140,
+        "name": "AFC Women's Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1140.png"
       },
-      "season": {
-        "id": 2518,
-        "startDate": "2026-08-16",
-        "endDate": "2027-05-30",
-        "currentMatchday": 1,
-        "winner": null
+      "home": {
+        "id": 26444,
+        "name": "Phnom Penh W",
+        "logo": "https://media.api-sports.io/football/teams/26444.png"
       },
-      "id": 564628,
-      "utcDate": "2026-08-19T19:00:00Z",
-      "status": "LIVE",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-08-19T20:01:15Z",
-      "homeTeam": {
-        "id": 78,
-        "name": "Club Atlético de Madrid",
-        "shortName": "Atleti",
-        "tla": "ATL",
-        "crest": "https://crests.football-data.org/78.png"
+      "away": {
+        "id": 24898,
+        "name": "Kaya W",
+        "logo": "https://media.api-sports.io/football/teams/24898.png"
       },
-      "awayTeam": {
-        "id": 84,
-        "name": "Málaga CF",
-        "shortName": "Málaga",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/84.png"
-      },
-      "score": {
-        "winner": "DRAW",
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": 0,
-          "away": 0
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 206205,
-          "name": "Adrián Cordero Vega",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
     },
     {
-      "area": {
-        "id": 2220,
-        "name": "South America",
-        "code": "SAM",
-        "flag": "https://crests.football-data.org/CLI.svg"
+      "fixture": {
+        "id": 1611333,
+        "date": "2026-08-22T09:00:00+00:00",
+        "status": "1H",
+        "elapsed": 32
       },
-      "competition": {
-        "id": 2152,
-        "name": "Copa Libertadores",
-        "code": "CLI",
-        "type": "CUP",
-        "emblem": "https://crests.football-data.org/CLI.svg"
+      "league": {
+        "id": 1031,
+        "name": "Premier League",
+        "country": "Bhutan",
+        "logo": "https://media.api-sports.io/football/leagues/1031.png"
       },
-      "season": {
-        "id": 2466,
-        "startDate": "2026-02-04",
-        "endDate": "2026-11-28",
-        "currentMatchday": 6,
-        "winner": null
+      "home": {
+        "id": 9426,
+        "name": "Paro",
+        "logo": "https://media.api-sports.io/football/teams/9426.png"
       },
-      "id": 564467,
-      "utcDate": "2026-08-19T22:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 1,
-      "stage": "PLAY_OFFS",
-      "group": null,
-      "lastUpdated": "2026-08-18T10:25:17Z",
-      "homeTeam": {
-        "id": 7912,
-        "name": "CD Coquimbo Unido",
-        "shortName": "Coquimbo Unido",
-        "tla": "COQ",
-        "crest": "https://crests.football-data.org/7912.png"
+      "away": {
+        "id": 19005,
+        "name": "RTC",
+        "logo": "https://media.api-sports.io/football/teams/19005.png"
       },
-      "awayTeam": {
-        "id": 7580,
-        "name": "CA Platense",
-        "shortName": "Platense",
-        "tla": "PLA",
-        "crest": "https://crests.football-data.org/7580.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
+      "goals": {
+        "home": 1,
+        "away": 0
+      }
     },
     {
-      "area": {
-        "id": 2220,
-        "name": "South America",
-        "code": "SAM",
-        "flag": "https://crests.football-data.org/CLI.svg"
+      "fixture": {
+        "id": 1519617,
+        "date": "2026-08-20T09:30:00+00:00",
+        "status": "2H",
+        "elapsed": 46
       },
-      "competition": {
-        "id": 2152,
-        "name": "Copa Libertadores",
-        "code": "CLI",
-        "type": "CUP",
-        "emblem": "https://crests.football-data.org/CLI.svg"
+      "league": {
+        "id": 328,
+        "name": "Esiliiga A",
+        "country": "Estonia",
+        "logo": "https://media.api-sports.io/football/leagues/328.png"
       },
-      "season": {
-        "id": 2466,
-        "startDate": "2026-02-04",
-        "endDate": "2026-11-28",
-        "currentMatchday": 6,
-        "winner": null
+      "home": {
+        "id": 3516,
+        "name": "Elva",
+        "logo": "https://media.api-sports.io/football/teams/3516.png"
       },
-      "id": 564466,
-      "utcDate": "2026-08-19T22:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 1,
-      "stage": "PLAY_OFFS",
-      "group": null,
-      "lastUpdated": "2026-08-18T10:25:17Z",
-      "homeTeam": {
-        "id": 9373,
-        "name": "Club Cerro Porteño",
-        "shortName": "Cerro Porteño",
-        "tla": "CCP",
-        "crest": "https://crests.football-data.org/9373.png"
+      "away": {
+        "id": 3527,
+        "name": "Maardu",
+        "logo": "https://media.api-sports.io/football/teams/3527.png"
       },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1627684,
+        "date": "2026-08-20T09:30:00+00:00",
+        "status": "HT",
+        "elapsed": 45
       },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
+      "league": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
       },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      "home": {
+        "id": 22001,
+        "name": "Aryan",
+        "logo": "https://media.api-sports.io/football/teams/22001.png"
       },
-      "referees": []
+      "away": {
+        "id": 24102,
+        "name": "Measurers",
+        "logo": "https://media.api-sports.io/football/teams/24102.png"
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "fixture": {
+        "id": 1627685,
+        "date": "2026-08-20T09:30:00+00:00",
+        "status": "HT",
+        "elapsed": 45
+      },
+      "league": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "home": {
+        "id": 21215,
+        "name": "Rainbow",
+        "logo": "https://media.api-sports.io/football/teams/21215.png"
+      },
+      "away": {
+        "id": 24101,
+        "name": "Kalighat Club",
+        "logo": "https://media.api-sports.io/football/teams/24101.png"
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      }
     }
   ]
 }
