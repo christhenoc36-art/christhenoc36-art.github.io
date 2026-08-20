@@ -1,1 +1,741 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football Live</title>
 
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#07111f;
+  color:#fff;
+}
+header{
+  background:linear-gradient(135deg,#1165ff,#063a9e);
+  text-align:center;
+  padding:28px 15px;
+}
+header h1{margin:0;font-size:42px}
+header p{font-size:20px;margin:12px 0 0}
+
+nav{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding:18px;
+  background:#0d1a2b;
+}
+nav button{
+  border:0;
+  border-radius:30px;
+  padding:14px 22px;
+  background:#172b45;
+  color:white;
+  font-size:17px;
+  white-space:nowrap;
+}
+nav button.active{background:#1265ff}
+
+#message{
+  text-align:center;
+  padding:25px 15px;
+  color:#b9cae5;
+  font-size:18px;
+}
+
+#matches{
+  max-width:700px;
+  margin:auto;
+  padding:10px 15px 40px;
+}
+
+.match{
+  background:#10223a;
+  border:1px solid #203b5d;
+  border-radius:22px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.competition{
+  color:#8fb4e8;
+  font-size:16px;
+  margin-bottom:18px;
+}
+
+.teams{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.team{
+  width:35%;
+  text-align:center;
+  font-weight:bold;
+  font-size:17px;
+}
+
+.team img{
+  width:65px;
+  height:65px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 8px;
+}
+
+.center{
+  width:30%;
+  text-align:center;
+}
+
+.score{
+  font-size:30px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.badge{
+  display:inline-block;
+  padding:9px 13px;
+  border-radius:25px;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.live{
+  background:#d71920;
+}
+
+.finished{
+  background:#239447;
+}
+
+.upcoming{
+  background:#52657d;
+}
+
+.date{
+  text-align:center;
+  margin:18px 0 12px;
+  color:#c7d8ef;
+  font-size:17px;
+}
+
+.tv{
+  border-top:1px solid #29415f;
+  margin-top:18px;
+  padding-top:15px;
+  color:#ffd84d;
+  font-size:17px;
+  line-height:1.5;
+}
+
+.watch{
+  width:100%;
+  border:0;
+  margin-top:18px;
+  padding:15px;
+  border-radius:14px;
+  background:#1265ff;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.watch:active{
+  transform:scale(.98);
+}
+
+#playerBox{
+  display:none;
+  max-width:700px;
+  margin:20px auto;
+  padding:15px;
+}
+
+#playerTitle{
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+video{
+  width:100%;
+  background:#000;
+  border-radius:15px;
+}
+
+.notice{
+  color:#ffcf45;
+  text-align:center;
+  margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>⚽ Football Live</h1>
+  <p>Matchs en direct, résultats et programmes TV</p>
+</header>
+
+<nav>
+  <button class="active" onclick="setFilter('all',this)">Tous</button>
+  <button onclick="setFilter('live',this)">🔴 En direct</button>
+  <button onclick="setFilter('upcoming',this)">🕐 À venir</button>
+  <button onclick="setFilter('finished',this)">✅ Terminés</button>
+</nav>
+
+<div id="message">⏳ Chargement des matchs...</div>
+
+<div id="matches"></div>
+
+<div id="playerBox">
+  <div id="playerTitle"></div>
+  <video id="player" controls playsinline></video>
+</div>
+
+<script>
+
+/* =====================================================
+   CONFIGURATION
+   ===================================================== */
+
+/*
+  Mets ta clé Football API entre les guillemets.
+
+  Exemple :
+  const FOOTBALL_API_KEY = "TA_CLE_ICI";
+
+  ATTENTION :
+  Une clé placée dans un site GitHub Pages est visible
+  par les visiteurs. Pour un vrai site public, il vaut
+  mieux utiliser un serveur/proxy.
+*/
+const FOOTBALL_API_KEY = "TA_CLE_ICI";
+
+const API_URL =
+  "https://v3.football.api-sports.io/fixtures";
+
+/*
+  Le fichier matches.json reste le secours principal.
+*/
+const MATCHES_FILE = "matches.json";
+
+let allMatches = [];
+let currentFilter = "all";
+
+/* =====================================================
+   OUTILS
+   ===================================================== */
+
+function escapeHTML(value){
+  return String(value ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+function getTeam(match, side){
+  return match?.teams?.[side] ||
+         match?.[side + "Team"] ||
+         {};
+}
+
+function getCompetition(match){
+  if(match?.competition?.name){
+    return match.competition.name;
+  }
+
+  if(match?.league?.name){
+    return match.league.name;
+  }
+
+  if(typeof match?.competition === "string"){
+    return match.competition;
+  }
+
+  return "Compétition";
+}
+
+function getDate(match){
+
+  return match?.fixture?.date ||
+         match?.utcDate ||
+         match?.date ||
+         null;
+}
+
+function getStatus(match){
+
+  const status =
+    match?.fixture?.status?.short ||
+    match?.status ||
+    "";
+
+  const s = String(status).toUpperCase();
+
+  if([
+    "1H","2H","ET","P","LIVE","IN_PLAY",
+    "HT","BT","INT"
+  ].includes(s)){
+    return "live";
+  }
+
+  if([
+    "FT","AET","PEN","FINISHED"
+  ].includes(s)){
+    return "finished";
+  }
+
+  return "upcoming";
+}
+
+function getElapsed(match){
+
+  const elapsed =
+    match?.fixture?.status?.elapsed ??
+    match?.elapsed ??
+    null;
+
+  if(elapsed !== null && elapsed !== undefined){
+    return `${elapsed}'`;
+  }
+
+  return "";
+}
+
+function formatDateTime(dateValue){
+
+  if(!dateValue){
+    return "Date inconnue";
+  }
+
+  const date = new Date(dateValue);
+
+  if(Number.isNaN(date.getTime())){
+    return "Date inconnue";
+  }
+
+  return new Intl.DateTimeFormat("fr-FR",{
+    dateStyle:"full",
+    timeStyle:"short"
+  }).format(date);
+}
+
+function getScore(match){
+
+  if(match?.score?.fullTime){
+    const h = match.score.fullTime.home;
+    const a = match.score.fullTime.away;
+
+    if(h !== null && h !== undefined &&
+       a !== null && a !== undefined){
+      return `${h} - ${a}`;
+    }
+  }
+
+  if(match?.goals){
+    const h = match.goals.home;
+    const a = match.goals.away;
+
+    if(h !== null && h !== undefined &&
+       a !== null && a !== undefined){
+      return `${h} - ${a}`;
+    }
+  }
+
+  return "–";
+}
+
+function getLogo(team){
+  return team?.logo ||
+         team?.crest ||
+         "";
+}
+
+function getChannels(match){
+
+  const channels =
+    match?.channels ||
+    match?.tv ||
+    match?.broadcast ||
+    match?.broadcasts ||
+    [];
+
+  if(Array.isArray(channels) && channels.length){
+    return channels.join(" • ");
+  }
+
+  if(typeof channels === "string" && channels.trim()){
+    return channels;
+  }
+
+  return "Canal+ Sport • beIN SPORTS • SuperSport";
+}
+
+/* =====================================================
+   CARTE D'UN MATCH
+   ===================================================== */
+
+function createMatchCard(match){
+
+  const home = getTeam(match,"home");
+  const away = getTeam(match,"away");
+
+  const homeName =
+    home.name ||
+    home.shortName ||
+    "Équipe inconnue";
+
+  const awayName =
+    away.name ||
+    away.shortName ||
+    "Équipe inconnue";
+
+  const homeLogo = getLogo(home);
+  const awayLogo = getLogo(away);
+
+  const status = getStatus(match);
+  const elapsed = getElapsed(match);
+  const date = getDate(match);
+
+  let badge = "";
+
+  if(status === "live"){
+
+    badge = `
+      <span class="badge live">
+        🔴 EN DIRECT ${elapsed}
+      </span>
+    `;
+
+  }else if(status === "finished"){
+
+    badge = `
+      <span class="badge finished">
+        ✅ TERMINÉ
+      </span>
+    `;
+
+  }else{
+
+    badge = `
+      <span class="badge upcoming">
+        🕐 À VENIR
+      </span>
+    `;
+  }
+
+  const score = getScore(match);
+  const competition = getCompetition(match);
+  const channels = getChannels(match);
+
+  const matchId =
+    match?.id ||
+    match?.fixture?.id ||
+    Math.random().toString(36).slice(2);
+
+  const logosHome = homeLogo
+    ? `<img src="${escapeHTML(homeLogo)}"
+            alt="${escapeHTML(homeName)}">`
+    : "⚽";
+
+  const logosAway = awayLogo
+    ? `<img src="${escapeHTML(awayLogo)}"
+            alt="${escapeHTML(awayName)}">`
+    : "⚽";
+
+  return `
+    <article class="match"
+      data-status="${status}">
+
+      <div class="competition">
+        🏆 ${escapeHTML(competition)}
+      </div>
+
+      <div class="teams">
+
+        <div class="team">
+          ${logosHome}
+          ${escapeHTML(homeName)}
+        </div>
+
+        <div class="center">
+          <div class="score">
+            ${escapeHTML(score)}
+          </div>
+
+          ${badge}
+        </div>
+
+        <div class="team">
+          ${logosAway}
+          ${escapeHTML(awayName)}
+        </div>
+
+      </div>
+
+      <div class="date">
+        📅 ${escapeHTML(formatDateTime(date))}
+      </div>
+
+      <div class="tv">
+        📺 Diffusion TV : ${escapeHTML(channels)}
+      </div>
+
+      <button class="watch"
+        onclick='regarderMatch(${JSON.stringify({
+          id:matchId,
+          homeTeam:homeName,
+          awayTeam:awayName,
+          streamUrl:match?.streamUrl || ""
+        }).replace(/</g,"\\u003c")})'>
+        ▶️ Regarder le match
+      </button>
+
+    </article>
+  `;
+}
+
+/* =====================================================
+   AFFICHAGE
+   ===================================================== */
+
+function renderMatches(){
+
+  const container =
+    document.getElementById("matches");
+
+  let filtered = allMatches;
+
+  if(currentFilter !== "all"){
+    filtered = allMatches.filter(
+      match => getStatus(match) === currentFilter
+    );
+  }
+
+  if(!filtered.length){
+
+    container.innerHTML = `
+      <div class="notice">
+        Aucun match dans cette catégorie.
+      </div>
+    `;
+
+    return;
+  }
+
+  container.innerHTML =
+    filtered.map(createMatchCard).join("");
+}
+
+/* =====================================================
+   FILTRES
+   ===================================================== */
+
+function setFilter(filter,button){
+
+  currentFilter = filter;
+
+  document.querySelectorAll("nav button")
+    .forEach(btn => btn.classList.remove("active"));
+
+  button.classList.add("active");
+
+  renderMatches();
+}
+
+/* =====================================================
+   MATCHES.JSON
+   ===================================================== */
+
+async function loadMatchesJSON(){
+
+  const response =
+    await fetch(
+      MATCHES_FILE + "?t=" + Date.now()
+    );
+
+  if(!response.ok){
+    throw new Error("matches.json introuvable");
+  }
+
+  const data = await response.json();
+
+  if(Array.isArray(data)){
+    return data;
+  }
+
+  if(Array.isArray(data.matches)){
+    return data.matches;
+  }
+
+  return [];
+}
+
+/* =====================================================
+   FOOTBALL API
+   ===================================================== */
+
+async function loadFootballAPI(){
+
+  if(
+    !FOOTBALL_API_KEY ||
+    FOOTBALL_API_KEY === "TA_CLE_ICI"
+  ){
+    throw new Error("Clé API non configurée");
+  }
+
+  const today =
+    new Date().toISOString().slice(0,10);
+
+  const response = await fetch(
+    API_URL + "?date=" + today,
+    {
+      headers:{
+        "x-apisports-key":FOOTBALL_API_KEY
+      }
+    }
+  );
+
+  if(!response.ok){
+    throw new Error(
+      "Erreur API : " + response.status
+    );
+  }
+
+  const data = await response.json();
+
+  if(!Array.isArray(data.response)){
+    throw new Error("Réponse API invalide");
+  }
+
+  return data.response;
+}
+
+/* =====================================================
+   CHARGEMENT
+   ===================================================== */
+
+async function loadMatches(){
+
+  const message =
+    document.getElementById("message");
+
+  message.textContent =
+    "⏳ Chargement des matchs...";
+
+  try{
+
+    /*
+      On essaie d'abord Football API.
+    */
+    allMatches = await loadFootballAPI();
+
+    message.textContent =
+      "✅ Matchs chargés depuis Football API";
+
+  }catch(error){
+
+    /*
+      Si l'API ne fonctionne pas,
+      matches.json prend le relais.
+    */
+
+    try{
+
+      allMatches = await loadMatchesJSON();
+
+      message.textContent =
+        "⚠️ API indisponible — matchs.json utilisé";
+
+    }catch(jsonError){
+
+      allMatches = [];
+
+      message.textContent =
+        "❌ Impossible de charger les matchs.";
+
+      console.error(error);
+      console.error(jsonError);
+
+      return;
+    }
+  }
+
+  renderMatches();
+}
+
+/* =====================================================
+   LECTEUR
+   ===================================================== */
+
+function regarderMatch(match){
+
+  const box =
+    document.getElementById("playerBox");
+
+  const player =
+    document.getElementById("player");
+
+  const title =
+    document.getElementById("playerTitle");
+
+  box.style.display = "block";
+
+  title.textContent =
+    "⚽ " +
+    match.homeTeam +
+    " - " +
+    match.awayTeam;
+
+  if(!match.streamUrl){
+
+    player.removeAttribute("src");
+
+    alert(
+      "La diffusion officielle de ce match " +
+      "n'est pas encore disponible."
+    );
+
+    box.scrollIntoView({
+      behavior:"smooth"
+    });
+
+    return;
+  }
+
+  player.src = match.streamUrl;
+  player.load();
+
+  player.play().catch(()=>{});
+
+  box.scrollIntoView({
+    behavior:"smooth"
+  });
+}
+
+/* =====================================================
+   ACTUALISATION
+   ===================================================== */
+
+loadMatches();
+
+/*
+  Actualise les données toutes les 60 secondes.
+*/
+setInterval(loadMatches,60000);
+
+</script>
+
+</body>
+  </html>
