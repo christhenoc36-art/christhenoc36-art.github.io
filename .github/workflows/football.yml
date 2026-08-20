@@ -1,4 +1,4 @@
-name: Football Live Update
+dename: Football Live Update
 
 on:
   workflow_dispatch:
@@ -150,30 +150,4 @@ jobs:
     print(f"OK : {len(matches)} matchs récupérés pour {today}")
     PY
 
-- name: Vérifier matches.json
-  run: |
-    if [ ! -f matches.json ]; then
-      echo "Erreur : matches.json n'a pas été créé."
-      exit 1
-    fi
 
-    python -m json.tool matches.json > /dev/null
-    echo "matches.json est bien présent et valide." 
-- name: Préparer la mise à jour
-        run: |
-           echo "Football Live est prêt pour l'actualisation automatique."
-          echo "Aucune donnée fictive ne sera écrite dans matches.json."
-
-- name: Enregistrer les changements
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add matches.json
-
-          if git diff --cached --quiet; then
-            echo "Aucun changement à enregistrer."
-          else
-            git commit -m "chore: update football data"
-            git push
-          fi
