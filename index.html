@@ -183,11 +183,81 @@ footer {
 }
 </style>
 </head>
+
 <script>
-function ouvrirMatchs() {
+
+let categorieSelectionnee = null;
+
+function ouvrirCategorie(categorie) {
+
+  categorieSelectionnee = categorie;
+
+  // Cacher la page d'accueil
   document.getElementById("homePage").style.display = "none";
+
+  // Afficher les matchs
+  afficherCategorie();
+
+  // Réessayer après le chargement des matchs
+  setTimeout(afficherCategorie, 300);
+  setTimeout(afficherCategorie, 1000);
 }
-</script>
+
+
+function afficherCategorie() {
+
+  if (!categorieSelectionnee) {
+    return;
+  }
+
+  const matchs =
+    document.querySelectorAll(".match");
+
+  matchs.forEach(match => {
+
+    let afficher = false;
+
+    if (
+      categorieSelectionnee === "live" &&
+      match.querySelector(".badge.live")
+    ) {
+      afficher = true;
+    }
+
+    if (
+      categorieSelectionnee === "upcoming" &&
+      match.querySelector(".badge.upcoming")
+    ) {
+      afficher = true;
+    }
+
+    if (
+      categorieSelectionnee === "finished" &&
+      match.querySelector(".badge.finished")
+    ) {
+      afficher = true;
+    }
+
+    match.style.display =
+      afficher ? "" : "none";
+  });
+
+
+  // Cacher les sections qui n'ont aucun match visible
+  document.querySelectorAll(".section").forEach(section => {
+
+    const matchsVisibles =
+      section.querySelectorAll(
+        ".match:not([style*='display: none'])"
+      );
+
+    section.style.display =
+      matchsVisibles.length > 0 ? "" : "none";
+  });
+
+}
+
+  </script>
 <body>
 <!-- PAGE D'ACCUEIL -->
 <div id="homePage" style="
