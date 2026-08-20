@@ -1,148 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="300">
-  <title>Football Live</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="300">
+<title>Football Live</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #07111f;
-      color: white;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
 
-    header {
-      background: #0d1b2a;
-      padding: 20px 15px;
-      text-align: center;
-      border-bottom: 1px solid #1d3557;
-    }
+header {
+  background: #0b1d33;
+  padding: 22px 15px;
+  text-align: center;
+  border-bottom: 2px solid #163b61;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
 
-    header p {
-      margin: 8px 0 0;
-      color: #9fb3c8;
-    }
+header p {
+  margin: 8px 0 0;
+  color: #a9c8e8;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 15px;
-    }
+.container {
+  width: 94%;
+  max-width: 800px;
+  margin: 20px auto;
+}
 
-    .status {
-      background: #102a43;
-      padding: 12px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      text-align: center;
-      color: #b9d6f2;
-    }
+.status {
+  background: #12304d;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
 
-    .match {
-      background: #0d1b2a;
-      border: 1px solid #1d3557;
-      border-radius: 14px;
-      padding: 16px;
-      margin-bottom: 15px;
-    }
+.match {
+  background: #0d1b2d;
+  border: 1px solid #23476d;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.25);
+}
 
-    .competition {
-      color: #72a7d9;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
+.competition {
+  color: #75b8ff;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
-    .teams {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      gap: 10px;
-      text-align: center;
-    }
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
 
-    .team {
-      font-weight: bold;
-      font-size: 16px;
-    }
+.team {
+  width: 40%;
+  text-align: center;
+}
 
-    .crest {
-      width: 45px;
-      height: 45px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto 7px;
-    }
+.team img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px;
+}
 
-    .score {
-      font-size: 24px;
-      font-weight: bold;
-    }
+.team-name {
+  font-weight: bold;
+  font-size: 15px;
+}
 
-    .date {
-      color: #9fb3c8;
-      text-align: center;
-      margin-top: 12px;
-      font-size: 14px;
-    }
+.score {
+  font-size: 22px;
+  font-weight: bold;
+  width: 20%;
+  text-align: center;
+}
 
-    .live {
-      display: inline-block;
-      background: #d90429;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+.datetime {
+  text-align: center;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #23405e;
+  color: #d7e8fa;
+}
 
-    .tv {
-      margin-top: 15px;
-      padding-top: 12px;
-      border-top: 1px solid #1d3557;
-    }
+.tv {
+  margin-top: 14px;
+  background: #132b43;
+  border-radius: 12px;
+  padding: 12px;
+}
 
-    .tv-title {
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
+.tv-title {
+  color: #ffd65a;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
 
-    .channel {
-      display: inline-block;
-      background: #172a3a;
-      padding: 7px 10px;
-      border-radius: 8px;
-      margin: 3px;
-      color: #dcecff;
-      font-size: 13px;
-    }
+.tv-channel {
+  padding: 5px 0;
+  color: #f1f6fb;
+}
 
-    .error {
-      background: #42151c;
-      color: #ffb3bd;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-    }
+.empty {
+  text-align: center;
+  padding: 40px 15px;
+  color: #aabbd0;
+}
 
-    footer {
-      text-align: center;
-      color: #71869b;
-      padding: 25px 10px;
-      font-size: 13px;
-    }
-  </style>
+.error {
+  background: #4a1820;
+  color: #ffb8c0;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -162,234 +157,262 @@
 
 </div>
 
-<footer>
-  Football Live • Données actualisées automatiquement
-</footer>
-
 <script>
-  const matchesContainer = document.getElementById("matches");
-  const statusContainer = document.getElementById("status");
 
-  function escapeHTML(value) {
-    return String(value ?? "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  }
+async function chargerMatchs() {
 
-  function formatDate(date) {
-    if (!date) return "Date inconnue";
+  const status = document.getElementById("status");
+  const container = document.getElementById("matches");
 
-    const d = new Date(date);
+  try {
 
-    if (isNaN(d.getTime())) {
-      return escapeHTML(date);
-    }
-
-    return d.toLocaleString("fr-FR", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit"
-    });
-  }
-
-  function getTeamName(team) {
-    if (!team) return "Équipe inconnue";
-    return team.shortName || team.name || "Équipe inconnue";
-  }
-
-  function getScore(match) {
-    const score = match.score || {};
-
-    const fullTime = score.fullTime || {};
-
-    const home =
-      fullTime.home !== null &&
-      fullTime.home !== undefined
-        ? fullTime.home
-        : "-";
-
-    const away =
-      fullTime.away !== null &&
-      fullTime.away !== undefined
-        ? fullTime.away
-        : "-";
-
-    return `${home} - ${away}`;
-  }
-
-  function getStatus(match) {
-    const status = match.status || "";
-
-    if (
-      status === "IN_PLAY" ||
-      status === "LIVE" ||
-      status === "PAUSED"
-    ) {
-      return `<span class="live">🔴 EN DIRECT</span>`;
-    }
-
-    if (status === "FINISHED") {
-      return `<span class="live">FINI</span>`;
-    }
-
-    return "";
-  }
-
-  function getChannels(match) {
-    const channels = match.tvChannels;
-
-    if (!Array.isArray(channels) || channels.length === 0) {
-      return "";
-    }
-
-    const validChannels = channels.filter(channel =>
-      channel &&
-      channel.name
+    const response = await fetch(
+      "matches.json?t=" + Date.now(),
+      { cache: "no-store" }
     );
 
-    if (validChannels.length === 0) {
-      return "";
+    if (!response.ok) {
+      throw new Error("matches.json introuvable");
     }
 
-    return `
-      <div class="tv">
-        <div class="tv-title">📺 Diffusion TV</div>
-        ${validChannels.map(channel => `
-          <span class="channel">
-            ${escapeHTML(channel.name)}
-          </span>
-        `).join("")}
-      </div>
-    `;
-  }
+    const data = await response.json();
 
-  function renderMatches(data) {
-    let matches = [];
+    let matchs = [];
+
+    /*
+      Le workflow peut enregistrer :
+      - directement un tableau
+      - ou un objet contenant matches
+    */
 
     if (Array.isArray(data)) {
-      matches = data;
+      matchs = data;
     } else if (Array.isArray(data.matches)) {
-      matches = data.matches;
+      matchs = data.matches;
+    } else if (Array.isArray(data.response)) {
+      matchs = data.response;
     }
 
-    if (matches.length === 0) {
-      statusContainer.textContent = "Aucun match disponible.";
-      matchesContainer.innerHTML = "";
+    if (!matchs.length) {
+      status.textContent = "Aucun match disponible";
+      container.innerHTML =
+        '<div class="empty">Aucun match trouvé pour le moment.</div>';
       return;
     }
 
-    statusContainer.textContent =
-      `${matches.length} match${matches.length > 1 ? "s" : ""} disponible${matches.length > 1 ? "s" : ""}`;
+    status.textContent =
+      matchs.length + " match" + (matchs.length > 1 ? "s" : "") +
+      " disponible" + (matchs.length > 1 ? "s" : "");
 
-    matchesContainer.innerHTML = matches.map(match => {
+    container.innerHTML = "";
 
-      const home = match.homeTeam || {};
-      const away = match.awayTeam || {};
+    matchs.forEach(match => {
+
+      const home = match.homeTeam || match.home || {};
+      const away = match.awayTeam || match.away || {};
       const competition = match.competition || {};
 
-      return `
-        <div class="match">
+      const homeName =
+        home.name ||
+        home.shortName ||
+        "Équipe inconnue";
 
-          <div class="competition">
-            ${escapeHTML(
-              competition.name || "Compétition"
-            )}
-          </div>
+      const awayName =
+        away.name ||
+        away.shortName ||
+        "Équipe inconnue";
 
-          <div class="teams">
+      const homeLogo =
+        home.crest ||
+        home.logo ||
+        "";
 
-            <div class="team">
-              ${home.crest ? `
-                <img
-                  class="crest"
-                  src="${escapeHTML(home.crest)}"
-                  alt=""
-                  onerror="this.style.display='none'"
-                >
-              ` : ""}
+      const awayLogo =
+        away.crest ||
+        away.logo ||
+        "";
 
-              ${escapeHTML(getTeamName(home))}
-            </div>
+      const competitionName =
+        competition.name ||
+        match.league?.name ||
+        "Compétition";
 
-            <div>
-              <div class="score">
-                ${escapeHTML(getScore(match))}
-              </div>
+      const dateValue =
+        match.utcDate ||
+        match.date ||
+        match.startDate ||
+        "";
 
-              ${getStatus(match)}
-            </div>
+      let dateText = "Date inconnue";
+      let timeText = "Heure inconnue";
 
-            <div class="team">
-              ${away.crest ? `
-                <img
-                  class="crest"
-                  src="${escapeHTML(away.crest)}"
-                  alt=""
-                  onerror="this.style.display='none'"
-                >
-              ` : ""}
+      if (dateValue) {
 
-              ${escapeHTML(getTeamName(away))}
-            </div>
+        const date = new Date(dateValue);
 
-          </div>
+        if (!isNaN(date.getTime())) {
 
-          <div class="date">
-            🕒 ${formatDate(match.utcDate)}
-          </div>
+          dateText = date.toLocaleDateString(
+            "fr-FR",
+            {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric"
+            }
+          );
 
-          ${getChannels(match)}
-
-        </div>
-      `;
-    }).join("");
-  }
-
-  async function loadMatches() {
-    try {
-
-      const response = await fetch(
-        "matches.json?t=" + Date.now(),
-        {
-          cache: "no-store"
+          timeText = date.toLocaleTimeString(
+            "fr-FR",
+            {
+              hour: "2-digit",
+              minute: "2-digit"
+            }
+          );
         }
-      );
-
-      if (!response.ok) {
-        throw new Error(
-          "Impossible de charger matches.json"
-        );
       }
 
-      const data = await response.json();
+      let homeScore = "-";
+      let awayScore = "-";
 
-      renderMatches(data);
+      if (match.score && match.score.fullTime) {
 
-    } catch (error) {
+        homeScore =
+          match.score.fullTime.home ?? "-";
 
-      console.error(error);
+        awayScore =
+          match.score.fullTime.away ?? "-";
+      }
 
-      statusContainer.textContent = "Erreur";
+      /*
+        Récupération des chaînes TV
+      */
 
-      matchesContainer.innerHTML = `
-        <div class="error">
-          ❌ Impossible de charger les matchs.<br><br>
-          Vérifie que <strong>matches.json</strong>
-          est bien présent dans le dépôt.
+      let tvChannels =
+        match.tvChannels ||
+        match.tv ||
+        [];
+
+      if (!Array.isArray(tvChannels)) {
+        tvChannels = [];
+      }
+
+      const tvHTML = tvChannels.length
+        ? `
+          <div class="tv">
+            <div class="tv-title">📺 Diffusion TV</div>
+            ${tvChannels.map(channel => {
+
+              const name =
+                typeof channel === "string"
+                  ? channel
+                  : channel.name || "Chaîne TV";
+
+              return `
+                <div class="tv-channel">
+                  📺 ${escapeHTML(name)}
+                </div>
+              `;
+
+            }).join("")}
+          </div>
+        `
+        : "";
+
+      const card = document.createElement("div");
+
+      card.className = "match";
+
+      card.innerHTML = `
+
+        <div class="competition">
+          🏆 ${escapeHTML(competitionName)}
         </div>
+
+        <div class="teams">
+
+          <div class="team">
+
+            ${
+              homeLogo
+              ? `<img src="${escapeHTML(homeLogo)}"
+                      alt="${escapeHTML(homeName)}"
+                      onerror="this.style.display='none'">`
+              : ""
+            }
+
+            <div class="team-name">
+              ${escapeHTML(homeName)}
+            </div>
+
+          </div>
+
+          <div class="score">
+            ${homeScore} - ${awayScore}
+          </div>
+
+          <div class="team">
+
+            ${
+              awayLogo
+              ? `<img src="${escapeHTML(awayLogo)}"
+                      alt="${escapeHTML(awayName)}"
+                      onerror="this.style.display='none'">`
+              : ""
+            }
+
+            <div class="team-name">
+              ${escapeHTML(awayName)}
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="datetime">
+          📅 ${dateText}
+          <br>
+          🕐 ${timeText}
+        </div>
+
+        ${tvHTML}
+
       `;
-    }
+
+      container.appendChild(card);
+
+    });
+
+  } catch (error) {
+
+    console.error(error);
+
+    status.textContent = "Erreur de chargement";
+
+    container.innerHTML = `
+      <div class="error">
+        ❌ Impossible de charger les matchs.<br><br>
+        Vérifie que <b>matches.json</b> existe bien.
+      </div>
+    `;
   }
+}
 
-  loadMatches();
 
-  // Actualisation de l'affichage toutes les 5 minutes
-  setInterval(loadMatches, 300000);
+function escapeHTML(value) {
+
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+
+chargerMatchs();
+
+setInterval(chargerMatchs, 300000);
+
 </script>
 
 </body>
