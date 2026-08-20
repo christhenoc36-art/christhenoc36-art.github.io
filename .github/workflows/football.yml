@@ -3,7 +3,7 @@ name: Football Live
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -22,11 +22,11 @@ jobs:
           python-version: "3.12"
 
       - name: Installer requests
-        run: pip install requests
+        run: python -m pip install requests
 
       - name: Actualiser les matchs
         env:
-          football_API_KEY: ${{ secrets.football_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: |
           python - <<'PY'
           import os
@@ -34,15 +34,21 @@ jobs:
           import requests
           from datetime import datetime, timezone
 
-          key = os.environ.get("API_KEY")
+          api_key = os.environ.get("API_FOOTBALL_KEY")
 
-          if not key:
-              raise SystemExit("Erreur : le secret API_KEY est absent.")
+          if not api_key:
+              raise SystemExit(
+                  "Erreur : le secret API_FOOTBALL_KEY est absent."
+              )
 
           response = requests.get(
               "https://v3.football.api-sports.io/fixtures",
-              headers={"x-apisports-key": key},
-              params={"live": "all"},
+              headers={
+                  "x-apisports-key": api_key
+              },
+              params={
+                  "live": "all"
+              },
               timeout=30
           )
 
@@ -52,7 +58,8 @@ jobs:
 
           if data.get("errors"):
               raise SystemExit(
-                  "Erreur API : " + json.dumps(data["errors"])
+                  "Erreur API : "
+                  + json.dumps(data["errors"], ensure_ascii=False)
               )
 
           matches = []
@@ -100,15 +107,25 @@ jobs:
           }
 
           with open("matches.json", "w", encoding="utf-8") as f:
-              json.dump(result, f, ensure_ascii=False, indent=2)
+              json.dump(
+                  result,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
 
-          print(f"{len(matches)} matchs actualisés.")
+          print(f"OK : {len(matches)} matchs récupérés.")
           PY
 
       - name: Vérifier matches.json
         run: |
-          test -f matches.json
+          if [ ! -f matches.json ]; then
+            echo "Erreur : matches.json n'a pas été créé."
+            exit 1
+          fi
+
           python -m json.tool matches.json > /dev/null
+
           echo "matches.json est valide."
 
       - name: Enregistrer les changements
@@ -119,8 +136,8 @@ jobs:
           git add matches.json
 
           if git diff --cached --quiet; then
-            echo "Aucun changement."
+            echo "Aucun changement à enregistrer."
           else
-            git commit -m "chore: actualisation des matchs"
+            git commit -m "chore: mise à jour des matchs"
             git push origin main
           fi
