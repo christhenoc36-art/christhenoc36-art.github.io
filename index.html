@@ -196,6 +196,27 @@ footer {
   <div id="status" class="status">
     Chargement des matchs...
   </div>
+
+<input
+  id="searchInput"
+  type="text"
+  placeholder="🔎 Rechercher une équipe..."
+  oninput="filterMatches()"
+  style="
+    display:block;
+    width:100%;
+    max-width:500px;
+    margin:0 auto 12px;
+    padding:13px 15px;
+    border:1px solid #23476d;
+    border-radius:12px;
+    background:#0d1b2d;
+    color:white;
+    font-size:16px;
+    outline:none;
+  "
+>
+
 <button
   onclick="loadMatches()"
   style="
