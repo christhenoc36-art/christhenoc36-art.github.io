@@ -199,3 +199,482 @@
 
   <button onclick="filterMatches('Terminés', this)">
     ✅ Terminés
+  </button>
+</nav>
+
+<main>
+
+  <section class="info">
+    <h2>⚡ Matchs du jour</h2>
+    <div class="muted">
+      Les matchs sont récupérés automatiquement depuis l'API Football.
+    </div>
+
+    <button class="refresh" onclick="loadMatches()">
+      🔄 Actualiser les matchs
+    </button>
+  </section>
+
+  <section id="games">
+
+    <div class="loading">
+      ⏳ Chargement des vrais matchs...
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  Football Live © 2026
+</footer>
+
+
+<script>
+
+  /* =========================
+     VARIABLES
+  ========================= */
+
+  let games = [];
+
+  let currentFilter = "Tous";
+
+
+  /* =========================
+     CHARGER LES MATCHS
+  ========================= */
+
+  async function loadMatches() {
+
+    const box = document.getElementById("games");
+
+    box.innerHTML = `
+      <div class="loading">
+        ⏳ Chargement des vrais matchs...
+      </div>
+    `;
+
+    try {
+
+      /*
+        On appelle ton fichier :
+        api/matches.js
+
+        Sur Vercel il devient :
+        /api/matches
+      */
+
+      const response = await fetch("/api/matches");
+
+      if (!response.ok) {
+        throw new Error("Erreur serveur : " + response.status);
+      }
+
+      const data = await response.json();
+
+      console.log("Réponse API :", data);
+
+
+      /* =========================
+         VÉRIFICATION
+      ========================= */
+
+      if (!data.response) {
+
+        throw new Error(
+          data.message || "Réponse API invalide"
+        );
+
+      }
+
+
+      /* =========================
+         TRANSFORMATION DES MATCHS
+      ========================= */
+
+      games = data.response.map(match => {
+
+        const shortStatus =
+          match.fixture?.status?.short || "NS";
+
+
+        let status = "À venir";
+
+
+        if (
+          [
+            "1H",
+            "2H",
+            "HT",
+            "ET",
+            "P",
+            "LIVE",
+            "INT"
+          ].includes(shortStatus)
+        ) {
+
+          status = "En direct";
+
+        }
+
+
+        else if (
+          [
+            "FT",
+            "AET",
+            "PEN"
+          ].includes(shortStatus)
+        ) {
+
+          status = "Terminés";
+
+        }
+
+
+        let score = "—";
+
+
+        if (
+          match.goals?.home !== null &&
+          match.goals?.home !== undefined &&
+          match.goals?.away !== null &&
+          match.goals?.away !== undefined
+        ) {
+
+          score =
+            match.goals.home +
+            " - " +
+            match.goals.away;
+
+        }
+
+
+        return {
+
+          league:
+            match.league?.name ||
+            "Football",
+
+          home:
+            match.teams?.home?.name ||
+            "Équipe domicile",
+
+          away:
+            match.teams?.away?.name ||
+            "Équipe extérieure",
+
+          homeLogo:
+            match.teams?.home?.logo ||
+            "",
+
+          awayLogo:
+            match.teams?.away?.logo ||
+            "",
+
+          score: score,
+
+          status: status,
+
+          date:
+            match.fixture?.date ||
+            ""
+
+        };
+
+      });
+
+
+      renderMatches();
+
+
+    }
+
+    catch (error) {
+
+      console.error(
+        "Erreur chargement matchs :",
+        error
+      );
+
+
+      box.innerHTML = `
+
+        <div class="error">
+
+          ❌ Impossible de charger les matchs.
+
+          <br><br>
+
+          Vérifie que :
+
+          <br>
+
+          • <b>api/matches.js</b> existe
+
+          <br>
+
+          • <b>football_api_key</b> existe dans Vercel
+
+          <br>
+
+          • le projet est bien déployé sur Vercel
+
+        </div>
+
+      `;
+
+    }
+
+  }
+
+
+  /* =========================
+     AFFICHER LES MATCHS
+  ========================= */
+
+  function renderMatches() {
+
+    const box =
+      document.getElementById("games");
+
+
+    const filtered =
+      games.filter(match => {
+
+        return (
+          currentFilter === "Tous" ||
+          match.status === currentFilter
+        );
+
+      });
+
+
+    if (filtered.length === 0) {
+
+      box.innerHTML = `
+
+        <div class="empty">
+
+          Aucun match trouvé pour cette catégorie.
+
+        </div>
+
+      `;
+
+      return;
+
+    }
+
+
+    box.innerHTML =
+      filtered.map(match => {
+
+        const homeLogo =
+          match.homeLogo
+            ? `
+              <img
+                src="${escapeHTML(match.homeLogo)}"
+                alt=""
+                onerror="this.style.display='none'"
+              >
+            `
+            : "⚽";
+
+
+        const awayLogo =
+          match.awayLogo
+            ? `
+              <img
+                src="${escapeHTML(match.awayLogo)}"
+                alt=""
+                onerror="this.style.display='none'"
+              >
+            `
+            : "⚽";
+
+
+        const liveClass =
+          match.status === "En direct"
+            ? "live"
+            : "";
+
+
+        return `
+
+          <article class="card">
+
+            <div class="league">
+
+              🏆
+              ${escapeHTML(match.league)}
+
+            </div>
+
+
+            <div class="teams">
+
+
+              <div class="team">
+
+                ${homeLogo}
+
+                <div>
+                  ${escapeHTML(match.home)}
+                </div>
+
+              </div>
+
+
+              <div class="vs">
+
+                <span
+                  class="status ${liveClass}"
+                >
+                  ${match.status}
+                </span>
+
+                <div class="score">
+
+                  ${escapeHTML(match.score)}
+
+                </div>
+
+              </div>
+
+
+              <div class="team">
+
+                ${awayLogo}
+
+                <div>
+                  ${escapeHTML(match.away)}
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+            <div class="date">
+
+              ${formatDate(match.date)}
+
+            </div>
+
+          </article>
+
+        `;
+
+      }).join("");
+
+  }
+
+
+  /* =========================
+     FILTRES
+  ========================= */
+
+  function filterMatches(
+    filter,
+    button
+  ) {
+
+    currentFilter = filter;
+
+
+    document
+      .querySelectorAll("nav button")
+      .forEach(btn => {
+
+        btn.classList.remove("active");
+
+      });
+
+
+    button.classList.add("active");
+
+
+    renderMatches();
+
+  }
+
+
+  /* =========================
+     DATE
+  ========================= */
+
+  function formatDate(date) {
+
+    if (!date) {
+      return "";
+    }
+
+
+    const d = new Date(date);
+
+
+    if (isNaN(d)) {
+      return "";
+    }
+
+
+    return d.toLocaleString(
+      "fr-FR",
+      {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }
+    );
+
+  }
+
+
+  /* =========================
+     SÉCURITÉ HTML
+  ========================= */
+
+  function escapeHTML(value) {
+
+    return String(value ?? "")
+      .replace(
+        /[&<>"']/g,
+        character => ({
+
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#039;"
+
+        }[character])
+      );
+
+  }
+
+
+  /* =========================
+     PREMIER CHARGEMENT
+  ========================= */
+
+  loadMatches();
+
+
+  /* =========================
+     ACTUALISATION AUTOMATIQUE
+     TOUTES LES 60 SECONDES
+  ========================= */
+
+  setInterval(
+    loadMatches,
+    60000
+  );
+
+</script>
+
+</body>
+    </html>
