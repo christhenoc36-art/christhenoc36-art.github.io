@@ -1013,7 +1013,8 @@ async function loadMatches(){
 
  try{
 
-  const response=await fetch("/api/matches" );
+  const response=await fetch("/api/matches",{cache:"no-store"}
+); );
 
   if(!response.ok)
    throw new Error("API error");
