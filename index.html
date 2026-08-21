@@ -22,6 +22,9 @@ main{max-width:1200px;margin:auto;padding:15px 16px 90px}
 .upcoming{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.up{background:#111923;border:1px solid #293548;border-radius:15px;padding:14px}.upDate{color:#19e879;font-size:11px;font-weight:900}.upTeams{font-weight:900;margin-top:6px}.empty{padding:30px;text-align:center;border:1px dashed #293548;border-radius:17px;color:#7f8b9d;grid-column:1/-1}
 .bottom{position:fixed;bottom:0;left:0;right:0;height:65px;background:#080d14f5;border-top:1px solid #202b38;display:flex;z-index:30}.bottom button{flex:1;background:transparent;border:0;color:#7e8998}.bottom .active{color:#19e879}
 @media(max-width:700px){.top{flex-wrap:wrap}.search{order:2;width:100%;margin:0}.matches,.upcoming{grid-template-columns:1fr}.hero h1{font-size:34px}.heroIcon{font-size:110px}}
+
+.tvSources{display:grid;gap:7px;margin-top:12px}
+.tvSources .watch{width:100%;cursor:pointer}
 </style>
 </head>
 <body>
@@ -203,28 +206,86 @@ function officialSources(m){
   const league=(m.league?.name||"").toLowerCase();
   const country=(m.league?.country||"").toLowerCase();
   const text=(league+" "+country).toLowerCase();
-  const sources=[
-    {name:"FIFA+ — gratuit selon les droits",url:"https://www.fifa.com/en/plus",region:"🌍 Global"},
-    {name:"OneFootball — Free to Air selon le match",url:"https://tv.onefootball.com/",region:"🌍 Global"}
-  ];
-  if(text.includes("uefa")||text.includes("europe")||text.includes("futsal")||text.includes("women")||text.includes("u19")||text.includes("u17"))
-    sources.push({name:"UEFA.tv — gratuit selon le territoire",url:"https://www.uefa.tv/",region:"🇪🇺 Europe"});
-  if(text.includes("caf")||text.includes("africa")||text.includes("senegal")||text.includes("ghana")||text.includes("nigeria")||text.includes("south africa"))
-    sources.push({name:"CAF — diffusion officielle",url:"https://www.cafonline.com/",region:"🌍 Afrique"});
-  if(text.includes("afc")||text.includes("asia")||text.includes("japan")||text.includes("korea")||text.includes("australia")||text.includes("oceania")||text.includes("ofc"))
-    sources.push({name:"AFC — diffusion officielle",url:"https://www.the-afc.com/",region:"🌏 Asie"});
-  if(text.includes("mls")||text.includes("concacaf")||text.includes("usa")||text.includes("canada")||text.includes("mexico")||text.includes("brazil")||text.includes("brasil"))
-    sources.push({name:"OneFootball — Free to Air selon le match",url:"https://tv.onefootball.com/",region:"🌎 Amériques"});
-  return sources.filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+  const sources=[];
+  const add=(name,url,region,note)=>sources.push({name,url,region,note});
+
+  add("FIFA+ / DAZN","https://www.dazn.com/","🌍 Global",
+      "Contenu FIFA+ gratuit selon le match et le territoire");
+
+  if(text.includes("uefa")||text.includes("europe")||text.includes("futsal")||
+     text.includes("women")||text.includes("fémin")||text.includes("u19")||text.includes("u17")){
+    add("UEFA.tv","https://www.uefa.tv/","🇪🇺 Europe",
+        "Directs gratuits pour certaines compétitions; restrictions territoriales possibles");
+    add("UEFA — Où regarder","https://www.uefa.com/match-calendar/","🇪🇺 Europe",
+        "Liste officielle des diffuseurs par territoire");
+  }
+
+  if(text.includes("caf")||text.includes("africa")||text.includes("ivoire")||
+     text.includes("ivory")||text.includes("senegal")||text.includes("ghana")||
+     text.includes("nigeria")||text.includes("south africa")||text.includes("morocco")||
+     text.includes("burkina")||text.includes("mali")||text.includes("guinea")){
+    add("CAF — Diffusion officielle","https://www.cafonline.com/","🌍 Afrique",
+        "Informations officielles sur les diffuseurs; gratuit selon le territoire");
+  }
+
+  if(text.includes("afc")||text.includes("asia")||text.includes("japan")||
+     text.includes("korea")||text.includes("australia")||text.includes("oceania")||
+     text.includes("ofc")||text.includes("china")||text.includes("thailand")||
+     text.includes("india")||text.includes("indonesia")||text.includes("malaysia")){
+    add("AFC — Où regarder","https://www.the-afc.com/en/national/asian_qualifiers/where_to_watch.html","🌏 Asie",
+        "Diffuseurs officiels selon la compétition et le territoire");
+  }
+
+  if(text.includes("mls")||text.includes("concacaf")||text.includes("usa")||
+     text.includes("canada")||text.includes("mexico")||text.includes("mexique")||
+     text.includes("brazil")||text.includes("brasil")||text.includes("argentina")||
+     text.includes("colombia")||text.includes("chile")||text.includes("peru")){
+    add("OneFootball TV","https://tv.onefootball.com/","🌎 Amériques",
+        "Certains matchs sont Free-to-Air; disponibilité selon le pays");
+  }
+
+  add("OneFootball TV","https://tv.onefootball.com/","🌍 Global",
+      "Vérifier la mention Free-to-Air pour le match");
+
+  return sources.filter((x,i,a)=>a.findIndex(y=>y.url===x.url && y.region===x.region)===i);
 }
 
 function card(m){
-let h=m.teams?.home||{},a=m.teams?.away||{};
-return `<article class="match"><div class="matchTop"><span class="live">${isLive(m)?"● LIVE":"MATCH"}</span><span class="status">${esc(m.fixture?.status?.long||"Programmé")}</span></div>
-<div class="league">🏆 ${esc(m.league?.name||"Football")}</div>
-<div class="teams"><div class="team"><img src="${esc(h.logo||"")} " onerror="this.style.visibility='hidden'"><b>${esc(h.name||"Équipe")}</b></div><div class="vs">VS</div><div class="team"><img src="${esc(a.logo||"")} " onerror="this.style.visibility='hidden'"><b>${esc(a.name||"Équipe")}</b></div></div>
-<button class="watch off" disabled>📺 Diffusion non configurée</button></article>`;
+  const h=m.teams?.home||{}, a=m.teams?.away||{};
+  const finished=isFinished(m), liveNow=isLive(m);
+  const hs=h.name||"Équipe", as=a.name||"Équipe";
+  const gh=m.goals?.home, ga=m.goals?.away;
+  const hasScore=gh!==null&&gh!==undefined&&ga!==null&&ga!==undefined;
+  const score=hasScore ? `${gh} - ${ga}` : "VS";
+  const sources=officialSources(m);
+
+  const sourceButtons=(!finished)
+    ? `<div class="tvSources">${sources.map(s=>`
+        <button class="watch" title="${esc(s.note)}"
+          onclick="openSource('${s.url}')">📺 ${esc(s.region)} · ${esc(s.name)}</button>
+      `).join("")}</div>
+      <div class="channel" style="text-align:center;margin-top:8px">
+        ℹ️ La disponibilité gratuite dépend du match, du pays et des droits.
+      </div>`
+    : `<div class="channel" style="text-align:center;margin-top:10px;color:#19e879;font-weight:900">
+        🏁 Score final : ${esc(score)}
+      </div>`;
+
+  return `<article class="match">
+    <div class="matchTop">
+      <span class="live">${finished?"✅ TERMINÉ":liveNow?"🔴 EN DIRECT":"⏰ À VENIR"}</span>
+      <span class="status">${esc(m.fixture?.status?.long||"Programmé")}</span>
+    </div>
+    <div class="league">🏆 ${esc(m.league?.name||"Football")}</div>
+    <div class="teams">
+      <div class="team"><img src="${esc(h.logo||"")}" onerror="this.style.visibility='hidden'"><b>${esc(hs)}</b></div>
+      <div class="vs">${esc(score)}</div>
+      <div class="team"><img src="${esc(a.logo||"")}" onerror="this.style.visibility='hidden'"><b>${esc(as)}</b></div>
+    </div>
+    ${sourceButtons}
+  </article>`;
 }
+
 function upCard(m){
 let d=new Date(m.fixture?.date),date=isNaN(d)?"":d.toLocaleDateString("fr-FR",{day:"2-digit",month:"2-digit"}),time=isNaN(d)?"":d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"});
 return `<div class="up"><div class="upDate">${date} • ${time}</div><div class="upTeams">${esc(m.teams?.home?.name||"Équipe")} — ${esc(m.teams?.away?.name||"Équipe")}</div><small class="muted">${esc(m.league?.name||"Football")}</small></div>`;
@@ -243,4 +304,4 @@ loadMatches();
 setInterval(loadMatches,60000);
 </script>
 </body>
-  </html>
+      </html>
