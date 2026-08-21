@@ -2,578 +2,617 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SportLive — Streaming Sports</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#05070b">
+<title>SportLive</title>
 
 <style>
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
- margin:0;
- background:#05070c;
- color:#fff;
- font-family:Arial,Helvetica,sans-serif;
- overflow-x:hidden;
+  margin:0;
+  background:#05070b;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
 }
 button,input{font:inherit}
 button{cursor:pointer}
 
 :root{
- --accent:#16f06b;
- --accent2:#00b7ff;
- --panel:#10151f;
- --panel2:#171e2a;
- --muted:#8995a8;
+  --green:#20ed72;
+  --blue:#20b8ff;
+  --red:#ff3150;
+  --panel:#101620;
+  --panel2:#151d29;
+  --line:#263243;
+  --muted:#8b98aa;
 }
 
+/* HEADER */
+
 header{
- position:sticky;
- top:0;
- z-index:50;
- background:rgba(5,7,12,.88);
- backdrop-filter:blur(18px);
- border-bottom:1px solid #202938;
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(5,7,11,.90);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid #1b2532;
 }
 
 .nav{
- max-width:1200px;
- margin:auto;
- min-height:68px;
- display:flex;
- align-items:center;
- justify-content:space-between;
- gap:18px;
- padding:10px 18px;
+  max-width:1200px;
+  margin:auto;
+  min-height:68px;
+  padding:10px 17px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
 }
 
 .logo{
- font-size:25px;
- font-weight:1000;
- letter-spacing:-1px;
+  font-size:25px;
+  font-weight:1000;
+  letter-spacing:-1px;
+  white-space:nowrap;
 }
-.logo b{color:var(--accent)}
+
+.logo span{color:var(--green)}
 
 .search{
- width:280px;
- background:#111722;
- color:white;
- border:1px solid #293345;
- border-radius:14px;
- padding:11px 15px;
- outline:none;
+  width:290px;
+  padding:12px 15px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#0e141e;
+  color:#fff;
+  outline:none;
 }
 
+.search:focus{border-color:var(--green)}
+
+/* MAIN */
+
 main{
- max-width:1200px;
- margin:auto;
- padding:18px;
+  max-width:1200px;
+  margin:auto;
+  padding:16px;
 }
 
 /* SPORTS */
 
 .sports{
- display:flex;
- gap:10px;
- overflow-x:auto;
- padding-bottom:12px;
- scrollbar-width:none;
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  padding:3px 0 15px;
 }
+
 .sports::-webkit-scrollbar{display:none}
 
 .sport{
- min-width:105px;
- height:68px;
- border:1px solid #273142;
- border-radius:17px;
- background:#101620;
- color:#fff;
- transition:.25s;
+  min-width:108px;
+  height:72px;
+  border-radius:18px;
+  border:1px solid var(--line);
+  background:#0e141e;
+  color:#fff;
+  transition:.25s;
 }
-.sport:hover,.sport.active{
- transform:translateY(-3px);
- border-color:var(--accent);
- background:#17231c;
- box-shadow:0 8px 30px rgba(22,240,107,.12);
+
+.sport:hover{
+  transform:translateY(-3px);
 }
-.sport-icon{font-size:25px;display:block}
-.sport-name{font-size:12px;font-weight:800}
+
+.sport.active{
+  border-color:var(--green);
+  background:#12231a;
+  box-shadow:0 8px 30px rgba(32,237,114,.12);
+}
+
+.sport-icon{
+  display:block;
+  font-size:27px;
+}
+
+.sport-name{
+  display:block;
+  margin-top:4px;
+  font-size:11px;
+  font-weight:900;
+}
 
 /* HERO */
 
 .hero{
- position:relative;
- min-height:365px;
- border-radius:30px;
- overflow:hidden;
- margin:10px 0 24px;
- background:
- linear-gradient(90deg,rgba(3,7,12,.98),rgba(3,7,12,.58),rgba(3,7,12,.1)),
- radial-gradient(circle at 78% 40%,#176f43,transparent 32%),
- linear-gradient(135deg,#10251a,#071018);
- border:1px solid #263344;
+  position:relative;
+  min-height:360px;
+  overflow:hidden;
+  border-radius:28px;
+  border:1px solid var(--line);
+  margin-bottom:27px;
+  background:
+    linear-gradient(90deg,#050a0b 0%,rgba(5,10,11,.85) 38%,rgba(5,10,11,.12) 100%),
+    radial-gradient(circle at 80% 45%,#167744,transparent 35%),
+    #0b1610;
 }
 
 .hero.basket{
- background:
- linear-gradient(90deg,rgba(8,6,5,.98),rgba(8,6,5,.5),rgba(8,6,5,.08)),
- radial-gradient(circle at 78% 40%,#c25d12,transparent 32%),
- #1b1009;
+  background:
+    linear-gradient(90deg,#0c0805 0%,rgba(12,8,5,.85) 38%,rgba(12,8,5,.1) 100%),
+    radial-gradient(circle at 80% 45%,#c45a0d,transparent 35%),
+    #1b0e07;
 }
+
 .hero.tennis{
- background:
- linear-gradient(90deg,rgba(4,8,4,.98),rgba(4,8,4,.5),rgba(4,8,4,.08)),
- radial-gradient(circle at 78% 40%,#719e18,transparent 32%),
- #101607;
+  background:
+    linear-gradient(90deg,#070b04 0%,rgba(7,11,4,.85) 38%,rgba(7,11,4,.1) 100%),
+    radial-gradient(circle at 80% 45%,#719d15,transparent 35%),
+    #111805;
 }
+
 .hero.racing{
- background:
- linear-gradient(90deg,rgba(8,4,5,.98),rgba(8,4,5,.5),rgba(8,4,5,.08)),
- radial-gradient(circle at 78% 40%,#b91c2c,transparent 32%),
- #18080b;
+  background:
+    linear-gradient(90deg,#0b0507 0%,rgba(11,5,7,.85) 38%,rgba(11,5,7,.1) 100%),
+    radial-gradient(circle at 80% 45%,#b51e32,transparent 35%),
+    #18070a;
 }
+
 .hero.boxing{
- background:
- linear-gradient(90deg,rgba(7,4,10,.98),rgba(7,4,10,.5),rgba(7,4,10,.08)),
- radial-gradient(circle at 78% 40%,#7625b4,transparent 32%),
- #13091b;
+  background:
+    linear-gradient(90deg,#08050d 0%,rgba(8,5,13,.85) 38%,rgba(8,5,13,.1) 100%),
+    radial-gradient(circle at 80% 45%,#7825ad,transparent 35%),
+    #14091c;
 }
 
 .hero-content{
- position:relative;
- z-index:2;
- padding:45px;
- max-width:650px;
+  position:relative;
+  z-index:3;
+  padding:45px;
+  max-width:650px;
 }
 
-.kicker{
- color:var(--accent);
- font-size:13px;
- font-weight:900;
- text-transform:uppercase;
- letter-spacing:2px;
+.hero-label{
+  color:var(--green);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
 }
 
 .hero h1{
- font-size:48px;
- line-height:1;
- margin:12px 0;
- letter-spacing:-2px;
+  font-size:50px;
+  line-height:1;
+  margin:12px 0;
+  letter-spacing:-2px;
 }
 
 .hero p{
- color:#c2cad6;
- line-height:1.5;
+  color:#bdc7d4;
+  line-height:1.55;
+  max-width:540px;
 }
 
-.hero-player{
- position:absolute;
- right:3%;
- bottom:-5%;
- font-size:220px;
- filter:drop-shadow(0 20px 40px rgba(0,0,0,.55));
- transform:rotate(-5deg);
- opacity:.95;
+.hero-icon{
+  position:absolute;
+  right:7%;
+  bottom:-15px;
+  font-size:205px;
+  filter:drop-shadow(0 20px 35px rgba(0,0,0,.65));
 }
 
-.hero-actions{
- display:flex;
- gap:10px;
- margin-top:24px;
+.buttons{
+  display:flex;
+  gap:10px;
+  margin-top:24px;
 }
 
 .primary{
- border:0;
- border-radius:13px;
- padding:14px 22px;
- background:var(--accent);
- color:#031108;
- font-weight:1000;
-}
-.secondary{
- border:1px solid #445064;
- border-radius:13px;
- padding:14px 20px;
- background:rgba(255,255,255,.06);
- color:white;
+  border:0;
+  border-radius:13px;
+  background:var(--green);
+  color:#031007;
+  padding:14px 21px;
+  font-weight:1000;
 }
 
-/* SECTION */
+.secondary{
+  border:1px solid #3a4759;
+  border-radius:13px;
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  padding:14px 20px;
+  font-weight:800;
+}
+
+/* TITLES */
 
 .section{
- margin:28px 0;
+  margin:30px 0;
 }
 
 .heading{
- display:flex;
- justify-content:space-between;
- align-items:center;
- margin-bottom:14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:14px;
 }
 
 .heading h2{
- margin:0;
- font-size:23px;
+  margin:0;
+  font-size:23px;
 }
 
 .heading span{
- color:var(--muted);
- font-size:13px;
+  color:var(--muted);
+  font-size:12px;
 }
 
-/* ATHLETES */
+/* ATHLETE CAROUSEL */
 
-.athletes{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:13px;
+.carousel-window{
+  width:100%;
+  overflow:hidden;
+  border-radius:24px;
+  position:relative;
+}
+
+.carousel-track{
+  display:flex;
+  gap:15px;
+  width:max-content;
+  will-change:transform;
 }
 
 .athlete{
- min-height:230px;
- position:relative;
- overflow:hidden;
- border-radius:22px;
- padding:18px;
- background:linear-gradient(145deg,#151d29,#0c1119);
- border:1px solid #263142;
+  flex:0 0 235px;
+  height:295px;
+  position:relative;
+  overflow:hidden;
+  border-radius:24px;
+  border:1px solid var(--line);
+  background:#101620;
 }
 
-.athlete:after{
- content:"";
- position:absolute;
- width:150px;
- height:150px;
- right:-35px;
- bottom:-40px;
- border-radius:50%;
- background:var(--accent);
- opacity:.12;
- filter:blur(10px);
+.athlete img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-.athlete-emoji{
- position:absolute;
- right:8px;
- bottom:-8px;
- font-size:125px;
- filter:drop-shadow(0 15px 18px rgba(0,0,0,.6));
+.athlete-shade{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      transparent 25%,
+      rgba(0,0,0,.08) 40%,
+      rgba(0,0,0,.92) 100%
+    );
 }
 
 .athlete-info{
- position:relative;
- z-index:2;
+  position:absolute;
+  z-index:2;
+  left:17px;
+  right:17px;
+  bottom:17px;
 }
 
-.athlete small{
- color:var(--muted);
+.athlete-sport{
+  color:#b9c3d0;
+  font-size:10px;
+  font-weight:900;
+  text-transform:uppercase;
 }
 
-.athlete h3{
- margin:7px 0;
- font-size:20px;
+.athlete-name{
+  margin:5px 0;
+  font-size:20px;
+  font-weight:900;
 }
 
-.tag{
- display:inline-block;
- padding:6px 9px;
- border-radius:8px;
- background:rgba(255,255,255,.08);
- font-size:10px;
- font-weight:bold;
+.athlete-role{
+  display:inline-block;
+  padding:6px 9px;
+  background:rgba(255,255,255,.12);
+  border-radius:8px;
+  font-size:10px;
 }
 
 /* LIVE */
 
 .live-grid{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:14px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
 }
 
 .match{
- background:linear-gradient(145deg,#111823,#0b1018);
- border:1px solid #232e3d;
- border-radius:20px;
- padding:18px;
- transition:.2s;
+  background:linear-gradient(145deg,#111925,#0b1017);
+  border:1px solid #222e3e;
+  border-radius:21px;
+  padding:18px;
+  transition:.25s;
 }
+
 .match:hover{
- transform:translateY(-4px);
- border-color:#3b4b62;
+  transform:translateY(-4px);
+  border-color:#3a485b;
 }
 
-.live-badge{
- display:inline-flex;
- align-items:center;
- gap:6px;
- background:#dc263d;
- border-radius:20px;
- padding:5px 9px;
- font-size:10px;
- font-weight:1000;
+.live{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:#df2846;
+  padding:6px 10px;
+  border-radius:20px;
+  font-size:10px;
+  font-weight:1000;
 }
 
-.live-dot{
- width:6px;height:6px;
- background:white;
- border-radius:50%;
+.dot{
+  width:6px;
+  height:6px;
+  background:#fff;
+  border-radius:50%;
 }
 
-.competition{
- color:#8794a7;
- font-size:11px;
- margin:13px 0;
+.league{
+  color:#8794a7;
+  margin:13px 0;
+  font-size:11px;
 }
 
 .teams{
- display:grid;
- grid-template-columns:1fr 45px 1fr;
- align-items:center;
- text-align:center;
- gap:7px;
+  display:grid;
+  grid-template-columns:1fr 42px 1fr;
+  gap:7px;
+  text-align:center;
+  align-items:center;
 }
 
 .team img{
- width:52px;
- height:52px;
- object-fit:contain;
-}
-.team-name{
- font-size:12px;
- font-weight:800;
- margin-top:7px;
-}
-.vs{
- color:#697587;
- font-weight:900;
+  width:53px;
+  height:53px;
+  object-fit:contain;
 }
 
-.watch{
- width:100%;
- margin-top:15px;
- border:0;
- border-radius:12px;
- padding:12px;
- background:var(--accent);
- color:#041008;
- font-weight:1000;
+.team-name{
+  font-size:12px;
+  font-weight:900;
+  margin-top:7px;
+}
+
+.vs{
+  color:#687589;
+  font-weight:900;
 }
 
 .channel{
- margin-top:9px;
- color:#aab5c4;
- font-size:11px;
- text-align:center;
+  text-align:center;
+  color:#8c99aa;
+  font-size:11px;
+  margin-top:12px;
+}
+
+.watch{
+  width:100%;
+  border:0;
+  border-radius:12px;
+  background:var(--green);
+  color:#031007;
+  padding:13px;
+  margin-top:14px;
+  font-weight:1000;
 }
 
 /* UPCOMING */
 
 .upcoming{
- display:grid;
- grid-template-columns:repeat(2,1fr);
- gap:12px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
 }
 
 .up-card{
- display:flex;
- align-items:center;
- justify-content:space-between;
- gap:15px;
- padding:16px;
- background:#101620;
- border:1px solid #232d3c;
- border-radius:17px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  padding:17px;
+  background:#101620;
+  border:1px solid #222d3c;
+  border-radius:17px;
 }
 
 .up-time{
- color:var(--accent);
- font-size:12px;
- font-weight:900;
+  color:var(--green);
+  font-weight:900;
+  font-size:12px;
 }
 
-.up-teams{
- font-weight:800;
- font-size:13px;
+.up-team{
+  margin-top:5px;
+  font-weight:900;
+  font-size:13px;
 }
 
-.up-channel{
- color:#8d99a9;
- font-size:11px;
- margin-top:5px;
+.up-league{
+  color:#7f8b9c;
+  font-size:10px;
+  margin-top:5px;
+}
+
+.play-small{
+  border:0;
+  border-radius:11px;
+  padding:12px;
+  background:#1d2938;
+  color:#fff;
 }
 
 /* EMPTY */
 
 .empty{
- text-align:center;
- padding:45px 15px;
- color:#778496;
- background:#0c121b;
- border:1px dashed #273344;
- border-radius:18px;
+  width:100%;
+  padding:40px 15px;
+  text-align:center;
+  color:#788698;
+  background:#0b1119;
+  border:1px dashed #273344;
+  border-radius:18px;
 }
 
 /* PLAYER */
 
 .player{
- display:none;
- position:fixed;
- inset:0;
- z-index:100;
- background:#000;
- padding:14px;
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:100;
+  background:#000;
+  padding:13px;
 }
+
 .player.open{
- display:flex;
- flex-direction:column;
+  display:flex;
+  flex-direction:column;
 }
+
 .player-head{
- max-width:1100px;
- width:100%;
- margin:auto;
- display:flex;
- justify-content:space-between;
- align-items:center;
- padding:8px;
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px;
 }
+
 .close{
- border:0;
- border-radius:10px;
- padding:10px 14px;
- background:#d9233f;
- color:#fff;
- font-weight:bold;
+  border:0;
+  border-radius:10px;
+  padding:10px 14px;
+  background:#df2846;
+  color:#fff;
+  font-weight:900;
 }
+
 .video{
- width:100%;
- max-width:1050px;
- aspect-ratio:16/9;
- margin:auto;
- background:#07090d;
- border-radius:16px;
- display:flex;
- align-items:center;
- justify-content:center;
- color:#8190a5;
- text-align:center;
- border:1px solid #1d2634;
+  width:100%;
+  max-width:1050px;
+  aspect-ratio:16/9;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:#07090d;
+  border:1px solid #1d2735;
+  border-radius:17px;
+  color:#8290a3;
 }
 
 video{
- width:100%;
- height:100%;
- border-radius:16px;
+  width:100%;
+  height:100%;
+  border-radius:17px;
 }
 
-/* NAV MOBILE */
+/* BOTTOM NAV */
 
 .bottom{
- display:none;
+  display:none;
 }
 
-footer{
- color:#536174;
- text-align:center;
- padding:40px 15px;
- font-size:12px;
-}
-
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
- .athletes{grid-template-columns:repeat(2,1fr)}
- .live-grid{grid-template-columns:repeat(2,1fr)}
+  .live-grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:650px){
 
- .nav{
-  flex-wrap:wrap;
- }
+  .nav{
+    flex-wrap:wrap;
+  }
 
- .search{
-  order:3;
-  width:100%;
- }
+  .search{
+    width:100%;
+    order:3;
+  }
 
- main{
-  padding:12px;
-  padding-bottom:85px;
- }
+  main{
+    padding:12px;
+    padding-bottom:82px;
+  }
 
- .hero{
-  min-height:310px;
-  border-radius:24px;
- }
+  .hero{
+    min-height:320px;
+    border-radius:23px;
+  }
 
- .hero-content{
-  padding:27px;
- }
+  .hero-content{
+    padding:27px;
+  }
 
- .hero h1{
-  font-size:36px;
- }
+  .hero h1{
+    font-size:37px;
+  }
 
- .hero-player{
-  font-size:130px;
-  right:0;
-  bottom:0;
- }
+  .hero-icon{
+    font-size:125px;
+    right:2%;
+    bottom:0;
+  }
 
- .hero-actions{
-  position:relative;
-  z-index:5;
- }
+  .athlete{
+    flex-basis:195px;
+    height:260px;
+  }
 
- .athletes{
-  grid-template-columns:repeat(2,1fr);
- }
+  .live-grid{
+    grid-template-columns:1fr;
+  }
 
- .athlete{
-  min-height:190px;
- }
+  .upcoming{
+    grid-template-columns:1fr;
+  }
 
- .athlete-emoji{
-  font-size:90px;
- }
+  .bottom{
+    position:fixed;
+    display:flex;
+    left:0;
+    right:0;
+    bottom:0;
+    height:65px;
+    z-index:45;
+    background:rgba(6,9,14,.96);
+    border-top:1px solid #202b3a;
+    backdrop-filter:blur(16px);
+  }
 
- .live-grid{
-  grid-template-columns:1fr;
- }
+  .bottom button{
+    flex:1;
+    border:0;
+    background:none;
+    color:#7f8b9d;
+    font-size:10px;
+  }
 
- .upcoming{
-  grid-template-columns:1fr;
- }
+  .bottom button b{
+    display:block;
+    font-size:19px;
+    margin-bottom:3px;
+  }
 
- .bottom{
-  display:flex;
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
-  z-index:40;
-  height:65px;
-  background:rgba(7,10,16,.96);
-  border-top:1px solid #202b3b;
-  backdrop-filter:blur(15px);
- }
-
- .bottom button{
-  flex:1;
-  border:0;
-  background:none;
-  color:#8793a5;
-  font-size:10px;
- }
-
- .bottom button b{
-  display:block;
-  font-size:20px;
-  margin-bottom:3px;
- }
-
- .bottom button.active{
-  color:var(--accent);
- }
+  .bottom button.active{
+    color:var(--green);
+  }
 }
 </style>
 </head>
@@ -581,134 +620,183 @@ footer{
 <body>
 
 <header>
- <nav class="nav">
-  <div class="logo">⚡ Sport<b>Live</b></div>
+  <nav class="nav">
 
-  <input
-   id="search"
-   class="search"
-   placeholder="🔎 Rechercher une équipe..."
-   oninput="searchMatches()"
-  >
- </nav>
+    <div class="logo">
+      ⚡ Sport<span>Live</span>
+    </div>
+
+    <input
+      id="search"
+      class="search"
+      type="search"
+      placeholder="🔎 Rechercher une équipe..."
+      oninput="searchMatches()"
+    >
+
+  </nav>
 </header>
 
 <main>
 
- <!-- SPORTS -->
+  <!-- SPORTS -->
 
- <div class="sports">
+  <div class="sports">
 
-  <button class="sport active" onclick="selectSport('football',this)">
-   <span class="sport-icon">⚽</span>
-   <span class="sport-name">FOOTBALL</span>
-  </button>
-
-  <button class="sport" onclick="selectSport('basket',this)">
-   <span class="sport-icon">🏀</span>
-   <span class="sport-name">BASKET</span>
-  </button>
-
-  <button class="sport" onclick="selectSport('tennis',this)">
-   <span class="sport-icon">🎾</span>
-   <span class="sport-name">TENNIS</span>
-  </button>
-
-  <button class="sport" onclick="selectSport('racing',this)">
-   <span class="sport-icon">🏎️</span>
-   <span class="sport-name">AUTO</span>
-  </button>
-
-  <button class="sport" onclick="selectSport('boxing',this)">
-   <span class="sport-icon">🥊</span>
-   <span class="sport-name">BOXE</span>
-  </button>
-
- </div>
-
-
- <!-- HERO -->
-
- <section id="hero" class="hero">
-
-  <div class="hero-content">
-
-   <div class="kicker">● SPORT EN DIRECT</div>
-
-   <h1 id="heroTitle">Football Live</h1>
-
-   <p id="heroText">
-    Toute l'action sportive dans une seule application.
-    Découvre les événements en direct et les prochaines rencontres.
-   </p>
-
-   <div class="hero-actions">
-    <button class="primary" onclick="scrollToLive()">
-     ▶ REGARDER LE LIVE
+    <button class="sport active"
+      onclick="changeSport('football',this)">
+      <span class="sport-icon">⚽</span>
+      <span class="sport-name">FOOTBALL</span>
     </button>
 
-    <button class="secondary" onclick="scrollToUpcoming()">
-     🕐 À VENIR
+    <button class="sport"
+      onclick="changeSport('basket',this)">
+      <span class="sport-icon">🏀</span>
+      <span class="sport-name">BASKET</span>
     </button>
-   </div>
+
+    <button class="sport"
+      onclick="changeSport('tennis',this)">
+      <span class="sport-icon">🎾</span>
+      <span class="sport-name">TENNIS</span>
+    </button>
+
+    <button class="sport"
+      onclick="changeSport('racing',this)">
+      <span class="sport-icon">🏎️</span>
+      <span class="sport-name">AUTO</span>
+    </button>
+
+    <button class="sport"
+      onclick="changeSport('boxing',this)">
+      <span class="sport-icon">🥊</span>
+      <span class="sport-name">BOXE</span>
+    </button>
 
   </div>
 
-  <div id="heroPlayer" class="hero-player">⚽</div>
 
- </section>
+  <!-- HERO -->
+
+  <section id="hero" class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-label">
+        ● SPORT EN DIRECT
+      </div>
+
+      <h1 id="heroTitle">
+        Football Live
+      </h1>
+
+      <p id="heroText">
+        Toute l'action sportive en direct,
+        les grands événements et les prochaines rencontres.
+      </p>
+
+      <div class="buttons">
+
+        <button class="primary"
+          onclick="goLive()">
+          ▶ REGARDER LE LIVE
+        </button>
+
+        <button class="secondary"
+          onclick="goUpcoming()">
+          🕐 À VENIR
+        </button>
+
+      </div>
+
+    </div>
+
+    <div id="heroIcon" class="hero-icon">
+      ⚽
+    </div>
+
+  </section>
 
 
- <!-- ATHLETES -->
+  <!-- ATHLETES -->
 
- <section class="section">
+  <section class="section">
 
-  <div class="heading">
-   <h2>⭐ À la une</h2>
-   <span id="sportLabel">Football</span>
-  </div>
+    <div class="heading">
 
-  <div id="athletes" class="athletes"></div>
+      <h2>⭐ Les stars du sport</h2>
 
- </section>
+      <span id="sportLabel">
+        Football
+      </span>
 
+    </div>
 
- <!-- LIVE -->
+    <div class="carousel-window">
 
- <section id="liveSection" class="section">
+      <div id="athleteTrack"
+        class="carousel-track">
+      </div>
 
-  <div class="heading">
-   <h2>🔴 En direct</h2>
-   <span>Maintenant</span>
-  </div>
+    </div>
 
-  <div id="liveMatches" class="live-grid">
-   <div class="empty">⏳ Chargement des matchs...</div>
-  </div>
-
- </section>
+  </section>
 
 
- <!-- UPCOMING -->
+  <!-- LIVE -->
 
- <section id="upcomingSection" class="section">
+  <section id="liveSection"
+    class="section">
 
-  <div class="heading">
-   <h2>🕐 Prochains événements</h2>
-   <span>À venir</span>
-  </div>
+    <div class="heading">
 
-  <div id="upcomingMatches" class="upcoming">
-   <div class="empty">⏳ Chargement...</div>
-  </div>
+      <h2>🔴 En direct</h2>
 
- </section>
+      <span>Maintenant</span>
+
+    </div>
+
+    <div id="liveMatches"
+      class="live-grid">
+
+      <div class="empty">
+        ⏳ Chargement des matchs...
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- UPCOMING -->
+
+  <section id="upcomingSection"
+    class="section">
+
+    <div class="heading">
+
+      <h2>🕐 Prochains événements</h2>
+
+      <span>À venir</span>
+
+    </div>
+
+    <div id="upcomingMatches"
+      class="upcoming">
+
+      <div class="empty">
+        ⏳ Chargement...
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
 
 
 <footer>
- SportLive © 2026 — Plateforme sportive
+  SportLive © 2026
 </footer>
 
 
@@ -716,548 +804,399 @@ footer{
 
 <nav class="bottom">
 
- <button class="active" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <b>⌂</b>Accueil
- </button>
+  <button class="active"
+    onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <b>⌂</b>
+    Accueil
+  </button>
 
- <button onclick="scrollToLive()">
-  <b>🔴</b>Live
- </button>
+  <button onclick="goLive()">
+    <b>🔴</b>
+    Live
+  </button>
 
- <button onclick="scrollToUpcoming()">
-  <b>🕐</b>À venir
- </button>
+  <button onclick="goUpcoming()">
+    <b>🕐</b>
+    À venir
+  </button>
 
- <button onclick="document.getElementById('search').focus()">
-  <b>🔎</b>Recherche
- </button>
+  <button onclick="document.getElementById('search').focus()">
+    <b>🔎</b>
+    Recherche
+  </button>
 
 </nav>
 
 
-<!-- VIDEO PLAYER -->
+<!-- PLAYER -->
 
-<div id="player" class="player">
+<div id="player"
+  class="player">
 
- <div class="player-head">
+  <div class="player-head">
 
-  <strong id="playerTitle">📺 Diffusion</strong>
+    <strong id="playerTitle">
+      📺 Diffusion
+    </strong>
 
-  <button class="close" onclick="closePlayer()">
-   ✕ Fermer
-  </button>
+    <button class="close"
+      onclick="closePlayer()">
+      ✕ Fermer
+    </button>
 
- </div>
+  </div>
 
- <div id="videoBox" class="video">
-  📺
-  <br>
-  Sélectionne une diffusion officielle
-  pour regarder l'événement.
- </div>
+  <div id="videoBox"
+    class="video">
+
+    📺<br><br>
+    Aucune diffusion officielle
+    n'est associée à cet événement.
+
+  </div>
 
 </div>
 
 
 <script>
 
-let sport="football";
-let matches=[];
+/* =====================================
+   DONNÉES SPORTS
+===================================== */
 
+const sports={
 
-/* =========================
-   SPORTS
-========================= */
+  football:{
+    label:"Football",
+    icon:"⚽",
+    title:"Football Live",
+    text:"Les grands matchs de football, les événements en direct et les prochaines rencontres.",
+    players:[
+      {
+        name:"Football Star",
+        role:"Attaquant",
+        image:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Football Pro",
+        role:"Milieu",
+        image:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Goal Master",
+        role:"Gardien",
+        image:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Speed Player",
+        role:"Ailier",
+        image:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=85"
+      }
+    ]
+  },
 
-const sportData={
+  basket:{
+    label:"Basketball",
+    icon:"🏀",
+    title:"Basketball Live",
+    text:"Les matchs de basketball et les grands événements du parquet.",
+    players:[
+      {
+        name:"Basket Star",
+        role:"Meneur",
+        image:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Dunk Master",
+        role:"Ailier",
+        image:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Court King",
+        role:"Arrière",
+        image:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"MVP",
+        role:"Star",
+        image:"https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=85"
+      }
+    ]
+  },
 
- football:{
-  label:"Football",
-  icon:"⚽",
-  title:"Football Live",
-  text:"Les plus grands matchs, les événements en direct et les prochaines rencontres.",
-  athletes:[
-   ["⚽","STAR DU FOOT","Attaquant"],
-   ["🥅","GOALKEEPER","Gardien"],
-   ["⚡","SUPER STAR","Ailier"],
-   ["🏆","CHAMPION","Légende"]
-  ]
- },
+  tennis:{
+    label:"Tennis",
+    icon:"🎾",
+    title:"Tennis Live",
+    text:"Les tournois, les grands matchs et toute l'action du court.",
+    players:[
+      {
+        name:"Tennis Star",
+        role:"Joueur",
+        image:"https://images.unsplash.com/photo-1530915365347-8b5d0b1d7f9a?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Ace Master",
+        role:"Serveur",
+        image:"https://images.unsplash.com/photo-1530915365347-8b5d0b1d7f9a?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Court Champion",
+        role:"Champion",
+        image:"https://images.unsplash.com/photo-1530915365347-8b5d0b1d7f9a?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Grand Slam",
+        role:"Finaliste",
+        image:"https://images.unsplash.com/photo-1530915365347-8b5d0b1d7f9a?auto=format&fit=crop&w=700&q=85"
+      }
+    ]
+  },
 
- basket:{
-  label:"Basketball",
-  icon:"🏀",
-  title:"Basketball Live",
-  text:"Retrouve les rencontres de basketball et les grands événements.",
-  athletes:[
-   ["🏀","DUNK STAR","Meneur"],
-   ["🔥","COURT KING","Ailier"],
-   ["⛹️","MVP","Arrière"],
-   ["🏆","CHAMPION","Star"]
-  ]
- },
+  racing:{
+    label:"Auto",
+    icon:"🏎️",
+    title:"Racing Live",
+    text:"Vitesse, courses et grands événements automobiles.",
+    players:[
+      {
+        name:"Speed Driver",
+        role:"Pilote",
+        image:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Racing Pro",
+        role:"Pilote",
+        image:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Track King",
+        role:"Pilote",
+        image:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=700&q=85"
+      }
+    ]
+  },
 
- tennis:{
-  label:"Tennis",
-  icon:"🎾",
-  title:"Tennis Live",
-  text:"Les tournois, les grands matchs et toute l'action du court.",
-  athletes:[
-   ["🎾","COURT STAR","Simple"],
-   ["💚","CHAMPION","Tournoi"],
-   ["🔥","ACE MASTER","Serveur"],
-   ["🏆","GRAND CHAMPION","Finaliste"]
-  ]
- },
-
- racing:{
-  label:"Auto",
-  icon:"🏎️",
-  title:"Racing Live",
-  text:"Courses, vitesse et grands événements automobiles.",
-  athletes:[
-   ["🏎️","SPEED STAR","Pilote"],
-   ["🏁","RACING PRO","Pilote"],
-   ["🚗","TRACK KING","Pilote"],
-   ["🏆","CHAMPION","Course"]
-  ]
- },
-
- boxing:{
-  label:"Boxe",
-  icon:"🥊",
-  title:"Boxing Live",
-  text:"Les grands combats et événements de sports de combat.",
-  athletes:[
-   ["🥊","FIGHT STAR","Poids lourd"],
-   ["🔥","CHAMPION","Champion"],
-   ["👊","KNOCKOUT","Combattant"],
-   ["🏆","WORLD CHAMP","Titre mondial"]
-  ]
- }
+  boxing:{
+    label:"Boxe",
+    icon:"🥊",
+    title:"Boxing Live",
+    text:"Les grands combats et événements de sports de combat.",
+    players:[
+      {
+        name:"Fight Star",
+        role:"Boxeur",
+        image:"https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"Knockout",
+        role:"Champion",
+        image:"https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=85"
+      },
+      {
+        name:"World Champion",
+        role:"Poids lourd",
+        image:"https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=700&q=85"
+      }
+    ]
+  }
 
 };
 
 
-/* =========================
-   SELECT SPORT
-========================= */
-
-function selectSport(value,button){
-
- sport=value;
-
- document
-  .querySelectorAll(".sport")
-  .forEach(x=>x.classList.remove("active"));
-
- button.classList.add("active");
-
- const data=sportData[value];
-
- document.getElementById("heroTitle").textContent=data.title;
- document.getElementById("heroText").textContent=data.text;
- document.getElementById("heroPlayer").textContent=data.icon;
- document.getElementById("sportLabel").textContent=data.label;
-
- document.getElementById("hero").className=
-  "hero "+(value==="football"?"":value);
-
- renderAthletes();
-
- if(value==="football"){
-  renderMatches();
- }else{
-  showOtherSport();
- }
-
-}
+let currentSport="football";
+let matches=[];
 
 
-/* =========================
-   ATHLETES
-========================= */
+/* =====================================
+   CARROUSEL
+===================================== */
+
+let carouselX=0;
+let carouselDirection=-1;
+let carouselAnimation=null;
+
 
 function renderAthletes(){
 
- const data=sportData[sport];
+  const track=
+    document.getElementById("athleteTrack");
 
- document.getElementById("athletes").innerHTML=
- data.athletes.map(a=>`
+  const data=
+    sports[currentSport];
 
-  <article class="athlete">
+  track.innerHTML=
+    data.players.map(player=>`
 
-   <div class="athlete-info">
+      <article class="athlete">
 
-    <small>${data.label}</small>
+        <img
+          src="${player.image}"
+          alt="${escapeHTML(player.name)}"
+          loading="lazy"
+        >
 
-    <h3>${a[1]}</h3>
+        <div class="athlete-shade"></div>
 
-    <span class="tag">${a[2]}</span>
+        <div class="athlete-info">
 
-   </div>
+          <div class="athlete-sport">
+            ${data.label}
+          </div>
 
-   <div class="athlete-emoji">${a[0]}</div>
+          <div class="athlete-name">
+            ${escapeHTML(player.name)}
+          </div>
 
-  </article>
+          <span class="athlete-role">
+            ${escapeHTML(player.role)}
+          </span>
 
- `).join("");
+        </div>
+
+      </article>
+
+    `).join("");
+
+  carouselX=0;
+  carouselDirection=-1;
+
+  startCarousel();
 
 }
 
 
-/* =========================
-   API
-========================= */
+function startCarousel(){
+
+  if(carouselAnimation)
+    cancelAnimationFrame(carouselAnimation);
+
+  const track=
+    document.getElementById("athleteTrack");
+
+  const box=
+    document.querySelector(".carousel-window");
+
+  function animate(){
+
+    const max=
+      Math.max(
+        0,
+        track.scrollWidth-box.clientWidth
+      );
+
+    if(max>0){
+
+      carouselX +=
+        carouselDirection*0.55;
+
+      if(carouselX<=-max){
+
+        carouselX=-max;
+        carouselDirection=1;
+
+      }
+
+      if(carouselX>=0){
+
+        carouselX=0;
+        carouselDirection=-1;
+
+      }
+
+      track.style.transform=
+        `translate3d(${carouselX}px,0,0)`;
+
+    }
+
+    carouselAnimation=
+      requestAnimationFrame(animate);
+
+  }
+
+  animate();
+
+}
+
+
+/* =====================================
+   CHANGER DE SPORT
+===================================== */
+
+function changeSport(value,button){
+
+  currentSport=value;
+
+  document
+    .querySelectorAll(".sport")
+    .forEach(x=>x.classList.remove("active"));
+
+  button.classList.add("active");
+
+  const data=sports[value];
+
+  document.getElementById("heroTitle").textContent=
+    data.title;
+
+  document.getElementById("heroText").textContent=
+    data.text;
+
+  document.getElementById("heroIcon").textContent=
+    data.icon;
+
+  document.getElementById("sportLabel").textContent=
+    data.label;
+
+  document.getElementById("hero").className=
+    "hero "+(value==="football"?"":value);
+
+  renderAthletes();
+
+  if(value==="football"){
+
+    renderMatches();
+
+  }else{
+
+    document.getElementById("liveMatches").innerHTML=`
+
+      <div class="empty">
+
+        ${data.icon}<br><br>
+
+        Les événements ${data.label}
+        seront connectés à leur source
+        de données.
+
+      </div>
+
+    `;
+
+    document.getElementById("upcomingMatches").innerHTML=`
+
+      <div class="empty">
+
+        🕐 Calendrier ${data.label}
+        en préparation.
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
+/* =====================================
+   CHARGER LES MATCHS
+===================================== */
 
 async function loadMatches(){
 
- try{
+  try{
 
-  const response=await fetch("/api/matches");
+    const response=
+      await fetch("/api/matches");
 
-  const data=await response.json();
-
-  if(!response.ok)
-   throw new Error(data.error||"API error");
-
-  matches=data.response||[];
-
-  if(sport==="football")
-   renderMatches();
-
- }catch(error){
-
-  console.error(error);
-
-  document.getElementById("liveMatches").innerHTML=
-   `<div class="empty">
-    ❌ Impossible de charger les matchs.<br><br>
-    Vérifie Vercel et ta configuration API.
-   </div>`;
-
-  document.getElementById("upcomingMatches").innerHTML="";
-
- }
-
-}
-
-
-/* =========================
-   MATCHS
-========================= */
-
-function renderMatches(){
-
- const live=matches.filter(m=>isLive(m));
- const upcoming=matches.filter(m=>!isLive(m)&&!isFinished(m));
-
- document.getElementById("liveMatches").innerHTML=
-  live.length
-   ? live.map(createLiveCard).join("")
-   : `<div class="empty">
-       🔴 Aucun match en direct actuellement.
-      </div>`;
-
- document.getElementById("upcomingMatches").innerHTML=
-  upcoming.length
-   ? upcoming.slice(0,10).map(createUpcomingCard).join("")
-   : `<div class="empty">
-       🕐 Aucun prochain match trouvé.
-      </div>`;
-
-}
-
-
-/* =========================
-   LIVE CARD
-========================= */
-
-function createLiveCard(m){
-
- const home=m.teams?.home;
- const away=m.teams?.away;
-
- return `
-
- <article class="match">
-
-  <span class="live-badge">
-   <i class="live-dot"></i> LIVE
-  </span>
-
-  <div class="competition">
-   🏆 ${escapeHTML(m.league?.name||"Football")}
-  </div>
-
-  <div class="teams">
-
-   <div class="team">
-
-    <img src="${escapeHTML(home?.logo||"")}" alt="">
-
-    <div class="team-name">
-     ${escapeHTML(home?.name||"Équipe")}
-    </div>
-
-   </div>
-
-   <div class="vs">VS</div>
-
-   <div class="team">
-
-    <img src="${escapeHTML(away?.logo||"")}" alt="">
-
-    <div class="team-name">
-     ${escapeHTML(away?.name||"Équipe")}
-    </div>
-
-   </div>
-
-  </div>
-
-  <div class="channel">
-   📺 Diffuseur : à déterminer
-  </div>
-
-  <button class="watch" onclick="openPlayer(${m.fixture.id})">
-   ▶ REGARDER
-  </button>
-
- </article>
-
- `;
-
-}
-
-
-/* =========================
-   UPCOMING CARD
-========================= */
-
-function createUpcomingCard(m){
-
- const home=m.teams?.home?.name||"Équipe";
- const away=m.teams?.away?.name||"Équipe";
-
- const d=new Date(m.fixture.date);
-
- const time=d.toLocaleTimeString("fr-FR",{
-  hour:"2-digit",
-  minute:"2-digit"
- });
-
- return `
-
- <article class="up-card">
-
-  <div>
-
-   <div class="up-time">${time}</div>
-
-   <div class="up-teams">
-    ${escapeHTML(home)} — ${escapeHTML(away)}
-   </div>
-
-   <div class="up-channel">
-    📺 Diffuseur à déterminer
-   </div>
-
-  </div>
-
-  <button class="secondary"
-   onclick="openPlayer(${m.fixture.id})">
-   ▶
-  </button>
-
- </article>
-
- `;
-
-}
-
-
-/* =========================
-   STATUS
-========================= */
-
-function isLive(m){
-
- const s=m.fixture?.status?.short;
-
- return [
-  "1H","2H","HT","ET","P","LIVE"
- ].includes(s);
-
-}
-
-function isFinished(m){
-
- const s=m.fixture?.status?.short;
-
- return [
-  "FT","AET","PEN"
- ].includes(s);
-
-}
-
-
-/* =========================
-   OTHER SPORTS
-========================= */
-
-function showOtherSport(){
-
- document.getElementById("liveMatches").innerHTML=`
-
-  <div class="empty">
-   ${sportData[sport].icon}<br><br>
-   Les événements ${sportData[sport].label}
-   seront connectés à leur source de données.
-  </div>
-
- `;
-
- document.getElementById("upcomingMatches").innerHTML=`
-
-  <div class="empty">
-   🕐 Calendrier ${sportData[sport].label}
-   en préparation.
-  </div>
-
- `;
-
-}
-
-
-/* =========================
-   PLAYER
-========================= */
-
-function openPlayer(id){
-
- const match=matches.find(
-  x=>x.fixture?.id===id
- );
-
- document.getElementById("player").classList.add("open");
-
- document.getElementById("playerTitle").textContent=
-  match
-   ? "📺 "+(match.teams?.home?.name||"")+
-     " — "+
-     (match.teams?.away?.name||"")
-   : "📺 Diffusion";
-
- document.getElementById("videoBox").innerHTML=`
-
-  <div>
-   📺<br><br>
-   Aucune diffusion officielle n'est
-   actuellement associée à ce match.
-   <br><br>
-   Le lecteur est prêt à recevoir
-   un flux autorisé.
-  </div>
-
- `;
-
-}
-
-
-function closePlayer(){
-
- document.getElementById("player").classList.remove("open");
-
-}
-
-
-/* =========================
-   SEARCH
-========================= */
-
-function searchMatches(){
-
- const q=document
-  .getElementById("search")
-  .value
-  .toLowerCase()
-  .trim();
-
- if(!q){
-  renderMatches();
-  return;
- }
-
- const old=matches;
-
- matches=matches.filter(m=>{
-
-  const h=(m.teams?.home?.name||"").toLowerCase();
-  const a=(m.teams?.away?.name||"").toLowerCase();
-  const l=(m.league?.name||"").toLowerCase();
-
-  return h.includes(q)||a.includes(q)||l.includes(q);
-
- });
-
- renderMatches();
-
- matches=old;
-
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-function scrollToLive(){
-
- document.getElementById("liveSection")
-  .scrollIntoView({behavior:"smooth"});
-
-}
-
-function scrollToUpcoming(){
-
- document.getElementById("upcomingSection")
-  .scrollIntoView({behavior:"smooth"});
-
-}
-
-
-/* =========================
-   SECURITY
-========================= */
-
-function escapeHTML(value){
-
- return String(value??"").replace(
-  /[&<>"']/g,
-  c=>({
-   "&":"&amp;",
-   "<":"&lt;",
-   ">":"&gt;",
-   '"':"&quot;",
-   "'":"&#039;"
-  }[c])
- );
-
-}
-
-
-/* =========================
-   START
-========================= */
-
-renderAthletes();
-loadMatches();
-
-/* actualisation toutes les 60 secondes */
-setInterval(loadMatches,60000);
-
-</script>
-
-</body>
-  </html>
+   
