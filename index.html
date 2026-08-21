@@ -207,52 +207,45 @@ function officialSources(m){
   const country=(m.league?.country||"").toLowerCase();
   const text=(league+" "+country).toLowerCase();
   const sources=[];
-  const add=(name,url,region,note)=>{ if(url && /^https?:\/\//i.test(url)) sources.push({name,url,region,note}); };
+  const add=(name,url,region,note)=>sources.push({name,url,region,note});
 
-  // 1) Si /api/matches renvoie déjà les diffuseurs officiels du match,
-  // on utilise leurs URLs exactes. Aucun flux inventé n'est créé.
-  const broadcasts=m.broadcasts||m.broadcasters||m.tvStations||m.tvstations||[];
-  if(Array.isArray(broadcasts)){
-    broadcasts.forEach(b=>{
-      const url=b.url||b.link||b.web||b.website||b.broadcast_url||b.streamUrl;
-      const name=b.name||b.channel||b.station||b.broadcaster||"Diffuseur officiel";
-      const region=b.region||b.country||"🌍 Selon le territoire";
-      if(url) add(name,url,region,"URL fournie par la source de données du match");
-    });
+  add("FIFA+ / DAZN","https://www.dazn.com/","🌍 Global",
+      "Contenu FIFA+ gratuit selon le match et le territoire");
+
+  if(text.includes("uefa")||text.includes("europe")||text.includes("futsal")||
+     text.includes("women")||text.includes("fémin")||text.includes("u19")||text.includes("u17")){
+    add("UEFA.tv","https://www.uefa.tv/","🇪🇺 Europe",
+        "Directs gratuits pour certaines compétitions; restrictions territoriales possibles");
+    add("UEFA — Où regarder","https://www.uefa.com/match-calendar/","🇪🇺 Europe",
+        "Liste officielle des diffuseurs par territoire");
   }
 
-  // 2) Si aucune URL de match n'est fournie par l'API, on affiche uniquement
-  // des pages officielles permettant de retrouver le diffuseur du match.
-  if(!sources.length){
-    if(text.includes("uefa")||text.includes("europe")||text.includes("futsal")||
-       text.includes("women")||text.includes("fémin")||text.includes("u19")||text.includes("u17")){
-      add("UEFA.tv","https://www.uefa.tv/","🇪🇺 Europe",
-          "Page officielle; disponibilité selon le match et le territoire");
-      add("UEFA — Où regarder","https://www.uefa.com/match-calendar/","🇪🇺 Europe",
-          "Page officielle des diffuseurs par match et territoire");
-    }
-
-    if(text.includes("caf")||text.includes("africa")||text.includes("ivoire")||
-       text.includes("ivory")||text.includes("senegal")||text.includes("ghana")||
-       text.includes("nigeria")||text.includes("south africa")||text.includes("morocco")||
-       text.includes("burkina")||text.includes("mali")||text.includes("guinea")){
-      add("CAF — Site officiel","https://www.cafonline.com/","🌍 Afrique",
-          "Page officielle; le diffuseur dépend du match et du territoire");
-    }
-
-    if(text.includes("afc")||text.includes("asia")||text.includes("japan")||
-       text.includes("korea")||text.includes("australia")||text.includes("oceania")||
-       text.includes("ofc")||text.includes("china")||text.includes("thailand")||
-       text.includes("india")||text.includes("indonesia")||text.includes("malaysia")){
-      add("AFC — Où regarder","https://www.the-afc.com/en/national/asian_qualifiers/where_to_watch.html","🌏 Asie",
-          "Page officielle des diffuseurs");
-    }
-
-    add("OneFootball","https://tv.onefootball.com/","🌍 Global",
-        "Vérifier si ce match est disponible dans votre territoire");
-    add("DAZN","https://www.dazn.com/","🌍 Global",
-        "Disponibilité et droits variables selon le territoire");
+  if(text.includes("caf")||text.includes("africa")||text.includes("ivoire")||
+     text.includes("ivory")||text.includes("senegal")||text.includes("ghana")||
+     text.includes("nigeria")||text.includes("south africa")||text.includes("morocco")||
+     text.includes("burkina")||text.includes("mali")||text.includes("guinea")){
+    add("CAF — Diffusion officielle","https://www.cafonline.com/","🌍 Afrique",
+        "Informations officielles sur les diffuseurs; gratuit selon le territoire");
   }
+
+  if(text.includes("afc")||text.includes("asia")||text.includes("japan")||
+     text.includes("korea")||text.includes("australia")||text.includes("oceania")||
+     text.includes("ofc")||text.includes("china")||text.includes("thailand")||
+     text.includes("india")||text.includes("indonesia")||text.includes("malaysia")){
+    add("AFC — Où regarder","https://www.the-afc.com/en/national/asian_qualifiers/where_to_watch.html","🌏 Asie",
+        "Diffuseurs officiels selon la compétition et le territoire");
+  }
+
+  if(text.includes("mls")||text.includes("concacaf")||text.includes("usa")||
+     text.includes("canada")||text.includes("mexico")||text.includes("mexique")||
+     text.includes("brazil")||text.includes("brasil")||text.includes("argentina")||
+     text.includes("colombia")||text.includes("chile")||text.includes("peru")){
+    add("OneFootball TV","https://tv.onefootball.com/","🌎 Amériques",
+        "Certains matchs sont Free-to-Air; disponibilité selon le pays");
+  }
+
+  add("OneFootball TV","https://tv.onefootball.com/","🌍 Global",
+      "Vérifier la mention Free-to-Air pour le match");
 
   return sources.filter((x,i,a)=>a.findIndex(y=>y.url===x.url && y.region===x.region)===i);
 }
@@ -311,7 +304,7 @@ setInterval(loadMatches,60000);
     <h2>📺 Diffuseurs disponibles</h2>
     <div id="broadcasterMatch" class="modalMatch"></div>
     <div id="broadcasterList" class="broadcasterList"></div>
-    <p class="modalNote">Les URLs exactes sont utilisées lorsqu’elles sont fournies par la source du match. Sinon, seules les pages officielles sont proposées.</p>
+    <p class="modalNote">Les diffuseurs disponibles peuvent varier selon le match et le pays.</p>
   </div>
 </div>
 
@@ -337,37 +330,59 @@ async function showBroadcasters(m){
   const title=document.getElementById("broadcasterMatch");
   const home=m.teams?.home?.name||"Équipe";
   const away=m.teams?.away?.name||"Équipe";
-  const fixtureId=m.fixture?.id;
   title.textContent="⚽ "+home+" — "+away+" · "+(m.league?.name||"Football");
-  modal.style.display="block";
-  document.body.style.overflow="hidden";
-  list.innerHTML='<div class="broadcasterItem"><div class="broadcasterInfo"><b>🔎 Recherche des diffuseurs officiels...</b><small>Aucun flux n'est inventé.</small></div></div>';
 
   let sources=officialSources(m);
-  // Optionnel : si ton backend ajoute /api/broadcasters?fixture=ID,
-  // les URLs exactes retournées par ce service passent avant les pages génériques.
+
+  // Si le backend fournit les diffuseurs exacts du match, on les utilise en priorité.
+  // Sinon, on conserve uniquement les pages officielles connues ci-dessous.
+  const fixtureId=m.fixture?.id;
   if(fixtureId){
     try{
-      const r=await fetch('/api/broadcasters?fixture='+encodeURIComponent(fixtureId),{cache:'no-store'});
+      const r=await fetch(`/api/broadcasters?fixture=${encodeURIComponent(fixtureId)}`,{cache:"no-store",headers:{"Accept":"application/json"}});
       if(r.ok){
         const d=await r.json();
-        const arr=Array.isArray(d)?d:(Array.isArray(d.response)?d.response:(Array.isArray(d.broadcasts)?d.broadcasts:[]));
-        const exact=[];
-        arr.forEach(b=>{
-          const url=b.url||b.link||b.web||b.website||b.broadcast_url||b.streamUrl;
-          if(url) exact.push({name:b.name||b.channel||b.station||b.broadcaster||'Diffuseur officiel',region:b.region||b.country||'🌍 Selon le territoire',url,note:'URL exacte fournie pour ce match'});
-        });
-        if(exact.length) sources=exact;
+        const exact=Array.isArray(d)?d:(Array.isArray(d.response)?d.response:(Array.isArray(d.broadcasters)?d.broadcasters:[]));
+        if(exact.length){
+          sources=exact.map(x=>({
+            name:x.name||x.broadcaster?.name||x.channel?.name||"Diffuseur officiel",
+            url:x.url||x.link||x.broadcastUrl||x.channel?.url||"",
+            region:x.region||x.country||"Territoire disponible",
+            note:x.note||"Diffuseur associé à ce match"
+          })).filter(x=>/^https?:\/\//i.test(x.url));
+        }
       }
-    }catch(e){ console.warn('SportLive broadcasters:',e); }
+    }catch(e){ console.log("/api/broadcasters indisponible",e); }
   }
 
   if(!sources.length){
-    list.innerHTML='<div class="broadcasterItem"><div class="broadcasterInfo"><b>Aucun diffuseur officiel trouvé</b><small>Le site ne fabrique pas de lien de streaming. Vérifie la page officielle de la compétition.</small></div></div>';
+    list.innerHTML='<div class="broadcasterItem"><div class="broadcasterInfo"><b>Aucun diffuseur officiel trouvé</b><small>Vérifie la page officielle de la compétition.</small></div></div>';
+  }else{
+    list.innerHTML=sources.map(s=>`
+      <div class="broadcasterItem">
+        <div class="broadcasterInfo">
+          <b>${esc(s.name)}</b>
+          <small>${esc(s.region)}</small>
+        </div>
+        <button class="watch" onclick="openSource('${s.url}')">OUVRIR</button>
+      </div>`).join("");
+  }
+  modal.style.display="block";
+  document.body.style.overflow="hidden";
+}
+function openSource(url){
+  if(!/^https?:\/\//i.test(url||"")){
+    alert("Lien officiel indisponible pour ce diffuseur.");
     return;
   }
-  list.innerHTML=sources.map(s=>`
-    <div class="broadcasterItem">
-      <div class="broadcasterInfo">
-        <b>${esc(s.name)}</b>
-        <small>${esc(s.region)} · ${esc(s.note||'Source offici
+  window.open(url,"_blank","noopener,noreferrer");
+}
+
+function closeBroadcasters(){
+  document.getElementById("broadcasterModal").style.display="none";
+  document.body.style.overflow="";
+}
+</script>
+
+</body>
+ </html>
