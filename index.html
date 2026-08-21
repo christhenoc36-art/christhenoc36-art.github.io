@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070b12">
+<title>SportLive</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#070b12;color:#fff;font-family:Arial,sans-serif}
+header{position:sticky;top:0;z-index:20;background:#070b12ee;border-bottom:1px solid #202b38}
+.top{max-width:1200px;margin:auto;padding:14px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-size:27px;font-weight:900}.logo span{color:#19e879}
+.search{margin-left:auto;width:310px;background:#0e151f;color:#fff;border:1px solid #293548;border-radius:14px;padding:12px 15px;outline:0}
+main{max-width:1200px;margin:auto;padding:15px 16px 90px}
+.sports,.filters{display:flex;gap:9px;overflow:auto;padding:4px 0 14px}.sports button,.filters button{border:1px solid #293548;background:#111923;color:#fff;border-radius:14px;padding:10px 14px;white-space:nowrap}
+.sports button.active{background:#12351f;border-color:#19e879}.filters button.active{background:#fff;color:#000}
+.hero{min-height:260px;border:1px solid #243143;border-radius:24px;margin:8px 0 28px;padding:30px;background:radial-gradient(circle at 80% 45%,#08763b,transparent 35%),#07110c;position:relative;overflow:hidden}
+.hero h1{font-size:42px;margin:10px 0}.hero p{color:#b8c3d0;max-width:540px}.heroIcon{position:absolute;right:8%;bottom:-25px;font-size:170px}
+.section{margin:25px 0}.title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.title h2{margin:0}.muted{color:#7f8b9d}
+.stars{display:flex;gap:12px;overflow:auto}.star{min-width:190px;height:230px;border-radius:20px;overflow:hidden;position:relative;background:#111923;border:1px solid #293548}.star img{width:100%;height:100%;object-fit:cover}.star div{position:absolute;left:12px;right:12px;bottom:12px;font-weight:900;text-shadow:0 2px 5px #000}
+.matches{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.match{background:#101721;border:1px solid #293548;border-radius:18px;padding:15px}.matchTop{display:flex;justify-content:space-between}.live{background:#ff3154;border-radius:12px;padding:5px 8px;font-size:10px;font-weight:900}.league,.status{color:#8190a3;font-size:10px}.league{margin:13px 0}.teams{display:grid;grid-template-columns:1fr 35px 1fr;text-align:center;align-items:center}.team img{width:50px;height:50px;object-fit:contain}.team b{display:block;font-size:11px;margin-top:5px}.vs{color:#738095;font-weight:900}.watch{width:100%;margin-top:13px;padding:11px;border:0;border-radius:10px;background:#19e879;color:#031008;font-weight:900}.watch.off{background:#29313d;color:#8793a2}
+.upcoming{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.up{background:#111923;border:1px solid #293548;border-radius:15px;padding:14px}.upDate{color:#19e879;font-size:11px;font-weight:900}.upTeams{font-weight:900;margin-top:6px}.empty{padding:30px;text-align:center;border:1px dashed #293548;border-radius:17px;color:#7f8b9d;grid-column:1/-1}
+.bottom{position:fixed;bottom:0;left:0;right:0;height:65px;background:#080d14f5;border-top:1px solid #202b38;display:flex;z-index:30}.bottom button{flex:1;background:transparent;border:0;color:#7e8998}.bottom .active{color:#19e879}
+@media(max-width:700px){.top{flex-wrap:wrap}.search{order:2;width:100%;margin:0}.matches,.upcoming{grid-template-columns:1fr}.hero h1{font-size:34px}.heroIcon{font-size:110px}}
+</style>
+</head>
+<body>
 
+<header><div class="top">
+<div class="logo">⚡ Sport<span>Live</span></div>
+<input id="search" class="search" placeholder="🔎 Rechercher une équipe..." oninput="render()">
+</div></header>
+
+<main>
+<div class="sports">
+<button class="active" onclick="sport('football',this)">⚽ FOOTBALL</button>
+<button onclick="sport('basket',this)">🏀 BASKET</button>
+<button onclick="sport('tennis',this)">🎾 TENNIS</button>
+<button onclick="sport('auto',this)">🏎️ AUTO</button>
+<button onclick="sport('boxe',this)">🥊 BOXE</button>
+</div>
+
+<div class="filters">
+<button class="active" onclick="filterBy('all',this)">Tous</button>
+<button onclick="filterBy('live',this)">🔴 En direct</button>
+<button onclick="filterBy('recent',this)">Récents</button>
+<button onclick="filterBy('upcoming',this)">À venir</button>
+</div>
+
+<section class="hero">
+<div><small style="color:#19e879;font-weight:900;letter-spacing:2px">● SPORT EN DIRECT</small>
+<h1 id="heroTitle">Football Live</h1>
+<p id="heroText">Retrouve les matchs, événements et stars de ton sport préféré.</p></div>
+<div class="heroIcon" id="heroIcon">⚽</div>
+</section>
+
+<section class="section">
+<div class="title"><h2>⭐ Stars du sport</h2><span class="muted" id="sportName">Football</span></div>
+<div class="stars" id="stars"></div>
+</section>
+
+<section class="section" id="matchSection">
+<div class="title"><h2>🏟️ Matchs</h2><span class="muted" id="count">Chargement...</span></div>
+<div class="matches" id="matches"><div class="empty">⏳ Chargement des matchs...</div></div>
+</section>
+
+<section class="section" id="upcomingSection">
+<div class="title"><h2>📅 À venir</h2><span class="muted">Prochains événements</span></div>
+<div class="upcoming" id="upcoming"><div class="empty">⏳ Chargement...</div></div>
+</section>
+</main>
+
+<nav class="bottom">
+<button class="active" onclick="home()">⌂<br>Accueil</button>
+<button onclick="live()">🔴<br>Live</button>
+<button onclick="upcomingNav()">📅<br>À venir</button>
+<button onclick="document.getElementById('search').focus()">🔎<br>Recherche</button>
+</nav>
+
+<script>
+let matches=[];
+let currentSport="football";
+let currentFilter="all";
+
+const sportData={
+ football:["Football","⚽","Football Live"],
+ basket:["Basketball","🏀","Basketball Live"],
+ tennis:["Tennis","🎾","Tennis Live"],
+ auto:["Auto","🏎️","Racing Live"],
+ boxe:["Boxe","🥊","Boxing Live"]
+};
+
+const stars=[
+ ["⭐ Football Star","https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80"],
+ ["⭐ Goal Master","https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80"],
+ ["⭐ Sport Pro","https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80"],
+ ["⭐ Champion","https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80"]
+];
+
+function esc(v){return String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]))}
+function isLive(m){let s=(m.fixture?.status?.short||m.fixture?.status?.long||"").toUpperCase();return ["1H","2H","ET","P","LIVE","HT"].includes(s)||s.includes("LIVE")}
+function isFinished(m){let s=(m.fixture?.status?.short||m.fixture?.status?.long||"").toUpperCase();return ["FT","AET","PEN","CANC","ABD","AWD","WO"].includes(s)||s.includes("FINISHED")}
+
+function drawStars(){
+document.getElementById("stars").innerHTML=stars.map(s=>`<div class="star"><img src="${s[1]}"><div>${s[0]}</div></div>`).join("");
+}
+
+async function loadMatches(){
+  const box = document.getElementById("matches");
+  const count = document.getElementById("count");
+  count.textContent = "Chargement...";
+  box.innerHTML = '<div class="empty">⏳ Chargement des matchs...</div>';
+
+  const urls = ["/api/matches", window.location.origin + "/api/matches"];
+
+  for (const url of urls) {
+    try {
+      const response = await fetch(url + (url.includes("?") ? "&" : "?") + "_=" + Date.now(), {
+        method:"GET",
+        cache:"no-store",
+        headers:{ "Accept":"application/json" }
+      });
+
+      const text = await response.text();
+      if (!response.ok) throw new Error("HTTP " + response.status);
+
+      let data;
+      try { data = JSON.parse(text); }
+      catch(e) { throw new Error("La réponse n'est pas du JSON"); }
+
+      // Football-API Sports normally returns:
+      // { results: 385, response: [ ... ] }
+      if (Array.isArray(data)) {
+        matches = data;
+      } else if (Array.isArray(data.response)) {
+        matches = data.response;
+      } else if (Array.isArray(data.fixtures)) {
+        matches = data.fixtures;
+      } else {
+        throw new Error("Aucun tableau de matchs dans la réponse");
+      }
+
+      console.log("SportLive: matchs reçus =", matches.length);
+      render();
+      return;
+    } catch (e) {
+      console.error("SportLive API:", url, e);
+    }
+  }
+
+  count.textContent = "Erreur API";
+  box.innerHTML = '<div class="empty">❌ Les matchs ne peuvent pas être chargés.<br><br>Ouvre <b>/api/matches</b> dans le navigateur : si tu vois le JSON avec <b>response</b> et des matchs, l’API fonctionne.</div>';
+}
+
+function render(){
+  const title = document.getElementById("heroTitle");
+  const text = document.getElementById("heroText");
+  const icon = document.getElementById("heroIcon");
+  const sportLabel = document.getElementById("sportName");
+
+  if(currentSport!=="football"){
+    document.getElementById("count").textContent="0 événement";
+    document.getElementById("matches").innerHTML='<div class="empty">🏟️ Les événements de '+sportData[currentSport][0]+' seront ajoutés ici.</div>';
+    document.getElementById("upcoming").innerHTML='<div class="empty">📅 Calendrier '+sportData[currentSport][0]+'</div>';
+    return;
+  }
+
+  title.textContent = sportData[currentSport][2];
+  text.textContent = "Retrouve les matchs, événements et stars de ton sport préféré.";
+  icon.textContent = sportData[currentSport][1];
+  sportLabel.textContent = sportData[currentSport][0];
+
+  let list=[...matches];
+  const q=document.getElementById("search").value.toLowerCase().trim();
+
+  if(q){
+    list=list.filter(m =>
+      (m.teams?.home?.name||"").toLowerCase().includes(q) ||
+      (m.teams?.away?.name||"").toLowerCase().includes(q) ||
+      (m.league?.name||"").toLowerCase().includes(q)
+    );
+  }
+
+  if(currentFilter==="live") list=list.filter(isLive);
+  if(currentFilter==="recent") list=list.filter(isFinished);
+  if(currentFilter==="upcoming") list=list.filter(m=>!isLive(m)&&!isFinished(m));
+
+  document.getElementById("count").textContent =
+    list.length+" événement"+(list.length>1?"s":"");
+
+  document.getElementById("matches").innerHTML =
+    list.length
+      ? list.slice(0,50).map(card).join("")
+      : '<div class="empty">Aucun match trouvé.</div>';
+
+  const up=matches.filter(m=>!isLive(m)&&!isFinished(m)).slice(0,12);
+  document.getElementById("upcoming").innerHTML =
+    up.length ? up.map(upCard).join("") :
+    '<div class="empty">📅 Aucun prochain événement.</div>';
+}
+
+function officialSources(m){
+  const league=(m.league?.name||"").toLowerCase();
+  const country=(m.league?.country||"").toLowerCase();
+  const text=(league+" "+country).toLowerCase();
+  const sources=[
+    {name:"FIFA+ — gratuit selon les droits",url:"https://www.fifa.com/en/plus",region:"🌍 Global"},
+    {name:"OneFootball — Free to Air selon le match",url:"https://tv.onefootball.com/",region:"🌍 Global"}
+  ];
+  if(text.includes("uefa")||text.includes("europe")||text.includes("futsal")||text.includes("women")||text.includes("u19")||text.includes("u17"))
+    sources.push({name:"UEFA.tv — gratuit selon le territoire",url:"https://www.uefa.tv/",region:"🇪🇺 Europe"});
+  if(text.includes("caf")||text.includes("africa")||text.includes("senegal")||text.includes("ghana")||text.includes("nigeria")||text.includes("south africa"))
+    sources.push({name:"CAF — diffusion officielle",url:"https://www.cafonline.com/",region:"🌍 Afrique"});
+  if(text.includes("afc")||text.includes("asia")||text.includes("japan")||text.includes("korea")||text.includes("australia")||text.includes("oceania")||text.includes("ofc"))
+    sources.push({name:"AFC — diffusion officielle",url:"https://www.the-afc.com/",region:"🌏 Asie"});
+  if(text.includes("mls")||text.includes("concacaf")||text.includes("usa")||text.includes("canada")||text.includes("mexico")||text.includes("brazil")||text.includes("brasil"))
+    sources.push({name:"OneFootball — Free to Air selon le match",url:"https://tv.onefootball.com/",region:"🌎 Amériques"});
+  return sources.filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+}
+
+function card(m){
+let h=m.teams?.home||{},a=m.teams?.away||{};
+return `<article class="match"><div class="matchTop"><span class="live">${isLive(m)?"● LIVE":"MATCH"}</span><span class="status">${esc(m.fixture?.status?.long||"Programmé")}</span></div>
+<div class="league">🏆 ${esc(m.league?.name||"Football")}</div>
+<div class="teams"><div class="team"><img src="${esc(h.logo||"")} " onerror="this.style.visibility='hidden'"><b>${esc(h.name||"Équipe")}</b></div><div class="vs">VS</div><div class="team"><img src="${esc(a.logo||"")} " onerror="this.style.visibility='hidden'"><b>${esc(a.name||"Équipe")}</b></div></div>
+<button class="watch off" disabled>📺 Diffusion non configurée</button></article>`;
+}
+function upCard(m){
+let d=new Date(m.fixture?.date),date=isNaN(d)?"":d.toLocaleDateString("fr-FR",{day:"2-digit",month:"2-digit"}),time=isNaN(d)?"":d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"});
+return `<div class="up"><div class="upDate">${date} • ${time}</div><div class="upTeams">${esc(m.teams?.home?.name||"Équipe")} — ${esc(m.teams?.away?.name||"Équipe")}</div><small class="muted">${esc(m.league?.name||"Football")}</small></div>`;
+}
+function sport(s,b){
+currentSport=s;document.querySelectorAll(".sports button").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+let d=sportData[s];heroTitle.textContent=d[2];heroText.textContent="Retrouve les matchs, événements et stars de ton sport préféré.";heroIcon.textContent=d[1];sportName.textContent=d[0];render();
+}
+function filterBy(f,b){currentFilter=f;document.querySelectorAll(".filters button").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()}
+function live(){filterBy("live",document.querySelectorAll(".filters button")[1]);document.getElementById("matchSection").scrollIntoView({behavior:"smooth"})}
+function upcomingNav(){filterBy("upcoming",document.querySelectorAll(".filters button")[3]);document.getElementById("upcomingSection").scrollIntoView({behavior:"smooth"})}
+function home(){window.scrollTo({top:0,behavior:"smooth"})}
+
+drawStars();
+loadMatches();
+setInterval(loadMatches,60000);
+</script>
+</body>
+  </html>
