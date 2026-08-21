@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T07:54:50.829068+00:00",
+  "lastUpdated": "2026-08-21T09:55:17.930675+00:00",
   "from": "2026-08-21",
   "to": "2026-08-23",
   "matches": [
@@ -394,9 +394,9 @@
       "id": 1549372,
       "utcDate": "2026-08-21T07:30:00+00:00",
       "timestamp": 1787297400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1230,
         "name": "Npl Nsw U20",
@@ -417,8 +417,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -437,9 +437,9 @@
       "id": 1565074,
       "utcDate": "2026-08-21T09:00:00+00:00",
       "timestamp": 1787302800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 668,
         "name": "1. Liga U19",
@@ -460,8 +460,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -523,9 +523,9 @@
       "id": 1611335,
       "utcDate": "2026-08-21T09:00:00+00:00",
       "timestamp": 1787302800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -546,8 +546,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -566,9 +566,9 @@
       "id": 1611350,
       "utcDate": "2026-08-21T09:00:00+00:00",
       "timestamp": 1787302800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -589,8 +589,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -609,9 +609,9 @@
       "id": 1623077,
       "utcDate": "2026-08-21T09:00:00+00:00",
       "timestamp": 1787302800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -632,8 +632,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -652,9 +652,9 @@
       "id": 1517632,
       "utcDate": "2026-08-21T09:30:00+00:00",
       "timestamp": 1787304600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 17,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -675,8 +675,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -695,9 +695,9 @@
       "id": 1522004,
       "utcDate": "2026-08-21T09:30:00+00:00",
       "timestamp": 1787304600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -718,8 +718,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -738,9 +738,9 @@
       "id": 1541374,
       "utcDate": "2026-08-21T09:30:00+00:00",
       "timestamp": 1787304600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 24,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -761,8 +761,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -781,9 +781,9 @@
       "id": 1627686,
       "utcDate": "2026-08-21T09:30:00+00:00",
       "timestamp": 1787304600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 25,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -804,8 +804,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -824,9 +824,9 @@
       "id": 1627687,
       "utcDate": "2026-08-21T09:30:00+00:00",
       "timestamp": 1787304600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 20,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -847,8 +847,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1489,49 +1489,6 @@
         "name": "Thimphu City",
         "shortName": "Thimphu City",
         "crest": "https://media.api-sports.io/football/teams/5592.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1627015,
-      "utcDate": "2026-08-21T12:00:00+00:00",
-      "timestamp": 1787313600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "homeTeam": {
-        "id": 9575,
-        "name": "Real Madrid II",
-        "shortName": "Real Madrid II",
-        "crest": "https://media.api-sports.io/football/teams/9575.png"
-      },
-      "awayTeam": {
-        "id": 9381,
-        "name": "Atlético Baleares",
-        "shortName": "Atlético Baleares",
-        "crest": "https://media.api-sports.io/football/teams/9381.png"
       },
       "score": {
         "fullTime": {
@@ -5832,6 +5789,49 @@
         "name": "Górnik Łęczna",
         "shortName": "Górnik Łęczna",
         "crest": "https://media.api-sports.io/football/teams/6941.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1562241,
+      "utcDate": "2026-08-21T16:00:00+00:00",
+      "timestamp": 1787328000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 350,
+        "name": "4. liga - Divizie A",
+        "country": "Czech-Republic",
+        "logo": "https://media.api-sports.io/football/leagues/350.png"
+      },
+      "homeTeam": {
+        "id": 19639,
+        "name": "Jiskra Domažlice II",
+        "shortName": "Jiskra Domažlice II",
+        "crest": "https://media.api-sports.io/football/teams/19639.png"
+      },
+      "awayTeam": {
+        "id": 21982,
+        "name": "Hluboka nad Vltavou",
+        "shortName": "Hluboka nad Vltavou",
+        "crest": "https://media.api-sports.io/football/teams/21982.png"
       },
       "score": {
         "fullTime": {
@@ -12818,6 +12818,49 @@
       ]
     },
     {
+      "id": 1627015,
+      "utcDate": "2026-08-21T18:00:00+00:00",
+      "timestamp": 1787335200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "homeTeam": {
+        "id": 9575,
+        "name": "Real Madrid II",
+        "shortName": "Real Madrid II",
+        "crest": "https://media.api-sports.io/football/teams/9575.png"
+      },
+      "awayTeam": {
+        "id": 9381,
+        "name": "Atlético Baleares",
+        "shortName": "Atlético Baleares",
+        "crest": "https://media.api-sports.io/football/teams/9381.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1627046,
       "utcDate": "2026-08-21T18:00:00+00:00",
       "timestamp": 1787335200,
@@ -12927,6 +12970,49 @@
         "name": "Rentistas",
         "shortName": "Rentistas",
         "crest": "https://media.api-sports.io/football/teams/2371.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631546,
+      "utcDate": "2026-08-21T18:00:00+00:00",
+      "timestamp": 1787335200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 15695,
+        "name": "Deportivo FATIC",
+        "shortName": "Deportivo FATIC",
+        "crest": "https://media.api-sports.io/football/teams/15695.png"
+      },
+      "awayTeam": {
+        "id": 15698,
+        "name": "EM Huanuni",
+        "shortName": "EM Huanuni",
+        "crest": "https://media.api-sports.io/football/teams/15698.png"
       },
       "score": {
         "fullTime": {
@@ -16129,6 +16215,49 @@
       ]
     },
     {
+      "id": 1605337,
+      "utcDate": "2026-08-21T22:00:00+00:00",
+      "timestamp": 1787349600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 759,
+        "name": "Liga Mayor",
+        "country": "Dominican-Republic",
+        "logo": "https://media.api-sports.io/football/leagues/759.png"
+      },
+      "homeTeam": {
+        "id": 16617,
+        "name": "Moca",
+        "shortName": "Moca",
+        "crest": "https://media.api-sports.io/football/teams/16617.png"
+      },
+      "awayTeam": {
+        "id": 16142,
+        "name": "Vega Real",
+        "shortName": "Vega Real",
+        "crest": "https://media.api-sports.io/football/teams/16142.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1623452,
       "utcDate": "2026-08-21T22:00:00+00:00",
       "timestamp": 1787349600,
@@ -16324,49 +16453,6 @@
         "name": "Querétaro W",
         "shortName": "Querétaro W",
         "crest": "https://media.api-sports.io/football/teams/14871.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1605337,
-      "utcDate": "2026-08-21T23:00:00+00:00",
-      "timestamp": 1787353200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 759,
-        "name": "Liga Mayor",
-        "country": "Dominican-Republic",
-        "logo": "https://media.api-sports.io/football/leagues/759.png"
-      },
-      "homeTeam": {
-        "id": 16617,
-        "name": "Moca",
-        "shortName": "Moca",
-        "crest": "https://media.api-sports.io/football/teams/16617.png"
-      },
-      "awayTeam": {
-        "id": 16142,
-        "name": "Vega Real",
-        "shortName": "Vega Real",
-        "crest": "https://media.api-sports.io/football/teams/16142.png"
       },
       "score": {
         "fullTime": {
@@ -52163,49 +52249,6 @@
       ]
     },
     {
-      "id": 1619402,
-      "utcDate": "2026-08-22T14:30:00+00:00",
-      "timestamp": 1787409000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 20690,
-        "name": "Vjosa",
-        "shortName": "Vjosa",
-        "crest": "https://media.api-sports.io/football/teams/20690.png"
-      },
-      "awayTeam": {
-        "id": 22816,
-        "name": "Prishtina e Re",
-        "shortName": "Prishtina e Re",
-        "crest": "https://media.api-sports.io/football/teams/22816.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1629814,
       "utcDate": "2026-08-22T14:30:00+00:00",
       "timestamp": 1787409000,
@@ -57194,6 +57237,92 @@
       ]
     },
     {
+      "id": 1631547,
+      "utcDate": "2026-08-22T15:00:00+00:00",
+      "timestamp": 1787410800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 26596,
+        "name": "CD IN San Juan FC",
+        "shortName": "CD IN San Juan FC",
+        "crest": "https://media.api-sports.io/football/teams/26596.png"
+      },
+      "awayTeam": {
+        "id": 28291,
+        "name": "Deportivo Tigres",
+        "shortName": "Deportivo Tigres",
+        "crest": "https://media.api-sports.io/football/teams/28291.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631548,
+      "utcDate": "2026-08-22T15:00:00+00:00",
+      "timestamp": 1787410800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 24598,
+        "name": "Universitario Tarija",
+        "shortName": "Universitario Tarija",
+        "crest": "https://media.api-sports.io/football/teams/24598.png"
+      },
+      "awayTeam": {
+        "id": 3875,
+        "name": "Club Universitario",
+        "shortName": "Club Universitario",
+        "crest": "https://media.api-sports.io/football/teams/3875.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1552732,
       "utcDate": "2026-08-22T15:15:00+00:00",
       "timestamp": 1787411700,
@@ -60733,10 +60862,10 @@
         "logo": "https://media.api-sports.io/football/leagues/69.png"
       },
       "homeTeam": {
-        "id": 3028,
-        "name": "Bourges Foot",
-        "shortName": "Bourges Foot",
-        "crest": "https://media.api-sports.io/football/teams/3028.png"
+        "id": 17360,
+        "name": "Bourges Foot 18",
+        "shortName": "Bourges Foot 18",
+        "crest": "https://media.api-sports.io/football/teams/17360.png"
       },
       "awayTeam": {
         "id": 3009,
@@ -65708,6 +65837,92 @@
       ]
     },
     {
+      "id": 1550024,
+      "utcDate": "2026-08-22T18:00:00+00:00",
+      "timestamp": 1787421600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1067,
+        "name": "Torneo Promocional Amateur",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/1067.png"
+      },
+      "homeTeam": {
+        "id": 23095,
+        "name": "Barrancas UMET",
+        "shortName": "Barrancas UMET",
+        "crest": "https://media.api-sports.io/football/teams/23095.png"
+      },
+      "awayTeam": {
+        "id": 27787,
+        "name": "Control Orientado",
+        "shortName": "Control Orientado",
+        "crest": "https://media.api-sports.io/football/teams/27787.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1550027,
+      "utcDate": "2026-08-22T18:00:00+00:00",
+      "timestamp": 1787421600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1067,
+        "name": "Torneo Promocional Amateur",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/1067.png"
+      },
+      "homeTeam": {
+        "id": 27788,
+        "name": "Las Mandarinas",
+        "shortName": "Las Mandarinas",
+        "crest": "https://media.api-sports.io/football/teams/27788.png"
+      },
+      "awayTeam": {
+        "id": 27785,
+        "name": "Alumni Los Hornos",
+        "shortName": "Alumni Los Hornos",
+        "crest": "https://media.api-sports.io/football/teams/27785.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1552136,
       "utcDate": "2026-08-22T18:00:00+00:00",
       "timestamp": 1787421600,
@@ -66826,6 +67041,49 @@
       ]
     },
     {
+      "id": 1631558,
+      "utcDate": "2026-08-22T18:00:00+00:00",
+      "timestamp": 1787421600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1076,
+        "name": "Catarinense U20",
+        "country": "Brazil",
+        "logo": "https://media.api-sports.io/football/leagues/1076.png"
+      },
+      "homeTeam": {
+        "id": 23321,
+        "name": "Barra SC U20",
+        "shortName": "Barra SC U20",
+        "crest": "https://media.api-sports.io/football/teams/23321.png"
+      },
+      "awayTeam": {
+        "id": 12999,
+        "name": "Criciuma U20",
+        "shortName": "Criciuma U20",
+        "crest": "https://media.api-sports.io/football/teams/12999.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1549456,
       "utcDate": "2026-08-22T18:15:00+00:00",
       "timestamp": 1787422500,
@@ -67322,92 +67580,6 @@
         "name": "Real Pilar",
         "shortName": "Real Pilar",
         "crest": "https://media.api-sports.io/football/teams/2422.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1550001,
-      "utcDate": "2026-08-22T18:30:00+00:00",
-      "timestamp": 1787423400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1067,
-        "name": "Torneo Promocional Amateur",
-        "country": "Argentina",
-        "logo": "https://media.api-sports.io/football/leagues/1067.png"
-      },
-      "homeTeam": {
-        "id": 23100,
-        "name": "Estrella de Berisso",
-        "shortName": "Estrella de Berisso",
-        "crest": "https://media.api-sports.io/football/teams/23100.png"
-      },
-      "awayTeam": {
-        "id": 23104,
-        "name": "Nautico Hacoaj",
-        "shortName": "Nautico Hacoaj",
-        "crest": "https://media.api-sports.io/football/teams/23104.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1550003,
-      "utcDate": "2026-08-22T18:30:00+00:00",
-      "timestamp": 1787423400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1067,
-        "name": "Torneo Promocional Amateur",
-        "country": "Argentina",
-        "logo": "https://media.api-sports.io/football/leagues/1067.png"
-      },
-      "homeTeam": {
-        "id": 23106,
-        "name": "SAT Moreno",
-        "shortName": "SAT Moreno",
-        "crest": "https://media.api-sports.io/football/teams/23106.png"
-      },
-      "awayTeam": {
-        "id": 23094,
-        "name": "Atletico Pilar",
-        "shortName": "Atletico Pilar",
-        "crest": "https://media.api-sports.io/football/teams/23094.png"
       },
       "score": {
         "fullTime": {
@@ -69558,6 +69730,178 @@
         "name": "Deportivo Recoleta",
         "shortName": "Deportivo Recoleta",
         "crest": "https://media.api-sports.io/football/teams/10476.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631549,
+      "utcDate": "2026-08-22T19:00:00+00:00",
+      "timestamp": 1787425200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 28289,
+        "name": "Atletico Juniors",
+        "shortName": "Atletico Juniors",
+        "crest": "https://media.api-sports.io/football/teams/28289.png"
+      },
+      "awayTeam": {
+        "id": 28292,
+        "name": "Independiente CBBA",
+        "shortName": "Independiente CBBA",
+        "crest": "https://media.api-sports.io/football/teams/28292.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631550,
+      "utcDate": "2026-08-22T19:00:00+00:00",
+      "timestamp": 1787425200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 26486,
+        "name": "Unión Tarija",
+        "shortName": "Unión Tarija",
+        "crest": "https://media.api-sports.io/football/teams/26486.png"
+      },
+      "awayTeam": {
+        "id": 26723,
+        "name": "CD Guadalajara",
+        "shortName": "CD Guadalajara",
+        "crest": "https://media.api-sports.io/football/teams/26723.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631551,
+      "utcDate": "2026-08-22T19:00:00+00:00",
+      "timestamp": 1787425200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 17745,
+        "name": "Ciudad Nueva Santa Cruz",
+        "shortName": "Ciudad Nueva Santa Cruz",
+        "crest": "https://media.api-sports.io/football/teams/17745.png"
+      },
+      "awayTeam": {
+        "id": 26485,
+        "name": "Primero Mayo",
+        "shortName": "Primero Mayo",
+        "crest": "https://media.api-sports.io/football/teams/26485.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631552,
+      "utcDate": "2026-08-22T19:00:00+00:00",
+      "timestamp": 1787425200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 15704,
+        "name": "Municipal Tiquipaya",
+        "shortName": "Municipal Tiquipaya",
+        "crest": "https://media.api-sports.io/football/teams/15704.png"
+      },
+      "awayTeam": {
+        "id": 28295,
+        "name": "Virginia",
+        "shortName": "Virginia",
+        "crest": "https://media.api-sports.io/football/teams/28295.png"
       },
       "score": {
         "fullTime": {
