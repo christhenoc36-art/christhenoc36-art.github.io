@@ -1,1 +1,1263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportLive — Streaming Sports</title>
 
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#05070c;
+ color:#fff;
+ font-family:Arial,Helvetica,sans-serif;
+ overflow-x:hidden;
+}
+button,input{font:inherit}
+button{cursor:pointer}
+
+:root{
+ --accent:#16f06b;
+ --accent2:#00b7ff;
+ --panel:#10151f;
+ --panel2:#171e2a;
+ --muted:#8995a8;
+}
+
+header{
+ position:sticky;
+ top:0;
+ z-index:50;
+ background:rgba(5,7,12,.88);
+ backdrop-filter:blur(18px);
+ border-bottom:1px solid #202938;
+}
+
+.nav{
+ max-width:1200px;
+ margin:auto;
+ min-height:68px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:18px;
+ padding:10px 18px;
+}
+
+.logo{
+ font-size:25px;
+ font-weight:1000;
+ letter-spacing:-1px;
+}
+.logo b{color:var(--accent)}
+
+.search{
+ width:280px;
+ background:#111722;
+ color:white;
+ border:1px solid #293345;
+ border-radius:14px;
+ padding:11px 15px;
+ outline:none;
+}
+
+main{
+ max-width:1200px;
+ margin:auto;
+ padding:18px;
+}
+
+/* SPORTS */
+
+.sports{
+ display:flex;
+ gap:10px;
+ overflow-x:auto;
+ padding-bottom:12px;
+ scrollbar-width:none;
+}
+.sports::-webkit-scrollbar{display:none}
+
+.sport{
+ min-width:105px;
+ height:68px;
+ border:1px solid #273142;
+ border-radius:17px;
+ background:#101620;
+ color:#fff;
+ transition:.25s;
+}
+.sport:hover,.sport.active{
+ transform:translateY(-3px);
+ border-color:var(--accent);
+ background:#17231c;
+ box-shadow:0 8px 30px rgba(22,240,107,.12);
+}
+.sport-icon{font-size:25px;display:block}
+.sport-name{font-size:12px;font-weight:800}
+
+/* HERO */
+
+.hero{
+ position:relative;
+ min-height:365px;
+ border-radius:30px;
+ overflow:hidden;
+ margin:10px 0 24px;
+ background:
+ linear-gradient(90deg,rgba(3,7,12,.98),rgba(3,7,12,.58),rgba(3,7,12,.1)),
+ radial-gradient(circle at 78% 40%,#176f43,transparent 32%),
+ linear-gradient(135deg,#10251a,#071018);
+ border:1px solid #263344;
+}
+
+.hero.basket{
+ background:
+ linear-gradient(90deg,rgba(8,6,5,.98),rgba(8,6,5,.5),rgba(8,6,5,.08)),
+ radial-gradient(circle at 78% 40%,#c25d12,transparent 32%),
+ #1b1009;
+}
+.hero.tennis{
+ background:
+ linear-gradient(90deg,rgba(4,8,4,.98),rgba(4,8,4,.5),rgba(4,8,4,.08)),
+ radial-gradient(circle at 78% 40%,#719e18,transparent 32%),
+ #101607;
+}
+.hero.racing{
+ background:
+ linear-gradient(90deg,rgba(8,4,5,.98),rgba(8,4,5,.5),rgba(8,4,5,.08)),
+ radial-gradient(circle at 78% 40%,#b91c2c,transparent 32%),
+ #18080b;
+}
+.hero.boxing{
+ background:
+ linear-gradient(90deg,rgba(7,4,10,.98),rgba(7,4,10,.5),rgba(7,4,10,.08)),
+ radial-gradient(circle at 78% 40%,#7625b4,transparent 32%),
+ #13091b;
+}
+
+.hero-content{
+ position:relative;
+ z-index:2;
+ padding:45px;
+ max-width:650px;
+}
+
+.kicker{
+ color:var(--accent);
+ font-size:13px;
+ font-weight:900;
+ text-transform:uppercase;
+ letter-spacing:2px;
+}
+
+.hero h1{
+ font-size:48px;
+ line-height:1;
+ margin:12px 0;
+ letter-spacing:-2px;
+}
+
+.hero p{
+ color:#c2cad6;
+ line-height:1.5;
+}
+
+.hero-player{
+ position:absolute;
+ right:3%;
+ bottom:-5%;
+ font-size:220px;
+ filter:drop-shadow(0 20px 40px rgba(0,0,0,.55));
+ transform:rotate(-5deg);
+ opacity:.95;
+}
+
+.hero-actions{
+ display:flex;
+ gap:10px;
+ margin-top:24px;
+}
+
+.primary{
+ border:0;
+ border-radius:13px;
+ padding:14px 22px;
+ background:var(--accent);
+ color:#031108;
+ font-weight:1000;
+}
+.secondary{
+ border:1px solid #445064;
+ border-radius:13px;
+ padding:14px 20px;
+ background:rgba(255,255,255,.06);
+ color:white;
+}
+
+/* SECTION */
+
+.section{
+ margin:28px 0;
+}
+
+.heading{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-bottom:14px;
+}
+
+.heading h2{
+ margin:0;
+ font-size:23px;
+}
+
+.heading span{
+ color:var(--muted);
+ font-size:13px;
+}
+
+/* ATHLETES */
+
+.athletes{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:13px;
+}
+
+.athlete{
+ min-height:230px;
+ position:relative;
+ overflow:hidden;
+ border-radius:22px;
+ padding:18px;
+ background:linear-gradient(145deg,#151d29,#0c1119);
+ border:1px solid #263142;
+}
+
+.athlete:after{
+ content:"";
+ position:absolute;
+ width:150px;
+ height:150px;
+ right:-35px;
+ bottom:-40px;
+ border-radius:50%;
+ background:var(--accent);
+ opacity:.12;
+ filter:blur(10px);
+}
+
+.athlete-emoji{
+ position:absolute;
+ right:8px;
+ bottom:-8px;
+ font-size:125px;
+ filter:drop-shadow(0 15px 18px rgba(0,0,0,.6));
+}
+
+.athlete-info{
+ position:relative;
+ z-index:2;
+}
+
+.athlete small{
+ color:var(--muted);
+}
+
+.athlete h3{
+ margin:7px 0;
+ font-size:20px;
+}
+
+.tag{
+ display:inline-block;
+ padding:6px 9px;
+ border-radius:8px;
+ background:rgba(255,255,255,.08);
+ font-size:10px;
+ font-weight:bold;
+}
+
+/* LIVE */
+
+.live-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:14px;
+}
+
+.match{
+ background:linear-gradient(145deg,#111823,#0b1018);
+ border:1px solid #232e3d;
+ border-radius:20px;
+ padding:18px;
+ transition:.2s;
+}
+.match:hover{
+ transform:translateY(-4px);
+ border-color:#3b4b62;
+}
+
+.live-badge{
+ display:inline-flex;
+ align-items:center;
+ gap:6px;
+ background:#dc263d;
+ border-radius:20px;
+ padding:5px 9px;
+ font-size:10px;
+ font-weight:1000;
+}
+
+.live-dot{
+ width:6px;height:6px;
+ background:white;
+ border-radius:50%;
+}
+
+.competition{
+ color:#8794a7;
+ font-size:11px;
+ margin:13px 0;
+}
+
+.teams{
+ display:grid;
+ grid-template-columns:1fr 45px 1fr;
+ align-items:center;
+ text-align:center;
+ gap:7px;
+}
+
+.team img{
+ width:52px;
+ height:52px;
+ object-fit:contain;
+}
+.team-name{
+ font-size:12px;
+ font-weight:800;
+ margin-top:7px;
+}
+.vs{
+ color:#697587;
+ font-weight:900;
+}
+
+.watch{
+ width:100%;
+ margin-top:15px;
+ border:0;
+ border-radius:12px;
+ padding:12px;
+ background:var(--accent);
+ color:#041008;
+ font-weight:1000;
+}
+
+.channel{
+ margin-top:9px;
+ color:#aab5c4;
+ font-size:11px;
+ text-align:center;
+}
+
+/* UPCOMING */
+
+.upcoming{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:12px;
+}
+
+.up-card{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:15px;
+ padding:16px;
+ background:#101620;
+ border:1px solid #232d3c;
+ border-radius:17px;
+}
+
+.up-time{
+ color:var(--accent);
+ font-size:12px;
+ font-weight:900;
+}
+
+.up-teams{
+ font-weight:800;
+ font-size:13px;
+}
+
+.up-channel{
+ color:#8d99a9;
+ font-size:11px;
+ margin-top:5px;
+}
+
+/* EMPTY */
+
+.empty{
+ text-align:center;
+ padding:45px 15px;
+ color:#778496;
+ background:#0c121b;
+ border:1px dashed #273344;
+ border-radius:18px;
+}
+
+/* PLAYER */
+
+.player{
+ display:none;
+ position:fixed;
+ inset:0;
+ z-index:100;
+ background:#000;
+ padding:14px;
+}
+.player.open{
+ display:flex;
+ flex-direction:column;
+}
+.player-head{
+ max-width:1100px;
+ width:100%;
+ margin:auto;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:8px;
+}
+.close{
+ border:0;
+ border-radius:10px;
+ padding:10px 14px;
+ background:#d9233f;
+ color:#fff;
+ font-weight:bold;
+}
+.video{
+ width:100%;
+ max-width:1050px;
+ aspect-ratio:16/9;
+ margin:auto;
+ background:#07090d;
+ border-radius:16px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#8190a5;
+ text-align:center;
+ border:1px solid #1d2634;
+}
+
+video{
+ width:100%;
+ height:100%;
+ border-radius:16px;
+}
+
+/* NAV MOBILE */
+
+.bottom{
+ display:none;
+}
+
+footer{
+ color:#536174;
+ text-align:center;
+ padding:40px 15px;
+ font-size:12px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+ .athletes{grid-template-columns:repeat(2,1fr)}
+ .live-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:650px){
+
+ .nav{
+  flex-wrap:wrap;
+ }
+
+ .search{
+  order:3;
+  width:100%;
+ }
+
+ main{
+  padding:12px;
+  padding-bottom:85px;
+ }
+
+ .hero{
+  min-height:310px;
+  border-radius:24px;
+ }
+
+ .hero-content{
+  padding:27px;
+ }
+
+ .hero h1{
+  font-size:36px;
+ }
+
+ .hero-player{
+  font-size:130px;
+  right:0;
+  bottom:0;
+ }
+
+ .hero-actions{
+  position:relative;
+  z-index:5;
+ }
+
+ .athletes{
+  grid-template-columns:repeat(2,1fr);
+ }
+
+ .athlete{
+  min-height:190px;
+ }
+
+ .athlete-emoji{
+  font-size:90px;
+ }
+
+ .live-grid{
+  grid-template-columns:1fr;
+ }
+
+ .upcoming{
+  grid-template-columns:1fr;
+ }
+
+ .bottom{
+  display:flex;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:40;
+  height:65px;
+  background:rgba(7,10,16,.96);
+  border-top:1px solid #202b3b;
+  backdrop-filter:blur(15px);
+ }
+
+ .bottom button{
+  flex:1;
+  border:0;
+  background:none;
+  color:#8793a5;
+  font-size:10px;
+ }
+
+ .bottom button b{
+  display:block;
+  font-size:20px;
+  margin-bottom:3px;
+ }
+
+ .bottom button.active{
+  color:var(--accent);
+ }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <nav class="nav">
+  <div class="logo">⚡ Sport<b>Live</b></div>
+
+  <input
+   id="search"
+   class="search"
+   placeholder="🔎 Rechercher une équipe..."
+   oninput="searchMatches()"
+  >
+ </nav>
+</header>
+
+<main>
+
+ <!-- SPORTS -->
+
+ <div class="sports">
+
+  <button class="sport active" onclick="selectSport('football',this)">
+   <span class="sport-icon">⚽</span>
+   <span class="sport-name">FOOTBALL</span>
+  </button>
+
+  <button class="sport" onclick="selectSport('basket',this)">
+   <span class="sport-icon">🏀</span>
+   <span class="sport-name">BASKET</span>
+  </button>
+
+  <button class="sport" onclick="selectSport('tennis',this)">
+   <span class="sport-icon">🎾</span>
+   <span class="sport-name">TENNIS</span>
+  </button>
+
+  <button class="sport" onclick="selectSport('racing',this)">
+   <span class="sport-icon">🏎️</span>
+   <span class="sport-name">AUTO</span>
+  </button>
+
+  <button class="sport" onclick="selectSport('boxing',this)">
+   <span class="sport-icon">🥊</span>
+   <span class="sport-name">BOXE</span>
+  </button>
+
+ </div>
+
+
+ <!-- HERO -->
+
+ <section id="hero" class="hero">
+
+  <div class="hero-content">
+
+   <div class="kicker">● SPORT EN DIRECT</div>
+
+   <h1 id="heroTitle">Football Live</h1>
+
+   <p id="heroText">
+    Toute l'action sportive dans une seule application.
+    Découvre les événements en direct et les prochaines rencontres.
+   </p>
+
+   <div class="hero-actions">
+    <button class="primary" onclick="scrollToLive()">
+     ▶ REGARDER LE LIVE
+    </button>
+
+    <button class="secondary" onclick="scrollToUpcoming()">
+     🕐 À VENIR
+    </button>
+   </div>
+
+  </div>
+
+  <div id="heroPlayer" class="hero-player">⚽</div>
+
+ </section>
+
+
+ <!-- ATHLETES -->
+
+ <section class="section">
+
+  <div class="heading">
+   <h2>⭐ À la une</h2>
+   <span id="sportLabel">Football</span>
+  </div>
+
+  <div id="athletes" class="athletes"></div>
+
+ </section>
+
+
+ <!-- LIVE -->
+
+ <section id="liveSection" class="section">
+
+  <div class="heading">
+   <h2>🔴 En direct</h2>
+   <span>Maintenant</span>
+  </div>
+
+  <div id="liveMatches" class="live-grid">
+   <div class="empty">⏳ Chargement des matchs...</div>
+  </div>
+
+ </section>
+
+
+ <!-- UPCOMING -->
+
+ <section id="upcomingSection" class="section">
+
+  <div class="heading">
+   <h2>🕐 Prochains événements</h2>
+   <span>À venir</span>
+  </div>
+
+  <div id="upcomingMatches" class="upcoming">
+   <div class="empty">⏳ Chargement...</div>
+  </div>
+
+ </section>
+
+</main>
+
+
+<footer>
+ SportLive © 2026 — Plateforme sportive
+</footer>
+
+
+<!-- MOBILE NAV -->
+
+<nav class="bottom">
+
+ <button class="active" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <b>⌂</b>Accueil
+ </button>
+
+ <button onclick="scrollToLive()">
+  <b>🔴</b>Live
+ </button>
+
+ <button onclick="scrollToUpcoming()">
+  <b>🕐</b>À venir
+ </button>
+
+ <button onclick="document.getElementById('search').focus()">
+  <b>🔎</b>Recherche
+ </button>
+
+</nav>
+
+
+<!-- VIDEO PLAYER -->
+
+<div id="player" class="player">
+
+ <div class="player-head">
+
+  <strong id="playerTitle">📺 Diffusion</strong>
+
+  <button class="close" onclick="closePlayer()">
+   ✕ Fermer
+  </button>
+
+ </div>
+
+ <div id="videoBox" class="video">
+  📺
+  <br>
+  Sélectionne une diffusion officielle
+  pour regarder l'événement.
+ </div>
+
+</div>
+
+
+<script>
+
+let sport="football";
+let matches=[];
+
+
+/* =========================
+   SPORTS
+========================= */
+
+const sportData={
+
+ football:{
+  label:"Football",
+  icon:"⚽",
+  title:"Football Live",
+  text:"Les plus grands matchs, les événements en direct et les prochaines rencontres.",
+  athletes:[
+   ["⚽","STAR DU FOOT","Attaquant"],
+   ["🥅","GOALKEEPER","Gardien"],
+   ["⚡","SUPER STAR","Ailier"],
+   ["🏆","CHAMPION","Légende"]
+  ]
+ },
+
+ basket:{
+  label:"Basketball",
+  icon:"🏀",
+  title:"Basketball Live",
+  text:"Retrouve les rencontres de basketball et les grands événements.",
+  athletes:[
+   ["🏀","DUNK STAR","Meneur"],
+   ["🔥","COURT KING","Ailier"],
+   ["⛹️","MVP","Arrière"],
+   ["🏆","CHAMPION","Star"]
+  ]
+ },
+
+ tennis:{
+  label:"Tennis",
+  icon:"🎾",
+  title:"Tennis Live",
+  text:"Les tournois, les grands matchs et toute l'action du court.",
+  athletes:[
+   ["🎾","COURT STAR","Simple"],
+   ["💚","CHAMPION","Tournoi"],
+   ["🔥","ACE MASTER","Serveur"],
+   ["🏆","GRAND CHAMPION","Finaliste"]
+  ]
+ },
+
+ racing:{
+  label:"Auto",
+  icon:"🏎️",
+  title:"Racing Live",
+  text:"Courses, vitesse et grands événements automobiles.",
+  athletes:[
+   ["🏎️","SPEED STAR","Pilote"],
+   ["🏁","RACING PRO","Pilote"],
+   ["🚗","TRACK KING","Pilote"],
+   ["🏆","CHAMPION","Course"]
+  ]
+ },
+
+ boxing:{
+  label:"Boxe",
+  icon:"🥊",
+  title:"Boxing Live",
+  text:"Les grands combats et événements de sports de combat.",
+  athletes:[
+   ["🥊","FIGHT STAR","Poids lourd"],
+   ["🔥","CHAMPION","Champion"],
+   ["👊","KNOCKOUT","Combattant"],
+   ["🏆","WORLD CHAMP","Titre mondial"]
+  ]
+ }
+
+};
+
+
+/* =========================
+   SELECT SPORT
+========================= */
+
+function selectSport(value,button){
+
+ sport=value;
+
+ document
+  .querySelectorAll(".sport")
+  .forEach(x=>x.classList.remove("active"));
+
+ button.classList.add("active");
+
+ const data=sportData[value];
+
+ document.getElementById("heroTitle").textContent=data.title;
+ document.getElementById("heroText").textContent=data.text;
+ document.getElementById("heroPlayer").textContent=data.icon;
+ document.getElementById("sportLabel").textContent=data.label;
+
+ document.getElementById("hero").className=
+  "hero "+(value==="football"?"":value);
+
+ renderAthletes();
+
+ if(value==="football"){
+  renderMatches();
+ }else{
+  showOtherSport();
+ }
+
+}
+
+
+/* =========================
+   ATHLETES
+========================= */
+
+function renderAthletes(){
+
+ const data=sportData[sport];
+
+ document.getElementById("athletes").innerHTML=
+ data.athletes.map(a=>`
+
+  <article class="athlete">
+
+   <div class="athlete-info">
+
+    <small>${data.label}</small>
+
+    <h3>${a[1]}</h3>
+
+    <span class="tag">${a[2]}</span>
+
+   </div>
+
+   <div class="athlete-emoji">${a[0]}</div>
+
+  </article>
+
+ `).join("");
+
+}
+
+
+/* =========================
+   API
+========================= */
+
+async function loadMatches(){
+
+ try{
+
+  const response=await fetch("/api/matches");
+
+  const data=await response.json();
+
+  if(!response.ok)
+   throw new Error(data.error||"API error");
+
+  matches=data.response||[];
+
+  if(sport==="football")
+   renderMatches();
+
+ }catch(error){
+
+  console.error(error);
+
+  document.getElementById("liveMatches").innerHTML=
+   `<div class="empty">
+    ❌ Impossible de charger les matchs.<br><br>
+    Vérifie Vercel et ta configuration API.
+   </div>`;
+
+  document.getElementById("upcomingMatches").innerHTML="";
+
+ }
+
+}
+
+
+/* =========================
+   MATCHS
+========================= */
+
+function renderMatches(){
+
+ const live=matches.filter(m=>isLive(m));
+ const upcoming=matches.filter(m=>!isLive(m)&&!isFinished(m));
+
+ document.getElementById("liveMatches").innerHTML=
+  live.length
+   ? live.map(createLiveCard).join("")
+   : `<div class="empty">
+       🔴 Aucun match en direct actuellement.
+      </div>`;
+
+ document.getElementById("upcomingMatches").innerHTML=
+  upcoming.length
+   ? upcoming.slice(0,10).map(createUpcomingCard).join("")
+   : `<div class="empty">
+       🕐 Aucun prochain match trouvé.
+      </div>`;
+
+}
+
+
+/* =========================
+   LIVE CARD
+========================= */
+
+function createLiveCard(m){
+
+ const home=m.teams?.home;
+ const away=m.teams?.away;
+
+ return `
+
+ <article class="match">
+
+  <span class="live-badge">
+   <i class="live-dot"></i> LIVE
+  </span>
+
+  <div class="competition">
+   🏆 ${escapeHTML(m.league?.name||"Football")}
+  </div>
+
+  <div class="teams">
+
+   <div class="team">
+
+    <img src="${escapeHTML(home?.logo||"")}" alt="">
+
+    <div class="team-name">
+     ${escapeHTML(home?.name||"Équipe")}
+    </div>
+
+   </div>
+
+   <div class="vs">VS</div>
+
+   <div class="team">
+
+    <img src="${escapeHTML(away?.logo||"")}" alt="">
+
+    <div class="team-name">
+     ${escapeHTML(away?.name||"Équipe")}
+    </div>
+
+   </div>
+
+  </div>
+
+  <div class="channel">
+   📺 Diffuseur : à déterminer
+  </div>
+
+  <button class="watch" onclick="openPlayer(${m.fixture.id})">
+   ▶ REGARDER
+  </button>
+
+ </article>
+
+ `;
+
+}
+
+
+/* =========================
+   UPCOMING CARD
+========================= */
+
+function createUpcomingCard(m){
+
+ const home=m.teams?.home?.name||"Équipe";
+ const away=m.teams?.away?.name||"Équipe";
+
+ const d=new Date(m.fixture.date);
+
+ const time=d.toLocaleTimeString("fr-FR",{
+  hour:"2-digit",
+  minute:"2-digit"
+ });
+
+ return `
+
+ <article class="up-card">
+
+  <div>
+
+   <div class="up-time">${time}</div>
+
+   <div class="up-teams">
+    ${escapeHTML(home)} — ${escapeHTML(away)}
+   </div>
+
+   <div class="up-channel">
+    📺 Diffuseur à déterminer
+   </div>
+
+  </div>
+
+  <button class="secondary"
+   onclick="openPlayer(${m.fixture.id})">
+   ▶
+  </button>
+
+ </article>
+
+ `;
+
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+function isLive(m){
+
+ const s=m.fixture?.status?.short;
+
+ return [
+  "1H","2H","HT","ET","P","LIVE"
+ ].includes(s);
+
+}
+
+function isFinished(m){
+
+ const s=m.fixture?.status?.short;
+
+ return [
+  "FT","AET","PEN"
+ ].includes(s);
+
+}
+
+
+/* =========================
+   OTHER SPORTS
+========================= */
+
+function showOtherSport(){
+
+ document.getElementById("liveMatches").innerHTML=`
+
+  <div class="empty">
+   ${sportData[sport].icon}<br><br>
+   Les événements ${sportData[sport].label}
+   seront connectés à leur source de données.
+  </div>
+
+ `;
+
+ document.getElementById("upcomingMatches").innerHTML=`
+
+  <div class="empty">
+   🕐 Calendrier ${sportData[sport].label}
+   en préparation.
+  </div>
+
+ `;
+
+}
+
+
+/* =========================
+   PLAYER
+========================= */
+
+function openPlayer(id){
+
+ const match=matches.find(
+  x=>x.fixture?.id===id
+ );
+
+ document.getElementById("player").classList.add("open");
+
+ document.getElementById("playerTitle").textContent=
+  match
+   ? "📺 "+(match.teams?.home?.name||"")+
+     " — "+
+     (match.teams?.away?.name||"")
+   : "📺 Diffusion";
+
+ document.getElementById("videoBox").innerHTML=`
+
+  <div>
+   📺<br><br>
+   Aucune diffusion officielle n'est
+   actuellement associée à ce match.
+   <br><br>
+   Le lecteur est prêt à recevoir
+   un flux autorisé.
+  </div>
+
+ `;
+
+}
+
+
+function closePlayer(){
+
+ document.getElementById("player").classList.remove("open");
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchMatches(){
+
+ const q=document
+  .getElementById("search")
+  .value
+  .toLowerCase()
+  .trim();
+
+ if(!q){
+  renderMatches();
+  return;
+ }
+
+ const old=matches;
+
+ matches=matches.filter(m=>{
+
+  const h=(m.teams?.home?.name||"").toLowerCase();
+  const a=(m.teams?.away?.name||"").toLowerCase();
+  const l=(m.league?.name||"").toLowerCase();
+
+  return h.includes(q)||a.includes(q)||l.includes(q);
+
+ });
+
+ renderMatches();
+
+ matches=old;
+
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+function scrollToLive(){
+
+ document.getElementById("liveSection")
+  .scrollIntoView({behavior:"smooth"});
+
+}
+
+function scrollToUpcoming(){
+
+ document.getElementById("upcomingSection")
+  .scrollIntoView({behavior:"smooth"});
+
+}
+
+
+/* =========================
+   SECURITY
+========================= */
+
+function escapeHTML(value){
+
+ return String(value??"").replace(
+  /[&<>"']/g,
+  c=>({
+   "&":"&amp;",
+   "<":"&lt;",
+   ">":"&gt;",
+   '"':"&quot;",
+   "'":"&#039;"
+  }[c])
+ );
+
+}
+
+
+/* =========================
+   START
+========================= */
+
+renderAthletes();
+loadMatches();
+
+/* actualisation toutes les 60 secondes */
+setInterval(loadMatches,60000);
+
+</script>
+
+</body>
+  </html>
