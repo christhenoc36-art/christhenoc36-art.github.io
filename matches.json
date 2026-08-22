@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T05:58:15.235944+00:00",
+  "lastUpdated": "2026-08-22T07:46:43.166698+00:00",
   "from": "2026-08-22",
   "to": "2026-08-24",
   "matches": [
@@ -910,8 +910,8 @@
       "id": 1631484,
       "utcDate": "2026-08-22T04:00:00+00:00",
       "timestamp": 1787371200,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 481,
@@ -996,9 +996,9 @@
       "id": 1533140,
       "utcDate": "2026-08-22T04:30:00+00:00",
       "timestamp": 1787373000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1091,
         "name": "Tasmania Northern Championship",
@@ -1019,8 +1019,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 6,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1168,9 +1168,9 @@
       "id": 1537518,
       "utcDate": "2026-08-22T04:30:00+00:00",
       "timestamp": 1787373000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 71,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1191,8 +1191,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 4,
-          "away": 3
+          "home": 5,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -1211,9 +1211,9 @@
       "id": 1522040,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1234,8 +1234,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 2
+          "home": 2,
+          "away": 6
         }
       },
       "tvChannels": [
@@ -1254,9 +1254,9 @@
       "id": 1522164,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 836,
         "name": "Victoria NPL 2",
@@ -1277,7 +1277,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       },
@@ -1297,9 +1297,9 @@
       "id": 1537519,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1320,7 +1320,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 4,
           "away": 0
         }
       },
@@ -1340,9 +1340,9 @@
       "id": 1537520,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1364,7 +1364,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 3
+          "away": 5
         }
       },
       "tvChannels": [
@@ -1383,9 +1383,9 @@
       "id": 1537521,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1426,9 +1426,9 @@
       "id": 1537522,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1449,7 +1449,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -1469,9 +1469,9 @@
       "id": 1541464,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1512,9 +1512,9 @@
       "id": 1522007,
       "utcDate": "2026-08-22T05:15:00+00:00",
       "timestamp": 1787375700,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1536,7 +1536,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1555,9 +1555,9 @@
       "id": 1629046,
       "utcDate": "2026-08-22T05:30:00+00:00",
       "timestamp": 1787376600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -1578,8 +1578,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1598,9 +1598,9 @@
       "id": 1517633,
       "utcDate": "2026-08-22T06:00:00+00:00",
       "timestamp": 1787378400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 79,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -1621,8 +1621,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1641,9 +1641,9 @@
       "id": 1522006,
       "utcDate": "2026-08-22T06:00:00+00:00",
       "timestamp": 1787378400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1664,8 +1664,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1684,9 +1684,9 @@
       "id": 1606616,
       "utcDate": "2026-08-22T06:00:00+00:00",
       "timestamp": 1787378400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 84,
       "competition": {
         "id": 99,
         "name": "J2 League",
@@ -1707,8 +1707,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -1727,9 +1727,9 @@
       "id": 1631485,
       "utcDate": "2026-08-22T06:00:00+00:00",
       "timestamp": 1787378400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 85,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1750,8 +1750,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1770,9 +1770,9 @@
       "id": 1517845,
       "utcDate": "2026-08-22T06:30:00+00:00",
       "timestamp": 1787380200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -1793,8 +1793,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1813,9 +1813,9 @@
       "id": 1517846,
       "utcDate": "2026-08-22T06:30:00+00:00",
       "timestamp": 1787380200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 48,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -1836,8 +1836,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1856,9 +1856,9 @@
       "id": 1549373,
       "utcDate": "2026-08-22T06:30:00+00:00",
       "timestamp": 1787380200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 60,
       "competition": {
         "id": 1230,
         "name": "Npl Nsw U20",
@@ -1879,8 +1879,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1942,9 +1942,9 @@
       "id": 1517847,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 41,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -1965,8 +1965,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1985,9 +1985,9 @@
       "id": 1517848,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 32,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2008,8 +2008,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2028,9 +2028,9 @@
       "id": 1517849,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 36,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2051,8 +2051,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2071,9 +2071,9 @@
       "id": 1517914,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2094,8 +2094,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2114,9 +2114,9 @@
       "id": 1522005,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -2137,8 +2137,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2200,9 +2200,9 @@
       "id": 1527258,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 40,
       "competition": {
         "id": 196,
         "name": "Western Australia NPL",
@@ -2223,8 +2223,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2243,9 +2243,9 @@
       "id": 1527259,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 44,
       "competition": {
         "id": 196,
         "name": "Western Australia NPL",
@@ -2266,8 +2266,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2286,9 +2286,9 @@
       "id": 1527260,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 44,
       "competition": {
         "id": 196,
         "name": "Western Australia NPL",
@@ -2309,8 +2309,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2329,9 +2329,9 @@
       "id": 1527261,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 44,
       "competition": {
         "id": 196,
         "name": "Western Australia NPL",
@@ -2352,8 +2352,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2372,9 +2372,9 @@
       "id": 1527262,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 43,
       "competition": {
         "id": 196,
         "name": "Western Australia NPL",
@@ -2395,8 +2395,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2415,9 +2415,9 @@
       "id": 1527263,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 45,
       "competition": {
         "id": 196,
         "name": "Western Australia NPL",
@@ -2438,8 +2438,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2501,9 +2501,9 @@
       "id": 1535556,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 41,
       "competition": {
         "id": 1094,
         "name": "Western Australia State League 1",
@@ -2524,8 +2524,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2544,9 +2544,9 @@
       "id": 1535557,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 42,
       "competition": {
         "id": 1094,
         "name": "Western Australia State League 1",
@@ -2567,8 +2567,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2587,9 +2587,9 @@
       "id": 1535558,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 40,
       "competition": {
         "id": 1094,
         "name": "Western Australia State League 1",
@@ -2610,8 +2610,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2630,9 +2630,9 @@
       "id": 1535559,
       "utcDate": "2026-08-22T07:00:00+00:00",
       "timestamp": 1787382000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 42,
       "competition": {
         "id": 1094,
         "name": "Western Australia State League 1",
@@ -2653,8 +2653,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2759,9 +2759,9 @@
       "id": 1517674,
       "utcDate": "2026-08-22T07:15:00+00:00",
       "timestamp": 1787382900,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 26,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -2782,8 +2782,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2802,9 +2802,9 @@
       "id": 1522008,
       "utcDate": "2026-08-22T07:15:00+00:00",
       "timestamp": 1787382900,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -2825,8 +2825,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2845,9 +2845,9 @@
       "id": 1517635,
       "utcDate": "2026-08-22T07:30:00+00:00",
       "timestamp": 1787383800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 10,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -2868,8 +2868,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2888,9 +2888,9 @@
       "id": 1629045,
       "utcDate": "2026-08-22T07:30:00+00:00",
       "timestamp": 1787383800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 15,
       "competition": {
         "id": 834,
         "name": "South Australia State League 1",
@@ -2911,8 +2911,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -4350,8 +4350,8 @@
       "id": 1562609,
       "utcDate": "2026-08-22T08:15:00+00:00",
       "timestamp": 1787386500,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 348,
@@ -47777,49 +47777,6 @@
       ]
     },
     {
-      "id": 1618957,
-      "utcDate": "2026-08-22T17:00:00+00:00",
-      "timestamp": 1787418000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "homeTeam": {
-        "id": 9675,
-        "name": "Manresa",
-        "shortName": "Manresa",
-        "crest": "https://media.api-sports.io/football/teams/9675.png"
-      },
-      "awayTeam": {
-        "id": 24574,
-        "name": "Atlètic Lleida",
-        "shortName": "Atlètic Lleida",
-        "crest": "https://media.api-sports.io/football/teams/24574.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1561366,
       "utcDate": "2026-08-22T17:15:00+00:00",
       "timestamp": 1787418900,
@@ -48101,6 +48058,49 @@
         "name": "Omarska",
         "shortName": "Omarska",
         "crest": "https://media.api-sports.io/football/teams/17374.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1618957,
+      "utcDate": "2026-08-22T17:30:00+00:00",
+      "timestamp": 1787419800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "homeTeam": {
+        "id": 9675,
+        "name": "Manresa",
+        "shortName": "Manresa",
+        "crest": "https://media.api-sports.io/football/teams/9675.png"
+      },
+      "awayTeam": {
+        "id": 24574,
+        "name": "Atlètic Lleida",
+        "shortName": "Atlètic Lleida",
+        "crest": "https://media.api-sports.io/football/teams/24574.png"
       },
       "score": {
         "fullTime": {
