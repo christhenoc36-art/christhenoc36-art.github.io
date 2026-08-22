@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T04:57:07.400480+00:00",
+  "lastUpdated": "2026-08-22T05:58:15.235944+00:00",
   "from": "2026-08-22",
   "to": "2026-08-24",
   "matches": [
@@ -93,9 +93,9 @@
       "id": 1526606,
       "utcDate": "2026-08-22T00:00:00+00:00",
       "timestamp": 1787356800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 243,
         "name": "Liga Pro Serie B",
@@ -116,8 +116,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -652,8 +652,8 @@
       "id": 1581399,
       "utcDate": "2026-08-22T03:00:00+00:00",
       "timestamp": 1787367600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 263,
@@ -676,7 +676,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -695,8 +695,8 @@
       "id": 1603328,
       "utcDate": "2026-08-22T03:00:00+00:00",
       "timestamp": 1787367600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 673,
@@ -738,9 +738,9 @@
       "id": 1630224,
       "utcDate": "2026-08-22T03:00:00+00:00",
       "timestamp": 1787367600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 27,
         "name": "OFC Champions League",
@@ -761,8 +761,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -781,9 +781,9 @@
       "id": 1550931,
       "utcDate": "2026-08-22T03:10:00+00:00",
       "timestamp": 1787368200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 81,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -847,8 +847,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -867,9 +867,9 @@
       "id": 1522221,
       "utcDate": "2026-08-22T04:00:00+00:00",
       "timestamp": 1787371200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 836,
         "name": "Victoria NPL 2",
@@ -891,7 +891,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       },
       "tvChannels": [
@@ -910,9 +910,9 @@
       "id": 1631484,
       "utcDate": "2026-08-22T04:00:00+00:00",
       "timestamp": 1787371200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -933,8 +933,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 3,
-          "away": 4
+          "home": 6,
+          "away": 6
         }
       },
       "tvChannels": [
@@ -1168,9 +1168,9 @@
       "id": 1537518,
       "utcDate": "2026-08-22T04:30:00+00:00",
       "timestamp": 1787373000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 26,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 71,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1191,8 +1191,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
-          "away": 1
+          "home": 4,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1211,9 +1211,9 @@
       "id": 1522040,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1234,8 +1234,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1254,9 +1254,9 @@
       "id": 1522164,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 836,
         "name": "Victoria NPL 2",
@@ -1277,8 +1277,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1297,9 +1297,9 @@
       "id": 1537519,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1320,8 +1320,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1340,9 +1340,9 @@
       "id": 1537520,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1363,8 +1363,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1383,9 +1383,9 @@
       "id": 1537521,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1406,8 +1406,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1426,9 +1426,9 @@
       "id": 1537522,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -1449,8 +1449,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1469,9 +1469,9 @@
       "id": 1541464,
       "utcDate": "2026-08-22T05:00:00+00:00",
       "timestamp": 1787374800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1492,8 +1492,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1512,9 +1512,9 @@
       "id": 1522007,
       "utcDate": "2026-08-22T05:15:00+00:00",
       "timestamp": 1787375700,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 43,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1535,8 +1535,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -4264,8 +4264,8 @@
       "id": 1562604,
       "utcDate": "2026-08-22T08:15:00+00:00",
       "timestamp": 1787386500,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 348,
@@ -32383,6 +32383,49 @@
       ]
     },
     {
+      "id": 1629870,
+      "utcDate": "2026-08-22T14:00:00+00:00",
+      "timestamp": 1787407200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 105,
+        "name": "NM Cupen",
+        "country": "Norway",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "homeTeam": {
+        "id": 6971,
+        "name": "Brodd",
+        "shortName": "Brodd",
+        "crest": "https://media.api-sports.io/football/teams/6971.png"
+      },
+      "awayTeam": {
+        "id": 759,
+        "name": "Viking",
+        "shortName": "Viking",
+        "crest": "https://media.api-sports.io/football/teams/759.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1629878,
       "utcDate": "2026-08-22T14:00:00+00:00",
       "timestamp": 1787407200,
@@ -45397,6 +45440,49 @@
         "fullTime": {
           "home": null,
           "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1629882,
+      "utcDate": "2026-08-22T16:00:00+00:00",
+      "timestamp": 1787414400,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
+      "competition": {
+        "id": 105,
+        "name": "NM Cupen",
+        "country": "Norway",
+        "logo": "https://media.api-sports.io/football/leagues/105.png"
+      },
+      "homeTeam": {
+        "id": 28254,
+        "name": "Stalkam",
+        "shortName": "Stalkam",
+        "crest": "https://media.api-sports.io/football/teams/28254.png"
+      },
+      "awayTeam": {
+        "id": 16229,
+        "name": "Rana",
+        "shortName": "Rana",
+        "crest": "https://media.api-sports.io/football/teams/16229.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
