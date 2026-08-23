@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T11:44:05.439492+00:00",
+  "lastUpdated": "2026-08-23T13:22:17.946770+00:00",
   "from": "2026-08-23",
   "to": "2026-08-25",
   "matches": [
@@ -3791,9 +3791,9 @@
       "id": 1569338,
       "utcDate": "2026-08-23T09:00:00+00:00",
       "timestamp": 1787475600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 705,
         "name": "Campionato Primavera - 1",
@@ -3814,8 +3814,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -4221,9 +4221,9 @@
       "id": 1595581,
       "utcDate": "2026-08-23T09:00:00+00:00",
       "timestamp": 1787475600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -4244,8 +4244,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -4264,9 +4264,9 @@
       "id": 1595583,
       "utcDate": "2026-08-23T09:00:00+00:00",
       "timestamp": 1787475600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -4287,8 +4287,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -4651,9 +4651,9 @@
       "id": 1595582,
       "utcDate": "2026-08-23T09:30:00+00:00",
       "timestamp": 1787477400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -4674,8 +4674,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -4823,9 +4823,9 @@
       "id": 1519622,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 88,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 328,
         "name": "Esiliiga A",
@@ -4866,9 +4866,9 @@
       "id": 1520538,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 83,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 295,
         "name": "K3 League",
@@ -4909,9 +4909,9 @@
       "id": 1529599,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 86,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 364,
         "name": "1. Liga",
@@ -4952,9 +4952,9 @@
       "id": 1529600,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 88,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 364,
         "name": "1. Liga",
@@ -5038,9 +5038,9 @@
       "id": 1536440,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 83,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 652,
         "name": "Second League - Group 2",
@@ -5081,9 +5081,9 @@
       "id": 1536878,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 86,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 653,
         "name": "Second League - Group 4",
@@ -5104,7 +5104,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 1
         }
       },
@@ -5124,9 +5124,9 @@
       "id": 1548997,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 84,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 119,
         "name": "Superliga",
@@ -5148,7 +5148,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5167,9 +5167,9 @@
       "id": 1555664,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 80,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 100,
         "name": "J3 League",
@@ -5190,7 +5190,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       },
@@ -5210,9 +5210,9 @@
       "id": 1561364,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 83,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 235,
         "name": "Premier League",
@@ -5234,7 +5234,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5253,9 +5253,9 @@
       "id": 1561627,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 84,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 109,
         "name": "II Liga - East",
@@ -5276,7 +5276,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 5,
+          "home": 6,
           "away": 1
         }
       },
@@ -5339,9 +5339,9 @@
       "id": 1569065,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 85,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 780,
         "name": "III Liga - Group 1",
@@ -5382,9 +5382,9 @@
       "id": 1569070,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 88,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 780,
         "name": "III Liga - Group 1",
@@ -5425,9 +5425,9 @@
       "id": 1576459,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 83,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 95,
         "name": "Segunda Liga",
@@ -5511,9 +5511,9 @@
       "id": 1583919,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 82,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1026,
         "name": "Second League A - Division A Silver",
@@ -5554,9 +5554,9 @@
       "id": 1595587,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -5577,8 +5577,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -5597,9 +5597,9 @@
       "id": 1595588,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -5620,8 +5620,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 6,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -5640,9 +5640,9 @@
       "id": 1595589,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -5663,8 +5663,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -5683,9 +5683,9 @@
       "id": 1597756,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 82,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 865,
         "name": "Liga 3",
@@ -5726,9 +5726,9 @@
       "id": 1605564,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 82,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 458,
         "name": "Campeonato de Portugal Prio - Group B",
@@ -5750,7 +5750,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -5769,9 +5769,9 @@
       "id": 1611352,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 54,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -5792,8 +5792,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -5855,9 +5855,9 @@
       "id": 1622616,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 84,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 728,
         "name": "Liga 1 Feminin",
@@ -5879,7 +5879,7 @@
       "score": {
         "fullTime": {
           "home": 2,
-          "away": 5
+          "away": 6
         }
       },
       "tvChannels": [
@@ -5898,9 +5898,9 @@
       "id": 1623078,
       "utcDate": "2026-08-23T10:00:00+00:00",
       "timestamp": 1787479200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 84,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -5941,9 +5941,9 @@
       "id": 1552139,
       "utcDate": "2026-08-23T10:15:00+00:00",
       "timestamp": 1787480100,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 70,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 88,
         "name": "Eredivisie",
@@ -5964,8 +5964,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6027,9 +6027,9 @@
       "id": 1629016,
       "utcDate": "2026-08-23T10:15:00+00:00",
       "timestamp": 1787480100,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 64,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 667,
         "name": "Friendlies Clubs",
@@ -6050,8 +6050,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6070,9 +6070,9 @@
       "id": 1507038,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 50,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -6093,7 +6093,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 0
         }
       },
@@ -6113,9 +6113,9 @@
       "id": 1507039,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 56,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -6137,7 +6137,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6156,9 +6156,9 @@
       "id": 1510423,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 53,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 293,
         "name": "K League 2",
@@ -6179,8 +6179,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -6199,9 +6199,9 @@
       "id": 1510424,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 53,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 293,
         "name": "K League 2",
@@ -6242,9 +6242,9 @@
       "id": 1510425,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 53,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 293,
         "name": "K League 2",
@@ -6285,9 +6285,9 @@
       "id": 1510426,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 53,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 293,
         "name": "K League 2",
@@ -6308,7 +6308,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -6328,9 +6328,9 @@
       "id": 1554018,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 49,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 98,
         "name": "J1 League",
@@ -6351,7 +6351,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 1
         }
       },
@@ -6371,9 +6371,9 @@
       "id": 1607305,
       "utcDate": "2026-08-23T10:30:00+00:00",
       "timestamp": 1787481000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 55,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 380,
         "name": "Premier League",
@@ -6394,7 +6394,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -6414,9 +6414,9 @@
       "id": 1495532,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 549,
         "name": "Damallsvenskan",
@@ -6437,7 +6437,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 4,
           "away": 1
         }
       },
@@ -6457,9 +6457,9 @@
       "id": 1497668,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 114,
         "name": "Superettan",
@@ -6480,7 +6480,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 1
         }
       },
@@ -6500,9 +6500,9 @@
       "id": 1505230,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 563,
         "name": "Ettan - Norra",
@@ -6524,7 +6524,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 3
         }
       },
       "tvChannels": [
@@ -6543,9 +6543,9 @@
       "id": 1505233,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 563,
         "name": "Ettan - Norra",
@@ -6586,9 +6586,9 @@
       "id": 1505234,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 563,
         "name": "Ettan - Norra",
@@ -6609,8 +6609,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
-          "away": 1
+          "home": 4,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -6629,9 +6629,9 @@
       "id": 1510826,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 42,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 593,
         "name": "Division 2 - Norra Svealand",
@@ -6652,8 +6652,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -6672,9 +6672,9 @@
       "id": 1510829,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 593,
         "name": "Division 2 - Norra Svealand",
@@ -6695,8 +6695,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6715,9 +6715,9 @@
       "id": 1510830,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 42,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 593,
         "name": "Division 2 - Norra Svealand",
@@ -6739,7 +6739,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 2
+          "away": 3
         }
       },
       "tvChannels": [
@@ -6758,9 +6758,9 @@
       "id": 1511192,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 595,
         "name": "Division 2 - Södra Svealand",
@@ -6781,8 +6781,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6801,9 +6801,9 @@
       "id": 1511374,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 596,
         "name": "Division 2 - Västra Götaland",
@@ -6844,9 +6844,9 @@
       "id": 1511376,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 596,
         "name": "Division 2 - Västra Götaland",
@@ -6867,8 +6867,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -6887,9 +6887,9 @@
       "id": 1523248,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 169,
         "name": "Super League",
@@ -6910,8 +6910,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 2
+          "home": 4,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -6930,9 +6930,9 @@
       "id": 1525951,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 116,
         "name": "Premier League",
@@ -6953,7 +6953,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -6973,9 +6973,9 @@
       "id": 1528690,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 170,
         "name": "League One",
@@ -6996,7 +6996,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 5,
+          "home": 6,
           "away": 0
         }
       },
@@ -7016,9 +7016,9 @@
       "id": 1528691,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 170,
         "name": "League One",
@@ -7039,8 +7039,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7059,9 +7059,9 @@
       "id": 1535649,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 915,
         "name": "1. Division Women",
@@ -7082,7 +7082,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       },
@@ -7102,9 +7102,9 @@
       "id": 1536671,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 42,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -7125,8 +7125,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7145,9 +7145,9 @@
       "id": 1536880,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 42,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 653,
         "name": "Second League - Group 4",
@@ -7188,9 +7188,9 @@
       "id": 1550682,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 81,
         "name": "DFB Pokal",
@@ -7211,8 +7211,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7231,9 +7231,9 @@
       "id": 1550687,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 81,
         "name": "DFB Pokal",
@@ -7254,8 +7254,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 3,
-          "away": 1
+          "home": 5,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7274,9 +7274,9 @@
       "id": 1551322,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 120,
         "name": "1. Division",
@@ -7298,7 +7298,7 @@
       "score": {
         "fullTime": {
           "home": 2,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7317,9 +7317,9 @@
       "id": 1563104,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 40,
         "name": "Championship",
@@ -7340,7 +7340,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 1
         }
       },
@@ -7360,9 +7360,9 @@
       "id": 1568758,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 781,
         "name": "III Liga - Group 2",
@@ -7383,7 +7383,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 1
         }
       },
@@ -7403,9 +7403,9 @@
       "id": 1568764,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 42,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 781,
         "name": "III Liga - Group 2",
@@ -7446,9 +7446,9 @@
       "id": 1575775,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 122,
         "name": "2. Division",
@@ -7470,7 +7470,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7532,9 +7532,9 @@
       "id": 1595590,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -7555,8 +7555,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7575,9 +7575,9 @@
       "id": 1595591,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -7598,8 +7598,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 6,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -7618,9 +7618,9 @@
       "id": 1595592,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -7641,8 +7641,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -7661,9 +7661,9 @@
       "id": 1595593,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -7684,8 +7684,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7704,9 +7704,9 @@
       "id": 1604217,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 749,
         "name": "Oberliga - Bremen",
@@ -7727,8 +7727,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7747,9 +7747,9 @@
       "id": 1620992,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 702,
         "name": "Premier League 2 Division One",
@@ -7873,12 +7873,55 @@
       ]
     },
     {
+      "id": 1629400,
+      "utcDate": "2026-08-23T11:00:00+00:00",
+      "timestamp": 1787482800,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
+      "competition": {
+        "id": 1240,
+        "name": "U19 league",
+        "country": "Turkey",
+        "logo": "https://media.api-sports.io/football/leagues/1240.png"
+      },
+      "homeTeam": {
+        "id": 17701,
+        "name": "Trabzonspor U19",
+        "shortName": "Trabzonspor U19",
+        "crest": "https://media.api-sports.io/football/teams/17701.png"
+      },
+      "awayTeam": {
+        "id": 16397,
+        "name": "İstanbul Başakşehir U19",
+        "shortName": "İstanbul Başakşehir U19",
+        "crest": "https://media.api-sports.io/football/teams/16397.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": 5,
+          "away": 0
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1630052,
       "utcDate": "2026-08-23T11:00:00+00:00",
       "timestamp": 1787482800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 37,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1241,
         "name": "U19 league",
@@ -7899,8 +7942,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 4,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -7919,9 +7962,9 @@
       "id": 1532885,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 14,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 929,
         "name": "League Two",
@@ -7943,7 +7986,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -7962,9 +8005,9 @@
       "id": 1532886,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 13,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 929,
         "name": "League Two",
@@ -8005,9 +8048,9 @@
       "id": 1532887,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 14,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 929,
         "name": "League Two",
@@ -8048,9 +8091,9 @@
       "id": 1532888,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 14,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 929,
         "name": "League Two",
@@ -8072,7 +8115,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8091,9 +8134,9 @@
       "id": 1532889,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 14,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 929,
         "name": "League Two",
@@ -8114,7 +8157,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         }
       },
@@ -8134,9 +8177,9 @@
       "id": 1532890,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 14,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 929,
         "name": "League Two",
@@ -8158,7 +8201,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       },
       "tvChannels": [
@@ -8177,9 +8220,9 @@
       "id": 1535713,
       "utcDate": "2026-08-23T11:30:00+00:00",
       "timestamp": 1787484600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 15,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 915,
         "name": "1. Division Women",
@@ -8200,8 +8243,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -8220,9 +8263,9 @@
       "id": 1523249,
       "utcDate": "2026-08-23T11:35:00+00:00",
       "timestamp": 1787484900,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 9,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 86,
       "competition": {
         "id": 169,
         "name": "Super League",
@@ -8243,8 +8286,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8263,9 +8306,9 @@
       "id": 1494251,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 64,
       "competition": {
         "id": 113,
         "name": "Allsvenskan",
@@ -8286,8 +8329,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8306,9 +8349,9 @@
       "id": 1494256,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 66,
       "competition": {
         "id": 113,
         "name": "Allsvenskan",
@@ -8329,8 +8372,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8349,9 +8392,9 @@
       "id": 1495535,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 65,
       "competition": {
         "id": 549,
         "name": "Damallsvenskan",
@@ -8372,8 +8415,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8392,9 +8435,9 @@
       "id": 1495767,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 61,
       "competition": {
         "id": 244,
         "name": "Veikkausliiga",
@@ -8415,8 +8458,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -8435,9 +8478,9 @@
       "id": 1495768,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 57,
       "competition": {
         "id": 244,
         "name": "Veikkausliiga",
@@ -8458,8 +8501,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8478,9 +8521,9 @@
       "id": 1510648,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 67,
       "competition": {
         "id": 592,
         "name": "Division 2 - Norra Götaland",
@@ -8501,8 +8544,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -8564,9 +8607,9 @@
       "id": 1519623,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 63,
       "competition": {
         "id": 328,
         "name": "Esiliiga A",
@@ -8587,8 +8630,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8607,9 +8650,9 @@
       "id": 1521669,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 68,
       "competition": {
         "id": 1126,
         "name": "Esiliiga B",
@@ -8630,8 +8673,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8650,9 +8693,9 @@
       "id": 1521670,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 66,
       "competition": {
         "id": 1126,
         "name": "Esiliiga B",
@@ -8673,8 +8716,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -8693,9 +8736,9 @@
       "id": 1523250,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 63,
       "competition": {
         "id": 169,
         "name": "Super League",
@@ -8716,8 +8759,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8779,9 +8822,9 @@
       "id": 1534411,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 66,
       "competition": {
         "id": 117,
         "name": "1. Division",
@@ -8802,8 +8845,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -8822,9 +8865,9 @@
       "id": 1536881,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 64,
       "competition": {
         "id": 653,
         "name": "Second League - Group 4",
@@ -8845,8 +8888,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8865,9 +8908,9 @@
       "id": 1548996,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 61,
       "competition": {
         "id": 119,
         "name": "Superliga",
@@ -8888,8 +8931,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -8908,9 +8951,9 @@
       "id": 1548998,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 59,
       "competition": {
         "id": 119,
         "name": "Superliga",
@@ -8931,8 +8974,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8951,9 +8994,9 @@
       "id": 1555036,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 61,
       "competition": {
         "id": 208,
         "name": "Challenge League",
@@ -8974,8 +9017,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8994,9 +9037,9 @@
       "id": 1555367,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 65,
       "competition": {
         "id": 207,
         "name": "Super League",
@@ -9017,8 +9060,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -9123,9 +9166,9 @@
       "id": 1568761,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 67,
       "competition": {
         "id": 781,
         "name": "III Liga - Group 2",
@@ -9146,8 +9189,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -9166,9 +9209,9 @@
       "id": 1574607,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 64,
       "competition": {
         "id": 484,
         "name": "Frauenliga",
@@ -9189,8 +9232,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -9209,9 +9252,9 @@
       "id": 1578048,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 62,
       "competition": {
         "id": 1140,
         "name": "AFC Women's Champions League",
@@ -9232,8 +9275,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -9295,9 +9338,9 @@
       "id": 1578051,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 62,
       "competition": {
         "id": 1140,
         "name": "AFC Women's Champions League",
@@ -9318,8 +9361,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -9338,9 +9381,9 @@
       "id": 1578056,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 61,
       "competition": {
         "id": 1140,
         "name": "AFC Women's Champions League",
@@ -9361,8 +9404,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 4
         }
       },
       "tvChannels": [
@@ -9381,9 +9424,9 @@
       "id": 1579435,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 59,
       "competition": {
         "id": 492,
         "name": "Tweede Divisie",
@@ -9404,8 +9447,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -9596,9 +9639,9 @@
       "id": 1586524,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 59,
       "competition": {
         "id": 84,
         "name": "Regionalliga - Nord",
@@ -9619,8 +9662,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -9639,9 +9682,9 @@
       "id": 1587429,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 61,
       "competition": {
         "id": 87,
         "name": "Regionalliga - West",
@@ -9662,8 +9705,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -9682,9 +9725,9 @@
       "id": 1587431,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 62,
       "competition": {
         "id": 87,
         "name": "Regionalliga - West",
@@ -9705,8 +9748,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -9725,9 +9768,9 @@
       "id": 1593111,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 63,
       "competition": {
         "id": 82,
         "name": "Frauen Bundesliga",
@@ -9748,8 +9791,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -10456,9 +10499,9 @@
       "id": 1619117,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 64,
       "competition": {
         "id": 703,
         "name": "Professional Development League",
@@ -10479,8 +10522,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -10499,9 +10542,9 @@
       "id": 1619393,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 62,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -10522,8 +10565,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10542,9 +10585,9 @@
       "id": 1620993,
       "utcDate": "2026-08-23T12:00:00+00:00",
       "timestamp": 1787486400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 60,
       "competition": {
         "id": 702,
         "name": "Premier League 2 Division One",
@@ -10565,8 +10608,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -10585,9 +10628,9 @@
       "id": 1561368,
       "utcDate": "2026-08-23T12:15:00+00:00",
       "timestamp": 1787487300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 46,
       "competition": {
         "id": 235,
         "name": "Premier League",
@@ -10608,8 +10651,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -10628,9 +10671,9 @@
       "id": 1538680,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 391,
         "name": "Super League",
@@ -10651,8 +10694,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10671,9 +10714,9 @@
       "id": 1538682,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 391,
         "name": "Super League",
@@ -10694,8 +10737,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10714,9 +10757,9 @@
       "id": 1538684,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 391,
         "name": "Super League",
@@ -10737,8 +10780,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10757,9 +10800,9 @@
       "id": 1538685,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 391,
         "name": "Super League",
@@ -10780,8 +10823,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10800,9 +10843,9 @@
       "id": 1543464,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 166,
         "name": "2. Deild",
@@ -10823,8 +10866,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10843,9 +10886,9 @@
       "id": 1552140,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 88,
         "name": "Eredivisie",
@@ -10866,8 +10909,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -10886,9 +10929,9 @@
       "id": 1558186,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 107,
         "name": "I Liga",
@@ -10909,8 +10952,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -10929,9 +10972,9 @@
       "id": 1559756,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 346,
         "name": "FNL",
@@ -10952,8 +10995,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -10972,9 +11015,9 @@
       "id": 1561632,
       "utcDate": "2026-08-23T12:30:00+00:00",
       "timestamp": 1787488200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 109,
         "name": "II Liga - East",
@@ -10995,8 +11038,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -11273,9 +11316,9 @@
       "id": 1553143,
       "utcDate": "2026-08-23T12:45:00+00:00",
       "timestamp": 1787489100,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 36,
       "competition": {
         "id": 106,
         "name": "Ekstraklasa",
@@ -11296,8 +11339,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11316,9 +11359,9 @@
       "id": 1495536,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 549,
         "name": "Damallsvenskan",
@@ -11339,8 +11382,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -11359,9 +11402,9 @@
       "id": 1497665,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 114,
         "name": "Superettan",
@@ -11382,8 +11425,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -11402,9 +11445,9 @@
       "id": 1503709,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 736,
         "name": "Elitettan",
@@ -11425,8 +11468,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11445,9 +11488,9 @@
       "id": 1511060,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 19,
       "competition": {
         "id": 597,
         "name": "Division 2 - Södra Götaland",
@@ -11468,8 +11511,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11574,9 +11617,9 @@
       "id": 1536879,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 653,
         "name": "Second League - Group 4",
@@ -11597,8 +11640,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11617,9 +11660,9 @@
       "id": 1536882,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 653,
         "name": "Second League - Group 4",
@@ -11640,8 +11683,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -11660,9 +11703,9 @@
       "id": 1536883,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 653,
         "name": "Second League - Group 4",
@@ -11683,8 +11726,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11703,9 +11746,9 @@
       "id": 1552729,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 61,
         "name": "Ligue 1",
@@ -11726,8 +11769,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -11746,9 +11789,9 @@
       "id": 1557373,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 39,
         "name": "Premier League",
@@ -11769,8 +11812,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11789,9 +11832,9 @@
       "id": 1557374,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 18,
       "competition": {
         "id": 39,
         "name": "Premier League",
@@ -11812,8 +11855,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11832,9 +11875,9 @@
       "id": 1565228,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 283,
         "name": "Liga I",
@@ -11855,8 +11898,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -11918,9 +11961,9 @@
       "id": 1569069,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 780,
         "name": "III Liga - Group 1",
@@ -11941,8 +11984,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -12004,9 +12047,9 @@
       "id": 1576463,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 95,
         "name": "Segunda Liga",
@@ -12027,8 +12070,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -12047,9 +12090,9 @@
       "id": 1577496,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 236,
         "name": "First League",
@@ -12070,8 +12113,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -12864,9 +12907,9 @@
       "id": 1600750,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 567,
         "name": "Ligi kuu Bara",
@@ -12887,8 +12930,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13036,9 +13079,9 @@
       "id": 1611337,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 19,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -13059,8 +13102,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13294,9 +13337,9 @@
       "id": 1620974,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 18,
       "competition": {
         "id": 1100,
         "name": "Brasiliense U20",
@@ -13317,8 +13360,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13337,9 +13380,9 @@
       "id": 1623376,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 20,
       "competition": {
         "id": 401,
         "name": "Premier Soccer League",
@@ -13360,8 +13403,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13380,9 +13423,9 @@
       "id": 1623377,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 401,
         "name": "Premier Soccer League",
@@ -13403,8 +13446,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13423,9 +13466,9 @@
       "id": 1623378,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 401,
         "name": "Premier Soccer League",
@@ -13446,8 +13489,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13466,9 +13509,9 @@
       "id": 1627548,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 20,
       "competition": {
         "id": 335,
         "name": "Cup",
@@ -13489,8 +13532,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13595,9 +13638,9 @@
       "id": 1628936,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 251,
         "name": "Division Intermedia",
@@ -13618,8 +13661,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13638,9 +13681,9 @@
       "id": 1628937,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 251,
         "name": "Division Intermedia",
@@ -13661,8 +13704,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -13681,9 +13724,9 @@
       "id": 1628938,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 251,
         "name": "Division Intermedia",
@@ -13704,8 +13747,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13767,9 +13810,9 @@
       "id": 1629395,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 23,
       "competition": {
         "id": 1240,
         "name": "U19 league",
@@ -13790,51 +13833,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1629400,
-      "utcDate": "2026-08-23T13:00:00+00:00",
-      "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1240,
-        "name": "U19 league",
-        "country": "Turkey",
-        "logo": "https://media.api-sports.io/football/leagues/1240.png"
-      },
-      "homeTeam": {
-        "id": 17701,
-        "name": "Trabzonspor U19",
-        "shortName": "Trabzonspor U19",
-        "crest": "https://media.api-sports.io/football/teams/17701.png"
-      },
-      "awayTeam": {
-        "id": 16397,
-        "name": "İstanbul Başakşehir U19",
-        "shortName": "İstanbul Başakşehir U19",
-        "crest": "https://media.api-sports.io/football/teams/16397.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13853,9 +13853,9 @@
       "id": 1629818,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 509,
         "name": "8 Cup",
@@ -13876,8 +13876,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13896,9 +13896,9 @@
       "id": 1629875,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 21,
       "competition": {
         "id": 105,
         "name": "NM Cupen",
@@ -13919,8 +13919,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -13939,9 +13939,9 @@
       "id": 1629890,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 22,
       "competition": {
         "id": 105,
         "name": "NM Cupen",
@@ -13962,8 +13962,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -13982,9 +13982,9 @@
       "id": 1629891,
       "utcDate": "2026-08-23T13:00:00+00:00",
       "timestamp": 1787490000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 20,
       "competition": {
         "id": 105,
         "name": "NM Cupen",
@@ -14005,8 +14005,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -14518,49 +14518,6 @@
         "name": "Bantu",
         "shortName": "Bantu",
         "crest": "https://media.api-sports.io/football/teams/15563.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1629811,
-      "utcDate": "2026-08-23T13:30:00+00:00",
-      "timestamp": 1787491800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 299,
-        "name": "Primera División",
-        "country": "Venezuela",
-        "logo": "https://media.api-sports.io/football/leagues/299.png"
-      },
-      "homeTeam": {
-        "id": 2811,
-        "name": "Monagas SC",
-        "shortName": "Monagas SC",
-        "crest": "https://media.api-sports.io/football/teams/2811.png"
-      },
-      "awayTeam": {
-        "id": 2814,
-        "name": "Portuguesa FC",
-        "shortName": "Portuguesa FC",
-        "crest": "https://media.api-sports.io/football/teams/2814.png"
       },
       "score": {
         "fullTime": {
