@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T06:01:41.536031+00:00",
+  "lastUpdated": "2026-08-23T07:49:52.998893+00:00",
   "from": "2026-08-23",
   "to": "2026-08-25",
   "matches": [
@@ -1942,9 +1942,9 @@
       "id": 1517638,
       "utcDate": "2026-08-23T04:30:00+00:00",
       "timestamp": 1787459400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 71,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -1985,9 +1985,9 @@
       "id": 1517634,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -2009,7 +2009,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2028,9 +2028,9 @@
       "id": 1517637,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -2051,7 +2051,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 0
         }
       },
@@ -2071,9 +2071,9 @@
       "id": 1517850,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2095,7 +2095,7 @@
       "score": {
         "fullTime": {
           "home": 2,
-          "away": 1
+          "away": 4
         }
       },
       "tvChannels": [
@@ -2114,9 +2114,9 @@
       "id": 1522167,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 836,
         "name": "Victoria NPL 2",
@@ -2138,7 +2138,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2157,9 +2157,9 @@
       "id": 1630746,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "P",
+      "statusLong": "Penalty in progress",
+      "elapsed": null,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2200,9 +2200,9 @@
       "id": 1522168,
       "utcDate": "2026-08-23T05:15:00+00:00",
       "timestamp": 1787462100,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 836,
         "name": "Victoria NPL 2",
@@ -2224,7 +2224,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 3
         }
       },
       "tvChannels": [
@@ -2243,9 +2243,9 @@
       "id": 1522009,
       "utcDate": "2026-08-23T05:30:00+00:00",
       "timestamp": 1787463000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 30,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -2266,8 +2266,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2286,9 +2286,9 @@
       "id": 1549379,
       "utcDate": "2026-08-23T06:30:00+00:00",
       "timestamp": 1787466600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 53,
       "competition": {
         "id": 1230,
         "name": "Npl Nsw U20",
@@ -2309,8 +2309,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2329,9 +2329,9 @@
       "id": 1569826,
       "utcDate": "2026-08-23T07:00:00+00:00",
       "timestamp": 1787468400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 33,
       "competition": {
         "id": 1234,
         "name": "K4 League",
@@ -2352,8 +2352,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -23955,6 +23955,49 @@
       ]
     },
     {
+      "id": 1618231,
+      "utcDate": "2026-08-23T16:00:00+00:00",
+      "timestamp": 1787500800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 290,
+        "name": "Persian Gulf Pro League",
+        "country": "Iran",
+        "logo": "https://media.api-sports.io/football/leagues/290.png"
+      },
+      "homeTeam": {
+        "id": 2739,
+        "name": "Esteghlal Khuzestan",
+        "shortName": "Esteghlal Khuzestan",
+        "crest": "https://media.api-sports.io/football/teams/2739.png"
+      },
+      "awayTeam": {
+        "id": 2719,
+        "name": "Nassaji Mazandaran",
+        "shortName": "Nassaji Mazandaran",
+        "crest": "https://media.api-sports.io/football/teams/2719.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1618960,
       "utcDate": "2026-08-23T16:00:00+00:00",
       "timestamp": 1787500800,
@@ -25847,49 +25890,6 @@
       ]
     },
     {
-      "id": 1618231,
-      "utcDate": "2026-08-23T17:00:00+00:00",
-      "timestamp": 1787504400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 290,
-        "name": "Persian Gulf Pro League",
-        "country": "Iran",
-        "logo": "https://media.api-sports.io/football/leagues/290.png"
-      },
-      "homeTeam": {
-        "id": 2739,
-        "name": "Esteghlal Khuzestan",
-        "shortName": "Esteghlal Khuzestan",
-        "crest": "https://media.api-sports.io/football/teams/2739.png"
-      },
-      "awayTeam": {
-        "id": 2719,
-        "name": "Nassaji Mazandaran",
-        "shortName": "Nassaji Mazandaran",
-        "crest": "https://media.api-sports.io/football/teams/2719.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1555479,
       "utcDate": "2026-08-23T17:15:00+00:00",
       "timestamp": 1787505300,
@@ -26171,6 +26171,49 @@
         "name": "Estudiantes L.P.",
         "shortName": "Estudiantes L.P.",
         "crest": "https://media.api-sports.io/football/teams/450.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1498742,
+      "utcDate": "2026-08-23T18:00:00+00:00",
+      "timestamp": 1787508000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 129,
+        "name": "Primera Nacional",
+        "country": "Argentina",
+        "logo": "https://media.api-sports.io/football/leagues/129.png"
+      },
+      "homeTeam": {
+        "id": 447,
+        "name": "Chacarita Juniors",
+        "shortName": "Chacarita Juniors",
+        "crest": "https://media.api-sports.io/football/teams/447.png"
+      },
+      "awayTeam": {
+        "id": 485,
+        "name": "San Martin Tucuman",
+        "shortName": "San Martin Tucuman",
+        "crest": "https://media.api-sports.io/football/teams/485.png"
       },
       "score": {
         "fullTime": {
@@ -27375,49 +27418,6 @@
         "name": "Bravo",
         "shortName": "Bravo",
         "crest": "https://media.api-sports.io/football/teams/4359.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1498742,
-      "utcDate": "2026-08-23T18:30:00+00:00",
-      "timestamp": 1787509800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 129,
-        "name": "Primera Nacional",
-        "country": "Argentina",
-        "logo": "https://media.api-sports.io/football/leagues/129.png"
-      },
-      "homeTeam": {
-        "id": 447,
-        "name": "Chacarita Juniors",
-        "shortName": "Chacarita Juniors",
-        "crest": "https://media.api-sports.io/football/teams/447.png"
-      },
-      "awayTeam": {
-        "id": 485,
-        "name": "San Martin Tucuman",
-        "shortName": "San Martin Tucuman",
-        "crest": "https://media.api-sports.io/football/teams/485.png"
       },
       "score": {
         "fullTime": {
