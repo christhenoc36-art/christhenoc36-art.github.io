@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T03:31:44.674123+00:00",
+  "lastUpdated": "2026-08-23T05:04:59.568897+00:00",
   "from": "2026-08-23",
   "to": "2026-08-25",
   "matches": [
@@ -738,9 +738,9 @@
       "id": 1493643,
       "utcDate": "2026-08-23T01:00:00+00:00",
       "timestamp": 1787446800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 14,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 255,
         "name": "USL Championship",
@@ -762,7 +762,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1168,9 +1168,9 @@
       "id": 1490415,
       "utcDate": "2026-08-23T01:30:00+00:00",
       "timestamp": 1787448600,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 88,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 253,
         "name": "Major League Soccer",
@@ -1340,9 +1340,9 @@
       "id": 1493648,
       "utcDate": "2026-08-23T02:00:00+00:00",
       "timestamp": 1787450400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 61,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 255,
         "name": "USL Championship",
@@ -1364,7 +1364,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 3
+          "away": 5
         }
       },
       "tvChannels": [
@@ -1383,9 +1383,9 @@
       "id": 1551668,
       "utcDate": "2026-08-23T02:00:00+00:00",
       "timestamp": 1787450400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 69,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 162,
         "name": "Primera División",
@@ -1407,7 +1407,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1426,9 +1426,9 @@
       "id": 1559618,
       "utcDate": "2026-08-23T02:00:00+00:00",
       "timestamp": 1787450400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 68,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 339,
         "name": "Liga Nacional",
@@ -1449,7 +1449,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -1469,9 +1469,9 @@
       "id": 1600573,
       "utcDate": "2026-08-23T02:00:00+00:00",
       "timestamp": 1787450400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 68,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -1492,7 +1492,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1512,9 +1512,9 @@
       "id": 1490416,
       "utcDate": "2026-08-23T02:30:00+00:00",
       "timestamp": 1787452200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 253,
         "name": "Major League Soccer",
@@ -1535,7 +1535,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -1555,9 +1555,9 @@
       "id": 1490417,
       "utcDate": "2026-08-23T02:30:00+00:00",
       "timestamp": 1787452200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 253,
         "name": "Major League Soccer",
@@ -1578,7 +1578,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -1598,9 +1598,9 @@
       "id": 1490418,
       "utcDate": "2026-08-23T02:30:00+00:00",
       "timestamp": 1787452200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 253,
         "name": "Major League Soccer",
@@ -1622,7 +1622,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 3
+          "away": 5
         }
       },
       "tvChannels": [
@@ -1641,9 +1641,9 @@
       "id": 1493650,
       "utcDate": "2026-08-23T03:00:00+00:00",
       "timestamp": 1787454000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 19,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 255,
         "name": "USL Championship",
@@ -1664,8 +1664,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1684,9 +1684,9 @@
       "id": 1493953,
       "utcDate": "2026-08-23T03:00:00+00:00",
       "timestamp": 1787454000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 26,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 489,
         "name": "USL League One",
@@ -1707,8 +1707,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1727,9 +1727,9 @@
       "id": 1549375,
       "utcDate": "2026-08-23T03:00:00+00:00",
       "timestamp": 1787454000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 25,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1230,
         "name": "Npl Nsw U20",
@@ -1751,7 +1751,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1770,9 +1770,9 @@
       "id": 1549378,
       "utcDate": "2026-08-23T03:00:00+00:00",
       "timestamp": 1787454000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 27,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1230,
         "name": "Npl Nsw U20",
@@ -1793,8 +1793,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 4,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1813,9 +1813,9 @@
       "id": 1550935,
       "utcDate": "2026-08-23T03:00:00+00:00",
       "timestamp": 1787454000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 30,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -1837,7 +1837,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1856,9 +1856,9 @@
       "id": 1630745,
       "utcDate": "2026-08-23T03:00:00+00:00",
       "timestamp": 1787454000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 28,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1879,7 +1879,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 2
         }
       },
@@ -1899,9 +1899,9 @@
       "id": 1628853,
       "utcDate": "2026-08-23T04:00:00+00:00",
       "timestamp": 1787457600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 49,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1922,8 +1922,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1942,9 +1942,9 @@
       "id": 1517638,
       "utcDate": "2026-08-23T04:30:00+00:00",
       "timestamp": 1787459400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 29,
       "competition": {
         "id": 192,
         "name": "New South Wales NPL",
@@ -1965,8 +1965,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2071,9 +2071,9 @@
       "id": 1517850,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 3,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2094,8 +2094,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2114,9 +2114,9 @@
       "id": 1522167,
       "utcDate": "2026-08-23T05:00:00+00:00",
       "timestamp": 1787461200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 3,
       "competition": {
         "id": 836,
         "name": "Victoria NPL 2",
@@ -2137,8 +2137,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
