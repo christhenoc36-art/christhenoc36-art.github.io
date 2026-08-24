@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T10:22:31.872805+00:00",
+  "lastUpdated": "2026-08-24T11:48:38.450322+00:00",
   "from": "2026-08-24",
   "to": "2026-08-26",
   "matches": [
@@ -609,9 +609,9 @@
       "id": 1633882,
       "utcDate": "2026-08-24T08:30:00+00:00",
       "timestamp": 1787560200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 81,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 919,
         "name": "Mediterranean Games",
@@ -695,9 +695,9 @@
       "id": 1631488,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -719,7 +719,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -738,9 +738,9 @@
       "id": 1631493,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -761,7 +761,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 5,
           "away": 0
         }
       },
@@ -781,9 +781,9 @@
       "id": 1631494,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -804,7 +804,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 0
         }
       },
@@ -824,9 +824,9 @@
       "id": 1631495,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -847,7 +847,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -1896,6 +1896,49 @@
       ]
     },
     {
+      "id": 1519624,
+      "utcDate": "2026-08-24T15:30:00+00:00",
+      "timestamp": 1787585400,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 328,
+        "name": "Esiliiga A",
+        "country": "Estonia",
+        "logo": "https://media.api-sports.io/football/leagues/328.png"
+      },
+      "homeTeam": {
+        "id": 3516,
+        "name": "Elva",
+        "shortName": "Elva",
+        "crest": "https://media.api-sports.io/football/teams/3516.png"
+      },
+      "awayTeam": {
+        "id": 3518,
+        "name": "Flora II",
+        "shortName": "Flora II",
+        "crest": "https://media.api-sports.io/football/teams/3518.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1565225,
       "utcDate": "2026-08-24T15:30:00+00:00",
       "timestamp": 1787585400,
@@ -2005,49 +2048,6 @@
         "name": "Šiauliai",
         "shortName": "Šiauliai",
         "crest": "https://media.api-sports.io/football/teams/3870.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1519624,
-      "utcDate": "2026-08-24T16:00:00+00:00",
-      "timestamp": 1787587200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 328,
-        "name": "Esiliiga A",
-        "country": "Estonia",
-        "logo": "https://media.api-sports.io/football/leagues/328.png"
-      },
-      "homeTeam": {
-        "id": 3516,
-        "name": "Elva",
-        "shortName": "Elva",
-        "crest": "https://media.api-sports.io/football/teams/3516.png"
-      },
-      "awayTeam": {
-        "id": 3518,
-        "name": "Flora II",
-        "shortName": "Flora II",
-        "crest": "https://media.api-sports.io/football/teams/3518.png"
       },
       "score": {
         "fullTime": {
