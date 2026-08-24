@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T08:09:05.770017+00:00",
+  "lastUpdated": "2026-08-24T10:22:31.872805+00:00",
   "from": "2026-08-24",
   "to": "2026-08-26",
   "matches": [
@@ -606,6 +606,49 @@
       ]
     },
     {
+      "id": 1633882,
+      "utcDate": "2026-08-24T08:30:00+00:00",
+      "timestamp": 1787560200,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 81,
+      "competition": {
+        "id": 919,
+        "name": "Mediterranean Games",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
+      },
+      "homeTeam": {
+        "id": 11039,
+        "name": "Morocco U20",
+        "shortName": "Morocco U20",
+        "crest": "https://media.api-sports.io/football/teams/11039.png"
+      },
+      "awayTeam": {
+        "id": 28333,
+        "name": "Tunisia U21",
+        "shortName": "Tunisia U21",
+        "crest": "https://media.api-sports.io/football/teams/28333.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 1
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1632342,
       "utcDate": "2026-08-24T09:00:00+00:00",
       "timestamp": 1787562000,
@@ -652,9 +695,9 @@
       "id": 1631488,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -675,8 +718,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -695,9 +738,9 @@
       "id": 1631493,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -718,8 +761,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -738,9 +781,9 @@
       "id": 1631494,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -761,8 +804,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -781,9 +824,9 @@
       "id": 1631495,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 45,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -804,8 +847,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -5316,6 +5359,135 @@
         "name": "Chaco",
         "shortName": "Chaco",
         "crest": "https://media.api-sports.io/football/teams/26427.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1633883,
+      "utcDate": "2026-08-24T19:00:00+00:00",
+      "timestamp": 1787598000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 919,
+        "name": "Mediterranean Games",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
+      },
+      "homeTeam": {
+        "id": 8177,
+        "name": "Albania U21",
+        "shortName": "Albania U21",
+        "crest": "https://media.api-sports.io/football/teams/8177.png"
+      },
+      "awayTeam": {
+        "id": 8203,
+        "name": "Kosovo U21",
+        "shortName": "Kosovo U21",
+        "crest": "https://media.api-sports.io/football/teams/8203.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1633884,
+      "utcDate": "2026-08-24T19:00:00+00:00",
+      "timestamp": 1787598000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 919,
+        "name": "Mediterranean Games",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
+      },
+      "homeTeam": {
+        "id": 19071,
+        "name": "Italy U18",
+        "shortName": "Italy U18",
+        "crest": "https://media.api-sports.io/football/teams/19071.png"
+      },
+      "awayTeam": {
+        "id": 28332,
+        "name": "Algeria U21",
+        "shortName": "Algeria U21",
+        "crest": "https://media.api-sports.io/football/teams/28332.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1633885,
+      "utcDate": "2026-08-24T19:00:00+00:00",
+      "timestamp": 1787598000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 919,
+        "name": "Mediterranean Games",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/919.png"
+      },
+      "homeTeam": {
+        "id": 23431,
+        "name": "Türkiye U20",
+        "shortName": "Türkiye U20",
+        "crest": "https://media.api-sports.io/football/teams/23431.png"
+      },
+      "awayTeam": {
+        "id": 8212,
+        "name": "North Macedonia U21",
+        "shortName": "North Macedonia U21",
+        "crest": "https://media.api-sports.io/football/teams/8212.png"
       },
       "score": {
         "fullTime": {
