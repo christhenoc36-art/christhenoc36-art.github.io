@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T11:48:38.450322+00:00",
+  "lastUpdated": "2026-08-24T14:23:29.550791+00:00",
   "from": "2026-08-24",
   "to": "2026-08-26",
   "matches": [
@@ -652,9 +652,9 @@
       "id": 1632342,
       "utcDate": "2026-08-24T09:00:00+00:00",
       "timestamp": 1787562000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 10,
         "name": "Friendlies",
@@ -675,8 +675,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -867,9 +867,9 @@
       "id": 1588810,
       "utcDate": "2026-08-24T12:00:00+00:00",
       "timestamp": 1787572800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 709,
         "name": "Cup",
@@ -890,8 +890,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -996,9 +996,9 @@
       "id": 1516115,
       "utcDate": "2026-08-24T14:00:00+00:00",
       "timestamp": 1787580000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 23,
       "competition": {
         "id": 369,
         "name": "Super League",
@@ -1019,8 +1019,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1125,9 +1125,9 @@
       "id": 1601100,
       "utcDate": "2026-08-24T14:00:00+00:00",
       "timestamp": 1787580000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 23,
       "competition": {
         "id": 1218,
         "name": "Pro League U23",
@@ -1148,8 +1148,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1168,9 +1168,9 @@
       "id": 1601101,
       "utcDate": "2026-08-24T14:00:00+00:00",
       "timestamp": 1787580000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 23,
       "competition": {
         "id": 1218,
         "name": "Pro League U23",
@@ -1191,8 +1191,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1211,9 +1211,9 @@
       "id": 1629398,
       "utcDate": "2026-08-24T14:00:00+00:00",
       "timestamp": 1787580000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 23,
       "competition": {
         "id": 1240,
         "name": "U19 league",
@@ -1234,8 +1234,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1297,9 +1297,9 @@
       "id": 1606527,
       "utcDate": "2026-08-24T14:15:00+00:00",
       "timestamp": 1787580900,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 8,
       "competition": {
         "id": 306,
         "name": "Second Division",
@@ -1320,8 +1320,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
