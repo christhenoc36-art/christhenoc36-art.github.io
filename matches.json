@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T05:26:17.872941+00:00",
+  "lastUpdated": "2026-08-24T08:09:05.770017+00:00",
   "from": "2026-08-24",
   "to": "2026-08-26",
   "matches": [
@@ -606,6 +606,49 @@
       ]
     },
     {
+      "id": 1632342,
+      "utcDate": "2026-08-24T09:00:00+00:00",
+      "timestamp": 1787562000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "homeTeam": {
+        "id": 25098,
+        "name": "Kuwait U20",
+        "shortName": "Kuwait U20",
+        "crest": "https://media.api-sports.io/football/teams/25098.png"
+      },
+      "awayTeam": {
+        "id": 19632,
+        "name": "UAE U20",
+        "shortName": "UAE U20",
+        "crest": "https://media.api-sports.io/football/teams/19632.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1631488,
       "utcDate": "2026-08-24T09:30:00+00:00",
       "timestamp": 1787563800,
@@ -1145,6 +1188,49 @@
         "name": "Amedspor U19",
         "shortName": "Amedspor U19",
         "crest": "https://media.api-sports.io/football/teams/28241.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1632343,
+      "utcDate": "2026-08-24T14:00:00+00:00",
+      "timestamp": 1787580000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "homeTeam": {
+        "id": 19628,
+        "name": "Lebanon U20",
+        "shortName": "Lebanon U20",
+        "crest": "https://media.api-sports.io/football/teams/19628.png"
+      },
+      "awayTeam": {
+        "id": 21060,
+        "name": "Tajikistan U20",
+        "shortName": "Tajikistan U20",
+        "crest": "https://media.api-sports.io/football/teams/21060.png"
       },
       "score": {
         "fullTime": {
@@ -2607,6 +2693,92 @@
         "name": "Mes Shahr-e Babak",
         "shortName": "Mes Shahr-e Babak",
         "crest": "https://media.api-sports.io/football/teams/10388.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1632344,
+      "utcDate": "2026-08-24T16:00:00+00:00",
+      "timestamp": 1787587200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "homeTeam": {
+        "id": 10301,
+        "name": "Saudi Arabia U20",
+        "shortName": "Saudi Arabia U20",
+        "crest": "https://media.api-sports.io/football/teams/10301.png"
+      },
+      "awayTeam": {
+        "id": 21059,
+        "name": "Syria U20",
+        "shortName": "Syria U20",
+        "crest": "https://media.api-sports.io/football/teams/21059.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1632345,
+      "utcDate": "2026-08-24T16:00:00+00:00",
+      "timestamp": 1787587200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "homeTeam": {
+        "id": 10300,
+        "name": "Qatar U20",
+        "shortName": "Qatar U20",
+        "crest": "https://media.api-sports.io/football/teams/10300.png"
+      },
+      "awayTeam": {
+        "id": 19624,
+        "name": "Bahrain U20",
+        "shortName": "Bahrain U20",
+        "crest": "https://media.api-sports.io/football/teams/19624.png"
       },
       "score": {
         "fullTime": {
@@ -10367,6 +10539,49 @@
       ]
     },
     {
+      "id": 1632328,
+      "utcDate": "2026-08-25T17:00:00+00:00",
+      "timestamp": 1787677200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "homeTeam": {
+        "id": 4204,
+        "name": "Home United",
+        "shortName": "Home United",
+        "crest": "https://media.api-sports.io/football/teams/4204.png"
+      },
+      "awayTeam": {
+        "id": 9771,
+        "name": "Xerez Deportivo",
+        "shortName": "Xerez Deportivo",
+        "crest": "https://media.api-sports.io/football/teams/9771.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1600321,
       "utcDate": "2026-08-25T17:30:00+00:00",
       "timestamp": 1787679000,
@@ -11981,6 +12196,49 @@
         "name": "Naft Maysan",
         "shortName": "Naft Maysan",
         "crest": "https://media.api-sports.io/football/teams/11074.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1632346,
+      "utcDate": "2026-08-25T18:00:00+00:00",
+      "timestamp": 1787680800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 10,
+        "name": "Friendlies",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/10.png"
+      },
+      "homeTeam": {
+        "id": 10307,
+        "name": "Uruguay U20",
+        "shortName": "Uruguay U20",
+        "crest": "https://media.api-sports.io/football/teams/10307.png"
+      },
+      "awayTeam": {
+        "id": 16202,
+        "name": "Paraguay U20",
+        "shortName": "Paraguay U20",
+        "crest": "https://media.api-sports.io/football/teams/16202.png"
       },
       "score": {
         "fullTime": {
@@ -14432,6 +14690,49 @@
         "name": "Atlántico",
         "shortName": "Atlántico",
         "crest": "https://media.api-sports.io/football/teams/16138.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1632402,
+      "utcDate": "2026-08-25T21:15:00+00:00",
+      "timestamp": 1787692500,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 930,
+        "name": "Copa Uruguay",
+        "country": "Uruguay",
+        "logo": "https://media.api-sports.io/football/leagues/930.png"
+      },
+      "homeTeam": {
+        "id": 2350,
+        "name": "Defensor Sporting",
+        "shortName": "Defensor Sporting",
+        "crest": "https://media.api-sports.io/football/teams/2350.png"
+      },
+      "awayTeam": {
+        "id": 2371,
+        "name": "Rentistas",
+        "shortName": "Rentistas",
+        "crest": "https://media.api-sports.io/football/teams/2371.png"
       },
       "score": {
         "fullTime": {
