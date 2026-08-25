@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T21:56:12.976589+00:00",
+  "lastUpdated": "2026-08-25T23:00:36.350556+00:00",
   "from": "2026-08-25",
   "to": "2026-08-27",
   "matches": [
@@ -8220,9 +8220,9 @@
       "id": 1589394,
       "utcDate": "2026-08-25T20:00:00+00:00",
       "timestamp": 1787688000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 90,
+      "status": "PEN",
+      "statusLong": "Match Finished",
+      "elapsed": 120,
       "competition": {
         "id": 1232,
         "name": "Copa De La Liga",
@@ -8263,8 +8263,8 @@
       "id": 1605341,
       "utcDate": "2026-08-25T20:00:00+00:00",
       "timestamp": 1787688000,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 759,
@@ -8306,9 +8306,9 @@
       "id": 1549603,
       "utcDate": "2026-08-25T20:30:00+00:00",
       "timestamp": 1787689800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 69,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -8349,9 +8349,9 @@
       "id": 1632402,
       "utcDate": "2026-08-25T21:15:00+00:00",
       "timestamp": 1787692500,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 38,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 82,
       "competition": {
         "id": 930,
         "name": "Copa Uruguay",
@@ -8392,9 +8392,9 @@
       "id": 1612600,
       "utcDate": "2026-08-25T21:30:00+00:00",
       "timestamp": 1787693400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 26,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 73,
       "competition": {
         "id": 501,
         "name": "Copa Paraguay",
@@ -8415,7 +8415,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       },
@@ -8435,9 +8435,9 @@
       "id": 1628885,
       "utcDate": "2026-08-25T21:30:00+00:00",
       "timestamp": 1787693400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 26,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 73,
       "competition": {
         "id": 252,
         "name": "Division Profesional - Clausura",
@@ -8478,9 +8478,9 @@
       "id": 1498659,
       "utcDate": "2026-08-25T22:00:00+00:00",
       "timestamp": 1787695200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 129,
         "name": "Primera Nacional",
@@ -8501,8 +8501,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8521,9 +8521,9 @@
       "id": 1520831,
       "utcDate": "2026-08-25T22:30:00+00:00",
       "timestamp": 1787697000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -8544,8 +8544,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8564,9 +8564,9 @@
       "id": 1520835,
       "utcDate": "2026-08-25T22:30:00+00:00",
       "timestamp": 1787697000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 28,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -8587,8 +8587,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8736,9 +8736,9 @@
       "id": 1618989,
       "utcDate": "2026-08-25T23:00:00+00:00",
       "timestamp": 1787698800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 344,
         "name": "Primera División",
@@ -8759,8 +8759,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
