@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T07:32:55.284587+00:00",
+  "lastUpdated": "2026-08-25T09:20:46.479747+00:00",
   "from": "2026-08-25",
   "to": "2026-08-27",
   "matches": [
@@ -5660,49 +5660,6 @@
         "name": "Al Qadsia",
         "shortName": "Al Qadsia",
         "crest": "https://media.api-sports.io/football/teams/3537.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1622638,
-      "utcDate": "2026-08-25T18:00:00+00:00",
-      "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 330,
-        "name": "Premier League",
-        "country": "Kuwait",
-        "logo": "https://media.api-sports.io/football/leagues/330.png"
-      },
-      "homeTeam": {
-        "id": 3540,
-        "name": "Kazma",
-        "shortName": "Kazma",
-        "crest": "https://media.api-sports.io/football/teams/3540.png"
-      },
-      "awayTeam": {
-        "id": 3539,
-        "name": "Al Tadhamon",
-        "shortName": "Al Tadhamon",
-        "crest": "https://media.api-sports.io/football/teams/3539.png"
       },
       "score": {
         "fullTime": {
@@ -20773,49 +20730,6 @@
       ]
     },
     {
-      "id": 1632236,
-      "utcDate": "2026-08-26T18:00:00+00:00",
-      "timestamp": 1787767200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 330,
-        "name": "Premier League",
-        "country": "Kuwait",
-        "logo": "https://media.api-sports.io/football/leagues/330.png"
-      },
-      "homeTeam": {
-        "id": 3542,
-        "name": "Al Sahel",
-        "shortName": "Al Sahel",
-        "crest": "https://media.api-sports.io/football/teams/3542.png"
-      },
-      "awayTeam": {
-        "id": 3543,
-        "name": "Al Sulaibikhat",
-        "shortName": "Al Sulaibikhat",
-        "crest": "https://media.api-sports.io/football/teams/3543.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1632403,
       "utcDate": "2026-08-26T18:00:00+00:00",
       "timestamp": 1787767200,
@@ -22301,92 +22215,6 @@
         "name": "Sport Huancayo",
         "shortName": "Sport Huancayo",
         "crest": "https://media.api-sports.io/football/teams/2555.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1628952,
-      "utcDate": "2026-08-26T20:00:00+00:00",
-      "timestamp": 1787774400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 917,
-        "name": "Copa Ecuador",
-        "country": "Ecuador",
-        "logo": "https://media.api-sports.io/football/leagues/917.png"
-      },
-      "homeTeam": {
-        "id": 27663,
-        "name": "Astillero FC (Ecu)",
-        "shortName": "Astillero FC (Ecu)",
-        "crest": "https://media.api-sports.io/football/teams/27663.png"
-      },
-      "awayTeam": {
-        "id": 1157,
-        "name": "Universidad Catolica",
-        "shortName": "Universidad Catolica",
-        "crest": "https://media.api-sports.io/football/teams/1157.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1628953,
-      "utcDate": "2026-08-26T20:00:00+00:00",
-      "timestamp": 1787774400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 917,
-        "name": "Copa Ecuador",
-        "country": "Ecuador",
-        "logo": "https://media.api-sports.io/football/leagues/917.png"
-      },
-      "homeTeam": {
-        "id": 1153,
-        "name": "Independiente del Valle",
-        "shortName": "Independiente del Valle",
-        "crest": "https://media.api-sports.io/football/teams/1153.png"
-      },
-      "awayTeam": {
-        "id": 1986,
-        "name": "Gualaceo SC",
-        "shortName": "Gualaceo SC",
-        "crest": "https://media.api-sports.io/football/teams/1986.png"
       },
       "score": {
         "fullTime": {
