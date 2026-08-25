@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T20:51:31.001394+00:00",
+  "lastUpdated": "2026-08-25T21:56:12.976589+00:00",
   "from": "2026-08-25",
   "to": "2026-08-27",
   "matches": [
@@ -2137,8 +2137,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 2
+          "home": 2,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -4909,9 +4909,9 @@
       "id": 1543991,
       "utcDate": "2026-08-25T18:00:00+00:00",
       "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -4932,8 +4932,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -4995,9 +4995,9 @@
       "id": 1543993,
       "utcDate": "2026-08-25T18:00:00+00:00",
       "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -5018,8 +5018,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -5038,9 +5038,9 @@
       "id": 1543995,
       "utcDate": "2026-08-25T18:00:00+00:00",
       "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -5061,8 +5061,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 7,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -5081,9 +5081,9 @@
       "id": 1543997,
       "utcDate": "2026-08-25T18:00:00+00:00",
       "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -5104,8 +5104,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -5124,9 +5124,9 @@
       "id": 1543998,
       "utcDate": "2026-08-25T18:00:00+00:00",
       "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -5147,8 +5147,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -5210,9 +5210,9 @@
       "id": 1544000,
       "utcDate": "2026-08-25T18:00:00+00:00",
       "timestamp": 1787680800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1128,
         "name": "Brasileiro U17",
@@ -5233,8 +5233,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -6371,9 +6371,9 @@
       "id": 1593559,
       "utcDate": "2026-08-25T18:45:00+00:00",
       "timestamp": 1787683500,
-      "status": "FT",
-      "statusLong": "Match Finished",
-      "elapsed": 90,
+      "status": "ABD",
+      "statusLong": "Match Abandoned",
+      "elapsed": null,
       "competition": {
         "id": 182,
         "name": "Challenge Cup",
@@ -6394,7 +6394,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 0,
           "away": 0
         }
       },
@@ -7661,9 +7661,9 @@
       "id": 1623097,
       "utcDate": "2026-08-25T18:45:00+00:00",
       "timestamp": 1787683500,
-      "status": "P",
-      "statusLong": "Penalty in progress",
-      "elapsed": null,
+      "status": "PEN",
+      "statusLong": "Match Finished",
+      "elapsed": 120,
       "competition": {
         "id": 48,
         "name": "League Cup",
@@ -7704,9 +7704,9 @@
       "id": 1623098,
       "utcDate": "2026-08-25T18:45:00+00:00",
       "timestamp": 1787683500,
-      "status": "P",
-      "statusLong": "Penalty in progress",
-      "elapsed": null,
+      "status": "PEN",
+      "statusLong": "Match Finished",
+      "elapsed": 120,
       "competition": {
         "id": 48,
         "name": "League Cup",
@@ -7833,9 +7833,9 @@
       "id": 1570342,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 89,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 140,
         "name": "La Liga",
@@ -7876,8 +7876,8 @@
       "id": 1598662,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 701,
@@ -7919,9 +7919,9 @@
       "id": 1610924,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 90,
+      "status": "AET",
+      "statusLong": "Match Finished",
+      "elapsed": 120,
       "competition": {
         "id": 2,
         "name": "UEFA Champions League",
@@ -7942,7 +7942,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 4,
+          "home": 5,
           "away": 1
         }
       },
@@ -7962,9 +7962,9 @@
       "id": 1612599,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 90,
+      "status": "PEN",
+      "statusLong": "Match Finished",
+      "elapsed": 120,
       "competition": {
         "id": 501,
         "name": "Copa Paraguay",
@@ -8005,9 +8005,9 @@
       "id": 1618988,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 87,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 344,
         "name": "Primera División",
@@ -8048,8 +8048,8 @@
       "id": 1622627,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 2,
@@ -8134,8 +8134,8 @@
       "id": 1623100,
       "utcDate": "2026-08-25T19:00:00+00:00",
       "timestamp": 1787684400,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 48,
@@ -8177,9 +8177,9 @@
       "id": 1514238,
       "utcDate": "2026-08-25T19:15:00+00:00",
       "timestamp": 1787685300,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 75,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 165,
         "name": "1. Deild",
@@ -8200,7 +8200,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -8220,9 +8220,9 @@
       "id": 1589394,
       "utcDate": "2026-08-25T20:00:00+00:00",
       "timestamp": 1787688000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 1232,
         "name": "Copa De La Liga",
@@ -8263,9 +8263,9 @@
       "id": 1605341,
       "utcDate": "2026-08-25T20:00:00+00:00",
       "timestamp": 1787688000,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 759,
         "name": "Liga Mayor",
@@ -8286,7 +8286,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -8306,9 +8306,9 @@
       "id": 1549603,
       "utcDate": "2026-08-25T20:30:00+00:00",
       "timestamp": 1787689800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 20,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 69,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -8329,8 +8329,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -8349,9 +8349,9 @@
       "id": 1632402,
       "utcDate": "2026-08-25T21:15:00+00:00",
       "timestamp": 1787692500,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 38,
       "competition": {
         "id": 930,
         "name": "Copa Uruguay",
@@ -8372,8 +8372,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8392,9 +8392,9 @@
       "id": 1612600,
       "utcDate": "2026-08-25T21:30:00+00:00",
       "timestamp": 1787693400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 26,
       "competition": {
         "id": 501,
         "name": "Copa Paraguay",
@@ -8415,8 +8415,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8435,9 +8435,9 @@
       "id": 1628885,
       "utcDate": "2026-08-25T21:30:00+00:00",
       "timestamp": 1787693400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 26,
       "competition": {
         "id": 252,
         "name": "Division Profesional - Clausura",
@@ -8458,8 +8458,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
