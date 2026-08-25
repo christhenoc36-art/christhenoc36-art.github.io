@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T23:00:36.350556+00:00",
+  "lastUpdated": "2026-08-25T23:55:37.680786+00:00",
   "from": "2026-08-25",
   "to": "2026-08-27",
   "matches": [
@@ -8349,9 +8349,9 @@
       "id": 1632402,
       "utcDate": "2026-08-25T21:15:00+00:00",
       "timestamp": 1787692500,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 82,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 930,
         "name": "Copa Uruguay",
@@ -8392,9 +8392,9 @@
       "id": 1612600,
       "utcDate": "2026-08-25T21:30:00+00:00",
       "timestamp": 1787693400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 73,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 501,
         "name": "Copa Paraguay",
@@ -8435,9 +8435,9 @@
       "id": 1628885,
       "utcDate": "2026-08-25T21:30:00+00:00",
       "timestamp": 1787693400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 73,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 252,
         "name": "Division Profesional - Clausura",
@@ -8478,9 +8478,9 @@
       "id": 1498659,
       "utcDate": "2026-08-25T22:00:00+00:00",
       "timestamp": 1787695200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 129,
         "name": "Primera Nacional",
@@ -8501,7 +8501,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -8521,9 +8521,9 @@
       "id": 1520831,
       "utcDate": "2026-08-25T22:30:00+00:00",
       "timestamp": 1787697000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 31,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 65,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -8564,9 +8564,9 @@
       "id": 1520835,
       "utcDate": "2026-08-25T22:30:00+00:00",
       "timestamp": 1787697000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 28,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 63,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -8588,7 +8588,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -8607,9 +8607,9 @@
       "id": 1499598,
       "utcDate": "2026-08-25T23:00:00+00:00",
       "timestamp": 1787698800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 131,
         "name": "Primera B Metropolitana",
@@ -8630,8 +8630,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8693,9 +8693,9 @@
       "id": 1605342,
       "utcDate": "2026-08-25T23:00:00+00:00",
       "timestamp": 1787698800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 759,
         "name": "Liga Mayor",
@@ -8716,8 +8716,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -8736,9 +8736,9 @@
       "id": 1618989,
       "utcDate": "2026-08-25T23:00:00+00:00",
       "timestamp": 1787698800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 1,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 344,
         "name": "Primera División",
@@ -8759,7 +8759,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -8779,9 +8779,9 @@
       "id": 1632312,
       "utcDate": "2026-08-25T23:00:00+00:00",
       "timestamp": 1787698800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 712,
         "name": "Liga Femenina",
@@ -8802,8 +8802,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       },
       "tvChannels": [
