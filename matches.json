@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T09:20:46.479747+00:00",
+  "lastUpdated": "2026-08-25T11:01:38.228072+00:00",
   "from": "2026-08-25",
   "to": "2026-08-27",
   "matches": [
@@ -351,9 +351,9 @@
       "id": 1541317,
       "utcDate": "2026-08-25T09:30:00+00:00",
       "timestamp": 1787650200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 73,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -374,8 +374,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 5
         }
       },
       "tvChannels": [
@@ -394,9 +394,9 @@
       "id": 1623385,
       "utcDate": "2026-08-25T09:30:00+00:00",
       "timestamp": 1787650200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 73,
       "competition": {
         "id": 874,
         "name": "Australia Cup",
@@ -417,8 +417,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -437,9 +437,9 @@
       "id": 1631496,
       "utcDate": "2026-08-25T09:30:00+00:00",
       "timestamp": 1787650200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 70,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -460,8 +460,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -480,9 +480,9 @@
       "id": 1631497,
       "utcDate": "2026-08-25T09:30:00+00:00",
       "timestamp": 1787650200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 68,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -503,8 +503,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -523,9 +523,9 @@
       "id": 1598655,
       "utcDate": "2026-08-25T10:00:00+00:00",
       "timestamp": 1787652000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 701,
         "name": "Liga Revelação U23",
@@ -546,8 +546,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -566,9 +566,9 @@
       "id": 1627492,
       "utcDate": "2026-08-25T10:00:00+00:00",
       "timestamp": 1787652000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 237,
         "name": "Cup",
@@ -589,8 +589,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -609,9 +609,9 @@
       "id": 1507040,
       "utcDate": "2026-08-25T10:30:00+00:00",
       "timestamp": 1787653800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -632,8 +632,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -652,9 +652,9 @@
       "id": 1507041,
       "utcDate": "2026-08-25T10:30:00+00:00",
       "timestamp": 1787653800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -675,8 +675,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -695,9 +695,9 @@
       "id": 1507042,
       "utcDate": "2026-08-25T10:30:00+00:00",
       "timestamp": 1787653800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 31,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -718,8 +718,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -781,9 +781,9 @@
       "id": 1619118,
       "utcDate": "2026-08-25T11:00:00+00:00",
       "timestamp": 1787655600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 703,
         "name": "Professional Development League",
@@ -804,8 +804,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -19311,49 +19311,6 @@
       ]
     },
     {
-      "id": 1623477,
-      "utcDate": "2026-08-26T17:45:00+00:00",
-      "timestamp": 1787766300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1035,
-        "name": "Copa Rio",
-        "country": "Brazil",
-        "logo": "https://media.api-sports.io/football/leagues/1035.png"
-      },
-      "homeTeam": {
-        "id": 7780,
-        "name": "Madureira",
-        "shortName": "Madureira",
-        "crest": "https://media.api-sports.io/football/teams/7780.png"
-      },
-      "awayTeam": {
-        "id": 2206,
-        "name": "Boavista SC",
-        "shortName": "Boavista SC",
-        "crest": "https://media.api-sports.io/football/teams/2206.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1623478,
       "utcDate": "2026-08-26T17:45:00+00:00",
       "timestamp": 1787766300,
@@ -21699,6 +21656,49 @@
         "name": "Everton",
         "shortName": "Everton",
         "crest": "https://media.api-sports.io/football/teams/45.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1623477,
+      "utcDate": "2026-08-26T19:00:00+00:00",
+      "timestamp": 1787770800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1035,
+        "name": "Copa Rio",
+        "country": "Brazil",
+        "logo": "https://media.api-sports.io/football/leagues/1035.png"
+      },
+      "homeTeam": {
+        "id": 2206,
+        "name": "Boavista SC",
+        "shortName": "Boavista SC",
+        "crest": "https://media.api-sports.io/football/teams/2206.png"
+      },
+      "awayTeam": {
+        "id": 7780,
+        "name": "Madureira",
+        "shortName": "Madureira",
+        "crest": "https://media.api-sports.io/football/teams/7780.png"
       },
       "score": {
         "fullTime": {
