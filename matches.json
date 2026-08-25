@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T03:15:32.236455+00:00",
+  "lastUpdated": "2026-08-25T05:08:34.937978+00:00",
   "from": "2026-08-25",
   "to": "2026-08-27",
   "matches": [
@@ -308,9 +308,9 @@
       "id": 1513315,
       "utcDate": "2026-08-25T02:00:00+00:00",
       "timestamp": 1787623200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 53,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -332,7 +332,7 @@
       "score": {
         "fullTime": {
           "home": 4,
-          "away": 1
+          "away": 0
         }
       },
       "tvChannels": [
@@ -19354,6 +19354,49 @@
       ]
     },
     {
+      "id": 1623477,
+      "utcDate": "2026-08-26T17:45:00+00:00",
+      "timestamp": 1787766300,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1035,
+        "name": "Copa Rio",
+        "country": "Brazil",
+        "logo": "https://media.api-sports.io/football/leagues/1035.png"
+      },
+      "homeTeam": {
+        "id": 7780,
+        "name": "Madureira",
+        "shortName": "Madureira",
+        "crest": "https://media.api-sports.io/football/teams/7780.png"
+      },
+      "awayTeam": {
+        "id": 2206,
+        "name": "Boavista SC",
+        "shortName": "Boavista SC",
+        "crest": "https://media.api-sports.io/football/teams/2206.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1623478,
       "utcDate": "2026-08-26T17:45:00+00:00",
       "timestamp": 1787766300,
@@ -21742,49 +21785,6 @@
         "name": "Everton",
         "shortName": "Everton",
         "crest": "https://media.api-sports.io/football/teams/45.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1623477,
-      "utcDate": "2026-08-26T19:00:00+00:00",
-      "timestamp": 1787770800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1035,
-        "name": "Copa Rio",
-        "country": "Brazil",
-        "logo": "https://media.api-sports.io/football/leagues/1035.png"
-      },
-      "homeTeam": {
-        "id": 7780,
-        "name": "Madureira",
-        "shortName": "Madureira",
-        "crest": "https://media.api-sports.io/football/teams/7780.png"
-      },
-      "awayTeam": {
-        "id": 2206,
-        "name": "Boavista SC",
-        "shortName": "Boavista SC",
-        "crest": "https://media.api-sports.io/football/teams/2206.png"
       },
       "score": {
         "fullTime": {
