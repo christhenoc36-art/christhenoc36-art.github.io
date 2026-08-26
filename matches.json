@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T03:35:28.207229+00:00",
+  "lastUpdated": "2026-08-26T05:17:36.809640+00:00",
   "from": "2026-08-26",
   "to": "2026-08-28",
   "matches": [
@@ -265,9 +265,9 @@
       "id": 1548368,
       "utcDate": "2026-08-26T02:30:00+00:00",
       "timestamp": 1787711400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 47,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1028,
         "name": "CONCACAF Central American Cup",
@@ -288,7 +288,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       },
@@ -308,9 +308,9 @@
       "id": 1548369,
       "utcDate": "2026-08-26T02:30:00+00:00",
       "timestamp": 1787711400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 46,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1028,
         "name": "CONCACAF Central American Cup",
@@ -331,7 +331,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -351,9 +351,9 @@
       "id": 1627559,
       "utcDate": "2026-08-26T02:30:00+00:00",
       "timestamp": 1787711400,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 772,
         "name": "Leagues Cup",
@@ -374,7 +374,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 0
         }
       },
