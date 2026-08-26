@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T10:06:59.757310+00:00",
+  "lastUpdated": "2026-08-26T11:49:42.385251+00:00",
   "from": "2026-08-26",
   "to": "2026-08-28",
   "matches": [
@@ -566,9 +566,9 @@
       "id": 1565164,
       "utcDate": "2026-08-26T08:30:00+00:00",
       "timestamp": 1787733000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 80,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 668,
         "name": "1. Liga U19",
@@ -589,7 +589,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 4,
+          "home": 6,
           "away": 2
         }
       },
@@ -609,9 +609,9 @@
       "id": 1633886,
       "utcDate": "2026-08-26T08:30:00+00:00",
       "timestamp": 1787733000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 919,
         "name": "Mediterranean Games",
@@ -632,8 +632,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 5
         }
       },
       "tvChannels": [
@@ -652,9 +652,9 @@
       "id": 1633887,
       "utcDate": "2026-08-26T08:30:00+00:00",
       "timestamp": 1787733000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 919,
         "name": "Mediterranean Games",
@@ -675,8 +675,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -738,9 +738,9 @@
       "id": 1595553,
       "utcDate": "2026-08-26T09:00:00+00:00",
       "timestamp": 1787734800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 488,
         "name": "U19 Bundesliga",
@@ -761,8 +761,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -781,9 +781,9 @@
       "id": 1611745,
       "utcDate": "2026-08-26T09:00:00+00:00",
       "timestamp": 1787734800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1065,
         "name": "U19 League",
@@ -804,7 +804,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -824,9 +824,9 @@
       "id": 1611748,
       "utcDate": "2026-08-26T09:00:00+00:00",
       "timestamp": 1787734800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1065,
         "name": "U19 League",
@@ -847,7 +847,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 2
         }
       },
@@ -867,9 +867,9 @@
       "id": 1611867,
       "utcDate": "2026-08-26T09:00:00+00:00",
       "timestamp": 1787734800,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 46,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1065,
         "name": "U19 League",
@@ -953,9 +953,9 @@
       "id": 1623386,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 36,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 874,
         "name": "Australia Cup",
@@ -976,8 +976,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -996,9 +996,9 @@
       "id": 1630749,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 33,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1019,7 +1019,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 1
         }
       },
@@ -1039,9 +1039,9 @@
       "id": 1630750,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 37,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1062,7 +1062,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         }
       },
@@ -1082,9 +1082,9 @@
       "id": 1630751,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 35,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1106,7 +1106,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1125,9 +1125,9 @@
       "id": 1630752,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 35,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1148,7 +1148,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 4,
           "away": 1
         }
       },
@@ -1168,9 +1168,9 @@
       "id": 1630753,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 36,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1191,7 +1191,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 0
         }
       },
@@ -1211,9 +1211,9 @@
       "id": 1630754,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 37,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1234,8 +1234,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 4,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1254,9 +1254,9 @@
       "id": 1630755,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 35,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1277,8 +1277,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1297,9 +1297,9 @@
       "id": 1635055,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 36,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -1321,7 +1321,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1340,9 +1340,9 @@
       "id": 1635056,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 21,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -1363,8 +1363,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1383,9 +1383,9 @@
       "id": 1635057,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 35,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -1407,7 +1407,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 6
         }
       },
       "tvChannels": [
@@ -1426,9 +1426,9 @@
       "id": 1635058,
       "utcDate": "2026-08-26T09:30:00+00:00",
       "timestamp": 1787736600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 36,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1020,
         "name": "Calcutta Premier Division",
@@ -1449,8 +1449,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1469,9 +1469,9 @@
       "id": 1611746,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 5,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 84,
       "competition": {
         "id": 1065,
         "name": "U19 League",
@@ -1492,7 +1492,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1512,9 +1512,9 @@
       "id": 1623340,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 7,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1535,8 +1535,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1555,9 +1555,9 @@
       "id": 1623341,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 6,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1578,8 +1578,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1598,9 +1598,9 @@
       "id": 1623342,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 85,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1621,8 +1621,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1641,9 +1641,9 @@
       "id": 1623343,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 6,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1684,9 +1684,9 @@
       "id": 1623344,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 7,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1707,8 +1707,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1727,9 +1727,9 @@
       "id": 1623345,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 4,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 86,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1750,7 +1750,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       },
@@ -1770,9 +1770,9 @@
       "id": 1623346,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 4,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1793,7 +1793,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 4,
           "away": 0
         }
       },
@@ -1813,9 +1813,9 @@
       "id": 1623347,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 6,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1836,8 +1836,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1856,9 +1856,9 @@
       "id": 1630756,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 3,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 88,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1880,50 +1880,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1630757,
-      "utcDate": "2026-08-26T10:00:00+00:00",
-      "timestamp": 1787738400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 102,
-        "name": "Emperor Cup",
-        "country": "Japan",
-        "logo": "https://media.api-sports.io/football/leagues/102.png"
-      },
-      "homeTeam": {
-        "id": 316,
-        "name": "Avispa Fukuoka",
-        "shortName": "Avispa Fukuoka",
-        "crest": "https://media.api-sports.io/football/teams/316.png"
-      },
-      "awayTeam": {
-        "id": 7151,
-        "name": "Verspah Oita",
-        "shortName": "Verspah Oita",
-        "crest": "https://media.api-sports.io/football/teams/7151.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
+          "away": 3
         }
       },
       "tvChannels": [
@@ -1942,9 +1899,9 @@
       "id": 1630758,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 86,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -1965,8 +1922,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1985,9 +1942,9 @@
       "id": 1630759,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 7,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2008,7 +1965,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 6,
           "away": 0
         }
       },
@@ -2028,9 +1985,9 @@
       "id": 1630760,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 3,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 88,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2051,7 +2008,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -2071,9 +2028,9 @@
       "id": 1630761,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 7,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2094,7 +2051,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         }
       },
@@ -2114,9 +2071,9 @@
       "id": 1630762,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2137,8 +2094,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2157,9 +2114,9 @@
       "id": 1630763,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 2,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 86,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2180,8 +2137,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2200,9 +2157,9 @@
       "id": 1630764,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 6,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2223,7 +2180,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -2243,9 +2200,9 @@
       "id": 1630765,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 4,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 89,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2267,7 +2224,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2286,9 +2243,9 @@
       "id": 1630766,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 6,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2309,7 +2266,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         }
       },
@@ -2329,9 +2286,9 @@
       "id": 1630767,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 5,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 90,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2352,8 +2309,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2372,9 +2329,9 @@
       "id": 1630768,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 2,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 87,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2395,7 +2352,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -2415,9 +2372,9 @@
       "id": 1630769,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 1,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 88,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2438,7 +2395,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         }
       },
@@ -2458,9 +2415,9 @@
       "id": 1630770,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 4,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 88,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2481,8 +2438,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2501,9 +2458,9 @@
       "id": 1630771,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 4,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 88,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2524,8 +2481,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2544,9 +2501,9 @@
       "id": 1630772,
       "utcDate": "2026-08-26T10:00:00+00:00",
       "timestamp": 1787738400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 85,
       "competition": {
         "id": 102,
         "name": "Emperor Cup",
@@ -2567,8 +2524,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2587,9 +2544,9 @@
       "id": 1507043,
       "utcDate": "2026-08-26T10:30:00+00:00",
       "timestamp": 1787740200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 58,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -2610,8 +2567,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2630,9 +2587,9 @@
       "id": 1507044,
       "utcDate": "2026-08-26T10:30:00+00:00",
       "timestamp": 1787740200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 58,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -2653,8 +2610,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2673,9 +2630,9 @@
       "id": 1507045,
       "utcDate": "2026-08-26T10:30:00+00:00",
       "timestamp": 1787740200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 59,
       "competition": {
         "id": 292,
         "name": "K League 1",
@@ -2696,8 +2653,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2716,9 +2673,9 @@
       "id": 1627490,
       "utcDate": "2026-08-26T11:00:00+00:00",
       "timestamp": 1787742000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 45,
       "competition": {
         "id": 237,
         "name": "Cup",
@@ -2739,8 +2696,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -2759,9 +2716,9 @@
       "id": 1627495,
       "utcDate": "2026-08-26T11:00:00+00:00",
       "timestamp": 1787742000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 237,
         "name": "Cup",
@@ -2782,8 +2739,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2802,9 +2759,9 @@
       "id": 1627496,
       "utcDate": "2026-08-26T11:00:00+00:00",
       "timestamp": 1787742000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 237,
         "name": "Cup",
@@ -2825,8 +2782,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2845,9 +2802,9 @@
       "id": 1630060,
       "utcDate": "2026-08-26T11:00:00+00:00",
       "timestamp": 1787742000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 45,
       "competition": {
         "id": 1241,
         "name": "U19 league",
@@ -2868,8 +2825,51 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1630757,
+      "utcDate": "2026-08-26T11:05:00+00:00",
+      "timestamp": 1787742300,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 44,
+      "competition": {
+        "id": 102,
+        "name": "Emperor Cup",
+        "country": "Japan",
+        "logo": "https://media.api-sports.io/football/leagues/102.png"
+      },
+      "homeTeam": {
+        "id": 316,
+        "name": "Avispa Fukuoka",
+        "shortName": "Avispa Fukuoka",
+        "crest": "https://media.api-sports.io/football/teams/316.png"
+      },
+      "awayTeam": {
+        "id": 7151,
+        "name": "Verspah Oita",
+        "shortName": "Verspah Oita",
+        "crest": "https://media.api-sports.io/football/teams/7151.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
