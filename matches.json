@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T23:32:41.512365+00:00",
+  "lastUpdated": "2026-08-28T23:42:32.880579+00:00",
   "from": "2026-08-28",
   "to": "2026-08-30",
   "matches": [
@@ -18413,7 +18413,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 76,
+      "elapsed": 86,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -18434,8 +18434,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 3,
-          "away": 0
+          "home": 4,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -18456,7 +18456,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 64,
+      "elapsed": 73,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -18499,7 +18499,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 74,
+      "elapsed": 84,
       "competition": {
         "id": 268,
         "name": "Primera División",
@@ -18540,9 +18540,9 @@
       "id": 1505507,
       "utcDate": "2026-08-28T22:30:00+00:00",
       "timestamp": 1787956200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 54,
       "competition": {
         "id": 265,
         "name": "Primera División",
@@ -18583,9 +18583,9 @@
       "id": 1520845,
       "utcDate": "2026-08-28T22:30:00+00:00",
       "timestamp": 1787956200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 49,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -18757,7 +18757,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 30,
+      "elapsed": 39,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18800,7 +18800,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 29,
+      "elapsed": 39,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18843,7 +18843,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 22,
+      "elapsed": 32,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18886,7 +18886,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 22,
+      "elapsed": 32,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18927,9 +18927,9 @@
       "id": 1520847,
       "utcDate": "2026-08-28T23:30:00+00:00",
       "timestamp": 1787959800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 10,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -18950,8 +18950,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -18972,7 +18972,7 @@
       "timestamp": 1787959800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 2,
+      "elapsed": 12,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -19013,9 +19013,9 @@
       "id": 1557193,
       "utcDate": "2026-08-28T23:30:00+00:00",
       "timestamp": 1787959800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 4,
       "competition": {
         "id": 1130,
         "name": "USL Super League",
@@ -19036,8 +19036,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
