@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T23:22:32.758474+00:00",
+  "lastUpdated": "2026-08-28T23:32:41.512365+00:00",
   "from": "2026-08-28",
   "to": "2026-08-30",
   "matches": [
@@ -18325,8 +18325,8 @@
       "id": 1628887,
       "utcDate": "2026-08-28T21:30:00+00:00",
       "timestamp": 1787952600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 252,
@@ -18349,7 +18349,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       },
       "tvChannels": [
@@ -18368,8 +18368,8 @@
       "id": 1628941,
       "utcDate": "2026-08-28T21:30:00+00:00",
       "timestamp": 1787952600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 251,
@@ -18413,7 +18413,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 66,
+      "elapsed": 76,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -18434,7 +18434,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -18456,7 +18456,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 53,
+      "elapsed": 64,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -18477,7 +18477,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -18499,7 +18499,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 64,
+      "elapsed": 74,
       "competition": {
         "id": 268,
         "name": "Primera División",
@@ -18757,7 +18757,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 19,
+      "elapsed": 30,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18800,7 +18800,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 19,
+      "elapsed": 29,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18821,7 +18821,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -18843,7 +18843,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 12,
+      "elapsed": 22,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18886,7 +18886,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 12,
+      "elapsed": 22,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18970,9 +18970,9 @@
       "id": 1520848,
       "utcDate": "2026-08-28T23:30:00+00:00",
       "timestamp": 1787959800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 2,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -18993,8 +18993,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
