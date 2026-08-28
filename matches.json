@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T23:12:51.809287+00:00",
+  "lastUpdated": "2026-08-28T23:22:32.758474+00:00",
   "from": "2026-08-28",
   "to": "2026-08-30",
   "matches": [
@@ -18327,7 +18327,7 @@
       "timestamp": 1787952600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 83,
+      "elapsed": 90,
       "competition": {
         "id": 252,
         "name": "Division Profesional - Clausura",
@@ -18349,7 +18349,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -18370,7 +18370,7 @@
       "timestamp": 1787952600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 85,
+      "elapsed": 90,
       "competition": {
         "id": 251,
         "name": "Division Intermedia",
@@ -18413,7 +18413,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 56,
+      "elapsed": 66,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -18434,7 +18434,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -18454,9 +18454,9 @@
       "id": 1600576,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 53,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -18499,7 +18499,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 54,
+      "elapsed": 64,
       "competition": {
         "id": 268,
         "name": "Primera División",
@@ -18520,7 +18520,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -18540,9 +18540,9 @@
       "id": 1505507,
       "utcDate": "2026-08-28T22:30:00+00:00",
       "timestamp": 1787956200,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 265,
         "name": "Primera División",
@@ -18583,9 +18583,9 @@
       "id": 1520845,
       "utcDate": "2026-08-28T22:30:00+00:00",
       "timestamp": 1787956200,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 41,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -18669,8 +18669,8 @@
       "id": 1592826,
       "utcDate": "2026-08-28T22:45:00+00:00",
       "timestamp": 1787957100,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 1200,
@@ -18712,8 +18712,8 @@
       "id": 1493963,
       "utcDate": "2026-08-28T23:00:00+00:00",
       "timestamp": 1787958000,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 489,
@@ -18757,7 +18757,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 10,
+      "elapsed": 19,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18800,7 +18800,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 9,
+      "elapsed": 19,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18821,7 +18821,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -18843,7 +18843,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 2,
+      "elapsed": 12,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18865,7 +18865,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -18886,7 +18886,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 2,
+      "elapsed": 12,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -19013,8 +19013,8 @@
       "id": 1557193,
       "utcDate": "2026-08-28T23:30:00+00:00",
       "timestamp": 1787959800,
-      "status": "PST",
-      "statusLong": "Match Postponed",
+      "status": "NS",
+      "statusLong": "Not Started",
       "elapsed": null,
       "competition": {
         "id": 1130,
