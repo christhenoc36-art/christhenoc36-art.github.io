@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T21:52:16.382775+00:00",
+  "lastUpdated": "2026-08-28T22:02:13.174110+00:00",
   "from": "2026-08-28",
   "to": "2026-08-30",
   "matches": [
@@ -11359,8 +11359,8 @@
       "id": 1580719,
       "utcDate": "2026-08-28T17:45:00+00:00",
       "timestamp": 1787939100,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 111,
@@ -14842,9 +14842,9 @@
       "id": 1564839,
       "utcDate": "2026-08-28T18:45:00+00:00",
       "timestamp": 1787942700,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 407,
         "name": "Championship",
@@ -14865,8 +14865,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -17465,9 +17465,9 @@
       "id": 1619860,
       "utcDate": "2026-08-28T19:00:00+00:00",
       "timestamp": 1787943600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 96,
         "name": "Taça de Portugal",
@@ -17488,8 +17488,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 3
         }
       },
       "tvChannels": [
@@ -18112,7 +18112,7 @@
       "timestamp": 1787949000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 54,
+      "elapsed": 64,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -18133,7 +18133,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -18155,7 +18155,7 @@
       "timestamp": 1787949000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 60,
+      "elapsed": 70,
       "competition": {
         "id": 281,
         "name": "Primera División",
@@ -18198,7 +18198,7 @@
       "timestamp": 1787949000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 62,
+      "elapsed": 72,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -18282,8 +18282,8 @@
       "id": 1609623,
       "utcDate": "2026-08-28T21:00:00+00:00",
       "timestamp": 1787950800,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 740,
@@ -18327,7 +18327,7 @@
       "timestamp": 1787952600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 22,
+      "elapsed": 31,
       "competition": {
         "id": 252,
         "name": "Division Profesional - Clausura",
@@ -18370,7 +18370,7 @@
       "timestamp": 1787952600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 22,
+      "elapsed": 32,
       "competition": {
         "id": 251,
         "name": "Division Intermedia",
@@ -18391,7 +18391,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -18411,9 +18411,9 @@
       "id": 1493106,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 2,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -18434,8 +18434,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -18497,9 +18497,9 @@
       "id": 1629048,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 2,
       "competition": {
         "id": 268,
         "name": "Primera División",
@@ -18520,8 +18520,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
