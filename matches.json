@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T23:42:32.880579+00:00",
+  "lastUpdated": "2026-08-28T23:52:36.724728+00:00",
   "from": "2026-08-28",
   "to": "2026-08-30",
   "matches": [
@@ -18411,9 +18411,9 @@
       "id": 1493106,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 86,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -18456,7 +18456,7 @@
       "timestamp": 1787954400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 73,
+      "elapsed": 83,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -18478,7 +18478,7 @@
       "score": {
         "fullTime": {
           "home": 2,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -18497,9 +18497,9 @@
       "id": 1629048,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 84,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 268,
         "name": "Primera División",
@@ -18542,7 +18542,7 @@
       "timestamp": 1787956200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 54,
+      "elapsed": 64,
       "competition": {
         "id": 265,
         "name": "Primera División",
@@ -18585,7 +18585,7 @@
       "timestamp": 1787956200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 49,
+      "elapsed": 59,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -18607,7 +18607,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -18646,49 +18646,6 @@
         "name": "Irapuato II",
         "shortName": "Irapuato II",
         "crest": "https://media.api-sports.io/football/teams/28300.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1592826,
-      "utcDate": "2026-08-28T22:45:00+00:00",
-      "timestamp": 1787957100,
-      "status": "PST",
-      "statusLong": "Match Postponed",
-      "elapsed": null,
-      "competition": {
-        "id": 1200,
-        "name": "Liga MX U21",
-        "country": "Mexico",
-        "logo": "https://media.api-sports.io/football/leagues/1200.png"
-      },
-      "homeTeam": {
-        "id": 26831,
-        "name": "Club Tijuana U21",
-        "shortName": "Club Tijuana U21",
-        "crest": "https://media.api-sports.io/football/teams/26831.png"
-      },
-      "awayTeam": {
-        "id": 26844,
-        "name": "UNAM Pumas U21",
-        "shortName": "UNAM Pumas U21",
-        "crest": "https://media.api-sports.io/football/teams/26844.png"
       },
       "score": {
         "fullTime": {
@@ -18757,7 +18714,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 39,
+      "elapsed": 45,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18778,7 +18735,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -18798,9 +18755,9 @@
       "id": 1513319,
       "utcDate": "2026-08-28T23:00:00+00:00",
       "timestamp": 1787958000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 39,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -18843,7 +18800,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 32,
+      "elapsed": 42,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18886,7 +18843,7 @@
       "timestamp": 1787958000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 32,
+      "elapsed": 42,
       "competition": {
         "id": 479,
         "name": "Canadian Premier League",
@@ -18907,7 +18864,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -18929,7 +18886,7 @@
       "timestamp": 1787959800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 10,
+      "elapsed": 20,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -18972,7 +18929,7 @@
       "timestamp": 1787959800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 12,
+      "elapsed": 22,
       "competition": {
         "id": 72,
         "name": "Serie B",
@@ -19015,7 +18972,7 @@
       "timestamp": 1787959800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 14,
       "competition": {
         "id": 1130,
         "name": "USL Super League",
@@ -19033,6 +18990,49 @@
         "name": "Brooklyn W",
         "shortName": "Brooklyn W",
         "crest": "https://media.api-sports.io/football/teams/24657.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1592826,
+      "utcDate": "2026-08-28T23:40:00+00:00",
+      "timestamp": 1787960400,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 5,
+      "competition": {
+        "id": 1200,
+        "name": "Liga MX U21",
+        "country": "Mexico",
+        "logo": "https://media.api-sports.io/football/leagues/1200.png"
+      },
+      "homeTeam": {
+        "id": 26831,
+        "name": "Club Tijuana U21",
+        "shortName": "Club Tijuana U21",
+        "crest": "https://media.api-sports.io/football/teams/26831.png"
+      },
+      "awayTeam": {
+        "id": 26844,
+        "name": "UNAM Pumas U21",
+        "shortName": "UNAM Pumas U21",
+        "crest": "https://media.api-sports.io/football/teams/26844.png"
       },
       "score": {
         "fullTime": {
