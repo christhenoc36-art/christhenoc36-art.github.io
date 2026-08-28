@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28T22:52:52.751292+00:00",
+  "lastUpdated": "2026-08-28T23:02:45.447258+00:00",
   "from": "2026-08-28",
   "to": "2026-08-30",
   "matches": [
@@ -18239,8 +18239,8 @@
       "id": 1601416,
       "utcDate": "2026-08-28T21:00:00+00:00",
       "timestamp": 1787950800,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 163,
@@ -18284,7 +18284,7 @@
       "timestamp": 1787950800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 85,
+      "elapsed": 90,
       "competition": {
         "id": 740,
         "name": "Brasileiro U20 A",
@@ -18327,7 +18327,7 @@
       "timestamp": 1787952600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 63,
+      "elapsed": 73,
       "competition": {
         "id": 252,
         "name": "Division Profesional - Clausura",
@@ -18370,7 +18370,7 @@
       "timestamp": 1787952600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 65,
+      "elapsed": 75,
       "competition": {
         "id": 251,
         "name": "Division Intermedia",
@@ -18411,9 +18411,9 @@
       "id": 1493106,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 46,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -18454,8 +18454,8 @@
       "id": 1600576,
       "utcDate": "2026-08-28T22:00:00+00:00",
       "timestamp": 1787954400,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 370,
@@ -18542,7 +18542,7 @@
       "timestamp": 1787956200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 23,
+      "elapsed": 34,
       "competition": {
         "id": 265,
         "name": "Primera División",
@@ -18585,7 +18585,7 @@
       "timestamp": 1787956200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 21,
+      "elapsed": 31,
       "competition": {
         "id": 72,
         "name": "Serie B",
