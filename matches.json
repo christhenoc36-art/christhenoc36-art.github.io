@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T01:33:28.557880+00:00",
+  "lastUpdated": "2026-08-29T01:43:28.568963+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -9,7 +9,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 68,
+      "elapsed": 78,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -31,7 +31,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -52,7 +52,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 71,
+      "elapsed": 80,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -95,7 +95,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 67,
+      "elapsed": 77,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -138,7 +138,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 72,
+      "elapsed": 82,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -181,7 +181,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 64,
+      "elapsed": 74,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -224,7 +224,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 74,
+      "elapsed": 84,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -245,7 +245,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -267,7 +267,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 50,
+      "elapsed": 60,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -310,7 +310,7 @@
       "timestamp": 1787963400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 46,
+      "elapsed": 56,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -396,7 +396,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 28,
+      "elapsed": 38,
       "competition": {
         "id": 129,
         "name": "Primera Nacional",
@@ -439,7 +439,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 43,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -525,7 +525,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 32,
+      "elapsed": 42,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -568,7 +568,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 31,
+      "elapsed": 41,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -654,7 +654,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 43,
       "competition": {
         "id": 234,
         "name": "Liga Nacional",
@@ -740,7 +740,7 @@
       "timestamp": 1787967000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 13,
       "competition": {
         "id": 304,
         "name": "Liga Panameña de Fútbol",
@@ -761,7 +761,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -781,8 +781,8 @@
       "id": 1631696,
       "utcDate": "2026-08-29T01:30:00+00:00",
       "timestamp": 1787967000,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 722,
@@ -16066,49 +16066,6 @@
         "name": "Kjelsås",
         "shortName": "Kjelsås",
         "crest": "https://media.api-sports.io/football/teams/7001.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1507207,
-      "utcDate": "2026-08-29T12:30:00+00:00",
-      "timestamp": 1788006600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 326,
-        "name": "Erovnuli Liga 2",
-        "country": "Georgia",
-        "logo": "https://media.api-sports.io/football/leagues/326.png"
-      },
-      "homeTeam": {
-        "id": 10016,
-        "name": "Merani Martvili",
-        "shortName": "Merani Martvili",
-        "crest": "https://media.api-sports.io/football/teams/10016.png"
-      },
-      "awayTeam": {
-        "id": 14860,
-        "name": "Gareji",
-        "shortName": "Gareji",
-        "crest": "https://media.api-sports.io/football/teams/14860.png"
       },
       "score": {
         "fullTime": {
@@ -34576,49 +34533,6 @@
       ]
     },
     {
-      "id": 1631599,
-      "utcDate": "2026-08-29T14:00:00+00:00",
-      "timestamp": 1788012000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 412,
-        "name": "Premier League",
-        "country": "Botswana",
-        "logo": "https://media.api-sports.io/football/leagues/412.png"
-      },
-      "homeTeam": {
-        "id": 5422,
-        "name": "Galaxy",
-        "shortName": "Galaxy",
-        "crest": "https://media.api-sports.io/football/teams/5422.png"
-      },
-      "awayTeam": {
-        "id": 5431,
-        "name": "Township Rollers",
-        "shortName": "Township Rollers",
-        "crest": "https://media.api-sports.io/football/teams/5431.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1631600,
       "utcDate": "2026-08-29T14:00:00+00:00",
       "timestamp": 1788012000,
@@ -34705,7 +34619,7 @@
       ]
     },
     {
-      "id": 1631602,
+      "id": 1631603,
       "utcDate": "2026-08-29T14:00:00+00:00",
       "timestamp": 1788012000,
       "status": "NS",
@@ -34718,16 +34632,16 @@
         "logo": "https://media.api-sports.io/football/leagues/412.png"
       },
       "homeTeam": {
-        "id": 28296,
-        "name": "Tonota",
-        "shortName": "Tonota",
-        "crest": "https://media.api-sports.io/football/teams/28296.png"
+        "id": 5420,
+        "name": "Extension Gunners",
+        "shortName": "Extension Gunners",
+        "crest": "https://media.api-sports.io/football/teams/5420.png"
       },
       "awayTeam": {
-        "id": 5597,
-        "name": "TAFIC",
-        "shortName": "TAFIC",
-        "crest": "https://media.api-sports.io/football/teams/5597.png"
+        "id": 5419,
+        "name": "Centre Chiefs",
+        "shortName": "Centre Chiefs",
+        "crest": "https://media.api-sports.io/football/teams/5419.png"
       },
       "score": {
         "fullTime": {
@@ -36554,6 +36468,221 @@
       ]
     },
     {
+      "id": 1619403,
+      "utcDate": "2026-08-29T14:30:00+00:00",
+      "timestamp": 1788013800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1195,
+        "name": "Liga E Pare",
+        "country": "Kosovo",
+        "logo": "https://media.api-sports.io/football/leagues/1195.png"
+      },
+      "homeTeam": {
+        "id": 25421,
+        "name": "FC Besa Peja",
+        "shortName": "FC Besa Peja",
+        "crest": "https://media.api-sports.io/football/teams/25421.png"
+      },
+      "awayTeam": {
+        "id": 15582,
+        "name": "Vëllaznimi",
+        "shortName": "Vëllaznimi",
+        "crest": "https://media.api-sports.io/football/teams/15582.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1619405,
+      "utcDate": "2026-08-29T14:30:00+00:00",
+      "timestamp": 1788013800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1195,
+        "name": "Liga E Pare",
+        "country": "Kosovo",
+        "logo": "https://media.api-sports.io/football/leagues/1195.png"
+      },
+      "homeTeam": {
+        "id": 27238,
+        "name": "KF Lepenci",
+        "shortName": "KF Lepenci",
+        "crest": "https://media.api-sports.io/football/teams/27238.png"
+      },
+      "awayTeam": {
+        "id": 26099,
+        "name": "Mitrovica",
+        "shortName": "Mitrovica",
+        "crest": "https://media.api-sports.io/football/teams/26099.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1619406,
+      "utcDate": "2026-08-29T14:30:00+00:00",
+      "timestamp": 1788013800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1195,
+        "name": "Liga E Pare",
+        "country": "Kosovo",
+        "logo": "https://media.api-sports.io/football/leagues/1195.png"
+      },
+      "homeTeam": {
+        "id": 15574,
+        "name": "Kika",
+        "shortName": "Kika",
+        "crest": "https://media.api-sports.io/football/teams/15574.png"
+      },
+      "awayTeam": {
+        "id": 22815,
+        "name": "Dinamo Ferizaj",
+        "shortName": "Dinamo Ferizaj",
+        "crest": "https://media.api-sports.io/football/teams/22815.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1619407,
+      "utcDate": "2026-08-29T14:30:00+00:00",
+      "timestamp": 1788013800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1195,
+        "name": "Liga E Pare",
+        "country": "Kosovo",
+        "logo": "https://media.api-sports.io/football/leagues/1195.png"
+      },
+      "homeTeam": {
+        "id": 14402,
+        "name": "Liria Prizren",
+        "shortName": "Liria Prizren",
+        "crest": "https://media.api-sports.io/football/teams/14402.png"
+      },
+      "awayTeam": {
+        "id": 20690,
+        "name": "Vjosa",
+        "shortName": "Vjosa",
+        "crest": "https://media.api-sports.io/football/teams/20690.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1619408,
+      "utcDate": "2026-08-29T14:30:00+00:00",
+      "timestamp": 1788013800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1195,
+        "name": "Liga E Pare",
+        "country": "Kosovo",
+        "logo": "https://media.api-sports.io/football/leagues/1195.png"
+      },
+      "homeTeam": {
+        "id": 22816,
+        "name": "Prishtina e Re",
+        "shortName": "Prishtina e Re",
+        "crest": "https://media.api-sports.io/football/teams/22816.png"
+      },
+      "awayTeam": {
+        "id": 15572,
+        "name": "Istogu",
+        "shortName": "Istogu",
+        "crest": "https://media.api-sports.io/football/teams/15572.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1619409,
       "utcDate": "2026-08-29T14:30:00+00:00",
       "timestamp": 1788013800,
@@ -36620,6 +36749,49 @@
         "name": "Ramiz Sadiku",
         "shortName": "Ramiz Sadiku",
         "crest": "https://media.api-sports.io/football/teams/15579.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1619411,
+      "utcDate": "2026-08-29T14:30:00+00:00",
+      "timestamp": 1788013800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1195,
+        "name": "Liga E Pare",
+        "country": "Kosovo",
+        "logo": "https://media.api-sports.io/football/leagues/1195.png"
+      },
+      "homeTeam": {
+        "id": 14403,
+        "name": "Trepça Mitrovicë",
+        "shortName": "Trepça Mitrovicë",
+        "crest": "https://media.api-sports.io/football/teams/14403.png"
+      },
+      "awayTeam": {
+        "id": 20689,
+        "name": "Rilindja 1974",
+        "shortName": "Rilindja 1974",
+        "crest": "https://media.api-sports.io/football/teams/20689.png"
       },
       "score": {
         "fullTime": {
@@ -40725,6 +40897,49 @@
       ]
     },
     {
+      "id": 1606124,
+      "utcDate": "2026-08-29T15:00:00+00:00",
+      "timestamp": 1788015600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 177,
+        "name": "Third League - Southeast",
+        "country": "Bulgaria",
+        "logo": "https://media.api-sports.io/football/leagues/177.png"
+      },
+      "homeTeam": {
+        "id": 8532,
+        "name": "Gigant Saedinenie",
+        "shortName": "Gigant Saedinenie",
+        "crest": "https://media.api-sports.io/football/teams/8532.png"
+      },
+      "awayTeam": {
+        "id": 21863,
+        "name": "Sekirovo Rakovski",
+        "shortName": "Sekirovo Rakovski",
+        "crest": "https://media.api-sports.io/football/teams/21863.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1606125,
       "utcDate": "2026-08-29T15:00:00+00:00",
       "timestamp": 1788015600,
@@ -41135,6 +41350,49 @@
         "name": "Slavija",
         "shortName": "Slavija",
         "crest": "https://media.api-sports.io/football/teams/3378.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1609881,
+      "utcDate": "2026-08-29T15:00:00+00:00",
+      "timestamp": 1788015600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 317,
+        "name": "1st League - RS",
+        "country": "Bosnia",
+        "logo": "https://media.api-sports.io/football/leagues/317.png"
+      },
+      "homeTeam": {
+        "id": 4285,
+        "name": "Sutjeska Foča",
+        "shortName": "Sutjeska Foča",
+        "crest": "https://media.api-sports.io/football/teams/4285.png"
+      },
+      "awayTeam": {
+        "id": 15290,
+        "name": "Velež Nevesinje",
+        "shortName": "Velež Nevesinje",
+        "crest": "https://media.api-sports.io/football/teams/15290.png"
       },
       "score": {
         "fullTime": {
@@ -44724,49 +44982,6 @@
       ]
     },
     {
-      "id": 1606126,
-      "utcDate": "2026-08-29T15:30:00+00:00",
-      "timestamp": 1788017400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 177,
-        "name": "Third League - Southeast",
-        "country": "Bulgaria",
-        "logo": "https://media.api-sports.io/football/leagues/177.png"
-      },
-      "homeTeam": {
-        "id": 14566,
-        "name": "Maritsa Milevo",
-        "shortName": "Maritsa Milevo",
-        "crest": "https://media.api-sports.io/football/teams/14566.png"
-      },
-      "awayTeam": {
-        "id": 16963,
-        "name": "Botev Plovdiv II",
-        "shortName": "Botev Plovdiv II",
-        "crest": "https://media.api-sports.io/football/teams/16963.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1607419,
       "utcDate": "2026-08-29T15:30:00+00:00",
       "timestamp": 1788017400,
@@ -45263,49 +45478,6 @@
         "name": "Malavan",
         "shortName": "Malavan",
         "crest": "https://media.api-sports.io/football/teams/2717.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1507205,
-      "utcDate": "2026-08-29T16:00:00+00:00",
-      "timestamp": 1788019200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 326,
-        "name": "Erovnuli Liga 2",
-        "country": "Georgia",
-        "logo": "https://media.api-sports.io/football/leagues/326.png"
-      },
-      "homeTeam": {
-        "id": 14861,
-        "name": "Gori",
-        "shortName": "Gori",
-        "crest": "https://media.api-sports.io/football/teams/14861.png"
-      },
-      "awayTeam": {
-        "id": 16516,
-        "name": "Shturmi",
-        "shortName": "Shturmi",
-        "crest": "https://media.api-sports.io/football/teams/16516.png"
       },
       "score": {
         "fullTime": {
@@ -49239,49 +49411,6 @@
       ]
     },
     {
-      "id": 1606124,
-      "utcDate": "2026-08-29T16:30:00+00:00",
-      "timestamp": 1788021000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 177,
-        "name": "Third League - Southeast",
-        "country": "Bulgaria",
-        "logo": "https://media.api-sports.io/football/leagues/177.png"
-      },
-      "homeTeam": {
-        "id": 8532,
-        "name": "Gigant Saedinenie",
-        "shortName": "Gigant Saedinenie",
-        "crest": "https://media.api-sports.io/football/teams/8532.png"
-      },
-      "awayTeam": {
-        "id": 21863,
-        "name": "Sekirovo Rakovski",
-        "shortName": "Sekirovo Rakovski",
-        "crest": "https://media.api-sports.io/football/teams/21863.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1552146,
       "utcDate": "2026-08-29T16:45:00+00:00",
       "timestamp": 1788021900,
@@ -50572,49 +50701,6 @@
       ]
     },
     {
-      "id": 1609881,
-      "utcDate": "2026-08-29T17:00:00+00:00",
-      "timestamp": 1788022800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 317,
-        "name": "1st League - RS",
-        "country": "Bosnia",
-        "logo": "https://media.api-sports.io/football/leagues/317.png"
-      },
-      "homeTeam": {
-        "id": 4285,
-        "name": "Sutjeska Foča",
-        "shortName": "Sutjeska Foča",
-        "crest": "https://media.api-sports.io/football/teams/4285.png"
-      },
-      "awayTeam": {
-        "id": 15290,
-        "name": "Velež Nevesinje",
-        "shortName": "Velež Nevesinje",
-        "crest": "https://media.api-sports.io/football/teams/15290.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1627028,
       "utcDate": "2026-08-29T17:00:00+00:00",
       "timestamp": 1788022800,
@@ -50787,7 +50873,7 @@
       ]
     },
     {
-      "id": 1631603,
+      "id": 1631599,
       "utcDate": "2026-08-29T17:00:00+00:00",
       "timestamp": 1788022800,
       "status": "NS",
@@ -50800,16 +50886,59 @@
         "logo": "https://media.api-sports.io/football/leagues/412.png"
       },
       "homeTeam": {
-        "id": 5420,
-        "name": "Extension Gunners",
-        "shortName": "Extension Gunners",
-        "crest": "https://media.api-sports.io/football/teams/5420.png"
+        "id": 5422,
+        "name": "Galaxy",
+        "shortName": "Galaxy",
+        "crest": "https://media.api-sports.io/football/teams/5422.png"
       },
       "awayTeam": {
-        "id": 5419,
-        "name": "Centre Chiefs",
-        "shortName": "Centre Chiefs",
-        "crest": "https://media.api-sports.io/football/teams/5419.png"
+        "id": 5431,
+        "name": "Township Rollers",
+        "shortName": "Township Rollers",
+        "crest": "https://media.api-sports.io/football/teams/5431.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1631602,
+      "utcDate": "2026-08-29T17:00:00+00:00",
+      "timestamp": 1788022800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 412,
+        "name": "Premier League",
+        "country": "Botswana",
+        "logo": "https://media.api-sports.io/football/leagues/412.png"
+      },
+      "homeTeam": {
+        "id": 28296,
+        "name": "Tonota",
+        "shortName": "Tonota",
+        "crest": "https://media.api-sports.io/football/teams/28296.png"
+      },
+      "awayTeam": {
+        "id": 5597,
+        "name": "TAFIC",
+        "shortName": "TAFIC",
+        "crest": "https://media.api-sports.io/football/teams/5597.png"
       },
       "score": {
         "fullTime": {
@@ -53453,49 +53582,6 @@
       ]
     },
     {
-      "id": 1627190,
-      "utcDate": "2026-08-29T18:00:00+00:00",
-      "timestamp": 1788026400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1088,
-        "name": "Pernambucano - U20",
-        "country": "Brazil",
-        "logo": "https://media.api-sports.io/football/leagues/1088.png"
-      },
-      "homeTeam": {
-        "id": 26778,
-        "name": "Atletico PE U20",
-        "shortName": "Atletico PE U20",
-        "crest": "https://media.api-sports.io/football/teams/26778.png"
-      },
-      "awayTeam": {
-        "id": 13053,
-        "name": "Santa Cruz U20",
-        "shortName": "Santa Cruz U20",
-        "crest": "https://media.api-sports.io/football/teams/13053.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1627192,
       "utcDate": "2026-08-29T18:00:00+00:00",
       "timestamp": 1788026400,
@@ -53519,49 +53605,6 @@
         "name": "Retrô U20",
         "shortName": "Retrô U20",
         "crest": "https://media.api-sports.io/football/teams/13050.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1627193,
-      "utcDate": "2026-08-29T18:00:00+00:00",
-      "timestamp": 1788026400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1088,
-        "name": "Pernambucano - U20",
-        "country": "Brazil",
-        "logo": "https://media.api-sports.io/football/leagues/1088.png"
-      },
-      "homeTeam": {
-        "id": 13029,
-        "name": "Nautico U20",
-        "shortName": "Nautico U20",
-        "crest": "https://media.api-sports.io/football/teams/13029.png"
-      },
-      "awayTeam": {
-        "id": 26779,
-        "name": "Guarany U20",
-        "shortName": "Guarany U20",
-        "crest": "https://media.api-sports.io/football/teams/26779.png"
       },
       "score": {
         "fullTime": {
@@ -71642,6 +71685,49 @@
       ]
     },
     {
+      "id": 1507207,
+      "utcDate": "2026-08-30T12:30:00+00:00",
+      "timestamp": 1788093000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 326,
+        "name": "Erovnuli Liga 2",
+        "country": "Georgia",
+        "logo": "https://media.api-sports.io/football/leagues/326.png"
+      },
+      "homeTeam": {
+        "id": 10016,
+        "name": "Merani Martvili",
+        "shortName": "Merani Martvili",
+        "crest": "https://media.api-sports.io/football/teams/10016.png"
+      },
+      "awayTeam": {
+        "id": 14860,
+        "name": "Gareji",
+        "shortName": "Gareji",
+        "crest": "https://media.api-sports.io/football/teams/14860.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1552149,
       "utcDate": "2026-08-30T12:30:00+00:00",
       "timestamp": 1788093000,
@@ -79812,264 +79898,6 @@
       ]
     },
     {
-      "id": 1619403,
-      "utcDate": "2026-08-30T14:30:00+00:00",
-      "timestamp": 1788100200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 25421,
-        "name": "FC Besa Peja",
-        "shortName": "FC Besa Peja",
-        "crest": "https://media.api-sports.io/football/teams/25421.png"
-      },
-      "awayTeam": {
-        "id": 15582,
-        "name": "Vëllaznimi",
-        "shortName": "Vëllaznimi",
-        "crest": "https://media.api-sports.io/football/teams/15582.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1619405,
-      "utcDate": "2026-08-30T14:30:00+00:00",
-      "timestamp": 1788100200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 27238,
-        "name": "KF Lepenci",
-        "shortName": "KF Lepenci",
-        "crest": "https://media.api-sports.io/football/teams/27238.png"
-      },
-      "awayTeam": {
-        "id": 26099,
-        "name": "Mitrovica",
-        "shortName": "Mitrovica",
-        "crest": "https://media.api-sports.io/football/teams/26099.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1619406,
-      "utcDate": "2026-08-30T14:30:00+00:00",
-      "timestamp": 1788100200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 15574,
-        "name": "Kika",
-        "shortName": "Kika",
-        "crest": "https://media.api-sports.io/football/teams/15574.png"
-      },
-      "awayTeam": {
-        "id": 22815,
-        "name": "Dinamo Ferizaj",
-        "shortName": "Dinamo Ferizaj",
-        "crest": "https://media.api-sports.io/football/teams/22815.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1619407,
-      "utcDate": "2026-08-30T14:30:00+00:00",
-      "timestamp": 1788100200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 14402,
-        "name": "Liria Prizren",
-        "shortName": "Liria Prizren",
-        "crest": "https://media.api-sports.io/football/teams/14402.png"
-      },
-      "awayTeam": {
-        "id": 20690,
-        "name": "Vjosa",
-        "shortName": "Vjosa",
-        "crest": "https://media.api-sports.io/football/teams/20690.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1619408,
-      "utcDate": "2026-08-30T14:30:00+00:00",
-      "timestamp": 1788100200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 22816,
-        "name": "Prishtina e Re",
-        "shortName": "Prishtina e Re",
-        "crest": "https://media.api-sports.io/football/teams/22816.png"
-      },
-      "awayTeam": {
-        "id": 15572,
-        "name": "Istogu",
-        "shortName": "Istogu",
-        "crest": "https://media.api-sports.io/football/teams/15572.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1619411,
-      "utcDate": "2026-08-30T14:30:00+00:00",
-      "timestamp": 1788100200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 1195,
-        "name": "Liga E Pare",
-        "country": "Kosovo",
-        "logo": "https://media.api-sports.io/football/leagues/1195.png"
-      },
-      "homeTeam": {
-        "id": 14403,
-        "name": "Trepça Mitrovicë",
-        "shortName": "Trepça Mitrovicë",
-        "crest": "https://media.api-sports.io/football/teams/14403.png"
-      },
-      "awayTeam": {
-        "id": 20689,
-        "name": "Rilindja 1974",
-        "shortName": "Rilindja 1974",
-        "crest": "https://media.api-sports.io/football/teams/20689.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1626831,
       "utcDate": "2026-08-30T14:30:00+00:00",
       "timestamp": 1788100200,
@@ -82994,6 +82822,49 @@
       ]
     },
     {
+      "id": 1606126,
+      "utcDate": "2026-08-30T15:00:00+00:00",
+      "timestamp": 1788102000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 177,
+        "name": "Third League - Southeast",
+        "country": "Bulgaria",
+        "logo": "https://media.api-sports.io/football/leagues/177.png"
+      },
+      "homeTeam": {
+        "id": 14566,
+        "name": "Maritsa Milevo",
+        "shortName": "Maritsa Milevo",
+        "crest": "https://media.api-sports.io/football/teams/14566.png"
+      },
+      "awayTeam": {
+        "id": 16963,
+        "name": "Botev Plovdiv II",
+        "shortName": "Botev Plovdiv II",
+        "crest": "https://media.api-sports.io/football/teams/16963.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1609883,
       "utcDate": "2026-08-30T15:00:00+00:00",
       "timestamp": 1788102000,
@@ -85038,6 +84909,49 @@
         "name": "Sport Huancayo 2",
         "shortName": "Sport Huancayo 2",
         "crest": "https://media.api-sports.io/football/teams/27639.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1507205,
+      "utcDate": "2026-08-30T16:00:00+00:00",
+      "timestamp": 1788105600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 326,
+        "name": "Erovnuli Liga 2",
+        "country": "Georgia",
+        "logo": "https://media.api-sports.io/football/leagues/326.png"
+      },
+      "homeTeam": {
+        "id": 14861,
+        "name": "Gori",
+        "shortName": "Gori",
+        "crest": "https://media.api-sports.io/football/teams/14861.png"
+      },
+      "awayTeam": {
+        "id": 16516,
+        "name": "Shturmi",
+        "shortName": "Shturmi",
+        "crest": "https://media.api-sports.io/football/teams/16516.png"
       },
       "score": {
         "fullTime": {
