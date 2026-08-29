@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T00:13:03.637403+00:00",
+  "lastUpdated": "2026-08-29T00:23:17.834651+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -9,7 +9,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 13,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -52,7 +52,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 10,
+      "elapsed": 20,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -95,7 +95,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 10,
+      "elapsed": 20,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -138,7 +138,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 13,
+      "elapsed": 24,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -160,7 +160,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -181,7 +181,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 8,
+      "elapsed": 18,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -224,7 +224,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 13,
+      "elapsed": 23,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -265,8 +265,8 @@
       "id": 1635942,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 1242,
