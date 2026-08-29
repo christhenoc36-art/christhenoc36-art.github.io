@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T05:55:35.700333+00:00",
+  "lastUpdated": "2026-08-29T06:06:12.019082+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1125,9 +1125,9 @@
       "id": 1633892,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "BT",
-      "statusLong": "Break Time",
-      "elapsed": null,
+      "status": "ET",
+      "statusLong": "Extra Time",
+      "elapsed": 101,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1254,9 +1254,9 @@
       "id": 1522010,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 48,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1340,9 +1340,9 @@
       "id": 1522012,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 50,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1383,9 +1383,9 @@
       "id": 1522013,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 48,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1426,9 +1426,9 @@
       "id": 1522014,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 50,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1449,7 +1449,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1469,9 +1469,9 @@
       "id": 1522015,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 48,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1512,9 +1512,9 @@
       "id": 1522041,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 47,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1641,9 +1641,9 @@
       "id": 1541377,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 46,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1858,7 +1858,7 @@
       "timestamp": 1787981400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 23,
+      "elapsed": 34,
       "competition": {
         "id": 834,
         "name": "South Australia State League 1",
@@ -1880,7 +1880,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1901,7 +1901,7 @@
       "timestamp": 1787981400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 20,
+      "elapsed": 31,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -1942,9 +1942,9 @@
       "id": 1529987,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 6,
       "competition": {
         "id": 649,
         "name": "Supreme Division Women",
@@ -1965,8 +1965,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -1985,9 +1985,9 @@
       "id": 1635486,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2008,8 +2008,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
