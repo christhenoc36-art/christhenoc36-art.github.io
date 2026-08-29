@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T03:24:11.630592+00:00",
+  "lastUpdated": "2026-08-29T03:34:12.059611+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -482,7 +482,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 66,
+      "elapsed": 76,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -609,9 +609,9 @@
       "id": 1581405,
       "utcDate": "2026-08-29T01:00:00+00:00",
       "timestamp": 1787965200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 53,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -738,8 +738,8 @@
       "id": 1583747,
       "utcDate": "2026-08-29T01:30:00+00:00",
       "timestamp": 1787967000,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 304,
@@ -826,7 +826,7 @@
       "timestamp": 1787968800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 59,
+      "elapsed": 69,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -869,7 +869,7 @@
       "timestamp": 1787968800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 63,
+      "elapsed": 73,
       "competition": {
         "id": 162,
         "name": "Primera División",
@@ -912,7 +912,7 @@
       "timestamp": 1787968800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 57,
+      "elapsed": 67,
       "competition": {
         "id": 339,
         "name": "Liga Nacional",
@@ -998,7 +998,7 @@
       "timestamp": 1787973000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 24,
       "competition": {
         "id": 262,
         "name": "Liga MX",
