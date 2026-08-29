@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T06:56:24.023008+00:00",
+  "lastUpdated": "2026-08-29T07:06:37.409727+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1641,8 +1641,8 @@
       "id": 1541377,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 1226,
@@ -1684,8 +1684,8 @@
       "id": 1541465,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 1226,
@@ -1858,7 +1858,7 @@
       "timestamp": 1787981400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 64,
+      "elapsed": 74,
       "competition": {
         "id": 834,
         "name": "South Australia State League 1",
@@ -1901,7 +1901,7 @@
       "timestamp": 1787981400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 59,
+      "elapsed": 69,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -1942,9 +1942,9 @@
       "id": 1529987,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 51,
       "competition": {
         "id": 649,
         "name": "Supreme Division Women",
@@ -1985,9 +1985,9 @@
       "id": 1635486,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 48,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2028,9 +2028,9 @@
       "id": 1635234,
       "utcDate": "2026-08-29T06:10:00+00:00",
       "timestamp": 1787983800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -2114,9 +2114,9 @@
       "id": 1517851,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 2,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2137,8 +2137,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2286,9 +2286,9 @@
       "id": 1569829,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 7,
       "competition": {
         "id": 1234,
         "name": "K4 League",
@@ -2309,8 +2309,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -2329,9 +2329,9 @@
       "id": 1628461,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 7,
       "competition": {
         "id": 482,
         "name": "Queensland NPL",
@@ -2352,8 +2352,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
