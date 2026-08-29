@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T07:26:53.646163+00:00",
+  "lastUpdated": "2026-08-29T07:37:08.103326+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1856,8 +1856,8 @@
       "id": 1632451,
       "utcDate": "2026-08-29T05:30:00+00:00",
       "timestamp": 1787981400,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 834,
@@ -1899,9 +1899,9 @@
       "id": 1633979,
       "utcDate": "2026-08-29T05:30:00+00:00",
       "timestamp": 1787981400,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 89,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -1944,7 +1944,7 @@
       "timestamp": 1787983200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 71,
+      "elapsed": 82,
       "competition": {
         "id": 649,
         "name": "Supreme Division Women",
@@ -1987,7 +1987,7 @@
       "timestamp": 1787983200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 68,
+      "elapsed": 78,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2030,7 +2030,7 @@
       "timestamp": 1787983800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 54,
+      "elapsed": 64,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -2051,7 +2051,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 2
         }
       },
@@ -2116,7 +2116,7 @@
       "timestamp": 1787986800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 22,
+      "elapsed": 32,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2137,7 +2137,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 3,
+          "home": 4,
           "away": 0
         }
       },
@@ -2202,7 +2202,7 @@
       "timestamp": 1787986800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 16,
+      "elapsed": 26,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2245,7 +2245,7 @@
       "timestamp": 1787986800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 18,
+      "elapsed": 28,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2266,7 +2266,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -2288,7 +2288,7 @@
       "timestamp": 1787986800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 28,
+      "elapsed": 38,
       "competition": {
         "id": 1234,
         "name": "K4 League",
@@ -2331,7 +2331,7 @@
       "timestamp": 1787986800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 27,
+      "elapsed": 37,
       "competition": {
         "id": 482,
         "name": "Queensland NPL",
