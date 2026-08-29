@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T00:02:58.837746+00:00",
+  "lastUpdated": "2026-08-29T00:13:03.637403+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -7,9 +7,9 @@
       "id": 1508522,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 3,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -30,8 +30,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -50,9 +50,9 @@
       "id": 1513320,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 10,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -73,8 +73,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -93,9 +93,9 @@
       "id": 1513321,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 10,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -116,8 +116,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -138,7 +138,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 13,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -179,9 +179,9 @@
       "id": 1600577,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 8,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -202,8 +202,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -224,7 +224,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 13,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -43133,49 +43133,6 @@
       ]
     },
     {
-      "id": 1635390,
-      "utcDate": "2026-08-29T15:00:00+00:00",
-      "timestamp": 1788015600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 710,
-        "name": "Nacional B",
-        "country": "Bolivia",
-        "logo": "https://media.api-sports.io/football/leagues/710.png"
-      },
-      "homeTeam": {
-        "id": 26427,
-        "name": "Chaco",
-        "shortName": "Chaco",
-        "crest": "https://media.api-sports.io/football/teams/26427.png"
-      },
-      "awayTeam": {
-        "id": 28288,
-        "name": "26 de Febrero",
-        "shortName": "26 de Febrero",
-        "crest": "https://media.api-sports.io/football/teams/28288.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1589988,
       "utcDate": "2026-08-29T15:05:00+00:00",
       "timestamp": 1788015900,
@@ -51111,6 +51068,49 @@
         "name": "Real Apodaca",
         "shortName": "Real Apodaca",
         "crest": "https://media.api-sports.io/football/teams/22047.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1635390,
+      "utcDate": "2026-08-29T17:00:00+00:00",
+      "timestamp": 1788022800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 710,
+        "name": "Nacional B",
+        "country": "Bolivia",
+        "logo": "https://media.api-sports.io/football/leagues/710.png"
+      },
+      "homeTeam": {
+        "id": 26427,
+        "name": "Chaco",
+        "shortName": "Chaco",
+        "crest": "https://media.api-sports.io/football/teams/26427.png"
+      },
+      "awayTeam": {
+        "id": 28288,
+        "name": "26 de Febrero",
+        "shortName": "26 de Febrero",
+        "crest": "https://media.api-sports.io/football/teams/28288.png"
       },
       "score": {
         "fullTime": {
