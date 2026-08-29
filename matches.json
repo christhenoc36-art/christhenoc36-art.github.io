@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T00:33:29.523530+00:00",
+  "lastUpdated": "2026-08-29T00:43:34.982602+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -9,7 +9,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 23,
+      "elapsed": 33,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -52,7 +52,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 30,
+      "elapsed": 40,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -73,7 +73,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -95,7 +95,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 31,
+      "elapsed": 41,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -116,7 +116,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -138,7 +138,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 34,
+      "elapsed": 44,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -159,7 +159,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       },
@@ -181,7 +181,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 28,
+      "elapsed": 38,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -224,7 +224,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 43,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -267,7 +267,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 9,
+      "elapsed": 19,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -310,7 +310,7 @@
       "timestamp": 1787963400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 15,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
