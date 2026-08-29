@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T05:45:50.163644+00:00",
+  "lastUpdated": "2026-08-29T05:55:35.700333+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1039,9 +1039,9 @@
       "id": 1536677,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 85,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1082,8 +1082,8 @@
       "id": 1631486,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 481,
@@ -1125,9 +1125,9 @@
       "id": 1633892,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 89,
+      "status": "BT",
+      "statusLong": "Break Time",
+      "elapsed": null,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1254,8 +1254,8 @@
       "id": 1522010,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 195,
@@ -1297,9 +1297,9 @@
       "id": 1522011,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1340,8 +1340,8 @@
       "id": 1522012,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 195,
@@ -1383,8 +1383,8 @@
       "id": 1522013,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 195,
@@ -1426,8 +1426,8 @@
       "id": 1522014,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 195,
@@ -1469,8 +1469,8 @@
       "id": 1522015,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 195,
@@ -1512,8 +1512,8 @@
       "id": 1522041,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 195,
@@ -1641,9 +1641,9 @@
       "id": 1541377,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1684,9 +1684,9 @@
       "id": 1541465,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1858,7 +1858,7 @@
       "timestamp": 1787981400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 23,
       "competition": {
         "id": 834,
         "name": "South Australia State League 1",
@@ -1880,7 +1880,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1901,7 +1901,7 @@
       "timestamp": 1787981400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 10,
+      "elapsed": 20,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -4886,6 +4886,49 @@
         "name": "Jagiellonia U19",
         "shortName": "Jagiellonia U19",
         "crest": "https://media.api-sports.io/football/teams/20590.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1601126,
+      "utcDate": "2026-08-29T09:00:00+00:00",
+      "timestamp": 1787994000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 278,
+        "name": "Super League",
+        "country": "Malaysia",
+        "logo": "https://media.api-sports.io/football/leagues/278.png"
+      },
+      "homeTeam": {
+        "id": 27373,
+        "name": "Kelantan Red Warrior FC",
+        "shortName": "Kelantan Red Warrior FC",
+        "crest": "https://media.api-sports.io/football/teams/27373.png"
+      },
+      "awayTeam": {
+        "id": 10108,
+        "name": "Kuching FA",
+        "shortName": "Kuching FA",
+        "crest": "https://media.api-sports.io/football/teams/10108.png"
       },
       "score": {
         "fullTime": {
@@ -19807,49 +19850,6 @@
         "name": "Dodoma Jiji",
         "shortName": "Dodoma Jiji",
         "crest": "https://media.api-sports.io/football/teams/14345.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1601126,
-      "utcDate": "2026-08-29T13:00:00+00:00",
-      "timestamp": 1788008400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 278,
-        "name": "Super League",
-        "country": "Malaysia",
-        "logo": "https://media.api-sports.io/football/leagues/278.png"
-      },
-      "homeTeam": {
-        "id": 27373,
-        "name": "Kelantan Red Warrior FC",
-        "shortName": "Kelantan Red Warrior FC",
-        "crest": "https://media.api-sports.io/football/teams/27373.png"
-      },
-      "awayTeam": {
-        "id": 10108,
-        "name": "Kuching FA",
-        "shortName": "Kuching FA",
-        "crest": "https://media.api-sports.io/football/teams/10108.png"
       },
       "score": {
         "fullTime": {
