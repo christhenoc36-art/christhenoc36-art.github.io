@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T00:23:17.834651+00:00",
+  "lastUpdated": "2026-08-29T00:33:29.523530+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -9,7 +9,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 13,
+      "elapsed": 23,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -52,7 +52,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 20,
+      "elapsed": 30,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -95,7 +95,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 20,
+      "elapsed": 31,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -138,7 +138,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 24,
+      "elapsed": 34,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -159,7 +159,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -181,7 +181,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 18,
+      "elapsed": 28,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -224,7 +224,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 23,
+      "elapsed": 33,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -265,9 +265,9 @@
       "id": 1635942,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "PST",
-      "statusLong": "Match Postponed",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 9,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -288,8 +288,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -308,9 +308,9 @@
       "id": 1493095,
       "utcDate": "2026-08-29T00:30:00+00:00",
       "timestamp": 1787963400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 5,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
@@ -331,8 +331,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -12259,49 +12259,6 @@
       ]
     },
     {
-      "id": 1495927,
-      "utcDate": "2026-08-29T12:00:00+00:00",
-      "timestamp": 1788004800,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 104,
-        "name": "1. Division",
-        "country": "Norway",
-        "logo": "https://media.api-sports.io/football/leagues/104.png"
-      },
-      "homeTeam": {
-        "id": 2142,
-        "name": "Bryne",
-        "shortName": "Bryne",
-        "crest": "https://media.api-sports.io/football/teams/2142.png"
-      },
-      "awayTeam": {
-        "id": 328,
-        "name": "Haugesund",
-        "shortName": "Haugesund",
-        "crest": "https://media.api-sports.io/football/teams/328.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1496309,
       "utcDate": "2026-08-29T12:00:00+00:00",
       "timestamp": 1788004800,
@@ -22688,49 +22645,6 @@
         "name": "United FC U23",
         "shortName": "United FC U23",
         "crest": "https://media.api-sports.io/football/teams/28030.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1494746,
-      "utcDate": "2026-08-29T14:00:00+00:00",
-      "timestamp": 1788012000,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 103,
-        "name": "Eliteserien",
-        "country": "Norway",
-        "logo": "https://media.api-sports.io/football/leagues/103.png"
-      },
-      "homeTeam": {
-        "id": 326,
-        "name": "Valerenga",
-        "shortName": "Valerenga",
-        "crest": "https://media.api-sports.io/football/teams/326.png"
-      },
-      "awayTeam": {
-        "id": 329,
-        "name": "Molde",
-        "shortName": "Molde",
-        "crest": "https://media.api-sports.io/football/teams/329.png"
       },
       "score": {
         "fullTime": {
@@ -45435,49 +45349,6 @@
         "name": "Malavan",
         "shortName": "Malavan",
         "crest": "https://media.api-sports.io/football/teams/2717.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
-      "id": 1494747,
-      "utcDate": "2026-08-29T16:00:00+00:00",
-      "timestamp": 1788019200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 103,
-        "name": "Eliteserien",
-        "country": "Norway",
-        "logo": "https://media.api-sports.io/football/leagues/103.png"
-      },
-      "homeTeam": {
-        "id": 759,
-        "name": "Viking",
-        "shortName": "Viking",
-        "crest": "https://media.api-sports.io/football/teams/759.png"
-      },
-      "awayTeam": {
-        "id": 757,
-        "name": "Aalesund",
-        "shortName": "Aalesund",
-        "crest": "https://media.api-sports.io/football/teams/757.png"
       },
       "score": {
         "fullTime": {
@@ -80930,6 +80801,135 @@
       ]
     },
     {
+      "id": 1494746,
+      "utcDate": "2026-08-30T15:00:00+00:00",
+      "timestamp": 1788102000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 103,
+        "name": "Eliteserien",
+        "country": "Norway",
+        "logo": "https://media.api-sports.io/football/leagues/103.png"
+      },
+      "homeTeam": {
+        "id": 326,
+        "name": "Valerenga",
+        "shortName": "Valerenga",
+        "crest": "https://media.api-sports.io/football/teams/326.png"
+      },
+      "awayTeam": {
+        "id": 329,
+        "name": "Molde",
+        "shortName": "Molde",
+        "crest": "https://media.api-sports.io/football/teams/329.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1494747,
+      "utcDate": "2026-08-30T15:00:00+00:00",
+      "timestamp": 1788102000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 103,
+        "name": "Eliteserien",
+        "country": "Norway",
+        "logo": "https://media.api-sports.io/football/leagues/103.png"
+      },
+      "homeTeam": {
+        "id": 759,
+        "name": "Viking",
+        "shortName": "Viking",
+        "crest": "https://media.api-sports.io/football/teams/759.png"
+      },
+      "awayTeam": {
+        "id": 757,
+        "name": "Aalesund",
+        "shortName": "Aalesund",
+        "crest": "https://media.api-sports.io/football/teams/757.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1495927,
+      "utcDate": "2026-08-30T15:00:00+00:00",
+      "timestamp": 1788102000,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 104,
+        "name": "1. Division",
+        "country": "Norway",
+        "logo": "https://media.api-sports.io/football/leagues/104.png"
+      },
+      "homeTeam": {
+        "id": 2142,
+        "name": "Bryne",
+        "shortName": "Bryne",
+        "crest": "https://media.api-sports.io/football/teams/2142.png"
+      },
+      "awayTeam": {
+        "id": 328,
+        "name": "Haugesund",
+        "shortName": "Haugesund",
+        "crest": "https://media.api-sports.io/football/teams/328.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
       "id": 1495928,
       "utcDate": "2026-08-30T15:00:00+00:00",
       "timestamp": 1788102000,
@@ -97657,49 +97657,6 @@
       ]
     },
     {
-      "id": 1635071,
-      "utcDate": "2026-08-30T22:00:00+00:00",
-      "timestamp": 1788127200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 269,
-        "name": "Segunda División",
-        "country": "Uruguay",
-        "logo": "https://media.api-sports.io/football/leagues/269.png"
-      },
-      "homeTeam": {
-        "id": 2376,
-        "name": "Oriental",
-        "shortName": "Oriental",
-        "crest": "https://media.api-sports.io/football/teams/2376.png"
-      },
-      "awayTeam": {
-        "id": 2355,
-        "name": "Plaza Colonia",
-        "shortName": "Plaza Colonia",
-        "crest": "https://media.api-sports.io/football/teams/2355.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1493100,
       "utcDate": "2026-08-30T22:15:00+00:00",
       "timestamp": 1788128100,
@@ -98540,6 +98497,49 @@
         "name": "Oriente Petrolero",
         "shortName": "Oriente Petrolero",
         "crest": "https://media.api-sports.io/football/teams/3707.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1635071,
+      "utcDate": "2026-08-30T23:30:00+00:00",
+      "timestamp": 1788132600,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 269,
+        "name": "Segunda División",
+        "country": "Uruguay",
+        "logo": "https://media.api-sports.io/football/leagues/269.png"
+      },
+      "homeTeam": {
+        "id": 2376,
+        "name": "Oriental",
+        "shortName": "Oriental",
+        "crest": "https://media.api-sports.io/football/teams/2376.png"
+      },
+      "awayTeam": {
+        "id": 2355,
+        "name": "Plaza Colonia",
+        "shortName": "Plaza Colonia",
+        "crest": "https://media.api-sports.io/football/teams/2355.png"
       },
       "score": {
         "fullTime": {
