@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T01:13:39.031826+00:00",
+  "lastUpdated": "2026-08-29T01:23:36.820907+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -9,7 +9,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 48,
+      "elapsed": 58,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -52,7 +52,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 51,
+      "elapsed": 60,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -95,7 +95,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 47,
+      "elapsed": 57,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -138,7 +138,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 52,
+      "elapsed": 62,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -179,9 +179,9 @@
       "id": 1600577,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 54,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -224,7 +224,7 @@
       "timestamp": 1787961600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 54,
+      "elapsed": 64,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -265,8 +265,8 @@
       "id": 1635942,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 1242,
@@ -308,8 +308,8 @@
       "id": 1493095,
       "utcDate": "2026-08-29T00:30:00+00:00",
       "timestamp": 1787963400,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 128,
@@ -396,7 +396,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 9,
+      "elapsed": 18,
       "competition": {
         "id": 129,
         "name": "Primera Nacional",
@@ -439,7 +439,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 13,
+      "elapsed": 23,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -525,7 +525,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 12,
+      "elapsed": 22,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -568,7 +568,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 11,
+      "elapsed": 21,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -609,8 +609,8 @@
       "id": 1581405,
       "utcDate": "2026-08-29T01:00:00+00:00",
       "timestamp": 1787965200,
-      "status": "NS",
-      "statusLong": "Not Started",
+      "status": "PST",
+      "statusLong": "Match Postponed",
       "elapsed": null,
       "competition": {
         "id": 263,
@@ -654,7 +654,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 23,
       "competition": {
         "id": 234,
         "name": "Liga Nacional",
