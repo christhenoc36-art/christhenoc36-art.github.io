@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T04:14:52.211919+00:00",
+  "lastUpdated": "2026-08-29T04:25:06.925732+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -353,7 +353,7 @@
       "timestamp": 1787963400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 79,
+      "elapsed": 89,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -609,8 +609,8 @@
       "id": 1581405,
       "utcDate": "2026-08-29T01:00:00+00:00",
       "timestamp": 1787965200,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 263,
@@ -998,7 +998,7 @@
       "timestamp": 1787973000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 47,
+      "elapsed": 57,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -1019,7 +1019,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1041,7 +1041,7 @@
       "timestamp": 1787976000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 13,
+      "elapsed": 24,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1084,7 +1084,7 @@
       "timestamp": 1787976000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 24,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1127,7 +1127,7 @@
       "timestamp": 1787976000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 15,
+      "elapsed": 25,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
