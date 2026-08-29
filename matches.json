@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T02:34:02.559060+00:00",
+  "lastUpdated": "2026-08-29T02:43:46.228723+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -351,9 +351,9 @@
       "id": 1635943,
       "utcDate": "2026-08-29T00:30:00+00:00",
       "timestamp": 1787963400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 6,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -374,8 +374,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -396,7 +396,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 69,
+      "elapsed": 79,
       "competition": {
         "id": 129,
         "name": "Primera Nacional",
@@ -439,7 +439,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 75,
+      "elapsed": 85,
       "competition": {
         "id": 240,
         "name": "Primera B",
@@ -482,7 +482,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 34,
+      "elapsed": 44,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -525,7 +525,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 70,
+      "elapsed": 80,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -568,7 +568,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 71,
+      "elapsed": 81,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -590,7 +590,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -611,7 +611,7 @@
       "timestamp": 1787965200,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 13,
+      "elapsed": 23,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -654,7 +654,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 75,
+      "elapsed": 85,
       "competition": {
         "id": 234,
         "name": "Liga Nacional",
@@ -738,9 +738,9 @@
       "id": 1583747,
       "utcDate": "2026-08-29T01:30:00+00:00",
       "timestamp": 1787967000,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 54,
       "competition": {
         "id": 304,
         "name": "Liga Panameña de Fútbol",
@@ -826,7 +826,7 @@
       "timestamp": 1787968800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 25,
+      "elapsed": 35,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -869,7 +869,7 @@
       "timestamp": 1787968800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 43,
       "competition": {
         "id": 162,
         "name": "Primera División",
@@ -912,7 +912,7 @@
       "timestamp": 1787968800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 28,
+      "elapsed": 38,
       "competition": {
         "id": 339,
         "name": "Liga Nacional",
@@ -933,7 +933,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       },
