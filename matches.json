@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T04:45:33.173305+00:00",
+  "lastUpdated": "2026-08-29T04:55:18.789766+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -998,7 +998,7 @@
       "timestamp": 1787973000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 77,
+      "elapsed": 87,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -1019,7 +1019,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       },
@@ -1039,9 +1039,9 @@
       "id": 1536677,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1082,8 +1082,8 @@
       "id": 1631486,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 481,
@@ -1125,8 +1125,8 @@
       "id": 1633892,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 648,
