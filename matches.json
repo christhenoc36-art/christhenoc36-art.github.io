@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T08:07:10.045763+00:00",
+  "lastUpdated": "2026-08-29T08:17:21.843207+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1987,7 +1987,7 @@
       "timestamp": 1787983200,
       "status": "ET",
       "statusLong": "Extra Time",
-      "elapsed": 101,
+      "elapsed": 111,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2028,8 +2028,8 @@
       "id": 1635234,
       "utcDate": "2026-08-29T06:10:00+00:00",
       "timestamp": 1787983800,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 189,
@@ -2114,9 +2114,9 @@
       "id": 1517851,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 55,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2137,7 +2137,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 5,
+          "home": 6,
           "away": 0
         }
       },
@@ -2200,9 +2200,9 @@
       "id": 1517853,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 46,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2243,9 +2243,9 @@
       "id": 1517856,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 51,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2288,7 +2288,7 @@
       "timestamp": 1787986800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 49,
+      "elapsed": 59,
       "competition": {
         "id": 1234,
         "name": "K4 League",
@@ -2331,7 +2331,7 @@
       "timestamp": 1787986800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 49,
+      "elapsed": 59,
       "competition": {
         "id": 482,
         "name": "Queensland NPL",
@@ -2374,7 +2374,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 14,
       "competition": {
         "id": 668,
         "name": "1. Liga U19",
@@ -2417,7 +2417,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 6,
+      "elapsed": 17,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2460,7 +2460,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 6,
+      "elapsed": 16,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2503,7 +2503,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 8,
+      "elapsed": 18,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2546,7 +2546,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 15,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2568,7 +2568,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -2589,7 +2589,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 16,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2632,7 +2632,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 15,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2675,7 +2675,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 15,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2718,7 +2718,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 6,
+      "elapsed": 16,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2761,7 +2761,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 6,
+      "elapsed": 16,
       "competition": {
         "id": 380,
         "name": "Premier League",
@@ -2804,7 +2804,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 7,
+      "elapsed": 17,
       "competition": {
         "id": 380,
         "name": "Premier League",
@@ -2825,7 +2825,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -2847,7 +2847,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 15,
       "competition": {
         "id": 284,
         "name": "Liga II",
@@ -2890,7 +2890,7 @@
       "timestamp": 1787990400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 13,
       "competition": {
         "id": 833,
         "name": "Queensland Premier League",
@@ -3060,9 +3060,9 @@
       "id": 1562374,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 3,
       "competition": {
         "id": 351,
         "name": "4. liga - Divizie B",
@@ -3083,8 +3083,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3103,9 +3103,9 @@
       "id": 1562377,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 2,
       "competition": {
         "id": 351,
         "name": "4. liga - Divizie B",
@@ -3126,8 +3126,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3189,9 +3189,9 @@
       "id": 1562611,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 2,
       "competition": {
         "id": 348,
         "name": "3. liga - CFL A",
@@ -3212,8 +3212,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3232,9 +3232,9 @@
       "id": 1562612,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 348,
         "name": "3. liga - CFL A",
@@ -3255,8 +3255,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3318,9 +3318,9 @@
       "id": 1562733,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 685,
         "name": "3. liga - CFL B",
@@ -3341,8 +3341,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3404,9 +3404,9 @@
       "id": 1562735,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 685,
         "name": "3. liga - CFL B",
@@ -3427,8 +3427,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3447,9 +3447,9 @@
       "id": 1579333,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 686,
         "name": "4. liga - Divizie F",
@@ -3470,8 +3470,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -3490,9 +3490,9 @@
       "id": 1579335,
       "utcDate": "2026-08-29T08:15:00+00:00",
       "timestamp": 1787991300,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 1,
       "competition": {
         "id": 686,
         "name": "4. liga - Divizie F",
@@ -3513,8 +3513,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "tvChannels": [
@@ -5961,6 +5961,178 @@
         "name": "West Torrens Birkalla",
         "shortName": "West Torrens Birkalla",
         "crest": "https://media.api-sports.io/football/teams/16769.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636484,
+      "utcDate": "2026-08-29T09:30:00+00:00",
+      "timestamp": 1787995800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 28010,
+        "name": "Bidhannagar",
+        "shortName": "Bidhannagar",
+        "crest": "https://media.api-sports.io/football/teams/28010.png"
+      },
+      "awayTeam": {
+        "id": 21604,
+        "name": "George Telegraph",
+        "shortName": "George Telegraph",
+        "crest": "https://media.api-sports.io/football/teams/21604.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636485,
+      "utcDate": "2026-08-29T09:30:00+00:00",
+      "timestamp": 1787995800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 21597,
+        "name": "BSS Sporting",
+        "shortName": "BSS Sporting",
+        "crest": "https://media.api-sports.io/football/teams/21597.png"
+      },
+      "awayTeam": {
+        "id": 21605,
+        "name": "Kalighat",
+        "shortName": "Kalighat",
+        "crest": "https://media.api-sports.io/football/teams/21605.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636486,
+      "utcDate": "2026-08-29T09:30:00+00:00",
+      "timestamp": 1787995800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 21607,
+        "name": "Patha Chakra",
+        "shortName": "Patha Chakra",
+        "crest": "https://media.api-sports.io/football/teams/21607.png"
+      },
+      "awayTeam": {
+        "id": 15749,
+        "name": "Bhawanipore",
+        "shortName": "Bhawanipore",
+        "crest": "https://media.api-sports.io/football/teams/15749.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636487,
+      "utcDate": "2026-08-29T09:30:00+00:00",
+      "timestamp": 1787995800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 21609,
+        "name": "Railway",
+        "shortName": "Railway",
+        "crest": "https://media.api-sports.io/football/teams/21609.png"
+      },
+      "awayTeam": {
+        "id": 3467,
+        "name": "Mohun Bagan",
+        "shortName": "Mohun Bagan",
+        "crest": "https://media.api-sports.io/football/teams/3467.png"
       },
       "score": {
         "fullTime": {
@@ -65602,6 +65774,135 @@
         "name": "Gainare Tottori",
         "shortName": "Gainare Tottori",
         "crest": "https://media.api-sports.io/football/teams/4319.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636488,
+      "utcDate": "2026-08-30T09:30:00+00:00",
+      "timestamp": 1788082200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 21599,
+        "name": "Calcutta Customs",
+        "shortName": "Calcutta Customs",
+        "crest": "https://media.api-sports.io/football/teams/21599.png"
+      },
+      "awayTeam": {
+        "id": 3463,
+        "name": "East Bengal",
+        "shortName": "East Bengal",
+        "crest": "https://media.api-sports.io/football/teams/3463.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636489,
+      "utcDate": "2026-08-30T09:30:00+00:00",
+      "timestamp": 1788082200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 21608,
+        "name": "Peerless",
+        "shortName": "Peerless",
+        "crest": "https://media.api-sports.io/football/teams/21608.png"
+      },
+      "awayTeam": {
+        "id": 21614,
+        "name": "Police",
+        "shortName": "Police",
+        "crest": "https://media.api-sports.io/football/teams/21614.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1636490,
+      "utcDate": "2026-08-30T09:30:00+00:00",
+      "timestamp": 1788082200,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 1020,
+        "name": "Calcutta Premier Division",
+        "country": "India",
+        "logo": "https://media.api-sports.io/football/leagues/1020.png"
+      },
+      "homeTeam": {
+        "id": 21215,
+        "name": "Rainbow",
+        "shortName": "Rainbow",
+        "crest": "https://media.api-sports.io/football/teams/21215.png"
+      },
+      "awayTeam": {
+        "id": 24100,
+        "name": "Calcutta Police",
+        "shortName": "Calcutta Police",
+        "crest": "https://media.api-sports.io/football/teams/24100.png"
       },
       "score": {
         "fullTime": {
