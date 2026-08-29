@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T06:46:31.976121+00:00",
+  "lastUpdated": "2026-08-29T06:56:24.023008+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1254,9 +1254,9 @@
       "id": 1522010,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 89,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1297,9 +1297,9 @@
       "id": 1522011,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 84,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1340,8 +1340,8 @@
       "id": 1522012,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 195,
@@ -1383,9 +1383,9 @@
       "id": 1522013,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 88,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1426,8 +1426,8 @@
       "id": 1522014,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 195,
@@ -1469,9 +1469,9 @@
       "id": 1522015,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 89,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1492,7 +1492,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 5,
+          "home": 6,
           "away": 0
         }
       },
@@ -1512,9 +1512,9 @@
       "id": 1522041,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 87,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1536,7 +1536,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 1
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1643,7 +1643,7 @@
       "timestamp": 1787979600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 86,
+      "elapsed": 90,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1686,7 +1686,7 @@
       "timestamp": 1787979600,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 84,
+      "elapsed": 90,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1858,7 +1858,7 @@
       "timestamp": 1787981400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 54,
+      "elapsed": 64,
       "competition": {
         "id": 834,
         "name": "South Australia State League 1",
@@ -1901,7 +1901,7 @@
       "timestamp": 1787981400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 49,
+      "elapsed": 59,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -1985,9 +1985,9 @@
       "id": 1635486,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 41,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2030,7 +2030,7 @@
       "timestamp": 1787983800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 34,
+      "elapsed": 43,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
