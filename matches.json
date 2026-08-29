@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T04:04:34.958215+00:00",
+  "lastUpdated": "2026-08-29T04:14:52.211919+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -353,7 +353,7 @@
       "timestamp": 1787963400,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 69,
+      "elapsed": 79,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -611,7 +611,7 @@
       "timestamp": 1787965200,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 84,
+      "elapsed": 90,
       "competition": {
         "id": 263,
         "name": "Liga de Expansión MX",
@@ -996,9 +996,9 @@
       "id": 1550941,
       "utcDate": "2026-08-29T03:10:00+00:00",
       "timestamp": 1787973000,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 47,
       "competition": {
         "id": 262,
         "name": "Liga MX",
@@ -1041,7 +1041,7 @@
       "timestamp": 1787976000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 13,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1084,7 +1084,7 @@
       "timestamp": 1787976000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 14,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1105,7 +1105,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1127,7 +1127,7 @@
       "timestamp": 1787976000,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 15,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1149,7 +1149,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
