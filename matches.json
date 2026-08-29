@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T00:43:34.982602+00:00",
+  "lastUpdated": "2026-08-29T00:53:33.373948+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -9,7 +9,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 43,
       "competition": {
         "id": 254,
         "name": "NWSL Women",
@@ -50,9 +50,9 @@
       "id": 1513320,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 40,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -74,7 +74,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -95,7 +95,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 41,
+      "elapsed": 45,
       "competition": {
         "id": 909,
         "name": "MLS Next Pro",
@@ -117,7 +117,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -136,9 +136,9 @@
       "id": 1519471,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 44,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 242,
         "name": "Liga Pro",
@@ -181,7 +181,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 38,
+      "elapsed": 45,
       "competition": {
         "id": 370,
         "name": "Primera Division",
@@ -222,9 +222,9 @@
       "id": 1603336,
       "utcDate": "2026-08-29T00:00:00+00:00",
       "timestamp": 1787961600,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 43,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 673,
         "name": "Liga MX Femenil",
@@ -267,7 +267,7 @@
       "timestamp": 1787961600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 19,
+      "elapsed": 29,
       "competition": {
         "id": 1242,
         "name": "Primera Premier",
@@ -310,7 +310,7 @@
       "timestamp": 1787963400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 15,
+      "elapsed": 25,
       "competition": {
         "id": 128,
         "name": "Liga Profesional Argentina",
