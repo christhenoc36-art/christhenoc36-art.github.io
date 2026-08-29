@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T05:35:51.108275+00:00",
+  "lastUpdated": "2026-08-29T05:45:50.163644+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1041,7 +1041,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 75,
+      "elapsed": 85,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1084,7 +1084,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 79,
+      "elapsed": 90,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1105,7 +1105,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       },
@@ -1127,7 +1127,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 78,
+      "elapsed": 89,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1256,7 +1256,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 34,
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1277,7 +1277,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1299,7 +1299,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 34,
+      "elapsed": 44,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1342,7 +1342,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 36,
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1364,7 +1364,7 @@
       "score": {
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1385,7 +1385,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 35,
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1428,7 +1428,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 36,
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1471,7 +1471,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 35,
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1514,7 +1514,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 35,
+      "elapsed": 45,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1643,7 +1643,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 44,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1686,7 +1686,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 33,
+      "elapsed": 44,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1858,7 +1858,7 @@
       "timestamp": 1787981400,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 14,
       "competition": {
         "id": 834,
         "name": "South Australia State League 1",
@@ -1899,9 +1899,9 @@
       "id": 1633979,
       "utcDate": "2026-08-29T05:30:00+00:00",
       "timestamp": 1787981400,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "1H",
+      "statusLong": "First Half",
+      "elapsed": 10,
       "competition": {
         "id": 194,
         "name": "South Australia NPL",
@@ -1922,8 +1922,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1982,49 +1982,6 @@
       ]
     },
     {
-      "id": 1635234,
-      "utcDate": "2026-08-29T06:00:00+00:00",
-      "timestamp": 1787983200,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 189,
-        "name": "Capital Territory NPL",
-        "country": "Australia",
-        "logo": "https://media.api-sports.io/football/leagues/189.png"
-      },
-      "homeTeam": {
-        "id": 1452,
-        "name": "Cooma Tigers FC",
-        "shortName": "Cooma Tigers FC",
-        "crest": "https://media.api-sports.io/football/teams/1452.png"
-      },
-      "awayTeam": {
-        "id": 23517,
-        "name": "Canberra Juventus",
-        "shortName": "Canberra Juventus",
-        "crest": "https://media.api-sports.io/football/teams/23517.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1635486,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
@@ -2048,6 +2005,49 @@
         "name": "Weston Bears",
         "shortName": "Weston Bears",
         "crest": "https://media.api-sports.io/football/teams/10210.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1635234,
+      "utcDate": "2026-08-29T06:10:00+00:00",
+      "timestamp": 1787983800,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 189,
+        "name": "Capital Territory NPL",
+        "country": "Australia",
+        "logo": "https://media.api-sports.io/football/leagues/189.png"
+      },
+      "homeTeam": {
+        "id": 1452,
+        "name": "Cooma Tigers FC",
+        "shortName": "Cooma Tigers FC",
+        "crest": "https://media.api-sports.io/football/teams/1452.png"
+      },
+      "awayTeam": {
+        "id": 23517,
+        "name": "Canberra Juventus",
+        "shortName": "Canberra Juventus",
+        "crest": "https://media.api-sports.io/football/teams/23517.png"
       },
       "score": {
         "fullTime": {
