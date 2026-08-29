@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T05:15:46.431002+00:00",
+  "lastUpdated": "2026-08-29T05:25:53.458595+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1041,7 +1041,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 55,
+      "elapsed": 65,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1084,7 +1084,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 60,
+      "elapsed": 70,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1127,7 +1127,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 59,
+      "elapsed": 69,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1256,7 +1256,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 15,
+      "elapsed": 25,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1299,7 +1299,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 24,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1320,7 +1320,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       },
@@ -1342,7 +1342,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 16,
+      "elapsed": 26,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1363,7 +1363,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1385,7 +1385,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 15,
+      "elapsed": 25,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1428,7 +1428,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 16,
+      "elapsed": 26,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1471,7 +1471,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 15,
+      "elapsed": 25,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1514,7 +1514,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 15,
+      "elapsed": 25,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1643,7 +1643,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 24,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1664,7 +1664,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -1686,7 +1686,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 14,
+      "elapsed": 24,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
