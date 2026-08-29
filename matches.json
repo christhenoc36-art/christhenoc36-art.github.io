@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T05:05:38.494886+00:00",
+  "lastUpdated": "2026-08-29T05:15:46.431002+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1039,9 +1039,9 @@
       "id": 1536677,
       "utcDate": "2026-08-29T04:00:00+00:00",
       "timestamp": 1787976000,
-      "status": "HT",
-      "statusLong": "Halftime",
-      "elapsed": 45,
+      "status": "2H",
+      "statusLong": "Second Half",
+      "elapsed": 55,
       "competition": {
         "id": 650,
         "name": "Second League - Group 3",
@@ -1084,7 +1084,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 49,
+      "elapsed": 60,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -1127,7 +1127,7 @@
       "timestamp": 1787976000,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 48,
+      "elapsed": 59,
       "competition": {
         "id": 648,
         "name": "Tasmania NPL",
@@ -1148,7 +1148,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 2
         }
       },
@@ -1256,7 +1256,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 15,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1299,7 +1299,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 14,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1342,7 +1342,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 16,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1385,7 +1385,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 4,
+      "elapsed": 15,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1406,7 +1406,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1428,7 +1428,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 16,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1471,7 +1471,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 15,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1492,7 +1492,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         }
       },
@@ -1514,7 +1514,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 5,
+      "elapsed": 15,
       "competition": {
         "id": 195,
         "name": "Victoria NPL",
@@ -1535,7 +1535,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },
@@ -1643,7 +1643,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 14,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1665,7 +1665,7 @@
       "score": {
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       },
       "tvChannels": [
@@ -1686,7 +1686,7 @@
       "timestamp": 1787979600,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 3,
+      "elapsed": 14,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1707,7 +1707,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       },
@@ -51604,49 +51604,6 @@
       ]
     },
     {
-      "id": 1627029,
-      "utcDate": "2026-08-29T17:30:00+00:00",
-      "timestamp": 1788024600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
-      "competition": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "homeTeam": {
-        "id": 22136,
-        "name": "Reddis",
-        "shortName": "Reddis",
-        "crest": "https://media.api-sports.io/football/teams/22136.png"
-      },
-      "awayTeam": {
-        "id": 17588,
-        "name": "Castellón II",
-        "shortName": "Castellón II",
-        "crest": "https://media.api-sports.io/football/teams/17588.png"
-      },
-      "score": {
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "tvChannels": [
-        {
-          "name": "Canal+ Sport"
-        },
-        {
-          "name": "beIN SPORTS"
-        },
-        {
-          "name": "SuperSport"
-        }
-      ]
-    },
-    {
       "id": 1629900,
       "utcDate": "2026-08-29T17:30:00+00:00",
       "timestamp": 1788024600,
@@ -53562,6 +53519,49 @@
         "name": "Boca Unidos",
         "shortName": "Boca Unidos",
         "crest": "https://media.api-sports.io/football/teams/467.png"
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "tvChannels": [
+        {
+          "name": "Canal+ Sport"
+        },
+        {
+          "name": "beIN SPORTS"
+        },
+        {
+          "name": "SuperSport"
+        }
+      ]
+    },
+    {
+      "id": 1627029,
+      "utcDate": "2026-08-29T18:00:00+00:00",
+      "timestamp": 1788026400,
+      "status": "NS",
+      "statusLong": "Not Started",
+      "elapsed": null,
+      "competition": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "homeTeam": {
+        "id": 22136,
+        "name": "Reddis",
+        "shortName": "Reddis",
+        "crest": "https://media.api-sports.io/football/teams/22136.png"
+      },
+      "awayTeam": {
+        "id": 17588,
+        "name": "Castellón II",
+        "shortName": "Castellón II",
+        "crest": "https://media.api-sports.io/football/teams/17588.png"
       },
       "score": {
         "fullTime": {
