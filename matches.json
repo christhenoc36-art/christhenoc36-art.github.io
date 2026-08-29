@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T07:47:07.987458+00:00",
+  "lastUpdated": "2026-08-29T07:56:59.039744+00:00",
   "from": "2026-08-29",
   "to": "2026-08-31",
   "matches": [
@@ -1770,9 +1770,9 @@
       "id": 1541467,
       "utcDate": "2026-08-29T05:00:00+00:00",
       "timestamp": 1787979600,
-      "status": "NS",
-      "statusLong": "Not Started",
-      "elapsed": null,
+      "status": "FT",
+      "statusLong": "Match Finished",
+      "elapsed": 90,
       "competition": {
         "id": 1226,
         "name": "Victoria Premier League 2",
@@ -1793,8 +1793,8 @@
       },
       "score": {
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -1942,8 +1942,8 @@
       "id": 1529987,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "2H",
-      "statusLong": "Second Half",
+      "status": "FT",
+      "statusLong": "Match Finished",
       "elapsed": 90,
       "competition": {
         "id": 649,
@@ -1985,9 +1985,9 @@
       "id": 1635486,
       "utcDate": "2026-08-29T06:00:00+00:00",
       "timestamp": 1787983200,
-      "status": "2H",
-      "statusLong": "Second Half",
-      "elapsed": 88,
+      "status": "ET",
+      "statusLong": "Extra Time",
+      "elapsed": 143,
       "competition": {
         "id": 481,
         "name": "Northern NSW NPL",
@@ -2030,7 +2030,7 @@
       "timestamp": 1787983800,
       "status": "2H",
       "statusLong": "Second Half",
-      "elapsed": 74,
+      "elapsed": 84,
       "competition": {
         "id": 189,
         "name": "Capital Territory NPL",
@@ -2114,9 +2114,9 @@
       "id": 1517851,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 42,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2137,7 +2137,7 @@
       },
       "score": {
         "fullTime": {
-          "home": 4,
+          "home": 5,
           "away": 0
         }
       },
@@ -2202,7 +2202,7 @@
       "timestamp": 1787986800,
       "status": "1H",
       "statusLong": "First Half",
-      "elapsed": 36,
+      "elapsed": 45,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2223,8 +2223,8 @@
       },
       "score": {
         "fullTime": {
-          "home": 1,
-          "away": 1
+          "home": 2,
+          "away": 2
         }
       },
       "tvChannels": [
@@ -2243,9 +2243,9 @@
       "id": 1517856,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "1H",
-      "statusLong": "First Half",
-      "elapsed": 38,
+      "status": "HT",
+      "statusLong": "Halftime",
+      "elapsed": 45,
       "competition": {
         "id": 835,
         "name": "New South Wales NPL 2",
@@ -2286,8 +2286,8 @@
       "id": 1569829,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 1234,
@@ -2329,8 +2329,8 @@
       "id": 1628461,
       "utcDate": "2026-08-29T07:00:00+00:00",
       "timestamp": 1787986800,
-      "status": "1H",
-      "statusLong": "First Half",
+      "status": "HT",
+      "statusLong": "Halftime",
       "elapsed": 45,
       "competition": {
         "id": 482,
